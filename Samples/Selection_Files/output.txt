@@ -1,0 +1,656 @@
+Total Number of Chromosomes: 10
+Number of Selected Chromosomes (Top 20% + Random 10%): 3
+
+=== Overall Fitness of All Chromosomes ===
+Chromosome      Fitness Score
+------------------------------
+Chromosome 1    1150
+Chromosome 2    1190 *
+Chromosome 3    1120
+Chromosome 4    1160 *
+Chromosome 5    1100 *
+Chromosome 6    1135
+Chromosome 7    1070
+Chromosome 8    1060
+Chromosome 9    955
+Chromosome 10   1110
+
+=== Selected Chromosomes: Top 20% + Random 10% ===
+
+--- Selected Chromosome 1 ---
+Overall Fitness Score: 1190
+
+--- Monday ---
+Time Slot                 Teacher    Subject    Classroom
+------------------------------------------------------------
+Section A:
+  9:00 - 9:55 A.M           T2         S2         R3
+  9:55 - 10:50 A.M          T5         S5         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T2         S6         R2
+  11:55 - 12:50 P.M         T3         S2         R3
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T1         S1         R1
+
+Section B:
+  9:00 - 9:55 A.M           T3         S2         R2
+  9:55 - 10:50 A.M          T2         S6         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T1         S1         R1
+  11:55 - 12:50 P.M         T4         S6         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T3         S2         R3
+
+Section C:
+  9:00 - 9:55 A.M           T1         S1         R1
+  9:55 - 10:50 A.M          T4         S6         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T3         S2         R3
+  11:55 - 12:50 P.M         T2         S6         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T4         S7         R2
+
+Section D:
+  9:00 - 9:55 A.M           T5         S1         R2
+  9:55 - 10:50 A.M          T4         S6         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T5         S1         R3
+  11:55 - 12:50 P.M         T5         S1         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T4         S6         R1
+
+
+--- Tuesday ---
+Time Slot                 Teacher    Subject    Classroom
+------------------------------------------------------------
+Section A:
+  9:00 - 9:55 A.M           T3         S5         R2
+  9:55 - 10:50 A.M          T3         S2         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T3         S5         R2
+  11:55 - 12:50 P.M         T1         S1         R3
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T2         S6         R1
+
+Section B:
+  9:00 - 9:55 A.M           T4         S7         R3
+  9:55 - 10:50 A.M          T4         S7         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T5         S5         R1
+  11:55 - 12:50 P.M         T3         S2         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T1         S1         R2
+
+Section C:
+  9:00 - 9:55 A.M           T2         S2         R1
+  9:55 - 10:50 A.M          T5         S1         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T1         S3         R3
+  11:55 - 12:50 P.M         T4         S6         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T5         S5         R3
+
+Section D:
+  9:00 - 9:55 A.M           T5         S5         R1
+  9:55 - 10:50 A.M          T5         S1         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T1         S3         R2
+  11:55 - 12:50 P.M         T3         S5         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T1         S3         R3
+
+
+--- Wednesday ---
+Time Slot                 Teacher    Subject    Classroom
+------------------------------------------------------------
+Section A:
+  9:00 - 9:55 A.M           T3         S5         R1
+  9:55 - 10:50 A.M          T5         S5         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T4         S6         R3
+  11:55 - 12:50 P.M         T1         S1         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T3         S5         R2
+
+Section B:
+  9:00 - 9:55 A.M           T5         S5         R2
+  9:55 - 10:50 A.M          T4         S6         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T3         S5         R1
+  11:55 - 12:50 P.M         T4         S6         R3
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T2         S2         R1
+
+Section C:
+  9:00 - 9:55 A.M           T4         S7         R3
+  9:55 - 10:50 A.M          T2         S4         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T5         S5         R2
+  11:55 - 12:50 P.M         T2         S4         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T5         S5         R3
+
+Section D:
+  9:00 - 9:55 A.M           T4         S6         R2
+  9:55 - 10:50 A.M          T2         S4         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T2         S4         R2
+  11:55 - 12:50 P.M         T3         S5         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T4         S6         R2
+
+
+--- Thursday ---
+Time Slot                 Teacher    Subject    Classroom
+------------------------------------------------------------
+Section A:
+  9:00 - 9:55 A.M           T2         S2         R3
+  9:55 - 10:50 A.M          T5         S5         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T4         S7         R1
+  11:55 - 12:50 P.M         T1         S3         R3
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T5         S1         R2
+
+Section B:
+  9:00 - 9:55 A.M           T5         S1         R2
+  9:55 - 10:50 A.M          T3         S2         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T1         S1         R3
+  11:55 - 12:50 P.M         T2         S6         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T1         S3         R1
+
+Section C:
+  9:00 - 9:55 A.M           T1         S1         R1
+  9:55 - 10:50 A.M          T4         S6         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T5         S1         R2
+  11:55 - 12:50 P.M         T4         S7         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T4         S7         R1
+
+Section D:
+  9:00 - 9:55 A.M           T3         S5         R2
+  9:55 - 10:50 A.M          T4         S6         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T1         S3         R1
+  11:55 - 12:50 P.M         T5         S1         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T3         S5         R3
+
+
+--- Friday ---
+Time Slot                 Teacher    Subject    Classroom
+------------------------------------------------------------
+Section A:
+  9:00 - 9:55 A.M           T1         S3         R3
+  9:55 - 10:50 A.M          T5         S5         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T4         S7         R2
+  11:55 - 12:50 P.M         T1         S3         R3
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T3         S2         R1
+
+Section B:
+  9:00 - 9:55 A.M           T4         S7         R2
+  9:55 - 10:50 A.M          T2         S2         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T3         S2         R1
+  11:55 - 12:50 P.M         T5         S5         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T1         S3         R2
+
+Section C:
+  9:00 - 9:55 A.M           T3         S5         R1
+  9:55 - 10:50 A.M          T1         S1         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T4         S6         R2
+  11:55 - 12:50 P.M         T4         S7         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T5         S1         R3
+
+Section D:
+  9:00 - 9:55 A.M           T5         S1         R2
+  9:55 - 10:50 A.M          T3         S5         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T3         S2         R2
+  11:55 - 12:50 P.M         T2         S6         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T1         S1         R1
+
+
+--- Selected Chromosome 2 ---
+Overall Fitness Score: 1160
+
+--- Monday ---
+Time Slot                 Teacher    Subject    Classroom
+------------------------------------------------------------
+Section A:
+  9:00 - 9:55 A.M           T1         S1         R1
+  9:55 - 10:50 A.M          T5         S1         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T3         S5         R3
+  11:55 - 12:50 P.M         T1         S3         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T1         S1         R2
+
+Section B:
+  9:00 - 9:55 A.M           T4         S7         R2
+  9:55 - 10:50 A.M          T2         S6         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T2         S6         R2
+  11:55 - 12:50 P.M         T3         S5         R3
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T3         S5         R3
+
+Section C:
+  9:00 - 9:55 A.M           T3         S2         R3
+  9:55 - 10:50 A.M          T1         S3         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T5         S1         R1
+  11:55 - 12:50 P.M         T4         S6         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T4         S6         R1
+
+Section D:
+  9:00 - 9:55 A.M           T2         S6         R2
+  9:55 - 10:50 A.M          T3         S2         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T5         S5         R2
+  11:55 - 12:50 P.M         T1         S1         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T2         S2         R1
+
+
+--- Tuesday ---
+Time Slot                 Teacher    Subject    Classroom
+------------------------------------------------------------
+Section A:
+  9:00 - 9:55 A.M           T4         S7         R3
+  9:55 - 10:50 A.M          T2         S4         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T5         S1         R3
+  11:55 - 12:50 P.M         T1         S1         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T5         S5         R3
+
+Section B:
+  9:00 - 9:55 A.M           T5         S5         R1
+  9:55 - 10:50 A.M          T3         S5         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T4         S6         R1
+  11:55 - 12:50 P.M         T4         S6         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T3         S2         R1
+
+Section C:
+  9:00 - 9:55 A.M           T1         S1         R2
+  9:55 - 10:50 A.M          T4         S6         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T2         S2         R2
+  11:55 - 12:50 P.M         T2         S2         R3
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T1         S1         R2
+
+Section D:
+  9:00 - 9:55 A.M           T3         S2         R1
+  9:55 - 10:50 A.M          T2         S6         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T5         S5         R3
+  11:55 - 12:50 P.M         T1         S3         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T3         S5         R2
+
+
+--- Wednesday ---
+Time Slot                 Teacher    Subject    Classroom
+------------------------------------------------------------
+Section A:
+  9:00 - 9:55 A.M           T2         S6         R1
+  9:55 - 10:50 A.M          T5         S1         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T3         S2         R2
+  11:55 - 12:50 P.M         T3         S2         R3
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T5         S1         R3
+
+Section B:
+  9:00 - 9:55 A.M           T4         S6         R3
+  9:55 - 10:50 A.M          T3         S5         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T1         S3         R3
+  11:55 - 12:50 P.M         T5         S5         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T4         S7         R1
+
+Section C:
+  9:00 - 9:55 A.M           T3         S5         R2
+  9:55 - 10:50 A.M          T1         S3         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T5         S1         R1
+  11:55 - 12:50 P.M         T4         S7         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T1         S3         R2
+
+Section D:
+  9:00 - 9:55 A.M           T4         S7         R1
+  9:55 - 10:50 A.M          T3         S2         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T3         S5         R1
+  11:55 - 12:50 P.M         T1         S3         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T5         S1         R2
+
+
+--- Thursday ---
+Time Slot                 Teacher    Subject    Classroom
+------------------------------------------------------------
+Section A:
+  9:00 - 9:55 A.M           T3         S2         R3
+  9:55 - 10:50 A.M          T3         S5         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T5         S5         R3
+  11:55 - 12:50 P.M         T4         S7         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T4         S6         R3
+
+Section B:
+  9:00 - 9:55 A.M           T2         S4         R1
+  9:55 - 10:50 A.M          T1         S3         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T1         S3         R2
+  11:55 - 12:50 P.M         T2         S4         R3
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T3         S5         R1
+
+Section C:
+  9:00 - 9:55 A.M           T1         S3         R2
+  9:55 - 10:50 A.M          T4         S7         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T2         S2         R1
+  11:55 - 12:50 P.M         T3         S5         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T5         S1         R2
+
+Section D:
+  9:00 - 9:55 A.M           T2         S2         R1
+  9:55 - 10:50 A.M          T4         S7         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T2         S6         R1
+  11:55 - 12:50 P.M         T2         S2         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T3         S5         R3
+
+
+--- Friday ---
+Time Slot                 Teacher    Subject    Classroom
+------------------------------------------------------------
+Section A:
+  9:00 - 9:55 A.M           T4         S7         R2
+  9:55 - 10:50 A.M          T1         S1         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T1         S3         R3
+  11:55 - 12:50 P.M         T2         S4         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T5         S1         R1
+
+Section B:
+  9:00 - 9:55 A.M           T3         S2         R1
+  9:55 - 10:50 A.M          T2         S4         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T2         S4         R2
+  11:55 - 12:50 P.M         T4         S7         R3
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T3         S5         R2
+
+Section C:
+  9:00 - 9:55 A.M           T5         S1         R3
+  9:55 - 10:50 A.M          T4         S6         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T3         S2         R1
+  11:55 - 12:50 P.M         T1         S3         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T2         S4         R3
+
+Section D:
+  9:00 - 9:55 A.M           T3         S2         R3
+  9:55 - 10:50 A.M          T3         S5         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T2         S2         R3
+  11:55 - 12:50 P.M         T4         S7         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T1         S1         R1
+
+
+--- Selected Chromosome 3 ---
+Overall Fitness Score: 1100
+
+--- Monday ---
+Time Slot                 Teacher    Subject    Classroom
+------------------------------------------------------------
+Section A:
+  9:00 - 9:55 A.M           T2         S2         R3
+  9:55 - 10:50 A.M          T4         S6         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T4         S7         R3
+  11:55 - 12:50 P.M         T4         S7         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T3         S5         R1
+
+Section B:
+  9:00 - 9:55 A.M           T5         S5         R1
+  9:55 - 10:50 A.M          T3         S2         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T5         S5         R2
+  11:55 - 12:50 P.M         T2         S6         R3
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T1         S1         R3
+
+Section C:
+  9:00 - 9:55 A.M           T4         S7         R2
+  9:55 - 10:50 A.M          T5         S1         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T2         S6         R1
+  11:55 - 12:50 P.M         T1         S1         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T2         S6         R2
+
+Section D:
+  9:00 - 9:55 A.M           T1         S3         R1
+  9:55 - 10:50 A.M          T4         S7         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T5         S1         R3
+  11:55 - 12:50 P.M         T2         S2         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T3         S2         R3
+
+
+--- Tuesday ---
+Time Slot                 Teacher    Subject    Classroom
+------------------------------------------------------------
+Section A:
+  9:00 - 9:55 A.M           T3         S2         R2
+  9:55 - 10:50 A.M          T4         S7         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T4         S6         R3
+  11:55 - 12:50 P.M         T3         S2         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T5         S5         R2
+
+Section B:
+  9:00 - 9:55 A.M           T1         S1         R1
+  9:55 - 10:50 A.M          T5         S5         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T1         S1         R2
+  11:55 - 12:50 P.M         T4         S6         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T2         S2         R1
+
+Section C:
+  9:00 - 9:55 A.M           T4         S7         R3
+  9:55 - 10:50 A.M          T1         S1         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T2         S6         R1
+  11:55 - 12:50 P.M         T2         S2         R3
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T4         S7         R3
+
+Section D:
+  9:00 - 9:55 A.M           T3         S2         R1
+  9:55 - 10:50 A.M          T5         S5         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T5         S1         R3
+  11:55 - 12:50 P.M         T4         S6         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T3         S2         R1
+
+
+--- Wednesday ---
+Time Slot                 Teacher    Subject    Classroom
+------------------------------------------------------------
+Section A:
+  9:00 - 9:55 A.M           T5         S1         R1
+  9:55 - 10:50 A.M          T2         S4         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T3         S2         R2
+  11:55 - 12:50 P.M         T5         S5         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T3         S2         R1
+
+Section B:
+  9:00 - 9:55 A.M           T3         S2         R2
+  9:55 - 10:50 A.M          T4         S7         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T4         S7         R3
+  11:55 - 12:50 P.M         T4         S7         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T1         S3         R3
+
+Section C:
+  9:00 - 9:55 A.M           T5         S1         R3
+  9:55 - 10:50 A.M          T1         S1         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T1         S3         R1
+  11:55 - 12:50 P.M         T2         S4         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T5         S1         R2
+
+Section D:
+  9:00 - 9:55 A.M           T3         S2         R1
+  9:55 - 10:50 A.M          T3         S2         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T2         S4         R2
+  11:55 - 12:50 P.M         T1         S3         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T2         S6         R1
+
+
+--- Thursday ---
+Time Slot                 Teacher    Subject    Classroom
+------------------------------------------------------------
+Section A:
+  9:00 - 9:55 A.M           T2         S2         R1
+  9:55 - 10:50 A.M          T3         S2         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T5         S5         R2
+  11:55 - 12:50 P.M         T3         S2         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T2         S2         R2
+
+Section B:
+  9:00 - 9:55 A.M           T4         S6         R3
+  9:55 - 10:50 A.M          T1         S3         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T2         S6         R1
+  11:55 - 12:50 P.M         T2         S4         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T1         S1         R1
+
+Section C:
+  9:00 - 9:55 A.M           T1         S3         R2
+  9:55 - 10:50 A.M          T4         S7         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T3         S2         R2
+  11:55 - 12:50 P.M         T5         S5         R3
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T4         S7         R3
+
+Section D:
+  9:00 - 9:55 A.M           T1         S1         R3
+  9:55 - 10:50 A.M          T2         S2         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T1         S3         R3
+  11:55 - 12:50 P.M         T3         S5         R3
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T2         S6         R2
+
+
+--- Friday ---
+Time Slot                 Teacher    Subject    Classroom
+------------------------------------------------------------
+Section A:
+  9:00 - 9:55 A.M           T2         S2         R2
+  9:55 - 10:50 A.M          T4         S6         R1
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T3         S5         R1
+  11:55 - 12:50 P.M         T1         S1         R3
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T5         S1         R1
+
+Section B:
+  9:00 - 9:55 A.M           T5         S1         R3
+  9:55 - 10:50 A.M          T5         S1         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T4         S6         R2
+  11:55 - 12:50 P.M         T5         S1         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T2         S4         R3
+
+Section C:
+  9:00 - 9:55 A.M           T4         S7         R1
+  9:55 - 10:50 A.M          T1         S3         R3
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T1         S1         R3
+  11:55 - 12:50 P.M         T4         S6         R1
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T3         S5         R2
+
+Section D:
+  9:00 - 9:55 A.M           T2         S2         R2
+  9:55 - 10:50 A.M          T2         S2         R2
+  10:50 - 11:00 A.M (Break) None       Break      N/A
+  11:00 - 11:55 A.M         T3         S5         R2
+  11:55 - 12:50 P.M         T4         S6         R2
+  12:50 - 1:00 P.M (Lunch Break) None       Break      N/A
+  1:00 - 2:00 P.M           T4         S7         R3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
