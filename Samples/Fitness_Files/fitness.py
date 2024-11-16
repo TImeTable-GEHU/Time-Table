@@ -165,17 +165,17 @@ class TimetableFitness:
 
     def calculate_fitness(self, chromosome):
         week_fitness_scores = []
+        section_fitness_scores = {}
 
         # Track fitness score for each week
         for week_num, (week, week_schedule) in enumerate(chromosome.items(), start=1):
             overall_fitness_score = 0
-            section_fitness_scores = {}
+            week_section_scores = {}
 
-            # Ensure that week_schedule is a dictionary and process day-wise schedules
+            # Process day-wise schedules for the week
             for day, day_schedule in week_schedule.items():
-                section_fitness_scores[day] = {}
+                day_section_scores = {}
 
-                # Ensure that day_schedule is a dictionary for sections and their schedules
                 for section, section_schedule in day_schedule.items():
                     section_score = 100
                     teacher_time_slots = {}
@@ -216,15 +216,20 @@ class TimetableFitness:
                         if len(time_slots) > self.teacher_work_load.get(teacher, 5):
                             section_score -= 10
 
-                    section_fitness_scores[day][section] = section_score
+                    day_section_scores[section] = section_score
                     overall_fitness_score += section_score
+
+                week_section_scores[day] = day_section_scores
 
             week_fitness_scores.append({
                 "week": f"Week {week_num}",
                 "score": overall_fitness_score
             })
 
+            section_fitness_scores[f"Week {week_num}"] = week_section_scores
+
         return week_fitness_scores, section_fitness_scores
+
 
 # Main Execution
 timetable_fitness = TimetableFitness()
@@ -240,5 +245,4 @@ output = {
 # Save output to a JSON file
 with open("Samples/Sample_Chromosome.json", "w") as f:
     json.dump(output, f, indent=4)
-
 
