@@ -1,0 +1,1864 @@
+{
+    "fitness": [
+        {
+            "week": "Week 1",
+            "score": 3243
+        },
+        {
+            "week": "Week 2",
+            "score": 3383
+        }
+    ],
+    "fitness_details": {
+        "Week 1": {
+            "Monday": {
+                "A": 93,
+                "B": 310,
+                "C": -32,
+                "D": 107
+            },
+            "Tuesday": {
+                "A": 216,
+                "B": 248,
+                "C": 169,
+                "D": 174
+            },
+            "Wednesday": {
+                "A": 180,
+                "B": 119,
+                "C": 336,
+                "D": 66
+            },
+            "Thursday": {
+                "A": 94,
+                "B": 204,
+                "C": 125,
+                "D": 219
+            },
+            "Friday": {
+                "A": 249,
+                "B": 147,
+                "C": 25,
+                "D": 194
+            }
+        },
+        "Week 2": {
+            "Monday": {
+                "A": 256,
+                "B": 69,
+                "C": 211,
+                "D": 269
+            },
+            "Tuesday": {
+                "A": 159,
+                "B": 209,
+                "C": 156,
+                "D": 26
+            },
+            "Wednesday": {
+                "A": 66,
+                "B": 82,
+                "C": 114,
+                "D": 359
+            },
+            "Thursday": {
+                "A": 194,
+                "B": 262,
+                "C": 140,
+                "D": 172
+            },
+            "Friday": {
+                "A": 138,
+                "B": 199,
+                "C": 170,
+                "D": 132
+            }
+        }
+    },
+    "chromosome": {
+        "Week 1": {
+            "Monday": {
+                "A": [
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L5",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "R2",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L4",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "R1",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L6",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "R1",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "R1",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "B": [
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L6",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R2",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L5",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "C3",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L5",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L4",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R1",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "C": [
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "C3",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L6",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L4",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "R2",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L4",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L4",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L6",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "D": [
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "R1",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "R1",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L5",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L6",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "R2",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L4",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "C3",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ]
+            },
+            "Tuesday": {
+                "A": [
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L4",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L5",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L4",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L6",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "C3",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L4",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L5",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "B": [
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "C3",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L4",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L6",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L5",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L5",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "R1",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L5",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "C": [
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "R1",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L6",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L4",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L4",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "R1",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "R1",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L5",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "D": [
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L4",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L5",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R1",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "R2",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L5",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L6",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R1",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ]
+            },
+            "Wednesday": {
+                "A": [
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L6",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "C3",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "C3",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "R1",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L6",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L5",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L5",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "B": [
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "C3",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L5",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L5",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R2",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L5",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "C3",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "R2",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "C": [
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "C3",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L6",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L4",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L4",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "R2",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L5",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L6",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "D": [
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "C3",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L4",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "R1",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L6",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "R2",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L6",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "R1",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ]
+            },
+            "Thursday": {
+                "A": [
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "R1",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "C3",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L6",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L5",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "R2",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L4",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L5",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "B": [
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "R1",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R1",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L5",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "R2",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L6",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "R1",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "C3",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "C": [
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "C3",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "C3",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "R1",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L6",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R2",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "C3",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "R2",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "D": [
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L6",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L4",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "C3",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L6",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "C3",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "C3",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "R2",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ]
+            },
+            "Friday": {
+                "A": [
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L6",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "R1",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L5",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "C3",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "R1",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "R2",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "C3",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "B": [
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "C3",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R1",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L4",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L6",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "R2",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R1",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L5",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "C": [
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "C3",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L4",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L6",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L5",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "R1",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L4",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L4",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "D": [
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "R2",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L4",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "C3",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "C3",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L6",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "R2",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L5",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ]
+            }
+        },
+        "Week 2": {
+            "Monday": {
+                "A": [
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R1",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "R2",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L5",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L6",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L4",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "R2",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L5",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "B": [
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "C3",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L5",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "R1",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "R1",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "C3",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R1",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "C3",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "C": [
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "R1",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "C3",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "R1",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L5",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R2",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L4",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "R2",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "D": [
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "R2",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "C3",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L6",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L6",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L4",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L6",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L6",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ]
+            },
+            "Tuesday": {
+                "A": [
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L4",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R2",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "R2",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "C3",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "R1",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L4",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L4",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "B": [
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R1",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L4",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L4",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L6",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "R1",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "R2",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "C3",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "C": [
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "C3",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L4",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L6",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L4",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R2",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L5",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "C3",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "D": [
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L4",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L6",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "C3",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "R2",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L6",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L4",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "C3",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ]
+            },
+            "Wednesday": {
+                "A": [
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L4",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L4",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "R1",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L4",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L6",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L5",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "R2",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "B": [
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L5",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "R2",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L4",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L5",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L6",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L6",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L4",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "C": [
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "C3",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L4",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L6",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L4",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "C3",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "R2",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L5",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "D": [
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L5",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L4",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "R1",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L5",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "C3",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L4",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L6",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ]
+            },
+            "Thursday": {
+                "A": [
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L5",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "R2",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L4",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "R1",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L5",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L6",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L4",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "B": [
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L6",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "R1",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R2",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R1",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "R1",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "R1",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "R2",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "C": [
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L6",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "R1",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L5",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L5",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L5",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L6",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L5",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "D": [
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "R1",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "R1",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L6",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "R1",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "C3",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R2",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "L4",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ]
+            },
+            "Friday": {
+                "A": [
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L6",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L5",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L5",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "R1",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "C3",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L5",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R1",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "B": [
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R2",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L5",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "R2",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "R1",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L6",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "PHY-303",
+                        "classroom_id": "L4",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "C3",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "C": [
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "R2",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L5",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "R1",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L6",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L4",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L5",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "C3",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ],
+                "D": [
+                    {
+                        "teacher_id": "BJ10",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L5",
+                        "time_slot": "9:00 - 9:55"
+                    },
+                    {
+                        "teacher_id": "MK05",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L4",
+                        "time_slot": "9:55 - 10:50"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "MTH-201",
+                        "classroom_id": "R1",
+                        "time_slot": "10:50 - 11:45"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L4",
+                        "time_slot": "11:10 - 12:05"
+                    },
+                    {
+                        "teacher_id": "KL09",
+                        "subject_id": "CSE-401",
+                        "classroom_id": "L5",
+                        "time_slot": "12:05 - 1:00"
+                    },
+                    {
+                        "teacher_id": "SJ16",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "L4",
+                        "time_slot": "1:00 - 1:55"
+                    },
+                    {
+                        "teacher_id": "SS12",
+                        "subject_id": "TCS-509",
+                        "classroom_id": "L5",
+                        "time_slot": "2:00 - 2:55"
+                    }
+                ]
+            }
+        }
+    }
+}
