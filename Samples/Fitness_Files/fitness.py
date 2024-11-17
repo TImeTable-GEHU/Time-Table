@@ -233,7 +233,7 @@ class TimetableFitness:
 
 # Main Execution
 timetable_fitness = TimetableFitness()
-timetable = timetable_fitness.create_timetable(2)
+timetable = timetable_fitness.create_timetable(10)
 week_fitness_scores, fitness_scores = timetable_fitness.calculate_fitness(timetable)
 
 output = {
