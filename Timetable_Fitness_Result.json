@@ -1,0 +1,15 @@
+{
+    "teacher_schedule": {
+        "Teacher1": {},
+        "Teacher2": {},
+        "Teacher3": {},
+        "Teacher4": {}
+    },
+    "fitness_score": 40,
+    "section_strength": {
+        "Class1": 43,
+        "Class2": 60,
+        "Class3": 56,
+        "Class4": 58
+    }
+}
