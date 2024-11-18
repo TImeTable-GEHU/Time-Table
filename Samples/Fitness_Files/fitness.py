@@ -224,5 +224,5 @@ output = [
 ]
 
 # Save output to a JSON file
-with open("Samples/Sample_Chromosome.json", "w") as f:
+with open("Samples/sample_chromosome.json", "w") as f:
     json.dump(output, f, indent=4)

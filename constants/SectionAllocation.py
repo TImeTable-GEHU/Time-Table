@@ -1,62 +1,75 @@
 import random
+
 from collections import defaultdict
 
-ATTRIBUTE_WEIGHTS = {
-    'good_cgpa': 1,         # 2^0
-    'average_cgpa': 2,      # 2^1
-    'hostler': 4,           # 2^2
-    'non_hostler': 8        # 2^3
-}
+from constants.constant import ChromosomeConstants
 
-CGPA_THRESHOLD = 9.0
 
-def calculate_student_score(student):
-    score = 0
-    if student['CGPA'] >= CGPA_THRESHOLD:
-        score += ATTRIBUTE_WEIGHTS['good_cgpa']
-    else:
-        score += ATTRIBUTE_WEIGHTS['average_cgpa']
+class SectionAllocationFlow:
+    # This flow is responsible for allocating sections based on factors we have pre-set.
 
-    if student['Hostler']:
-        score += ATTRIBUTE_WEIGHTS['hostler']
-    else:
-        score += ATTRIBUTE_WEIGHTS['non_hostler']
+    def __init__(self, students: dict):
+        self.students = students
 
-    return score
+        classify = lambda cgpas: (
+            sorted(cgpas, reverse=True)[max(1, len(cgpas) // 5) - 1],  # Top 20% threshold
+            sorted(cgpas)[max(1, len(cgpas) // 5) - 1]  # Bottom 20% threshold
+        )
 
-def divide_students(students, class_strength):
-    # Group students by score
-    grouped_by_score = defaultdict(list)
-    for student in students:
-        score = calculate_student_score(student)
-        student['Score'] = score
-        grouped_by_score[score].append(student)
+        self.good_cgpa, self.bad_cgpa = classify([student["cgpa"] for student in self.students.values()])
 
-    sections = []
-    current_section = []
+    def calculate_student_score(self, student: dict, cgpa_threshold = 9.0):
+        score = 0
 
-    for score_group in grouped_by_score.values():
-        for student in score_group:
-            if len(current_section) < class_strength:
-                current_section.append(student)
+        # 1st year students, or year back students don't have CGPA.
+        if student.get('CGPA'):
+            if student.get('CGPA') >= cgpa_threshold:
+                score += ChromosomeConstants.STUDENT_ATTRIBUTE_WEIGHTS.get('good_cgpa', 0)
             else:
-                sections.append(current_section)
-                current_section = [student]
+                score += ChromosomeConstants.STUDENT_ATTRIBUTE_WEIGHTS.get('average_cgpa', 0)
 
-    if current_section:
-        sections.append(current_section)
+        if student['Hostler']:
+            score += ChromosomeConstants.STUDENT_ATTRIBUTE_WEIGHTS['hostler']
+        else:
+            score += ChromosomeConstants.STUDENT_ATTRIBUTE_WEIGHTS['non_hostler']
 
-    return sections
+        return score
+
+    def divide_students(self, class_strength):
+        # Group students by score
+        grouped_by_score = defaultdict(list)
+        for student in students:
+            score = self.calculate_student_score(student)
+            student['Score'] = score
+            grouped_by_score[score].append(student)
+
+        sections = []
+        current_section = []
+
+        for score_group in grouped_by_score.values():
+            for student in score_group:
+                if len(current_section) < class_strength:
+                    current_section.append(student)
+                else:
+                    sections.append(current_section)
+                    current_section = [student]
+
+        if current_section:
+            sections.append(current_section)
+
+        return sections
+
 
 def generate_students(num_students=500):
     students = []
     for i in range(1, num_students + 1):
         student = {
-            'ID': i,
-            'CGPA': round(random.uniform(5.0, 9.8), 2),
-            'Hostler': random.choice([True, False])
+            'Student_ID': i,
+            'CGPA': round(random.uniform(1.0, 9.8), 2),
+            'is_Hostler': random.choice([True, False])
         }
         students.append(student)
+
     return students
 
 students = generate_students(500)
