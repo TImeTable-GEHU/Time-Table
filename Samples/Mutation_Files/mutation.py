@@ -1,6 +1,15 @@
 import random
 
 class Mutation:
+    def __init__(self, mutation_rate=0.5):
+        """
+        Initializes the Mutation class with a specified mutation rate.
+
+        Args:
+            mutation_rate (float): Fraction (0 to 1) of sections to mutate.
+        """
+        self.mutation_rate = mutation_rate
+
     def mutate_time_slots_in_section(self, schedule, section):
         """
         Mutates the time slots within a particular section by shuffling them.
@@ -35,7 +44,7 @@ class Mutation:
 
     def mutate_all_sections(self, schedule):
         """
-        Mutates time slots for all sections in the schedule.
+        Mutates time slots for a fixed fraction of sections in the schedule.
 
         Args:
             schedule (dict): The schedule containing sections and their data.
@@ -43,9 +52,15 @@ class Mutation:
         Returns:
             list: List of sections where mutations occurred.
         """
+        # Calculate the number of sections to mutate
+        total_sections = list(schedule.keys())
+        num_to_mutate = max(1, int(self.mutation_rate * len(total_sections)))
+
+        # Randomly select the sections to mutate
+        sections_to_mutate = random.sample(total_sections, num_to_mutate)
         mutated_sections = []
 
-        for section in schedule.keys():
+        for section in sections_to_mutate:
             if self.mutate_time_slots_in_section(schedule, section):
                 mutated_sections.append(section)
 
@@ -104,11 +119,15 @@ schedule = {
     ]
 }
 
-# Create an instance of the Mutation class
-mutator = Mutation()
+# Create an instance of the Mutation class with a fixed mutation rate (e.g., 50%)
+mutation_rate = 0.5
+mutator = Mutation(mutation_rate=mutation_rate)
 
 # Perform mutations on all sections
-mutator.mutate_all_sections(schedule)
+mutated_sections = mutator.mutate_all_sections(schedule)
 
 # Print the mutated schedule
 mutator.print_schedule(schedule)
+
+# Output the sections where mutation occurred
+print(f"Mutated Sections: {mutated_sections}")
