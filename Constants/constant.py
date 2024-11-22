@@ -3,10 +3,10 @@ class WorkingDays:
 
 
 class Sections:
-    sections = []
+    sections = ["A","B","C","D"]
 
-    def __init__(self, section_number):
-        self.sections = [chr(65 + i) for i in range(section_number)]
+    # def __init__(self, section_number):
+    #     self.sections = [chr(65 + i) for i in range(section_number)]
 
 
 class SubjectTeacherMap:

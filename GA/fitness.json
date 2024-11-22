@@ -1,10 +1,161 @@
 {
-    "fitness_scores": {},
+    "fitness_scores": {
+        "Week 1 - Monday": {
+            "A": 30,
+            "B": 80,
+            "C": 15,
+            "D": 65
+        },
+        "Week 1 - Tuesday": {
+            "A": 80,
+            "B": 80,
+            "C": 15,
+            "D": 65
+        },
+        "Week 1 - Wednesday": {
+            "A": 65,
+            "B": 65,
+            "C": 30,
+            "D": 30
+        },
+        "Week 1 - Thursday": {
+            "A": 65,
+            "B": 15,
+            "C": 30,
+            "D": 30
+        },
+        "Week 1 - Friday": {
+            "A": 15,
+            "B": 80,
+            "C": 65,
+            "D": 30
+        },
+        "Week 2 - Monday": {
+            "A": -20,
+            "B": 65,
+            "C": -20,
+            "D": 15
+        },
+        "Week 2 - Tuesday": {
+            "A": 15,
+            "B": 80,
+            "C": 65,
+            "D": 30
+        },
+        "Week 2 - Wednesday": {
+            "A": 65,
+            "B": 30,
+            "C": 30,
+            "D": 15
+        },
+        "Week 2 - Thursday": {
+            "A": 80,
+            "B": 15,
+            "C": 65,
+            "D": 80
+        },
+        "Week 2 - Friday": {
+            "A": 80,
+            "B": 80,
+            "C": 15,
+            "D": 15
+        },
+        "Week 3 - Monday": {
+            "A": 15,
+            "B": 15,
+            "C": 30,
+            "D": 30
+        },
+        "Week 3 - Tuesday": {
+            "A": 80,
+            "B": 15,
+            "C": -35,
+            "D": 80
+        },
+        "Week 3 - Wednesday": {
+            "A": 65,
+            "B": 80,
+            "C": 15,
+            "D": 30
+        },
+        "Week 3 - Thursday": {
+            "A": 65,
+            "B": 80,
+            "C": 80,
+            "D": 15
+        },
+        "Week 3 - Friday": {
+            "A": 15,
+            "B": 30,
+            "C": 65,
+            "D": 80
+        },
+        "Week 4 - Monday": {
+            "A": 65,
+            "B": 80,
+            "C": 80,
+            "D": 65
+        },
+        "Week 4 - Tuesday": {
+            "A": 30,
+            "B": 15,
+            "C": 30,
+            "D": 15
+        },
+        "Week 4 - Wednesday": {
+            "A": -20,
+            "B": -20,
+            "C": 65,
+            "D": 65
+        },
+        "Week 4 - Thursday": {
+            "A": -35,
+            "B": 65,
+            "C": 30,
+            "D": 80
+        },
+        "Week 4 - Friday": {
+            "A": -35,
+            "B": 80,
+            "C": -35,
+            "D": 80
+        },
+        "Week 5 - Monday": {
+            "A": 15,
+            "B": 30,
+            "C": 15,
+            "D": 80
+        },
+        "Week 5 - Tuesday": {
+            "A": 15,
+            "B": 30,
+            "C": 15,
+            "D": 80
+        },
+        "Week 5 - Wednesday": {
+            "A": 30,
+            "B": 65,
+            "C": 65,
+            "D": 30
+        },
+        "Week 5 - Thursday": {
+            "A": 65,
+            "B": 15,
+            "C": -20,
+            "D": -20
+        },
+        "Week 5 - Friday": {
+            "A": 30,
+            "B": 15,
+            "C": 15,
+            "D": 30
+        }
+    },
     "weekly_fitness_scores": {
-        "Week 1": 0,
-        "Week 2": 0,
-        "Week 3": 0,
-        "Week 4": 0,
-        "Week 5": 0
+        "Week 1": 950,
+        "Week 2": 800,
+        "Week 3": 850,
+        "Week 4": 700,
+        "Week 5": 600
     }
 }
