@@ -113,8 +113,8 @@ class TimetableFitnessEvaluator:
 
 
 if __name__ == "__main__":
-    total_sections = 6
-    total_classrooms = 8
+    total_sections = 4
+    total_classrooms = 2
     total_labs = 3
 
     # Generate timetable
