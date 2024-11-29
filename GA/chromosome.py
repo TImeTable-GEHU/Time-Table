@@ -130,6 +130,7 @@ class TimeTableGeneration:
                     }
                 )
                 section_subject_usage_tracker[section][selected_subject] += 1
+
         return section_schedule
 
     def _assign_subject_and_teacher(
