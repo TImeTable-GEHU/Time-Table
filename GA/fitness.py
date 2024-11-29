@@ -21,10 +21,9 @@ class TimetableFitnessEvaluator:
         subject_quota_data,
         teacher_time_preferences,
         teacher_daily_workload,
-        available_days=Defaults.working_days,
     ):
         self.timetable = timetable
-        self.available_days = available_days
+        self.available_days = Defaults.working_days  # Removed trailing comma
         self.all_sections = all_sections
         self.subject_teacher_mapping = subject_teacher_mapping
         self.available_classrooms = available_classrooms
@@ -38,13 +37,11 @@ class TimetableFitnessEvaluator:
     def evaluate_timetable_fitness(self):
         daily_section_fitness_scores = {}
         weekly_fitness_scores = {}
-
+        teacher_workload_tracking = {}
         for week, week_schedule in self.timetable.items():
             weekly_fitness = 0
             daily_section_fitness_scores[week] = {}
-            teacher_workload_tracking = {}
             teacher_time_slot_tracking = {}
-
             for day, day_schedule in week_schedule.items():
                 daily_section_fitness_scores[week][day] = {}
                 day_fitness = 0
@@ -56,10 +53,10 @@ class TimetableFitnessEvaluator:
                     for schedule_item in section_schedule:
                         assigned_teacher = schedule_item["teacher_id"]
                         assigned_classroom = schedule_item["classroom_id"]
-                        assigned_time_slot = TimeIntervalConstant.time_mapping[
+                        assigned_time_slot = TimeIntervalConstant.time_mapping.get(
                             schedule_item["time_slot"]
-                        ]
-                        section_strength = self.section_student_strength[section]
+                        )
+                        section_strength = self.section_student_strength.get(section, 0)
 
                         # Penalty 1: Double booking a teacher in the same time slot
                         if (assigned_teacher, assigned_time_slot) in teacher_time_slot_tracking.keys():
@@ -98,9 +95,9 @@ class TimetableFitnessEvaluator:
 
                     # Penalty 6: Exceeding teacher daily workload
                     for teacher, times_assigned in teacher_workload_tracking.items():
-                        allowed_workload = self.teacher_daily_workload.get(teacher, self.teacher_daily_workload)
-                        if len(times_assigned) > allowed_workload:
-                            section_fitness -= PenaltyConstants.PENALTY_OVERLOAD_TEACHER
+                        if teacher is not None:
+                            if len(times_assigned) > self.teacher_daily_workload.get(teacher, 0):
+                                section_fitness -= PenaltyConstants.PENALTY_OVERLOAD_TEACHER
 
                     daily_section_fitness_scores[week][day][section] = section_fitness
                     day_fitness += section_fitness
@@ -131,20 +128,19 @@ if __name__ == "__main__":
         teacher_duty_days=TeacherWorkload.teacher_duty_days,
     )
     generated_timetables = timetable_generator.create_timetable(5)
-
+    # print(generated_timetables)
     # Evaluate fitness
     fitness_evaluator = TimetableFitnessEvaluator(
         generated_timetables,
-        timetable_generator.sections,
+        timetable_generator.sections_manager.sections,
         SubjectTeacherMap.subject_teacher_map,
-        timetable_generator.classrooms,
-        timetable_generator.lab_classrooms,
-        timetable_generator.room_capacity,
-        timetable_generator.section_strength,
+        timetable_generator.classrooms_manager.classrooms,
+        timetable_generator.classrooms_manager.labs,
+        timetable_generator.room_capacity_manager.room_capacity,
+        timetable_generator.room_capacity_manager.section_strength,
         timetable_generator.subject_quota_limits,
         timetable_generator.teacher_availability_preferences,
         timetable_generator.weekly_workload,
-        Defaults.working_days,
     )
 
     section_fitness_data, weekly_fitness_data = fitness_evaluator.evaluate_timetable_fitness()

@@ -48,7 +48,7 @@ class SubjectWeeklyQuota:
         "PCS-506": 1,
         "TMA-502": 3,
         "PMA-502": 1,
-        "TCS-509": 4,
+        "TCS-509": 3,
         "XCS-501": 2,
         "CSP-501": 1,
         "SCS-501": 1,
