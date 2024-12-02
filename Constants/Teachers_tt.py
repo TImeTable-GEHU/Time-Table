@@ -49,31 +49,39 @@ class TeacherTimetable:
                             "day": day
                         }
 
-                        # Debug: Ensure each teacher is assigned a class
-                        if teacher_id not in self.teacher_timetable:
-                            print(f"Teacher {teacher_id} has no classes assigned.")
+        return self.teacher_timetable
 
     def save_timetable_to_json(self, file_path="Constants/teacher_timetable.json"):
         """
-        Save the teacher's timetable to a JSON file.
+        Create a dictionary and save the teacher's timetable to a JSON file.
         """
         try:
+            # Create a dictionary explicitly from the teacher timetable
+            timetable_dict = {
+                teacher: {
+                    day: classes
+                    for day, classes in days.items()
+                }
+                for teacher, days in self.teacher_timetable.items()
+            }
+            
+            # Save the dictionary to a JSON file
             with open(file_path, "w") as json_file:
-                json.dump(self.teacher_timetable, json_file, indent=4)
+                json.dump(timetable_dict, json_file, indent=4)
+                
+            print(f"Timetable successfully saved to '{file_path}'.")
         except Exception as e:
             print(f"Error saving timetable to '{file_path}': {e}")
 
-
 if __name__ == "__main__":
     teacher_timetable = TeacherTimetable()
-
     # Generate timetable from the sample chromosome (Week 1 and Week 2)
     w = {
         "Week 2": SampleChromosome.schedule2,
         "Week 1": SampleChromosome.schedule1
     }
     
-    teacher_timetable.generate_teacher_timetable(w)
-    
+    teacher_tt=teacher_timetable.generate_teacher_timetable(w)
+    print(teacher_tt)
     # Save timetable to a JSON file
-    teacher_timetable.save_timetable_to_json()  
+    teacher_timetable.save_timetable_to_json()
