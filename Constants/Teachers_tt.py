@@ -14,8 +14,15 @@ class TeacherTimetable:
     def generate_teacher_timetable(self, chromosome):
         """
         Populate the teacher's timetable based on the provided chromosome schedule.
-        Now includes the course (Week 1, Week 2, etc.) information.
+        Create a dictionary to store all data for the timetable and return it.
         """
+        # Dictionary to hold the full timetable
+        timetable_dict = {
+            teacher: {day: [] for day in WorkingDays.days} 
+            for teachers in SubjectTeacherMap.subject_teacher_map.values() 
+            for teacher in teachers
+        }
+
         for week, days in chromosome.items():
             for day, sections in days.items():
                 for section, classes in sections.items():
@@ -30,7 +37,7 @@ class TeacherTimetable:
                             continue  # Skip this assignment if there's a conflict
 
                         # Add the class to the teacher's timetable
-                        self.teacher_timetable[teacher_id][day].append({
+                        timetable_dict[teacher_id][day].append({
                             "course": week,  # Include course information (Week 1, Week 2)
                             "section": section,
                             "subject_id": subject_id,
@@ -49,9 +56,9 @@ class TeacherTimetable:
                             "day": day
                         }
 
-                        # Debug: Ensure each teacher is assigned a class
-                        if teacher_id not in self.teacher_timetable:
-                            print(f"Teacher {teacher_id} has no classes assigned.")
+        # Update the class-level timetable
+        self.teacher_timetable = timetable_dict
+        return timetable_dict
 
     def save_timetable_to_json(self, file_path="Constants/teacher_timetable.json"):
         """
@@ -63,7 +70,6 @@ class TeacherTimetable:
         except Exception as e:
             print(f"Error saving timetable to '{file_path}': {e}")
 
-
 if __name__ == "__main__":
     teacher_timetable = TeacherTimetable()
 
@@ -73,7 +79,11 @@ if __name__ == "__main__":
         "Week 1": SampleChromosome.schedule1
     }
     
-    teacher_timetable.generate_teacher_timetable(w)
+    # Generate the timetable and get it as a dictionary
+    timetable_dict = teacher_timetable.generate_teacher_timetable(w)
     
-    # Save timetable to a JSON file
-    teacher_timetable.save_timetable_to_json()  
+    # Save the timetable to a JSON file
+    teacher_timetable.save_timetable_to_json()
+    
+    # Return the timetable dictionary (optional, for further use)
+    timetable_dict
