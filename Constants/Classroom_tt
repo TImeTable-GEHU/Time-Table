@@ -65,3 +65,4 @@ if __name__ == "__main__":
     class_timetable.save_timetable_to_json()
 
     timetable_dict
+    
