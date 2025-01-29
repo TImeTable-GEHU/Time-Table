@@ -69,6 +69,64 @@ class PenaltyConstants:
     PENALTY_UN_PREFERRED_SLOT = 5
     PENALTY_OVERLOAD_TEACHER = 10
 
+class Depatments:
+    teacher_department_mapping = {
+    "AB01": ["CSE"],
+    "PK02": ["CSE", "Management", "SOC"],
+    "SS03": ["CSE"],
+    "AA04": ["CSE", "Management"],
+    "AC05": ["CSE", "SOC"],
+    "SP06": ["CSE", "Management"],
+    "DP07": ["CSE", "SOC"],
+    "AD08": ["CSE", "Management"],
+    "RD09": ["CSE"],
+    "BJ10": ["CSE", "Management", "SOC"],
+    "RS11": ["CSE"],
+    "JM12": ["CSE", "SOC"],
+    "NJ13": ["CSE", "Management"],
+    "PM14": ["CSE"],
+    "AA15": ["CSE", "SOC"],
+    "SJ16": ["CSE", "Management"],
+    "AB17": ["CSE", "SOC"],
+    "HP18": ["CSE", "Management"],
+    "SG19": ["CSE", "SOC"],
+    "DT20": ["CSE", "Management"],
+    "PA21": ["CSE", "SOC"],
+    "NB22": ["CSE", "Management"],
+    "AK23": ["CSE"],
+    "AP24": ["CSE", "SOC"],
+    "VD25": ["CSE", "Management"],
+    "AK26": ["CSE"],
+}
+class InterDepartment:
+   teacher_availability_matrix= {
+        "AB01": [True, True, True, True, True, True, True],
+        "PK02": [True, True, True, True, True, True, True],
+        "SS03": [True, True, True, True, True, True, True],
+        "AA04": [True, True, True, True, True, True, True],
+        "AC05": [True, True, True, True, True, True, True],
+        "SP06": [True, True, True, True, True, True, True],
+        "DP07": [True, True, True, True, True, True, True],
+        "AD08": [True, True, True, True, True, True, True],
+        "RD09": [True, True, True, True, True, True, True],
+        "BJ10": [True, True, True, True, True, True, True],
+        "RS11": [True, True, True, True, True, True, True],
+        "JM12": [True, True, True, True, True, True, True],
+        "NJ13": [True, True, True, True, True, True, True],
+        "PM14": [True, True, True, True, True, True, True],
+        "AA15": [True, True, True, True, True, True, True],
+        "SJ16": [True, True, True, True, True, True, True],
+        "AB17": [True, True, True, True, True, True, True],
+        "HP18": [True, True, True, True, True, True, True],
+        "SG19": [True, True, True, True, True, True, True],
+        "DT20": [True, True, True, True, True, True, True],
+        "PA21": [True, True, True, True, True, True, True],
+        "NB22": [True, True, True, True, True, True, True],
+        "AK23": [True, True, True, True, True, True, True],
+        "AP24": [True, True, True, True, True, True, True],
+        "VD25": [True, True, True, True, True, True, True],
+        "AK26": [False, False, False, False, True, False, False],  
+    }
 
 class TeacherWorkload:
     Weekly_workLoad = {

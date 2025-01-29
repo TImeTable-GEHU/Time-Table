@@ -12,7 +12,8 @@ from Samples.samples import (
     SubjectWeeklyQuota,
     Classrooms,
     Sections,
-
+    Depatments,
+    InterDepartment
 )
 
 
@@ -26,11 +27,13 @@ def timetable_generation():
         teacher_preferences=TeacherWorkload.teacher_preferences,
         teacher_weekly_workload=TeacherWorkload.Weekly_workLoad,
         special_subjects=SpecialSubjects.special_subjects,
+        labs=SpecialSubjects.Labs,
         subject_quota_limits=SubjectWeeklyQuota.subject_quota,
         labs_list=Classrooms.labs,
         teacher_duty_days=TeacherWorkload.teacher_duty_days,
+        teacher_availability_matrix=InterDepartment.teacher_availability_matrix,
+        teacher_department_mapping=Depatments.teacher_department_mapping,
     )
-
     timetable = timetable_generator.create_timetable(Defaults.initial_no_of_chromosomes)
     # Fitness of each Chromosome
     fitness_calculator = TimetableFitnessEvaluator(
@@ -91,5 +94,5 @@ def run_timetable_generation():
     for generation in range(Defaults.total_no_of_generations):
         best_chromosome = timetable_generation()
     return best_chromosome
-
+print(run_timetable_generation())
 run_timetable_generation()
