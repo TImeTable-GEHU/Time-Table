@@ -181,8 +181,8 @@ class TimeTableGeneration:
                 total_slots_for_section
             )
 
-            if assigned_teacher != "None":
-                teacher_availability_matrix[assigned_teacher][index][slot_index - 1] = False
+            # if assigned_teacher != "None":
+            #     teacher_availability_matrix[assigned_teacher][index][slot_index - 1] = False
 
             section_schedule.append(
                 {
@@ -192,7 +192,6 @@ class TimeTableGeneration:
                     "time_slot": current_time_slot,
                 }
             )
-
             if selected_subject != "Library":
                 section_subject_usage_tracker[section][selected_subject] += 1
 

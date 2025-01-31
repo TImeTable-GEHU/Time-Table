@@ -101,4 +101,4 @@ def run_timetable_generation():
 if __name__ == "__main__":
     print("Running Timetable Generation...")
     best_chromosome, teacher_availability_matrix = run_timetable_generation()
-    # print("Timetable Generation Completed.",teacher_availability_matrix)
+    print("Timetable Generation Completed.",best_chromosome)
