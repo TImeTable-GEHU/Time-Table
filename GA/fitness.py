@@ -128,7 +128,7 @@ if __name__ == "__main__":
         teacher_duty_days=TeacherWorkload.teacher_duty_days,
     )
     generated_timetables = timetable_generator.create_timetable(5)
-    # print(generated_timetables)
+
     # Evaluate fitness
     fitness_evaluator = TimetableFitnessEvaluator(
         generated_timetables,
