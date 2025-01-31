@@ -66,3 +66,4 @@ for i, section in enumerate(sections):
     print(f"Section {i + 1} (Total Students: {len(section)}):")
     for student in section:
         print(f"  Student ID: {student['ID']}, CGPA: {student['CGPA']}, Hostler: {student['Hostler']}, Score: {student['Score']}")
+
