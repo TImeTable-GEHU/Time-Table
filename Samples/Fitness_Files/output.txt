@@ -1,385 +1,651 @@
-OUTPUT 1
 --- Weekly Timetable ---
 
-Day: Monday
+Day: Week 1 - Monday
   Section: A
-    9:00 A.M - 9:55 A.M: SCS-501 (Teacher: AP24, Room: R1)
-    9:55 A.M - 10:50 A.M: TCS-502 (Teacher: SS03, Room: R1)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:55 A.M - 12:50 P.M: PCS-506 (Teacher: AD08, Room: R1)
-    11:00 A.M - 11:55 A.M: PCS-506 (Teacher: AD08, Room: R1)
-    11:55 A.M - 12:50 P.M: PMA-502 (Teacher: PM14, Room: R1)
+    9:00 - 9:55: CSP-501 (Teacher: AK23, Room: R1)
+    9:55 - 10:50: TMA-502 (Teacher: BJ10, Room: R1)
+    12:05 - 1:00: PMA-502 (Teacher: PM14, Room: R1)
+    11:10 - 12:05: PMA-502 (Teacher: PM14, Room: R1)
   ----------------------------------------
   Section: B
-    9:00 A.M - 9:55 A.M: PMA-502 (Teacher: PM14, Room: R2)
-    9:55 A.M - 10:50 A.M: SCS-501 (Teacher: AP24, Room: R2)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:55 A.M - 12:50 P.M: PCS-506 (Teacher: AD08, Room: R2)
-    11:00 A.M - 11:55 A.M: PCS-506 (Teacher: AD08, Room: R2)
-    11:55 A.M - 12:50 P.M: TCS-531 (Teacher: AB01, Room: R2)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    1:00 P.M - 2:00 P.M: XCS-501 (Teacher: DT20, Room: R2)
-    2:00 P.M - 3:00 P.M: TCS-503 (Teacher: SP06, Room: R2)
+    9:00 - 9:55: TCS-503 (Teacher: SP06, Room: R2)
+    9:55 - 10:50: SCS-501 (Teacher: AP24, Room: R2)
+    12:05 - 1:00: PCS-506 (Teacher: AD08, Room: R2)
+    11:10 - 12:05: PCS-506 (Teacher: AD08, Room: R2)
+    1:20 - 2:15: TCS-531 (Teacher: AB01, Room: R2)
+    2:15 - 3:10: TCS-509 (Teacher: SJ16, Room: R2)
+    3:30 - 4:25: CSP-501 (Teacher: AK23, Room: R2)
   ----------------------------------------
   Section: C
-    9:00 A.M - 9:55 A.M: TCS-503 (Teacher: SP06, Room: R3)
-    9:55 A.M - 10:50 A.M: TCS-509 (Teacher: SJ16, Room: R3)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TCS-502 (Teacher: SS03, Room: R3)
-    11:55 A.M - 12:50 P.M: SCS-501 (Teacher: AP24, Room: R3)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    2:00 P.M - 3:00 P.M: PCS-506 (Teacher: AD08, Room: R3)
-    1:00 P.M - 2:00 P.M: PCS-506 (Teacher: AD08, Room: R3)
-    2:00 P.M - 3:00 P.M: TCS-531 (Teacher: AB01, Room: R3)
+    9:55 - 10:50: PCS-506 (Teacher: AD08, Room: R3)
+    9:00 - 9:55: PCS-506 (Teacher: AD08, Room: R3)
+    11:10 - 12:05: TCS-503 (Teacher: SP06, Room: R3)
+    12:05 - 1:00: TCS-502 (Teacher: SS03, Room: R3)
   ----------------------------------------
   Section: D
-    9:00 A.M - 9:55 A.M: CSP-501 (Teacher: AK23, Room: R4)
-    9:55 A.M - 10:50 A.M: TCS-509 (Teacher: SJ16, Room: R4)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TMA-502 (Teacher: BJ10, Room: R4)
-    11:55 A.M - 12:50 P.M: PMA-502 (Teacher: PM14, Room: R4)
+    9:55 - 10:50: PCS-506 (Teacher: AD08, Room: R4)
+    9:00 - 9:55: PCS-506 (Teacher: AD08, Room: R4)
+    11:10 - 12:05: TCS-509 (Teacher: SJ16, Room: R4)
+    12:05 - 1:00: SCS-501 (Teacher: AP24, Room: R4)
+    1:20 - 2:15: TCS-502 (Teacher: SS03, Room: R4)
+    2:15 - 3:10: XCS-501 (Teacher: DT20, Room: R4)
+    3:30 - 4:25: CSP-501 (Teacher: AK23, Room: R4)
   ----------------------------------------
 ============================================================
-Day: Tuesday
+Day: Week 1 - Tuesday
   Section: A
-    9:00 A.M - 9:55 A.M: SCS-501 (Teacher: AP24, Room: R1)
-    9:55 A.M - 10:50 A.M: PCS-506 (Teacher: AD08, Room: R1)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: PMA-502 (Teacher: PM14, Room: R1)
-    11:55 A.M - 12:50 P.M: CSP-501 (Teacher: AK23, Room: R1)
+    9:55 - 10:50: PMA-502 (Teacher: PM14, Room: R1)
+    9:00 - 9:55: PMA-502 (Teacher: PM14, Room: R1)
+    11:10 - 12:05: TMA-502 (Teacher: BJ10, Room: R1)
+    12:05 - 1:00: SCS-501 (Teacher: AP24, Room: R1)
+    1:20 - 2:15: TCS-502 (Teacher: SS03, Room: R1)
+    2:15 - 3:10: Placement_Class (Teacher: AK26, Room: R1)
+    3:30 - 4:25: CSP-501 (Teacher: AK23, Room: R1)
   ----------------------------------------
   Section: B
-    9:00 A.M - 9:55 A.M: PMA-502 (Teacher: PM14, Room: R2)
-    9:55 A.M - 10:50 A.M: TCS-509 (Teacher: SJ16, Room: R2)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TMA-502 (Teacher: BJ10, Room: R2)
-    11:55 A.M - 12:50 P.M: XCS-501 (Teacher: DT20, Room: R2)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    1:00 P.M - 2:00 P.M: CSP-501 (Teacher: AK23, Room: R2)
-    2:00 P.M - 3:00 P.M: TCS-502 (Teacher: SS03, Room: R2)
+    9:55 - 10:50: PCS-503 (Teacher: RS11, Room: R2)
+    9:00 - 9:55: PCS-503 (Teacher: RS11, Room: R2)
+    12:05 - 1:00: PMA-502 (Teacher: PM14, Room: R2)
+    11:10 - 12:05: PMA-502 (Teacher: PM14, Room: R2)
+    1:20 - 2:15: CSP-501 (Teacher: AK23, Room: R2)
+    2:15 - 3:10: TMA-502 (Teacher: BJ10, Room: R2)
+    3:30 - 4:25: XCS-501 (Teacher: DT20, Room: R2)
   ----------------------------------------
   Section: C
-    9:00 A.M - 9:55 A.M: SCS-501 (Teacher: AP24, Room: R3)
-    9:55 A.M - 10:50 A.M: TCS-503 (Teacher: SP06, Room: R3)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: XCS-501 (Teacher: DT20, Room: R3)
-    11:55 A.M - 12:50 P.M: PCS-506 (Teacher: AD08, Room: R3)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    1:00 P.M - 2:00 P.M: CSP-501 (Teacher: AK23, Room: R3)
-    2:00 P.M - 3:00 P.M: PMA-502 (Teacher: PM14, Room: R3)
+    9:00 - 9:55: SCS-501 (Teacher: AP24, Room: R3)
+    9:55 - 10:50: CSP-501 (Teacher: AK23, Room: R3)
+    11:10 - 12:05: TCS-509 (Teacher: SJ16, Room: R3)
+    12:05 - 1:00: TCS-503 (Teacher: SP06, Room: R3)
   ----------------------------------------
   Section: D
-    9:00 A.M - 9:55 A.M: TCS-503 (Teacher: SP06, Room: R4)
-    9:55 A.M - 10:50 A.M: XCS-501 (Teacher: DT20, Room: R4)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TMA-502 (Teacher: BJ10, Room: R4)
-    11:55 A.M - 12:50 P.M: TCS-502 (Teacher: SS03, Room: R4)
+    9:00 - 9:55: CSP-501 (Teacher: AK23, Room: R4)
+    9:55 - 10:50: XCS-501 (Teacher: DT20, Room: R4)
+    11:10 - 12:05: TCS-503 (Teacher: SP06, Room: R4)
+    12:05 - 1:00: TCS-531 (Teacher: AB01, Room: R4)
   ----------------------------------------
 ============================================================
-Day: Wednesday
+Day: Week 1 - Wednesday
   Section: A
-    9:00 A.M - 9:55 A.M: TMA-502 (Teacher: BJ10, Room: R1)
-    9:55 A.M - 10:50 A.M: TCS-502 (Teacher: SS03, Room: R1)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TCS-509 (Teacher: SJ16, Room: R1)
-    11:55 A.M - 12:50 P.M: TCS-503 (Teacher: SP06, Room: R1)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    1:00 P.M - 2:00 P.M: PMA-502 (Teacher: PM14, Room: R1)
-    2:00 P.M - 3:00 P.M: XCS-501 (Teacher: DT20, Room: R1)
+    9:00 - 9:55: TCS-531 (Teacher: AB01, Room: R1)
+    9:55 - 10:50: TCS-502 (Teacher: SS03, Room: R1)
+    12:05 - 1:00: PMA-502 (Teacher: PM14, Room: R1)
+    11:10 - 12:05: PMA-502 (Teacher: PM14, Room: R1)
+    1:20 - 2:15: TCS-503 (Teacher: SP06, Room: R1)
+    2:15 - 3:10: TCS-509 (Teacher: SJ16, Room: R1)
+    3:30 - 4:25: TMA-502 (Teacher: BJ10, Room: R1)
   ----------------------------------------
   Section: B
-    9:00 A.M - 9:55 A.M: SCS-501 (Teacher: AP24, Room: R2)
-    9:55 A.M - 10:50 A.M: TCS-503 (Teacher: SP06, Room: R2)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TCS-531 (Teacher: AB01, Room: R2)
-    11:55 A.M - 12:50 P.M: TCS-509 (Teacher: SJ16, Room: R2)
+    9:00 - 9:55: SCS-501 (Teacher: AP24, Room: R2)
+    9:55 - 10:50: TCS-509 (Teacher: SJ16, Room: R2)
+    11:10 - 12:05: TMA-502 (Teacher: BJ10, Room: R2)
+    12:05 - 1:00: XCS-501 (Teacher: DT20, Room: R2)
   ----------------------------------------
   Section: C
-    9:00 A.M - 9:55 A.M: TCS-509 (Teacher: SJ16, Room: R3)
-    9:55 A.M - 10:50 A.M: TCS-531 (Teacher: AB01, Room: R3)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TMA-502 (Teacher: BJ10, Room: R3)
-    11:55 A.M - 12:50 P.M: CSP-501 (Teacher: AK23, Room: R3)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    1:00 P.M - 2:00 P.M: TCS-503 (Teacher: SP06, Room: R3)
-    2:00 P.M - 3:00 P.M: SCS-501 (Teacher: AP24, Room: R3)
+    9:55 - 10:50: PCS-506 (Teacher: AD08, Room: R3)
+    9:00 - 9:55: PCS-506 (Teacher: AD08, Room: R3)
+    11:10 - 12:05: SCS-501 (Teacher: AP24, Room: R3)
+    12:05 - 1:00: CSP-501 (Teacher: AK23, Room: R3)
+    1:20 - 2:15: XCS-501 (Teacher: DT20, Room: R3)
+    2:15 - 3:10: TCS-502 (Teacher: SS03, Room: R3)
+    3:30 - 4:25: TCS-503 (Teacher: SP06, Room: R3)
   ----------------------------------------
   Section: D
-    9:55 A.M - 10:50 A.M: PCS-506 (Teacher: AD08, Room: R4)
-    9:00 A.M - 9:55 A.M: PCS-506 (Teacher: AD08, Room: R4)
-    9:55 A.M - 10:50 A.M: CSP-501 (Teacher: AK23, Room: R4)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TCS-531 (Teacher: AB01, Room: R4)
-    11:55 A.M - 12:50 P.M: TMA-502 (Teacher: BJ10, Room: R4)
+    9:00 - 9:55: TMA-502 (Teacher: BJ10, Room: R4)
+    9:55 - 10:50: CSP-501 (Teacher: AK23, Room: R4)
+    11:10 - 12:05: TCS-509 (Teacher: SJ16, Room: R4)
+    12:05 - 1:00: SCS-501 (Teacher: AP24, Room: R4)
   ----------------------------------------
 ============================================================
-Day: Thursday
+Day: Week 1 - Thursday
   Section: A
-    9:00 A.M - 9:55 A.M: TCS-502 (Teacher: SS03, Room: R1)
-    9:55 A.M - 10:50 A.M: PMA-502 (Teacher: PM14, Room: R1)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TCS-509 (Teacher: SJ16, Room: R1)
-    11:55 A.M - 12:50 P.M: TCS-503 (Teacher: SP06, Room: R1)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    1:00 P.M - 2:00 P.M: SCS-501 (Teacher: AP24, Room: R1)
-    2:00 P.M - 3:00 P.M: PCS-506 (Teacher: AD08, Room: R1)
+    9:00 - 9:55: XCS-501 (Teacher: DT20, Room: R1)
+    9:55 - 10:50: TCS-531 (Teacher: AB01, Room: R1)
+    12:05 - 1:00: PMA-502 (Teacher: PM14, Room: R1)
+    11:10 - 12:05: PMA-502 (Teacher: PM14, Room: R1)
   ----------------------------------------
   Section: B
-    9:00 A.M - 9:55 A.M: TCS-531 (Teacher: AB01, Room: R2)
-    9:55 A.M - 10:50 A.M: XCS-501 (Teacher: DT20, Room: R2)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: SCS-501 (Teacher: AP24, Room: R2)
-    11:55 A.M - 12:50 P.M: PMA-502 (Teacher: PM14, Room: R2)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    1:00 P.M - 2:00 P.M: TMA-502 (Teacher: BJ10, Room: R2)
-    2:00 P.M - 3:00 P.M: TCS-509 (Teacher: SJ16, Room: R2)
+    9:55 - 10:50: PMA-502 (Teacher: PM14, Room: R2)
+    9:00 - 9:55: PMA-502 (Teacher: PM14, Room: R2)
+    11:10 - 12:05: TCS-502 (Teacher: SS03, Room: R2)
+    12:05 - 1:00: TCS-531 (Teacher: AB01, Room: R2)
+    1:20 - 2:15: XCS-501 (Teacher: DT20, Room: R2)
+    2:15 - 3:10: SCS-501 (Teacher: AP24, Room: R2)
+    3:30 - 4:25: CSP-501 (Teacher: AK23, Room: R2)
   ----------------------------------------
   Section: C
-    9:00 A.M - 9:55 A.M: TCS-503 (Teacher: SP06, Room: R3)
-    9:55 A.M - 10:50 A.M: PCS-506 (Teacher: AD08, Room: R3)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TCS-531 (Teacher: AB01, Room: R3)
-    11:55 A.M - 12:50 P.M: TCS-502 (Teacher: SS03, Room: R3)
+    9:55 - 10:50: PMA-502 (Teacher: PM14, Room: R3)
+    9:00 - 9:55: PMA-502 (Teacher: PM14, Room: R3)
+    12:05 - 1:00: PCS-503 (Teacher: RS11, Room: R3)
+    11:10 - 12:05: PCS-503 (Teacher: RS11, Room: R3)
+    1:20 - 2:15: TCS-531 (Teacher: AB01, Room: R3)
+    2:15 - 3:10: XCS-501 (Teacher: DT20, Room: R3)
+    3:30 - 4:25: TCS-502 (Teacher: SS03, Room: R3)
   ----------------------------------------
   Section: D
-    9:00 A.M - 9:55 A.M: SCS-501 (Teacher: AP24, Room: R4)
-    9:55 A.M - 10:50 A.M: XCS-501 (Teacher: DT20, Room: R4)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TCS-503 (Teacher: SP06, Room: R4)
-    11:55 A.M - 12:50 P.M: PMA-502 (Teacher: PM14, Room: R4)
+    9:00 - 9:55: CSP-501 (Teacher: AK23, Room: R4)
+    9:55 - 10:50: TCS-531 (Teacher: AB01, Room: R4)
+    11:10 - 12:05: TCS-503 (Teacher: SP06, Room: R4)
+    12:05 - 1:00: TCS-509 (Teacher: SJ16, Room: R4)
   ----------------------------------------
 ============================================================
-Day: Friday
+Day: Week 1 - Friday
   Section: A
-    9:00 A.M - 9:55 A.M: SCS-501 (Teacher: AP24, Room: R1)
-    9:55 A.M - 10:50 A.M: XCS-501 (Teacher: DT20, Room: R1)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TMA-502 (Teacher: BJ10, Room: R1)
-    11:55 A.M - 12:50 P.M: PMA-502 (Teacher: PM14, Room: R1)
+    9:00 - 9:55: TCS-531 (Teacher: AB01, Room: R1)
+    9:55 - 10:50: SCS-501 (Teacher: AP24, Room: R1)
+    11:10 - 12:05: TMA-502 (Teacher: BJ10, Room: R1)
+    12:05 - 1:00: TCS-502 (Teacher: SS03, Room: R1)
+    1:20 - 2:15: TCS-503 (Teacher: SP06, Room: R1)
+    2:15 - 3:10: XCS-501 (Teacher: DT20, Room: R1)
+    3:30 - 4:25: CSP-501 (Teacher: AK23, Room: R1)
   ----------------------------------------
   Section: B
-    9:00 A.M - 9:55 A.M: TCS-503 (Teacher: SP06, Room: R2)
-    9:55 A.M - 10:50 A.M: CSP-501 (Teacher: AK23, Room: R2)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: SCS-501 (Teacher: AP24, Room: R2)
-    11:55 A.M - 12:50 P.M: TCS-509 (Teacher: SJ16, Room: R2)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    2:00 P.M - 3:00 P.M: PCS-506 (Teacher: AD08, Room: R2)
-    1:00 P.M - 2:00 P.M: PCS-506 (Teacher: AD08, Room: R2)
-    2:00 P.M - 3:00 P.M: TMA-502 (Teacher: BJ10, Room: R2)
+    9:00 - 9:55: TCS-503 (Teacher: SP06, Room: R2)
+    9:55 - 10:50: SCS-501 (Teacher: AP24, Room: R2)
+    11:10 - 12:05: TCS-502 (Teacher: SS03, Room: R2)
+    12:05 - 1:00: TCS-531 (Teacher: AB01, Room: R2)
+    1:20 - 2:15: TCS-509 (Teacher: SJ16, Room: R2)
+    2:15 - 3:10: TMA-502 (Teacher: BJ10, Room: R2)
+    3:30 - 4:25: XCS-501 (Teacher: DT20, Room: R2)
   ----------------------------------------
   Section: C
-    9:00 A.M - 9:55 A.M: TCS-502 (Teacher: SS03, Room: R3)
-    9:55 A.M - 10:50 A.M: TCS-509 (Teacher: SJ16, Room: R3)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TCS-503 (Teacher: SP06, Room: R3)
-    11:55 A.M - 12:50 P.M: SCS-501 (Teacher: AP24, Room: R3)
+    9:55 - 10:50: PMA-502 (Teacher: PM14, Room: R3)
+    9:00 - 9:55: PMA-502 (Teacher: PM14, Room: R3)
+    11:10 - 12:05: SCS-501 (Teacher: AP24, Room: R3)
+    12:05 - 1:00: TCS-503 (Teacher: SP06, Room: R3)
   ----------------------------------------
   Section: D
-    9:00 A.M - 9:55 A.M: TCS-502 (Teacher: SS03, Room: R4)
-    9:55 A.M - 10:50 A.M: PCS-506 (Teacher: AD08, Room: R4)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: XCS-501 (Teacher: DT20, Room: R4)
-    11:55 A.M - 12:50 P.M: TMA-502 (Teacher: BJ10, Room: R4)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    1:00 P.M - 2:00 P.M: TCS-503 (Teacher: SP06, Room: R4)
-    2:00 P.M - 3:00 P.M: PMA-502 (Teacher: PM14, Room: R4)
+    9:00 - 9:55: TMA-502 (Teacher: BJ10, Room: R4)
+    9:55 - 10:50: TCS-502 (Teacher: SS03, Room: R4)
+    12:05 - 1:00: PCS-506 (Teacher: AD08, Room: R4)
+    11:10 - 12:05: PCS-506 (Teacher: AD08, Room: R4)
   ----------------------------------------
 ============================================================
 
-
-
-
-
-
-
-
-
-
-OUTPUT 2 :
 --- Weekly Timetable ---
 
-Day: Monday
+Day: Week 1 - Monday
   Section: A
-    9:00 A.M - 9:55 A.M: XCS-501 (Teacher: DT20, Room: R1)
-    9:55 A.M - 10:50 A.M: TCS-531 (Teacher: AB01, Room: R1)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: SCS-501 (Teacher: AP24, Room: R1)
-    11:55 A.M - 12:50 P.M: CSP-501 (Teacher: AK23, Room: R1)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    1:00 P.M - 2:00 P.M: TMA-502 (Teacher: BJ10, Room: R1)
-    2:00 P.M - 3:00 P.M: PCS-506 (Teacher: AD08, Room: R1)
+    9:00 - 9:55: TCS-531 (Teacher: AB01, Room: R1)
+    9:55 - 10:50: SCS-501 (Teacher: AP24, Room: R1)
+    12:05 - 1:00: PCS-506 (Teacher: AD08, Room: R1)
+    11:10 - 12:05: PCS-506 (Teacher: AD08, Room: R1)
   ----------------------------------------
   Section: B
-    9:00 A.M - 9:55 A.M: PMA-502 (Teacher: PM14, Room: R2)
-    9:55 A.M - 10:50 A.M: TCS-503 (Teacher: SP06, Room: R2)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TMA-502 (Teacher: BJ10, Room: R2)
-    11:55 A.M - 12:50 P.M: PCS-506 (Teacher: AD08, Room: R2)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    1:00 P.M - 2:00 P.M: TCS-509 (Teacher: SJ16, Room: R2)
-    2:00 P.M - 3:00 P.M: XCS-501 (Teacher: DT20, Room: R2)
+    9:00 - 9:55: TCS-503 (Teacher: SP06, Room: R2)
+    9:55 - 10:50: TCS-509 (Teacher: SJ16, Room: R2)
+    11:10 - 12:05: TCS-502 (Teacher: SS03, Room: R2)
+    12:05 - 1:00: TMA-502 (Teacher: BJ10, Room: R2)
+    2:15 - 3:10: PMA-502 (Teacher: PM14, Room: R2)
+    1:20 - 2:15: PMA-502 (Teacher: PM14, Room: R2)
+    3:30 - 4:25: TCS-531 (Teacher: AB01, Room: R2)
   ----------------------------------------
   Section: C
-    9:00 A.M - 9:55 A.M: TCS-531 (Teacher: AB01, Room: R3)
-    9:55 A.M - 10:50 A.M: TCS-502 (Teacher: SS03, Room: R3)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: XCS-501 (Teacher: DT20, Room: R3)
-    11:55 A.M - 12:50 P.M: CSP-501 (Teacher: AK23, Room: R3)
+    9:55 - 10:50: PCS-506 (Teacher: AD08, Room: R3)
+    9:00 - 9:55: PCS-506 (Teacher: AD08, Room: R3)
+    11:10 - 12:05: TCS-531 (Teacher: AB01, Room: R3)
+    12:05 - 1:00: TCS-503 (Teacher: SP06, Room: R3)
+    2:15 - 3:10: PMA-502 (Teacher: PM14, Room: R3)
+    1:20 - 2:15: PMA-502 (Teacher: PM14, Room: R3)
+    3:30 - 4:25: TMA-502 (Teacher: BJ10, Room: R3)
   ----------------------------------------
   Section: D
-    9:00 A.M - 9:55 A.M: SCS-501 (Teacher: AP24, Room: R4)
-    9:55 A.M - 10:50 A.M: TCS-503 (Teacher: SP06, Room: R4)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TMA-502 (Teacher: BJ10, Room: R4)
-    11:55 A.M - 12:50 P.M: PCS-506 (Teacher: AD08, Room: R4)
+    9:55 - 10:50: PCS-503 (Teacher: RS11, Room: R4)
+    9:00 - 9:55: PCS-503 (Teacher: RS11, Room: R4)
+    12:05 - 1:00: PCS-506 (Teacher: AD08, Room: R4)
+    11:10 - 12:05: PCS-506 (Teacher: AD08, Room: R4)
   ----------------------------------------
 ============================================================
-Day: Tuesday
+Day: Week 1 - Tuesday
   Section: A
-    9:00 A.M - 9:55 A.M: SCS-501 (Teacher: AP24, Room: R1)
-    9:55 A.M - 10:50 A.M: PMA-502 (Teacher: PM14, Room: R1)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TCS-531 (Teacher: AB01, Room: R1)
-    11:55 A.M - 12:50 P.M: TCS-503 (Teacher: SP06, Room: R1)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    2:00 P.M - 3:00 P.M: PCS-506 (Teacher: AD08, Room: R1)
-    1:00 P.M - 2:00 P.M: PCS-506 (Teacher: AD08, Room: R1)
-    2:00 P.M - 3:00 P.M: XCS-501 (Teacher: DT20, Room: R1)
+    9:55 - 10:50: PMA-502 (Teacher: PM14, Room: R1)
+    9:00 - 9:55: PMA-502 (Teacher: PM14, Room: R1)
+    12:05 - 1:00: PCS-506 (Teacher: AD08, Room: R1)
+    11:10 - 12:05: PCS-506 (Teacher: AD08, Room: R1)
   ----------------------------------------
   Section: B
-    9:00 A.M - 9:55 A.M: CSP-501 (Teacher: AK23, Room: R2)
-    9:55 A.M - 10:50 A.M: TCS-531 (Teacher: AB01, Room: R2)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TCS-502 (Teacher: SS03, Room: R2)
-    11:55 A.M - 12:50 P.M: SCS-501 (Teacher: AP24, Room: R2)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    1:00 P.M - 2:00 P.M: TCS-509 (Teacher: SJ16, Room: R2)
-    2:00 P.M - 3:00 P.M: PMA-502 (Teacher: PM14, Room: R2)
+    9:00 - 9:55: XCS-501 (Teacher: DT20, Room: R2)
+    9:55 - 10:50: TMA-502 (Teacher: BJ10, Room: R2)
+    11:10 - 12:05: TCS-502 (Teacher: SS03, Room: R2)
+    12:05 - 1:00: TCS-509 (Teacher: SJ16, Room: R2)
+    1:20 - 2:15: TCS-531 (Teacher: AB01, Room: R2)
+    2:15 - 3:10: SCS-501 (Teacher: AP24, Room: R2)
+    3:30 - 4:25: TCS-503 (Teacher: SP06, Room: R2)
   ----------------------------------------
   Section: C
-    9:00 A.M - 9:55 A.M: TCS-503 (Teacher: SP06, Room: R3)
-    9:55 A.M - 10:50 A.M: PMA-502 (Teacher: PM14, Room: R3)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:55 A.M - 12:50 P.M: PCS-506 (Teacher: AD08, Room: R3)
-    11:00 A.M - 11:55 A.M: PCS-506 (Teacher: AD08, Room: R3)
-    11:55 A.M - 12:50 P.M: TCS-509 (Teacher: SJ16, Room: R3)
+    9:00 - 9:55: TCS-509 (Teacher: SJ16, Room: R3)
+    9:55 - 10:50: TMA-502 (Teacher: BJ10, Room: R3)
+    11:10 - 12:05: CSP-501 (Teacher: AK23, Room: R3)
+    12:05 - 1:00: SCS-501 (Teacher: AP24, Room: R3)
+    1:20 - 2:15: TCS-502 (Teacher: SS03, Room: R3)
+    2:15 - 3:10: XCS-501 (Teacher: DT20, Room: R3)
+    3:30 - 4:25: TCS-503 (Teacher: SP06, Room: R3)
   ----------------------------------------
   Section: D
-    9:00 A.M - 9:55 A.M: XCS-501 (Teacher: DT20, Room: R4)
-    9:55 A.M - 10:50 A.M: TCS-502 (Teacher: SS03, Room: R4)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: PMA-502 (Teacher: PM14, Room: R4)
-    11:55 A.M - 12:50 P.M: TMA-502 (Teacher: BJ10, Room: R4)
+    9:00 - 9:55: XCS-501 (Teacher: DT20, Room: R4)
+    9:55 - 10:50: TCS-503 (Teacher: SP06, Room: R4)
+    11:10 - 12:05: CSP-501 (Teacher: AK23, Room: R4)
+    12:05 - 1:00: TMA-502 (Teacher: BJ10, Room: R4)
   ----------------------------------------
 ============================================================
-Day: Wednesday
+Day: Week 1 - Wednesday
   Section: A
-    9:00 A.M - 9:55 A.M: TCS-503 (Teacher: SP06, Room: R1)
-    9:55 A.M - 10:50 A.M: SCS-501 (Teacher: AP24, Room: R1)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TCS-502 (Teacher: SS03, Room: R1)
-    11:55 A.M - 12:50 P.M: TCS-531 (Teacher: AB01, Room: R1)
+    9:55 - 10:50: PMA-502 (Teacher: PM14, Room: R1)
+    9:00 - 9:55: PMA-502 (Teacher: PM14, Room: R1)
+    12:05 - 1:00: PCS-503 (Teacher: RS11, Room: R1)
+    11:10 - 12:05: PCS-503 (Teacher: RS11, Room: R1)
   ----------------------------------------
   Section: B
-    9:00 A.M - 9:55 A.M: SCS-501 (Teacher: AP24, Room: R2)
-    9:55 A.M - 10:50 A.M: PCS-506 (Teacher: AD08, Room: R2)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TCS-502 (Teacher: SS03, Room: R2)
-    11:55 A.M - 12:50 P.M: TCS-531 (Teacher: AB01, Room: R2)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    1:00 P.M - 2:00 P.M: TMA-502 (Teacher: BJ10, Room: R2)
-    2:00 P.M - 3:00 P.M: XCS-501 (Teacher: DT20, Room: R2)
+    9:00 - 9:55: TCS-531 (Teacher: AB01, Room: R2)
+    9:55 - 10:50: CSP-501 (Teacher: AK23, Room: R2)
+    11:10 - 12:05: SCS-501 (Teacher: AP24, Room: R2)
+    12:05 - 1:00: TCS-502 (Teacher: SS03, Room: R2)
+    1:20 - 2:15: TCS-503 (Teacher: SP06, Room: R2)
+    2:15 - 3:10: Placement_Class (Teacher: AK26, Room: R2)
+    3:30 - 4:25: XCS-501 (Teacher: DT20, Room: R2)
   ----------------------------------------
   Section: C
-    9:00 A.M - 9:55 A.M: TCS-503 (Teacher: SP06, Room: R3)
-    9:55 A.M - 10:50 A.M: XCS-501 (Teacher: DT20, Room: R3)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: SCS-501 (Teacher: AP24, Room: R3)
-    11:55 A.M - 12:50 P.M: TCS-509 (Teacher: SJ16, Room: R3)
+    9:00 - 9:55: SCS-501 (Teacher: AP24, Room: R3)
+    9:55 - 10:50: TCS-502 (Teacher: SS03, Room: R3)
+    12:05 - 1:00: PMA-502 (Teacher: PM14, Room: R3)
+    11:10 - 12:05: PMA-502 (Teacher: PM14, Room: R3)
+    2:15 - 3:10: PCS-506 (Teacher: AD08, Room: R3)
+    1:20 - 2:15: PCS-506 (Teacher: AD08, Room: R3)
+    3:30 - 4:25: CSP-501 (Teacher: AK23, Room: R3)
   ----------------------------------------
   Section: D
-    9:00 A.M - 9:55 A.M: TMA-502 (Teacher: BJ10, Room: R4)
-    9:55 A.M - 10:50 A.M: TCS-503 (Teacher: SP06, Room: R4)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: XCS-501 (Teacher: DT20, Room: R4)
-    11:55 A.M - 12:50 P.M: PCS-506 (Teacher: AD08, Room: R4)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    1:00 P.M - 2:00 P.M: CSP-501 (Teacher: AK23, Room: R4)
-    2:00 P.M - 3:00 P.M: TCS-509 (Teacher: SJ16, Room: R4)
+    9:00 - 9:55: XCS-501 (Teacher: DT20, Room: R4)
+    9:55 - 10:50: TCS-531 (Teacher: AB01, Room: R4)
+    12:05 - 1:00: PCS-506 (Teacher: AD08, Room: R4)
+    11:10 - 12:05: PCS-506 (Teacher: AD08, Room: R4)
   ----------------------------------------
 ============================================================
-Day: Thursday
+Day: Week 1 - Thursday
   Section: A
-    9:00 A.M - 9:55 A.M: PMA-502 (Teacher: PM14, Room: R1)
-    9:55 A.M - 10:50 A.M: XCS-501 (Teacher: DT20, Room: R1)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: SCS-501 (Teacher: AP24, Room: R1)
-    11:55 A.M - 12:50 P.M: TCS-503 (Teacher: SP06, Room: R1)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    1:00 P.M - 2:00 P.M: TMA-502 (Teacher: BJ10, Room: R1)
-    2:00 P.M - 3:00 P.M: PCS-506 (Teacher: AD08, Room: R1)
+    9:00 - 9:55: TCS-503 (Teacher: SP06, Room: R1)
+    9:55 - 10:50: TCS-509 (Teacher: SJ16, Room: R1)
+    12:05 - 1:00: PCS-503 (Teacher: RS11, Room: R1)
+    11:10 - 12:05: PCS-503 (Teacher: RS11, Room: R1)
+    1:20 - 2:15: TCS-502 (Teacher: SS03, Room: R1)
+    2:15 - 3:10: Placement_Class (Teacher: AK26, Room: R1)
+    3:30 - 4:25: CSP-501 (Teacher: AK23, Room: R1)
   ----------------------------------------
   Section: B
-    9:00 A.M - 9:55 A.M: CSP-501 (Teacher: AK23, Room: R2)
-    9:55 A.M - 10:50 A.M: TCS-531 (Teacher: AB01, Room: R2)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TCS-503 (Teacher: SP06, Room: R2)
-    11:55 A.M - 12:50 P.M: TCS-509 (Teacher: SJ16, Room: R2)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    2:00 P.M - 3:00 P.M: PCS-506 (Teacher: AD08, Room: R2)
-    1:00 P.M - 2:00 P.M: PCS-506 (Teacher: AD08, Room: R2)
-    2:00 P.M - 3:00 P.M: XCS-501 (Teacher: DT20, Room: R2)
+    9:00 - 9:55: TCS-502 (Teacher: SS03, Room: R2)
+    9:55 - 10:50: TCS-503 (Teacher: SP06, Room: R2)
+    11:10 - 12:05: TCS-509 (Teacher: SJ16, Room: R2)
+    12:05 - 1:00: TMA-502 (Teacher: BJ10, Room: R2)
   ----------------------------------------
   Section: C
-    9:00 A.M - 9:55 A.M: SCS-501 (Teacher: AP24, Room: R3)
-    9:55 A.M - 10:50 A.M: PCS-506 (Teacher: AD08, Room: R3)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: PMA-502 (Teacher: PM14, Room: R3)
-    11:55 A.M - 12:50 P.M: TCS-509 (Teacher: SJ16, Room: R3)
+    9:00 - 9:55: TCS-503 (Teacher: SP06, Room: R3)
+    9:55 - 10:50: SCS-501 (Teacher: AP24, Room: R3)
+    12:05 - 1:00: PCS-503 (Teacher: RS11, Room: R3)
+    11:10 - 12:05: PCS-503 (Teacher: RS11, Room: R3)
   ----------------------------------------
   Section: D
-    9:00 A.M - 9:55 A.M: TMA-502 (Teacher: BJ10, Room: R4)
-    9:55 A.M - 10:50 A.M: TCS-503 (Teacher: SP06, Room: R4)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TCS-509 (Teacher: SJ16, Room: R4)
-    11:55 A.M - 12:50 P.M: CSP-501 (Teacher: AK23, Room: R4)
+    9:00 - 9:55: TCS-503 (Teacher: SP06, Room: R4)
+    9:55 - 10:50: TCS-502 (Teacher: SS03, Room: R4)
+    11:10 - 12:05: TCS-531 (Teacher: AB01, Room: R4)
+    12:05 - 1:00: TMA-502 (Teacher: BJ10, Room: R4)
+    1:20 - 2:15: CSP-501 (Teacher: AK23, Room: R4)
+    2:15 - 3:10: TCS-509 (Teacher: SJ16, Room: R4)
+    3:30 - 4:25: SCS-501 (Teacher: AP24, Room: R4)
   ----------------------------------------
 ============================================================
-Day: Friday
+Day: Week 1 - Friday
   Section: A
-    9:00 A.M - 9:55 A.M: TCS-503 (Teacher: SP06, Room: R1)
-    9:55 A.M - 10:50 A.M: CSP-501 (Teacher: AK23, Room: R1)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TCS-502 (Teacher: SS03, Room: R1)
-    11:55 A.M - 12:50 P.M: XCS-501 (Teacher: DT20, Room: R1)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    2:00 P.M - 3:00 P.M: PCS-506 (Teacher: AD08, Room: R1)
-    1:00 P.M - 2:00 P.M: PCS-506 (Teacher: AD08, Room: R1)
-    2:00 P.M - 3:00 P.M: TCS-531 (Teacher: AB01, Room: R1)
+    9:55 - 10:50: PCS-503 (Teacher: RS11, Room: R1)
+    9:00 - 9:55: PCS-503 (Teacher: RS11, Room: R1)
+    11:10 - 12:05: TCS-531 (Teacher: AB01, Room: R1)
+    12:05 - 1:00: SCS-501 (Teacher: AP24, Room: R1)
+    1:20 - 2:15: CSP-501 (Teacher: AK23, Room: R1)
+    2:15 - 3:10: TCS-503 (Teacher: SP06, Room: R1)
+    3:30 - 4:25: XCS-501 (Teacher: DT20, Room: R1)
   ----------------------------------------
   Section: B
-    9:00 A.M - 9:55 A.M: CSP-501 (Teacher: AK23, Room: R2)
-    9:55 A.M - 10:50 A.M: TCS-509 (Teacher: SJ16, Room: R2)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TCS-531 (Teacher: AB01, Room: R2)
-    11:55 A.M - 12:50 P.M: SCS-501 (Teacher: AP24, Room: R2)
+    9:00 - 9:55: TCS-531 (Teacher: AB01, Room: R2)
+    9:55 - 10:50: TCS-509 (Teacher: SJ16, Room: R2)
+    12:05 - 1:00: PMA-502 (Teacher: PM14, Room: R2)
+    11:10 - 12:05: PMA-502 (Teacher: PM14, Room: R2)
   ----------------------------------------
   Section: C
-    9:00 A.M - 9:55 A.M: TMA-502 (Teacher: BJ10, Room: R3)
-    9:55 A.M - 10:50 A.M: XCS-501 (Teacher: DT20, Room: R3)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: TCS-503 (Teacher: SP06, Room: R3)
-    11:55 A.M - 12:50 P.M: TCS-531 (Teacher: AB01, Room: R3)
+    9:55 - 10:50: PMA-502 (Teacher: PM14, Room: R3)
+    9:00 - 9:55: PMA-502 (Teacher: PM14, Room: R3)
+    11:10 - 12:05: CSP-501 (Teacher: AK23, Room: R3)
+    12:05 - 1:00: TMA-502 (Teacher: BJ10, Room: R3)
   ----------------------------------------
   Section: D
-    9:00 A.M - 9:55 A.M: PMA-502 (Teacher: PM14, Room: R4)
-    9:55 A.M - 10:50 A.M: SCS-501 (Teacher: AP24, Room: R4)
-    10:50 A.M - 11:00 A.M (Break): Break (Teacher: None, Room: N/A)
-    11:00 A.M - 11:55 A.M: XCS-501 (Teacher: DT20, Room: R4)
-    11:55 A.M - 12:50 P.M: TCS-509 (Teacher: SJ16, Room: R4)
-    12:50 P.M - 1:00 P.M (Lunch Break): Break (Teacher: None, Room: N/A)
-    1:00 P.M - 2:00 P.M: TCS-502 (Teacher: SS03, Room: R4)
-    2:00 P.M - 3:00 P.M: TCS-503 (Teacher: SP06, Room: R4)
+    9:55 - 10:50: PCS-506 (Teacher: AD08, Room: R4)
+    9:00 - 9:55: PCS-506 (Teacher: AD08, Room: R4)
+    11:10 - 12:05: TCS-531 (Teacher: AB01, Room: R4)
+    12:05 - 1:00: CSP-501 (Teacher: AK23, Room: R4)
+    2:15 - 3:10: PCS-503 (Teacher: RS11, Room: R4)
+    1:20 - 2:15: PCS-503 (Teacher: RS11, Room: R4)
+    3:30 - 4:25: SCS-501 (Teacher: AP24, Room: R4)
+  ----------------------------------------
+============================================================
+
+--- Weekly Timetable ---
+
+Day: Week 1 - Monday
+  Section: A
+    9:00 - 9:55: TMA-502 (Teacher: BJ10, Room: R1)
+    9:55 - 10:50: TCS-502 (Teacher: SS03, Room: R1)
+    12:05 - 1:00: PMA-502 (Teacher: PM14, Room: R1)
+    11:10 - 12:05: PMA-502 (Teacher: PM14, Room: R1)
+  ----------------------------------------
+  Section: B
+    9:00 - 9:55: SCS-501 (Teacher: AP24, Room: R2)
+    9:55 - 10:50: CSP-501 (Teacher: AK23, Room: R2)
+    12:05 - 1:00: PCS-503 (Teacher: RS11, Room: R2)
+    11:10 - 12:05: PCS-503 (Teacher: RS11, Room: R2)
+    2:15 - 3:10: PMA-502 (Teacher: PM14, Room: R2)
+    1:20 - 2:15: PMA-502 (Teacher: PM14, Room: R2)
+    3:30 - 4:25: TCS-503 (Teacher: SP06, Room: R2)
+  ----------------------------------------
+  Section: C
+    9:00 - 9:55: TCS-531 (Teacher: AB01, Room: R3)
+    9:55 - 10:50: XCS-501 (Teacher: DT20, Room: R3)
+    12:05 - 1:00: PCS-503 (Teacher: RS11, Room: R3)
+    11:10 - 12:05: PCS-503 (Teacher: RS11, Room: R3)
+    1:20 - 2:15: TCS-509 (Teacher: SJ16, Room: R3)
+    2:15 - 3:10: TCS-503 (Teacher: SP06, Room: R3)
+    3:30 - 4:25: TCS-502 (Teacher: SS03, Room: R3)
+  ----------------------------------------
+  Section: D
+    9:55 - 10:50: PMA-502 (Teacher: PM14, Room: R4)
+    9:00 - 9:55: PMA-502 (Teacher: PM14, Room: R4)
+    12:05 - 1:00: PCS-503 (Teacher: RS11, Room: R4)
+    11:10 - 12:05: PCS-503 (Teacher: RS11, Room: R4)
+  ----------------------------------------
+============================================================
+Day: Week 1 - Tuesday
+  Section: A
+    9:00 - 9:55: TCS-509 (Teacher: SJ16, Room: R1)
+    9:55 - 10:50: TMA-502 (Teacher: BJ10, Room: R1)
+    11:10 - 12:05: XCS-501 (Teacher: DT20, Room: R1)
+    12:05 - 1:00: TCS-502 (Teacher: SS03, Room: R1)
+  ----------------------------------------
+  Section: B
+    9:55 - 10:50: PCS-503 (Teacher: RS11, Room: R2)
+    9:00 - 9:55: PCS-503 (Teacher: RS11, Room: R2)
+    11:10 - 12:05: TCS-502 (Teacher: SS03, Room: R2)
+    12:05 - 1:00: TMA-502 (Teacher: BJ10, Room: R2)
+  ----------------------------------------
+  Section: C
+    9:00 - 9:55: TMA-502 (Teacher: BJ10, Room: R3)
+    9:55 - 10:50: TCS-531 (Teacher: AB01, Room: R3)
+    11:10 - 12:05: TCS-509 (Teacher: SJ16, Room: R3)
+    12:05 - 1:00: CSP-501 (Teacher: AK23, Room: R3)
+    1:20 - 2:15: XCS-501 (Teacher: DT20, Room: R3)
+    2:15 - 3:10: SCS-501 (Teacher: AP24, Room: R3)
+    3:30 - 4:25: TCS-502 (Teacher: SS03, Room: R3)
+  ----------------------------------------
+  Section: D
+    9:00 - 9:55: TCS-503 (Teacher: SP06, Room: R4)
+    9:55 - 10:50: CSP-501 (Teacher: AK23, Room: R4)
+    12:05 - 1:00: PMA-502 (Teacher: PM14, Room: R4)
+    11:10 - 12:05: PMA-502 (Teacher: PM14, Room: R4)
+    1:20 - 2:15: TMA-502 (Teacher: BJ10, Room: R4)
+    2:15 - 3:10: Placement_Class (Teacher: AK26, Room: R4)
+    3:30 - 4:25: TCS-531 (Teacher: AB01, Room: R4)
+  ----------------------------------------
+============================================================
+Day: Week 1 - Wednesday
+  Section: A
+    9:00 - 9:55: TMA-502 (Teacher: BJ10, Room: R1)
+    9:55 - 10:50: TCS-503 (Teacher: SP06, Room: R1)
+    11:10 - 12:05: SCS-501 (Teacher: AP24, Room: R1)
+    12:05 - 1:00: TCS-531 (Teacher: AB01, Room: R1)
+  ----------------------------------------
+  Section: B
+    9:55 - 10:50: PMA-502 (Teacher: PM14, Room: R2)
+    9:00 - 9:55: PMA-502 (Teacher: PM14, Room: R2)
+    11:10 - 12:05: XCS-501 (Teacher: DT20, Room: R2)
+    12:05 - 1:00: CSP-501 (Teacher: AK23, Room: R2)
+    1:20 - 2:15: SCS-501 (Teacher: AP24, Room: R2)
+    2:15 - 3:10: TCS-531 (Teacher: AB01, Room: R2)
+    3:30 - 4:25: TCS-509 (Teacher: SJ16, Room: R2)
+  ----------------------------------------
+  Section: C
+    9:00 - 9:55: TCS-502 (Teacher: SS03, Room: R3)
+    9:55 - 10:50: XCS-501 (Teacher: DT20, Room: R3)
+    12:05 - 1:00: PMA-502 (Teacher: PM14, Room: R3)
+    11:10 - 12:05: PMA-502 (Teacher: PM14, Room: R3)
+  ----------------------------------------
+  Section: D
+    9:00 - 9:55: CSP-501 (Teacher: AK23, Room: R4)
+    9:55 - 10:50: TCS-502 (Teacher: SS03, Room: R4)
+    11:10 - 12:05: TCS-503 (Teacher: SP06, Room: R4)
+    12:05 - 1:00: TMA-502 (Teacher: BJ10, Room: R4)
+    2:15 - 3:10: PMA-502 (Teacher: PM14, Room: R4)
+    1:20 - 2:15: PMA-502 (Teacher: PM14, Room: R4)
+    3:30 - 4:25: TCS-509 (Teacher: SJ16, Room: R4)
+  ----------------------------------------
+============================================================
+Day: Week 1 - Thursday
+  Section: A
+    9:00 - 9:55: XCS-501 (Teacher: DT20, Room: R1)
+    9:55 - 10:50: SCS-501 (Teacher: AP24, Room: R1)
+    11:10 - 12:05: TCS-502 (Teacher: SS03, Room: R1)
+    12:05 - 1:00: TMA-502 (Teacher: BJ10, Room: R1)
+    2:15 - 3:10: PCS-503 (Teacher: RS11, Room: R1)
+    1:20 - 2:15: PCS-503 (Teacher: RS11, Room: R1)
+    3:30 - 4:25: TCS-503 (Teacher: SP06, Room: R1)
+  ----------------------------------------
+  Section: B
+    9:00 - 9:55: TCS-509 (Teacher: SJ16, Room: R2)
+    9:55 - 10:50: TCS-502 (Teacher: SS03, Room: R2)
+    12:05 - 1:00: PCS-503 (Teacher: RS11, Room: R2)
+    11:10 - 12:05: PCS-503 (Teacher: RS11, Room: R2)
+    2:15 - 3:10: PMA-502 (Teacher: PM14, Room: R2)
+    1:20 - 2:15: PMA-502 (Teacher: PM14, Room: R2)
+    3:30 - 4:25: XCS-501 (Teacher: DT20, Room: R2)
+  ----------------------------------------
+  Section: C
+    9:00 - 9:55: TCS-531 (Teacher: AB01, Room: R3)
+    9:55 - 10:50: TCS-502 (Teacher: SS03, Room: R3)
+    11:10 - 12:05: TMA-502 (Teacher: BJ10, Room: R3)
+    12:05 - 1:00: XCS-501 (Teacher: DT20, Room: R3)
+  ----------------------------------------
+  Section: D
+    9:55 - 10:50: PMA-502 (Teacher: PM14, Room: R4)
+    9:00 - 9:55: PMA-502 (Teacher: PM14, Room: R4)
+    11:10 - 12:05: CSP-501 (Teacher: AK23, Room: R4)
+    12:05 - 1:00: TCS-509 (Teacher: SJ16, Room: R4)
+  ----------------------------------------
+============================================================
+Day: Week 1 - Friday
+  Section: A
+    9:00 - 9:55: TCS-502 (Teacher: SS03, Room: R1)
+    9:55 - 10:50: TCS-503 (Teacher: SP06, Room: R1)
+    11:10 - 12:05: XCS-501 (Teacher: DT20, Room: R1)
+    12:05 - 1:00: CSP-501 (Teacher: AK23, Room: R1)
+  ----------------------------------------
+  Section: B
+    9:00 - 9:55: TCS-509 (Teacher: SJ16, Room: R2)
+    9:55 - 10:50: XCS-501 (Teacher: DT20, Room: R2)
+    11:10 - 12:05: TCS-503 (Teacher: SP06, Room: R2)
+    12:05 - 1:00: SCS-501 (Teacher: AP24, Room: R2)
+    1:20 - 2:15: TMA-502 (Teacher: BJ10, Room: R2)
+    2:15 - 3:10: Placement_Class (Teacher: AK26, Room: R2)
+    3:30 - 4:25: TCS-531 (Teacher: AB01, Room: R2)
+  ----------------------------------------
+  Section: C
+    9:00 - 9:55: TCS-503 (Teacher: SP06, Room: R3)
+    9:55 - 10:50: TMA-502 (Teacher: BJ10, Room: R3)
+    11:10 - 12:05: TCS-502 (Teacher: SS03, Room: R3)
+    12:05 - 1:00: TCS-531 (Teacher: AB01, Room: R3)
+    1:20 - 2:15: TCS-509 (Teacher: SJ16, Room: R3)
+    2:15 - 3:10: SCS-501 (Teacher: AP24, Room: R3)
+    3:30 - 4:25: CSP-501 (Teacher: AK23, Room: R3)
+  ----------------------------------------
+  Section: D
+    9:00 - 9:55: TCS-503 (Teacher: SP06, Room: R4)
+    9:55 - 10:50: TCS-502 (Teacher: SS03, Room: R4)
+    11:10 - 12:05: TCS-509 (Teacher: SJ16, Room: R4)
+    12:05 - 1:00: CSP-501 (Teacher: AK23, Room: R4)
+  ----------------------------------------
+============================================================
+
+--- Weekly Timetable ---
+
+Day: Week 1 - Monday
+  Section: A
+    9:00 - 9:55: SCS-501 (Teacher: AP24, Room: R1)
+    9:55 - 10:50: TMA-502 (Teacher: BJ10, Room: R1)
+    11:10 - 12:05: TCS-502 (Teacher: SS03, Room: R1)
+    12:05 - 1:00: TCS-503 (Teacher: SP06, Room: R1)
+    1:20 - 2:15: XCS-501 (Teacher: DT20, Room: R1)
+    2:15 - 3:10: Placement_Class (Teacher: AK26, Room: R1)
+    3:30 - 4:25: TCS-531 (Teacher: AB01, Room: R1)
+  ----------------------------------------
+  Section: B
+    9:00 - 9:55: TMA-502 (Teacher: BJ10, Room: R2)
+    9:55 - 10:50: TCS-503 (Teacher: SP06, Room: R2)
+    11:10 - 12:05: TCS-502 (Teacher: SS03, Room: R2)
+    12:05 - 1:00: SCS-501 (Teacher: AP24, Room: R2)
+  ----------------------------------------
+  Section: C
+    9:00 - 9:55: TCS-502 (Teacher: SS03, Room: R3)
+    9:55 - 10:50: XCS-501 (Teacher: DT20, Room: R3)
+    11:10 - 12:05: TCS-509 (Teacher: SJ16, Room: R3)
+    12:05 - 1:00: TCS-531 (Teacher: AB01, Room: R3)
+    2:15 - 3:10: PCS-503 (Teacher: RS11, Room: R3)
+    1:20 - 2:15: PCS-503 (Teacher: RS11, Room: R3)
+    3:30 - 4:25: SCS-501 (Teacher: AP24, Room: R3)
+  ----------------------------------------
+  Section: D
+    9:00 - 9:55: TCS-509 (Teacher: SJ16, Room: R4)
+    9:55 - 10:50: XCS-501 (Teacher: DT20, Room: R4)
+    11:10 - 12:05: TCS-502 (Teacher: SS03, Room: R4)
+    12:05 - 1:00: CSP-501 (Teacher: AK23, Room: R4)
+  ----------------------------------------
+============================================================
+Day: Week 1 - Tuesday
+  Section: A
+    9:00 - 9:55: TCS-531 (Teacher: AB01, Room: R1)
+    9:55 - 10:50: TCS-509 (Teacher: SJ16, Room: R1)
+    12:05 - 1:00: PCS-506 (Teacher: AD08, Room: R1)
+    11:10 - 12:05: PCS-506 (Teacher: AD08, Room: R1)
+  ----------------------------------------
+  Section: B
+    9:00 - 9:55: TCS-509 (Teacher: SJ16, Room: R2)
+    9:55 - 10:50: TCS-503 (Teacher: SP06, Room: R2)
+    11:10 - 12:05: SCS-501 (Teacher: AP24, Room: R2)
+    12:05 - 1:00: XCS-501 (Teacher: DT20, Room: R2)
+    2:15 - 3:10: PCS-506 (Teacher: AD08, Room: R2)
+    1:20 - 2:15: PCS-506 (Teacher: AD08, Room: R2)
+    3:30 - 4:25: TCS-531 (Teacher: AB01, Room: R2)
+  ----------------------------------------
+  Section: C
+    9:00 - 9:55: SCS-501 (Teacher: AP24, Room: R3)
+    9:55 - 10:50: TCS-502 (Teacher: SS03, Room: R3)
+    11:10 - 12:05: XCS-501 (Teacher: DT20, Room: R3)
+    12:05 - 1:00: TCS-531 (Teacher: AB01, Room: R3)
+  ----------------------------------------
+  Section: D
+    9:55 - 10:50: PCS-506 (Teacher: AD08, Room: R4)
+    9:00 - 9:55: PCS-506 (Teacher: AD08, Room: R4)
+    11:10 - 12:05: CSP-501 (Teacher: AK23, Room: R4)
+    12:05 - 1:00: XCS-501 (Teacher: DT20, Room: R4)
+    1:20 - 2:15: SCS-501 (Teacher: AP24, Room: R4)
+    2:15 - 3:10: Placement_Class (Teacher: AK26, Room: R4)
+    3:30 - 4:25: TCS-502 (Teacher: SS03, Room: R4)
+  ----------------------------------------
+============================================================
+Day: Week 1 - Wednesday
+  Section: A
+    9:00 - 9:55: TCS-531 (Teacher: AB01, Room: R1)
+    9:55 - 10:50: SCS-501 (Teacher: AP24, Room: R1)
+    12:05 - 1:00: PMA-502 (Teacher: PM14, Room: R1)
+    11:10 - 12:05: PMA-502 (Teacher: PM14, Room: R1)
+  ----------------------------------------
+  Section: B
+    9:00 - 9:55: TCS-502 (Teacher: SS03, Room: R2)
+    9:55 - 10:50: CSP-501 (Teacher: AK23, Room: R2)
+    11:10 - 12:05: TMA-502 (Teacher: BJ10, Room: R2)
+    12:05 - 1:00: TCS-531 (Teacher: AB01, Room: R2)
+    2:15 - 3:10: PMA-502 (Teacher: PM14, Room: R2)
+    1:20 - 2:15: PMA-502 (Teacher: PM14, Room: R2)
+    3:30 - 4:25: XCS-501 (Teacher: DT20, Room: R2)
+  ----------------------------------------
+  Section: C
+    9:00 - 9:55: TMA-502 (Teacher: BJ10, Room: R3)
+    9:55 - 10:50: CSP-501 (Teacher: AK23, Room: R3)
+    11:10 - 12:05: TCS-531 (Teacher: AB01, Room: R3)
+    12:05 - 1:00: TCS-509 (Teacher: SJ16, Room: R3)
+  ----------------------------------------
+  Section: D
+    9:00 - 9:55: CSP-501 (Teacher: AK23, Room: R4)
+    9:55 - 10:50: TMA-502 (Teacher: BJ10, Room: R4)
+    11:10 - 12:05: SCS-501 (Teacher: AP24, Room: R4)
+    12:05 - 1:00: TCS-509 (Teacher: SJ16, Room: R4)
+    2:15 - 3:10: PMA-502 (Teacher: PM14, Room: R4)
+    1:20 - 2:15: PMA-502 (Teacher: PM14, Room: R4)
+    3:30 - 4:25: TCS-531 (Teacher: AB01, Room: R4)
+  ----------------------------------------
+============================================================
+Day: Week 1 - Thursday
+  Section: A
+    9:00 - 9:55: XCS-501 (Teacher: DT20, Room: R1)
+    9:55 - 10:50: TCS-531 (Teacher: AB01, Room: R1)
+    11:10 - 12:05: SCS-501 (Teacher: AP24, Room: R1)
+    12:05 - 1:00: TCS-502 (Teacher: SS03, Room: R1)
+  ----------------------------------------
+  Section: B
+    9:00 - 9:55: SCS-501 (Teacher: AP24, Room: R2)
+    9:55 - 10:50: XCS-501 (Teacher: DT20, Room: R2)
+    11:10 - 12:05: TMA-502 (Teacher: BJ10, Room: R2)
+    12:05 - 1:00: TCS-509 (Teacher: SJ16, Room: R2)
+  ----------------------------------------
+  Section: C
+    9:00 - 9:55: SCS-501 (Teacher: AP24, Room: R3)
+    9:55 - 10:50: TCS-503 (Teacher: SP06, Room: R3)
+    11:10 - 12:05: TMA-502 (Teacher: BJ10, Room: R3)
+    12:05 - 1:00: TCS-502 (Teacher: SS03, Room: R3)
+    1:20 - 2:15: XCS-501 (Teacher: DT20, Room: R3)
+    2:15 - 3:10: Placement_Class (Teacher: AK26, Room: R3)
+    3:30 - 4:25: TCS-531 (Teacher: AB01, Room: R3)
+  ----------------------------------------
+  Section: D
+    9:00 - 9:55: TCS-502 (Teacher: SS03, Room: R4)
+    9:55 - 10:50: CSP-501 (Teacher: AK23, Room: R4)
+    12:05 - 1:00: PCS-506 (Teacher: AD08, Room: R4)
+    11:10 - 12:05: PCS-506 (Teacher: AD08, Room: R4)
+    1:20 - 2:15: TCS-503 (Teacher: SP06, Room: R4)
+    2:15 - 3:10: XCS-501 (Teacher: DT20, Room: R4)
+    3:30 - 4:25: SCS-501 (Teacher: AP24, Room: R4)
+  ----------------------------------------
+============================================================
+Day: Week 1 - Friday
+  Section: A
+    9:00 - 9:55: TCS-531 (Teacher: AB01, Room: R1)
+    9:55 - 10:50: SCS-501 (Teacher: AP24, Room: R1)
+    11:10 - 12:05: TMA-502 (Teacher: BJ10, Room: R1)
+    12:05 - 1:00: CSP-501 (Teacher: AK23, Room: R1)
+    1:20 - 2:15: TCS-503 (Teacher: SP06, Room: R1)
+    2:15 - 3:10: XCS-501 (Teacher: DT20, Room: R1)
+    3:30 - 4:25: TCS-509 (Teacher: SJ16, Room: R1)
+  ----------------------------------------
+  Section: B
+    9:00 - 9:55: XCS-501 (Teacher: DT20, Room: R2)
+    9:55 - 10:50: TCS-531 (Teacher: AB01, Room: R2)
+    11:10 - 12:05: TCS-503 (Teacher: SP06, Room: R2)
+    12:05 - 1:00: TCS-509 (Teacher: SJ16, Room: R2)
+    2:15 - 3:10: PMA-502 (Teacher: PM14, Room: R2)
+    1:20 - 2:15: PMA-502 (Teacher: PM14, Room: R2)
+    3:30 - 4:25: TMA-502 (Teacher: BJ10, Room: R2)
+  ----------------------------------------
+  Section: C
+    9:55 - 10:50: PMA-502 (Teacher: PM14, Room: R3)
+    9:00 - 9:55: PMA-502 (Teacher: PM14, Room: R3)
+    11:10 - 12:05: TCS-503 (Teacher: SP06, Room: R3)
+    12:05 - 1:00: TCS-531 (Teacher: AB01, Room: R3)
+  ----------------------------------------
+  Section: D
+    9:00 - 9:55: TCS-509 (Teacher: SJ16, Room: R4)
+    9:55 - 10:50: TMA-502 (Teacher: BJ10, Room: R4)
+    12:05 - 1:00: PCS-503 (Teacher: RS11, Room: R4)
+    11:10 - 12:05: PCS-503 (Teacher: RS11, Room: R4)
   ----------------------------------------
 ============================================================

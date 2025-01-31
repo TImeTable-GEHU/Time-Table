@@ -12,6 +12,16 @@ class TimeIntervalConstant:
         7: "3:30 - 4:25",
     }
 
+    time_mapping = {
+        "9:00 - 9:55": 1,
+        "9:55 - 10:50": 2,
+        "11:10 - 12:05": 3,
+        "12:05 - 1:00": 4,
+        "1:20 - 2:15": 5,
+        "2:15 - 3:10": 6,
+        "3:30 - 4:25": 7,
+    }
+
     @staticmethod
     def get_slot(slot_number: int) -> str:
         """Retrieve time slot based on slot number.
@@ -48,8 +58,8 @@ class TimeIntervalConstant:
 
         try:
             # Format start and end times to ensure they only include hours and minutes
-            start_time = str(datetime.strptime(start_time, "%H:%M").time())
-            end_time = str(datetime.strptime(end_time, "%H:%M").time())
+            start_time = str(datetime.strptime(start_time, "%H:%M").time()).strip(" ")
+            end_time = str(datetime.strptime(end_time, "%H:%M").time()).strip(" ")
 
             for slot, interval in cls.time_slots.items():
                 # Making string in this format: "3:30 - 4:25".

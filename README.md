@@ -89,10 +89,28 @@ A higher fitness score indicates a better solution, leading to more optimal time
 This project aims to simplify faculty management by automatically assigning courses, considering workload balance, and tracking expertise. Future enhancements may include a master schedule for departments, integration with university websites, and personalized time slot assignments.
 
 ## 🛠️ Installation
-To run this project, clone the repository and install the required dependencies:
+
+To run this project, clone the repository, set up a virtual environment, and install the required dependencies:
 
 ```bash
 git clone https://github.com/yourusername/timetable-scheduling-project.git
 cd timetable-scheduling-project
-# Install dependencies if any (for example, using pip)
+
+# Set up a virtual environment
+python -m venv venv
+
+# Activate the virtual environment
+# For Linux/macOS:
+source venv/bin/activate
+# For Windows:
+.\venv\Scripts\activate
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Optionally, set up environment variables in a .env file (e.g., DATABASE_URL, SECRET_KEY)
+# Create and edit .env file with necessary variables
+touch .env
+
+echo "Setup complete. You can now run the application."
+
