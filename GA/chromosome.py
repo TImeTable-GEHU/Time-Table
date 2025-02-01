@@ -151,7 +151,11 @@ class TimeTableGeneration:
                             else assigned_classroom
                         )
                         break
-
+                     
+        if not assigned_teacher:
+            selected_subject = "Library"
+            assigned_teacher = "None"
+            assigned_room = assigned_classroom
 
         return assigned_teacher, selected_subject, assigned_room
     
@@ -226,6 +230,7 @@ class TimeTableGeneration:
                 teacher_workload_tracker, self.teacher_availability_matrix, index
             )
             daily_schedule[section] = section_schedule
+            # print(f"Daily Schedule for {section}: {section_schedule}")
         return daily_schedule, section_subject_usage_tracker, self.teacher_availability_matrix
 
 
