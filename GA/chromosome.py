@@ -89,7 +89,15 @@ class TimeTableGeneration:
     def _initialize_teacher_workload_tracker(self):
         """Initialize a tracker for teacher workloads."""
         return {teacher: 0 for teacher in self.weekly_workload.keys()}
-    
+
+    def _get_available_subjects(self, section, section_subject_usage_tracker):
+        """Get a list of subjects available for a specific section."""
+        return [
+            subject
+            for subject in self.subject_teacher_mapping.keys()
+            if section_subject_usage_tracker[section][subject] < self.subject_quota_limits.get(subject, 0)
+        ]
+
     def _assign_subject_and_teacher(
         self,
         section,
@@ -126,7 +134,7 @@ class TimeTableGeneration:
                 teachers_with_least_load = sorted(
                     preferred_teachers, key=lambda teacher: teacher_workload_tracker[teacher]
                 )
-
+                # print(preferred_teachers)
                 for teacher in teachers_with_least_load:
                     # Ensure valid index access
                     if (teacher in teacher_availability_matrix and 
@@ -144,12 +152,9 @@ class TimeTableGeneration:
                         )
                         break
 
-        if not assigned_teacher:
-            selected_subject = "Library"
-            assigned_teacher = "None"
-            assigned_room = assigned_classroom
 
         return assigned_teacher, selected_subject, assigned_room
+    
     def _generate_section_schedule(
         self,
         section,
@@ -180,7 +185,6 @@ class TimeTableGeneration:
                 index,
                 total_slots_for_section
             )
-
             # if assigned_teacher != "None":
             #     teacher_availability_matrix[assigned_teacher][index][slot_index - 1] = False
 
@@ -208,17 +212,7 @@ class TimeTableGeneration:
                     )
                     section_subject_usage_tracker[section][selected_subject] += 1
                     slot_index += 1
-
         return section_schedule, teacher_availability_matrix
-
-
-    def _get_available_subjects(self, section, section_subject_usage_tracker):
-        """Get a list of subjects available for a specific section."""
-        return [
-            subject
-            for subject in self.subject_teacher_mapping.keys()
-            if section_subject_usage_tracker[section][subject] < self.subject_quota_limits.get(subject, 0)
-        ]
 
 
     def generate_daily_schedule(self, half_day_section_list, section_subject_usage_tracker, index):
@@ -232,7 +226,6 @@ class TimeTableGeneration:
                 teacher_workload_tracker, self.teacher_availability_matrix, index
             )
             daily_schedule[section] = section_schedule
-
         return daily_schedule, section_subject_usage_tracker, self.teacher_availability_matrix
 
 
