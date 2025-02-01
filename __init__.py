@@ -14,6 +14,7 @@ from Samples.samples import (
     Sections,
 
 )
+import json
 
 
 def timetable_generation():
@@ -54,7 +55,6 @@ def timetable_generation():
     # Selection of all Chromosomes
     selection_object = TimeTableSelection()
     selected_chromosomes = selection_object.select_chromosomes(fitness_scores[1])
-    ic(len(selected_chromosomes))
 
     # Crossover for all selected Chromosomes
     crossover_object = TimeTableCrossOver()
@@ -82,10 +82,10 @@ def timetable_generation():
     ]
 
 
-    ic(mutated_chromosomes)
-    ic(selected_chromosomes)
-
-    ic(selected_chromosomes)
+    # ic(mutated_chromosomes)
+    # ic(selected_chromosomes)
+    #
+    # ic(selected_chromosomes)
     # Store best of Chromosomes
     best_chromosome_score = -1
     best_chromosome = dict()
@@ -95,10 +95,13 @@ def timetable_generation():
             best_chromosome_score = int(week_score)
             best_chromosome = timetable[week_no]
 
-    ic(f"Best Chromosome: {best_chromosome}")
+    best_chromosome_json = json.dumps(best_chromosome, indent=4)  # Converts dict to JSON string with double quotes
+    print(best_chromosome_json)
 
 
 def run_timetable_generation():
     for generation in range(Defaults.total_no_of_generations):
         best_chromosome = timetable_generation()
     return best_chromosome
+
+run_timetable_generation()

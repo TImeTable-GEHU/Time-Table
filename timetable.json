@@ -1,0 +1,94 @@
+{
+  "MONDAY": [
+    {
+      "teacher_id": "SKS",
+      "subject_id": "TCS-706",
+      "classroom_id": "R1",
+      "time_slot": "09:00-9:55"
+    },
+    {
+      "teacher_id": "HP",
+      "subject_id": "TIT-704",
+      "classroom_id": "R2",
+      "time_slot": "9:55-10:50"
+    },
+    {
+      "teacher_id": "SP",
+      "subject_id": "TCS-704",
+      "classroom_id": "R4",
+      "time_slot": "11:00-11:55"
+    },
+    {
+      "teacher_id": "AA",
+      "subject_id": "TCS-703",
+      "classroom_id": "R5",
+      "time_slot": "11:55-12:50"
+    },
+    {
+      "teacher_id": "DVP",
+      "subject_id": "Placement Classes",
+      "classroom_id": "R7",
+      "time_slot": "1:20-2:15"
+    },
+    {
+      "teacher_id": "SKS",
+      "subject_id": "TCS-706",
+      "classroom_id": "R9",
+      "time_slot": "3:10-4:05"
+    },
+    {
+      "teacher_id": "SP",
+      "subject_id": "TCS-704",
+      "classroom_id": "R10",
+      "time_slot": "4:05-5:00"
+    }
+  ],
+  "TUESDAY": [],
+  "WEDNESDAY": [],
+  "THURSDAY": [
+    {
+      "teacher_id": "HP",
+      "subject_id": "TIT-704",
+      "classroom_id": "R1",
+      "time_slot": "09:00-9:55"
+    },
+    {
+      "teacher_id": "HP",
+      "subject_id": "TIT-704",
+      "classroom_id": "R2",
+      "time_slot": "9:55-10:50"
+    },
+    {
+      "teacher_id": "AA",
+      "subject_id": "TCS-703",
+      "classroom_id": "R4",
+      "time_slot": "11:00-11:55"
+    },
+    {
+      "teacher_id": "SKS",
+      "subject_id": "TCS-706",
+      "classroom_id": "R5",
+      "time_slot": "11:55-12:50"
+    },
+    {
+      "teacher_id": "PDP",
+      "subject_id": "PDP Classes",
+      "classroom_id": "R7",
+      "time_slot": "1:20-2:15"
+    },
+    {
+      "teacher_id": "SP",
+      "subject_id": "TCS-704",
+      "classroom_id": "R9",
+      "time_slot": "3:10-4:05"
+    },
+    {
+      "teacher_id": "AA",
+      "subject_id": "TCS-703",
+      "classroom_id": "R10",
+      "time_slot": "4:05-5:00"
+    }
+  ],
+  "FRIDAY": [],
+  "SATURDAY": []
+}
