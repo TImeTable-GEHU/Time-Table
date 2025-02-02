@@ -11,7 +11,7 @@ from Samples.samples import (
     SpecialSubjects,
     SubjectWeeklyQuota,
     Classrooms,
-    Sections,
+    Sections, InterDepartment,
 
 )
 
@@ -28,12 +28,12 @@ def timetable_generation():
         special_subjects=SpecialSubjects.special_subjects,
         subject_quota_limits=SubjectWeeklyQuota.subject_quota,
         labs_list=Classrooms.labs,
+        labs=SpecialSubjects.Labs,
         teacher_duty_days=TeacherWorkload.teacher_duty_days,
+        teacher_availability_matrix=InterDepartment.teacher_availability_matrix,
     )
 
-    timetable = timetable_generator.create_timetable(Defaults.initial_no_of_chromosomes)
-    from icecream import ic
-    ic(timetable)
+    timetable, teacher_avail_matrix = timetable_generator.create_timetable(Defaults.initial_no_of_chromosomes)
     # Fitness of each Chromosome
     fitness_calculator = TimetableFitnessEvaluator(
         timetable,
@@ -54,7 +54,7 @@ def timetable_generation():
     # Selection of all Chromosomes
     selection_object = TimeTableSelection()
     selected_chromosomes = selection_object.select_chromosomes(fitness_scores[1])
-    ic(len(selected_chromosomes))
+    # ic(len(selected_chromosomes))
 
     # Crossover for all selected Chromosomes
     crossover_object = TimeTableCrossOver()
@@ -82,10 +82,10 @@ def timetable_generation():
     ]
 
 
-    ic(mutated_chromosomes)
-    ic(selected_chromosomes)
-
-    ic(selected_chromosomes)
+    # ic(mutated_chromosomes)
+    # ic(selected_chromosomes)
+    #
+    # ic(selected_chromosomes)
     # Store best of Chromosomes
     best_chromosome_score = -1
     best_chromosome = dict()
@@ -94,11 +94,15 @@ def timetable_generation():
         if int(week_score) > best_chromosome_score:
             best_chromosome_score = int(week_score)
             best_chromosome = timetable[week_no]
+    return best_chromosome
 
-    ic(f"Best Chromosome: {best_chromosome}")
 
 
 def run_timetable_generation():
     for generation in range(Defaults.total_no_of_generations):
         best_chromosome = timetable_generation()
     return best_chromosome
+
+
+tt = run_timetable_generation()
+# ic(f"Best Chromosome: {tt}")

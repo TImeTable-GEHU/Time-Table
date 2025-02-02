@@ -242,10 +242,10 @@ class TimeTableGeneration:
             for section in self.sections_manager.sections
         }
 
-        for index, week_day in enumerate(self.weekdays):  # Pass index for each day
+        for index, week_day in enumerate(self.weekdays):
             half_day_sections = self.sections_manager.sections[: len(self.sections_manager.sections) // 2]
             daily_schedule, section_subject_usage_tracker, self.teacher_availability_matrix = self.generate_daily_schedule(
-                half_day_sections, section_subject_usage_tracker, index  # Pass index
+                half_day_sections, section_subject_usage_tracker, index
             )
             week_schedule[week_day] = daily_schedule
 
