@@ -1,0 +1,96 @@
+{
+    "R1": {
+        "Monday": [
+            {
+                "section": "A",
+                "course": "Week 1",
+                "teacher_id": "SJ16",
+                "subject_id": "TCS-509",
+                "time_slot": "9:00 - 9:55"
+            },
+            {
+                "section": "A",
+                "course": "Week 1",
+                "teacher_id": "SS03",
+                "subject_id": "TCS-502",
+                "time_slot": "9:55 - 10:50"
+            },
+            {
+                "section": "A",
+                "course": "Week 1",
+                "teacher_id": "AB01",
+                "subject_id": "TCS-531",
+                "time_slot": "11:10 - 12:05"
+            },
+            {
+                "section": "A",
+                "course": "Week 1",
+                "teacher_id": "AP24",
+                "subject_id": "SCS-501",
+                "time_slot": "12:05 - 1:00"
+            }
+        ],
+        "Tuesday": [],
+        "Wednesday": [],
+        "Thursday": [],
+        "Friday": []
+    },
+    "R2": {
+        "Monday": [
+            {
+                "section": "B",
+                "course": "Week 1",
+                "teacher_id": "DT20",
+                "subject_id": "XCS-501",
+                "time_slot": "9:00 - 9:55"
+            },
+            {
+                "section": "B",
+                "course": "Week 1",
+                "teacher_id": "PK02",
+                "subject_id": "TCS-531",
+                "time_slot": "9:55 - 10:50"
+            },
+            {
+                "section": "B",
+                "course": "Week 1",
+                "teacher_id": "SP06",
+                "subject_id": "TCS-503",
+                "time_slot": "1:20 - 2:15"
+            },
+            {
+                "section": "B",
+                "course": "Week 1",
+                "teacher_id": "AK23",
+                "subject_id": "CSP-501",
+                "time_slot": "2:15 - 3:10"
+            }
+        ],
+        "Tuesday": [],
+        "Wednesday": [],
+        "Thursday": [],
+        "Friday": []
+    },
+    "L3": {
+        "Monday": [
+            {
+                "section": "B",
+                "course": "Week 1",
+                "teacher_id": "RS11",
+                "subject_id": "PCS-503",
+                "time_slot": "12:05 - 1:00"
+            },
+            {
+                "section": "B",
+                "course": "Week 1",
+                "teacher_id": "RS11",
+                "subject_id": "PCS-503",
+                "time_slot": "11:10 - 12:05"
+            }
+        ],
+        "Tuesday": [],
+        "Wednesday": [],
+        "Thursday": [],
+        "Friday": []
+    }
+}
