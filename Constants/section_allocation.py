@@ -2,7 +2,7 @@ import random
 from collections import defaultdict
 from typing import List, Dict
 from Constants.constant import SectionsConstants, Defaults
-from Samples.Adhocs.common import generate_students
+# from Samples.Adhocs.common import generate_students
 
 
 class StudentScorer:
@@ -144,8 +144,8 @@ class StudentScorer:
 
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
-    scorer = StudentScorer(generate_students(num_students=500))
-    from icecream import ic
-    ic(scorer.entry_point_for_section_divide())
+#     scorer = StudentScorer(generate_students(num_students=500))
+#     from icecream import ic
+#     ic(scorer.entry_point_for_section_divide())
