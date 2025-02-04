@@ -1,0 +1,270 @@
+[33mcommit 68dabcbc744d7fa0e1786e93e2656456d9ebf462[m[33m ([m[1;36mHEAD -> [m[1;32mTtime-table[m[33m, [m[1;31morigin/Ttime-table[m[33m)[m
+Author: Falguni Makhija <falgunimakhija110@gmail.com>
+Date:   Tue Feb 4 21:16:41 2025 +0530
+
+    classroomt2
+
+[33mcommit c0ec766b5f0aa09db10fa81f6ffab326b65a7cbc[m
+Author: Falguni Makhija <falgunimakhija110@gmail.com>
+Date:   Tue Feb 4 19:49:10 2025 +0530
+
+    Classroom_tt
+
+[33mcommit 4a31aadb4405788b0f97e536e7a5187946703a70[m
+Author: Falguni Makhija <falgunimakhija110@gmail.com>
+Date:   Wed Jan 29 16:09:37 2025 +0530
+
+    Classroom
+
+[33mcommit dec8731ba7e61b702cd7c198028834830bed9326[m
+Author: Falguni Makhija <falgunimakhija110@gmail.com>
+Date:   Tue Jan 28 13:11:06 2025 +0530
+
+     Teachers_tt
+
+[33mcommit 2de3f9a6bf9736c3754f76201f81590e87fc5c06[m
+Author: Falguni Makhija <falgunimakhija110@gmail.com>
+Date:   Tue Jan 28 11:54:25 2025 +0530
+
+    abc
+
+[33mcommit db3087eb0742a04e4394558008c19b810a2b40ec[m
+Author: Falguni Makhija <falgunimakhija110@gmail.com>
+Date:   Mon Jan 27 17:59:30 2025 +0530
+
+    Classroo_tt
+
+[33mcommit 107ee1319bee7366656be3f9a22cd6b3dce4287c[m
+Author: Falguni Makhija <falgunimakhija110@gmail.com>
+Date:   Mon Jan 27 17:17:48 2025 +0530
+
+    Teachers_tt
+
+[33mcommit 53d228ab86a90929375f139a1aa42bc749331407[m
+Author: Falguni Makhija <falgunimakhija110@gmail.com>
+Date:   Mon Dec 2 15:01:21 2024 +0530
+
+    Teachers' tt done
+
+[33mcommit 6718fad304db64eaad525431af42ae754aafb972[m
+Author: Falguni Makhija <falgunimakhija110@gmail.com>
+Date:   Sun Dec 1 18:11:55 2024 +0530
+
+    Teacher's added
+
+[33mcommit 341317412a8b9a52ec3dac65f0f60c57939ca6d2[m
+Merge: bd8265f 6a716a0
+Author: Falguni Makhija <falgunimakhija110@gmail.com>
+Date:   Sun Dec 1 18:03:47 2024 +0530
+
+    Added teacher's time table
+
+[33mcommit bd8265ff938e4a24c7e736baf005e1f8acc713eb[m
+Author: Falguni Makhija <falgunimakhija110@gmail.com>
+Date:   Sat Nov 30 18:28:09 2024 +0530
+
+    Your commit message
+
+[33mcommit 6a716a08517c777806fe28ece2e5c4f10034d9f9[m[33m ([m[1;31morigin/Teachers'-time-table[m[33m)[m
+Author: Ayush-Techie <ayush.kapri@julofinance.com>
+Date:   Sat Nov 30 12:41:46 2024 +0530
+
+    Init final code refactor.
+
+[33mcommit a24fa47b4eb5335a2a12c9724db7c7d750c21e8a[m
+Author: Prachi Sah <prachisah66614@gmail.com>
+Date:   Sat Nov 30 12:12:43 2024 +0530
+
+    init changes
+
+[33mcommit 41208cc0c085983fc739343a98efe44eb7266e60[m
+Author: Prachi Sah <prachisah66614@gmail.com>
+Date:   Fri Nov 29 18:18:46 2024 +0530
+
+    Fixed teacher to section to subject maping
+
+[33mcommit c2f3b9b98e3a46462f7a93e90aa6b2406e718203[m
+Author: Ayush-Techie <ayush.kapri@julofinance.com>
+Date:   Fri Nov 29 16:44:36 2024 +0530
+
+    Added ortools==9.11.4210 as a dependency.
+
+[33mcommit 5a3216fb97fe85f5150d08e8a3ae74e8cb5731cb[m
+Author: Ayush-Techie <ayush.kapri@julofinance.com>
+Date:   Fri Nov 29 16:42:51 2024 +0530
+
+    Classroom allocate for generate chromosomes.
+
+[33mcommit 57659ee8cf0d1f8a0a8d40df7c56dbfb5ac7ef2d[m
+Author: Ayush-Techie <ayush.kapri@julofinance.com>
+Date:   Fri Nov 29 16:31:02 2024 +0530
+
+    Removed some issues.
+
+[33mcommit f6b1dfa0a734268a66628766893e0b67e7610831[m
+Author: Ayush-Techie <ayush.kapri@julofinance.com>
+Date:   Fri Nov 29 16:23:31 2024 +0530
+
+    Refactor for __init__.py
+
+[33mcommit 42632313606e1f04b2f69755c5024e99bc024e72[m
+Author: Prachi Sah <prachisah66614@gmail.com>
+Date:   Thu Nov 28 17:59:14 2024 +0530
+
+    Library and none allocated also weekly_quota_done
+
+[33mcommit 39dd831dfcf29477e69150c08153d52dba715115[m
+Author: Prachi Sah <prachisah66614@gmail.com>
+Date:   Thu Nov 28 16:50:20 2024 +0530
+
+    Library and none allocated also weekly_quota_done
+
+[33mcommit 2d5df6381fa0a51964c51f7fabe0e3aacdd92302[m
+Author: Prachi Sah <prachisah66614@gmail.com>
+Date:   Mon Nov 25 18:02:24 2024 +0530
+
+    Teacher_duty_day
+
+[33mcommit d1b749a09d7f762f1d6ac8204285554342a0eee0[m
+Author: Prachi Sah <prachisah66614@gmail.com>
+Date:   Mon Nov 25 02:03:51 2024 +0530
+
+    Added the teacher_duty_days
+
+[33mcommit 8889e6ecefb35c286862407e7c2e92005a8da00e[m
+Author: gunjan <gunjanbhanwal@gmail.com>
+Date:   Sun Nov 24 18:44:11 2024 +0530
+
+    Adding cromosome 2
+
+[33mcommit 4ba0ec4171bec37493abf98a2809bb68f4f4542f[m
+Author: Gunjan Bhanwal <133032453+GunjanBhanwal@users.noreply.github.com>
+Date:   Sun Nov 24 18:28:12 2024 +0530
+
+    Update README.md
+
+[33mcommit 8bea3495f16efdbb1d0a5c87b98e6f5795acaad5[m
+Author: Ayush-Techie <ayush.kapri@julofinance.com>
+Date:   Sun Nov 24 18:26:10 2024 +0530
+
+    fixup! Refactor chromosome.py
+
+[33mcommit 84e6bd9e07450dafa965704905f3def3db7ecaa8[m
+Merge: 89bfeb9 cfdd109
+Author: War Machine <53389091+TechLead-War@users.noreply.github.com>
+Date:   Sun Nov 24 18:20:54 2024 +0530
+
+    Merge pull request #29 from TImeTable-GEHU/Timetable_Conflict
+    
+    Timetable conflict
+
+[33mcommit cfdd1092233d37f01c4320c2fd51cb493ec735eb[m
+Author: gunjan <gunjanbhanwal@gmail.com>
+Date:   Sun Nov 24 18:18:29 2024 +0530
+
+    Deleting sample cromosome
+
+[33mcommit 89bfeb9dd51848675e11a05c816e9474c4944ee6[m
+Author: Ayush-Techie <ayush.kapri@julofinance.com>
+Date:   Sun Nov 24 18:15:34 2024 +0530
+
+    fixup! Refactor chromosome.py
+
+[33mcommit 014208f4c6a0b0d890ab4e8c8383c513a39082dc[m
+Author: Ayush-Techie <ayush.kapri@julofinance.com>
+Date:   Sun Nov 24 17:56:37 2024 +0530
+
+    fixup! Refactor chromosome.py
+
+[33mcommit 474095e66a96f54e9bb77da6ca2cbaea85fbd5ed[m
+Author: Prachi Sah <prachisah66614@gmail.com>
+Date:   Sun Nov 24 17:49:44 2024 +0530
+
+    TeacherDutyDays
+
+[33mcommit 0542ad31c438129b0e657f6532b06a53044049fd[m
+Author: gunjan <gunjanbhanwal@gmail.com>
+Date:   Sun Nov 24 16:54:09 2024 +0530
+
+    removing sample example
+
+[33mcommit ce5d11399fe32ac04da41c79ced5fff5d34deddd[m
+Author: gunjan <gunjanbhanwal@gmail.com>
+Date:   Sun Nov 24 16:52:17 2024 +0530
+
+    adding sample chromosome
+
+[33mcommit 9815ea776572b5adab1b767284869efb34f61a1a[m
+Author: Ayush-Techie <ayush.kapri@julofinance.com>
+Date:   Sun Nov 24 16:35:02 2024 +0530
+
+    fixup! Refactor chromosome.py
+
+[33mcommit 2f6100daceb4e1100e8a90e3a6bb3cc3844c0975[m
+Author: Ayush-Techie <ayush.kapri@julofinance.com>
+Date:   Sun Nov 24 16:10:26 2024 +0530
+
+    fixup! Refactor chromosome.py
+
+[33mcommit b5770d242e42adcf87d6ff18e9c8a710f1b87fe5[m
+Author: Ayush-Techie <ayush.kapri@julofinance.com>
+Date:   Sun Nov 24 16:09:10 2024 +0530
+
+    fixup! Refactor chromosome.py
+
+[33mcommit bf04cb34b49bf9a80b64c1f2158d8b5d80ac27ea[m
+Author: Prachi Sah <prachisah66614@gmail.com>
+Date:   Sun Nov 24 15:18:09 2024 +0530
+
+    Json created
+
+[33mcommit 2c375875a85db0f016a7d3f68201ac0dd68d1fe7[m
+Merge: 472cf7f e18dcc1
+Author: gunjan <gunjanbhanwal@gmail.com>
+Date:   Sun Nov 24 14:49:42 2024 +0530
+
+    Merge branch 'main' of https://github.com/TImeTable-GEHU/Time-Table into Timetable_Conflict
+
+[33mcommit e18dcc1a2e30e1191e4c1d91ae66e02bb2be6f8e[m
+Merge: 51a5ebc bb90fb0
+Author: Ayush-Techie <ayush.kapri@julofinance.com>
+Date:   Sun Nov 24 14:45:49 2024 +0530
+
+    Merge branch 'refactor_lib_to_support_BE'
+
+[33mcommit bb90fb063c460ebbce6691a5201ca9d8d7a65d5d[m[33m ([m[1;31morigin/refactor_lib_to_support_BE[m[33m)[m
+Author: Ayush-Techie <ayush.kapri@julofinance.com>
+Date:   Sun Nov 24 14:43:58 2024 +0530
+
+    fixup! Refactor chromosome.py
+
+[33mcommit ec70ecd97bda308aac44927028962e159012c80f[m
+Author: Ayush-Techie <ayush.kapri@julofinance.com>
+Date:   Sun Nov 24 14:43:04 2024 +0530
+
+    fixup! Refactor chromosome.py
+
+[33mcommit 472cf7fa30e0665cf20f105d2e48b4d183865b2f[m
+Author: gunjan <gunjanbhanwal@gmail.com>
+Date:   Sun Nov 24 14:38:55 2024 +0530
+
+    Update
+
+[33mcommit 257e499f93c68e4769f61c6296205357f85ad1a0[m
+Author: Ayush-Techie <ayush.kapri@julofinance.com>
+Date:   Sun Nov 24 14:34:50 2024 +0530
+
+    fixup! Refactor chromosome.py
+
+[33mcommit fb47da707a5207c8857ffebcd98b8e68c455e4f4[m
+Author: Ayush-Techie <ayush.kapri@julofinance.com>
+Date:   Sun Nov 24 14:32:15 2024 +0530
+
+    fixup! Refactor chromosome.py
+
+[33mcommit 085873c1ec43aefbd31fe5bfccd9d8df321cd0a3[m
+Merge: a2d7bca a75b796
+Author: Prachi Sah <prachisah66614@gmail.com>
+Date:   Sun Nov 24 14:31:41 2024 +0530
+
+    Merge branch 'refactor_l
