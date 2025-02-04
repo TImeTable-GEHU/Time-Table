@@ -1,26 +1,36 @@
-from datetime import datetime
+from datetime import datetime,timedelta
 
 
 class TimeIntervalConstant:
-    time_slots = {
-        1: "9:00 - 9:55",
-        2: "9:55 - 10:50",
-        3: "11:10 - 12:05",
-        4: "12:05 - 1:00",
-        5: "1:20 - 2:15",
-        6: "2:15 - 3:10",
-        7: "3:30 - 4:25",
-    }
 
-    time_mapping = {
-        "9:00 - 9:55": 1,
-        "9:55 - 10:50": 2,
-        "11:10 - 12:05": 3,
-        "12:05 - 1:00": 4,
-        "1:20 - 2:15": 5,
-        "2:15 - 3:10": 6,
-        "3:30 - 4:25": 7,
-    }
+    time_slots = {}
+    time_mapping = {}
+
+    @staticmethod
+    def generate_dynamic_schedule(start_time, period_duration=55, total_periods=7, break_after_periods=None, lunch_after_period=4, break_duration=10, lunch_duration=30):
+        if break_after_periods is None:
+            break_after_periods = set()
+        TimeIntervalConstant.time_slots.clear()  
+        TimeIntervalConstant.time_mapping.clear()  
+
+        
+        start_time = datetime.strptime(start_time, "%H:%M")
+
+        current_time = start_time
+        period_counter = 1
+
+        while period_counter <= total_periods:
+            end_time = current_time + timedelta(minutes=period_duration)
+            time_slot = f"{current_time.strftime('%H:%M')} - {end_time.strftime('%H:%M')}"
+            TimeIntervalConstant.time_slots[period_counter] = time_slot
+            TimeIntervalConstant.time_mapping[time_slot] = period_counter
+            current_time = end_time
+            if period_counter in break_after_periods:
+                current_time += timedelta(minutes=break_duration)
+            if period_counter == lunch_after_period:
+                current_time += timedelta(minutes=lunch_duration)
+            
+            period_counter += 1
 
     @staticmethod
     def get_slot(slot_number: int) -> str:
@@ -82,3 +92,23 @@ class TimeIntervalConstant:
     def get_all_time_slots():
         """Retrieve all time intervals."""
         return list(TimeIntervalConstant.time_slots.values())
+
+
+TimeIntervalConstant.generate_dynamic_schedule(
+    "8:00",      # Start time (positional argument)
+    60,          # Period duration (positional argument)
+    7,           # Total periods (positional argument)
+    {2, 6},      # Break after periods (positional argument)
+    4,           # Lunch after period (positional argument)
+    60,          # Break duration (positional argument)
+    50           # Lunch duration (positional argument)
+)
+
+slot_numbers = TimeIntervalConstant.get_all_slot_numbers()
+
+
+time_slots = TimeIntervalConstant.get_all_time_slots()
+
+
+print("Slot Numbers:", slot_numbers)
+print("Time Slots:", time_slots)
