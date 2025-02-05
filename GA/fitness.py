@@ -38,6 +38,7 @@ class TimetableFitnessEvaluator:
         daily_section_fitness_scores = {}
         weekly_fitness_scores = {}
         teacher_workload_tracking = {}
+
         for week, week_schedule in self.timetable.items():
             weekly_fitness = 0
             daily_section_fitness_scores[week] = {}

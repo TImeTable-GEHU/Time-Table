@@ -1,0 +1,277 @@
+{
+    "Teacher1": {
+        "Monday": [
+            {
+                "course_name": "BTech",
+                "subject_id": "TCS-509",
+                "classroom_name": "R1",
+                "time_slot": "9:00 - 9:55",
+                "section": "A"
+            },
+            {
+                "course_name": "BTech",
+                "subject_id": "TCS-509",
+                "classroom_name": "R1",
+                "time_slot": "10:00 - 10:55",
+                "section": "A"
+            }
+        ],
+        "Tuesday": [
+            {
+                "course_name": "BCA",
+                "subject_id": "CSP-501",
+                "classroom_name": "L2",
+                "time_slot": "9:00 - 9:55",
+                "section": "B"
+            },
+            {
+                "course_name": "BTech",
+                "subject_id": "TCS-509",
+                "classroom_name": "R1",
+                "time_slot": "11:00 - 11:55",
+                "section": "A"
+            }
+        ],
+        "Wednesday": [
+            {
+                "course_name": "MBA",
+                "subject_id": "MKT-202",
+                "classroom_name": "R3",
+                "time_slot": "9:00 - 9:55",
+                "section": "A"
+            },
+            {
+                "course_name": "BCA",
+                "subject_id": "CSP-501",
+                "classroom_name": "L2",
+                "time_slot": "10:00 - 10:55",
+                "section": "B"
+            }
+        ],
+        "Thursday": [
+            {
+                "course_name": "BTech",
+                "subject_id": "TCS-509",
+                "classroom_name": "R1",
+                "time_slot": "9:00 - 9:55",
+                "section": "A"
+            },
+            {
+                "course_name": "MBA",
+                "subject_id": "MKT-202",
+                "classroom_name": "R3",
+                "time_slot": "11:00 - 11:55",
+                "section": "A"
+            },
+            {
+                "course_name": "BTech",
+                "subject_id": "TCS-509",
+                "classroom_name": "R1",
+                "time_slot": "2:00 - 2:55",
+                "section": "B"
+            }
+        ],
+        "Friday": [
+            {
+                "course_name": "BCA",
+                "subject_id": "CSP-501",
+                "classroom_name": "L2",
+                "time_slot": "9:00 - 9:55",
+                "section": "B"
+            },
+            {
+                "course_name": "MBA",
+                "subject_id": "MKT-202",
+                "classroom_name": "R3",
+                "time_slot": "11:00 - 11:55",
+                "section": "A"
+            },
+            {
+                "course_name": "BTech",
+                "subject_id": "TCS-509",
+                "classroom_name": "R1",
+                "time_slot": "2:00 - 2:55",
+                "section": "A"
+            }
+        ]
+    },
+    "Teacher2": {
+        "Tuesday": [
+            {
+                "course_name": "BCA",
+                "subject_id": "CSP-501",
+                "classroom_name": "L2",
+                "time_slot": "9:00 - 9:55",
+                "section": "B"
+            },
+            {
+                "course_name": "BTech",
+                "subject_id": "TCS-509",
+                "classroom_name": "R1",
+                "time_slot": "11:00 - 11:55",
+                "section": "A"
+            }
+        ],
+        "Wednesday": [
+            {
+                "course_name": "MBA",
+                "subject_id": "MKT-202",
+                "classroom_name": "R3",
+                "time_slot": "9:00 - 9:55",
+                "section": "A"
+            },
+            {
+                "course_name": "BCA",
+                "subject_id": "CSP-501",
+                "classroom_name": "L2",
+                "time_slot": "10:00 - 10:55",
+                "section": "B"
+            }
+        ],
+        "Thursday": [
+            {
+                "course_name": "BTech",
+                "subject_id": "TCS-509",
+                "classroom_name": "R1",
+                "time_slot": "9:00 - 9:55",
+                "section": "A"
+            },
+            {
+                "course_name": "MBA",
+                "subject_id": "MKT-202",
+                "classroom_name": "R3",
+                "time_slot": "11:00 - 11:55",
+                "section": "A"
+            },
+            {
+                "course_name": "BTech",
+                "subject_id": "TCS-509",
+                "classroom_name": "R1",
+                "time_slot": "2:00 - 2:55",
+                "section": "B"
+            }
+        ],
+        "Friday": [
+            {
+                "course_name": "BCA",
+                "subject_id": "CSP-501",
+                "classroom_name": "L2",
+                "time_slot": "9:00 - 9:55",
+                "section": "B"
+            },
+            {
+                "course_name": "MBA",
+                "subject_id": "MKT-202",
+                "classroom_name": "R3",
+                "time_slot": "11:00 - 11:55",
+                "section": "A"
+            },
+            {
+                "course_name": "BTech",
+                "subject_id": "TCS-509",
+                "classroom_name": "R1",
+                "time_slot": "2:00 - 2:55",
+                "section": "A"
+            }
+        ],
+        "Saturday": [
+            {
+                "course_name": "BTech",
+                "subject_id": "TCS-509",
+                "classroom_name": "R1",
+                "time_slot": "9:00 - 9:55",
+                "section": "A"
+            },
+            {
+                "course_name": "BTech",
+                "subject_id": "TCS-509",
+                "classroom_name": "R1",
+                "time_slot": "10:00 - 10:55",
+                "section": "A"
+            }
+        ]
+    },
+    "Teacher3": {
+        "Monday": [
+            {
+                "course_name": "BBA",
+                "subject_id": "HRM-301",
+                "classroom_name": "L3",
+                "time_slot": "9:00 - 9:55",
+                "section": "C"
+            },
+            {
+                "course_name": "MBA",
+                "subject_id": "FIN-305",
+                "classroom_name": "R4",
+                "time_slot": "11:00 - 11:55",
+                "section": "A"
+            }
+        ],
+        "Tuesday": [
+            {
+                "course_name": "BTech",
+                "subject_id": "TCS-510",
+                "classroom_name": "R2",
+                "time_slot": "10:00 - 10:55",
+                "section": "A"
+            },
+            {
+                "course_name": "BCA",
+                "subject_id": "CSP-502",
+                "classroom_name": "L1",
+                "time_slot": "2:00 - 2:55",
+                "section": "B"
+            }
+        ],
+        "Wednesday": [
+            {
+                "course_name": "MBA",
+                "subject_id": "MKT-203",
+                "classroom_name": "R3",
+                "time_slot": "10:00 - 10:55",
+                "section": "A"
+            },
+            {
+                "course_name": "BBA",
+                "subject_id": "HRM-301",
+                "classroom_name": "L3",
+                "time_slot": "2:00 - 2:55",
+                "section": "C"
+            }
+        ]
+    },
+    "Teacher4": {
+        "Thursday": [
+            {
+                "course_name": "BCA",
+                "subject_id": "CSP-503",
+                "classroom_name": "L1",
+                "time_slot": "9:00 - 9:55",
+                "section": "B"
+            },
+            {
+                "course_name": "BTech",
+                "subject_id": "TCS-511",
+                "classroom_name": "R2",
+                "time_slot": "11:00 - 11:55",
+                "section": "C"
+            }
+        ],
+        "Friday": [
+            {
+                "course_name": "MBA",
+                "subject_id": "FIN-306",
+                "classroom_name": "R4",
+                "time_slot": "9:00 - 9:55",
+                "section": "A"
+            },
+            {
+                "course_name": "BBA",
+                "subject_id": "HRM-302",
+                "classroom_name": "L3",
+                "time_slot": "10:00 - 10:55",
+            }
+        ]
+    }
+}

@@ -1,5 +1,3 @@
-# This is the Orchestrator file, which will govern the flow.
-
 from Constants.constant import Defaults
 from GA.mutation import TimeTableMutation, TimeTableCrossOver
 from GA.selection import TimeTableSelection
@@ -12,7 +10,8 @@ from Samples.samples import (
     SubjectWeeklyQuota,
     Classrooms,
     Sections,
-
+    Depatments,
+    InterDepartment
 )
 
 
@@ -26,14 +25,15 @@ def timetable_generation():
         teacher_preferences=TeacherWorkload.teacher_preferences,
         teacher_weekly_workload=TeacherWorkload.Weekly_workLoad,
         special_subjects=SpecialSubjects.special_subjects,
+        labs=SpecialSubjects.Labs,
         subject_quota_limits=SubjectWeeklyQuota.subject_quota,
         labs_list=Classrooms.labs,
         teacher_duty_days=TeacherWorkload.teacher_duty_days,
+        teacher_availability_matrix=InterDepartment.teacher_availability_matrix,
+        teacher_department_mapping=Depatments.teacher_department_mapping,
     )
-
-    timetable = timetable_generator.create_timetable(Defaults.initial_no_of_chromosomes)
-    from icecream import ic
-    ic(timetable)
+    timetable, teacher_availability_matrix = timetable_generator.create_timetable(Defaults.initial_no_of_chromosomes)
+    
     # Fitness of each Chromosome
     fitness_calculator = TimetableFitnessEvaluator(
         timetable,
@@ -50,11 +50,9 @@ def timetable_generation():
 
     fitness_scores = fitness_calculator.evaluate_timetable_fitness()
 
-
     # Selection of all Chromosomes
     selection_object = TimeTableSelection()
     selected_chromosomes = selection_object.select_chromosomes(fitness_scores[1])
-    ic(len(selected_chromosomes))
 
     # Crossover for all selected Chromosomes
     crossover_object = TimeTableCrossOver()
@@ -73,20 +71,13 @@ def timetable_generation():
             crossover_chromosomes.append(child1)
             crossover_chromosomes.append(child2)
 
-
     # Mutate all crossover Chromosomes
     mutation_object = TimeTableMutation()
     mutated_chromosomes = [
         mutation_object.mutate_schedule_for_week(chromosome)
         for chromosome in crossover_chromosomes
     ]
-
-
-    ic(mutated_chromosomes)
-    ic(selected_chromosomes)
-
-    ic(selected_chromosomes)
-    # Store best of Chromosomes
+    
     best_chromosome_score = -1
     best_chromosome = dict()
 
@@ -94,16 +85,20 @@ def timetable_generation():
         if int(week_score) > best_chromosome_score:
             best_chromosome_score = int(week_score)
             best_chromosome = timetable[week_no]
-
-    ic(f"Best Chromosome: {best_chromosome}")
-    return best_chromosome
+            
+    return best_chromosome, teacher_availability_matrix
 
 
 def run_timetable_generation():
+    best_chromosome = None
+    teacher_availability_matrix = None
+    
     for generation in range(Defaults.total_no_of_generations):
-        best_chromosome = timetable_generation()
-    return best_chromosome
-
+        best_chromosome, teacher_availability_matrix = timetable_generation()
+    
+    return best_chromosome, teacher_availability_matrix
 
 if __name__ == "__main__":
-    print(run_timetable_generation())
+    print("Running Timetable Generation...")
+    best_chromosome, teacher_availability_matrix = run_timetable_generation()
+    # print("Timetable Generation Completed.",best_chromosome)
