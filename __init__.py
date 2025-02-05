@@ -1,4 +1,5 @@
 # This is the Orchestrator file, which will govern the flow.
+import json
 
 from Constants.constant import Defaults
 from GA.mutation import TimeTableMutation, TimeTableCrossOver
@@ -11,7 +12,7 @@ from Samples.samples import (
     SpecialSubjects,
     SubjectWeeklyQuota,
     Classrooms,
-    Sections,
+    Sections, InterDepartment,
 
 )
 
@@ -29,9 +30,11 @@ def timetable_generation():
         subject_quota_limits=SubjectWeeklyQuota.subject_quota,
         labs_list=Classrooms.labs,
         teacher_duty_days=TeacherWorkload.teacher_duty_days,
+        labs=SpecialSubjects.Labs,
+        teacher_availability_matrix=InterDepartment.teacher_availability_matrix,
     )
 
-    timetable = timetable_generator.create_timetable(Defaults.initial_no_of_chromosomes)
+    timetable, teacher_avail_matrix = timetable_generator.create_timetable(Defaults.initial_no_of_chromosomes)
     from icecream import ic
     ic(timetable)
     # Fitness of each Chromosome
@@ -54,7 +57,6 @@ def timetable_generation():
     # Selection of all Chromosomes
     selection_object = TimeTableSelection()
     selected_chromosomes = selection_object.select_chromosomes(fitness_scores[1])
-    ic(len(selected_chromosomes))
 
     # Crossover for all selected Chromosomes
     crossover_object = TimeTableCrossOver()
@@ -81,11 +83,6 @@ def timetable_generation():
         for chromosome in crossover_chromosomes
     ]
 
-
-    ic(mutated_chromosomes)
-    ic(selected_chromosomes)
-
-    ic(selected_chromosomes)
     # Store best of Chromosomes
     best_chromosome_score = -1
     best_chromosome = dict()
@@ -95,10 +92,15 @@ def timetable_generation():
             best_chromosome_score = int(week_score)
             best_chromosome = timetable[week_no]
 
-    ic(f"Best Chromosome: {best_chromosome}")
+    return best_chromosome
 
 
 def run_timetable_generation():
+    best_chromosome = dict()
     for generation in range(Defaults.total_no_of_generations):
         best_chromosome = timetable_generation()
     return best_chromosome
+
+
+json_data = json.dumps(run_timetable_generation(), indent=4)
+print(json_data)
