@@ -164,6 +164,7 @@ class TimeTableGeneration:
                         "classroom_id": a_room,
                         "time_slot": next_time
                     })
+                    availability_matrix[a_teacher][day_index][nxt - 1] = False
                     usage[section][a_sub] += 1
                     slot_idx += 1
             slot_idx += 1
@@ -197,4 +198,5 @@ class TimeTableGeneration:
         for w in range(1, num_weeks + 1):
             ws, u_tracker, self.teacher_availability_matrix = self._generate_weekly_schedule()
             timetable[f"Week {w}"] = ws
+        print(self.teacher_availability_matrix)
         return timetable, self.teacher_availability_matrix

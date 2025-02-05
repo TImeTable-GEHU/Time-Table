@@ -39,7 +39,7 @@ class TimetableFitnessEvaluator:
         weekly_fitness_scores = {}
         teacher_workload_tracking = {}
         from icecream import ic
-        ic(self.timetable)
+        # ic(self.timetable)
         for week, week_schedule in self.timetable.items():
             weekly_fitness = 0
             daily_section_fitness_scores[week] = {}
