@@ -1,5 +1,6 @@
 import random
 
+
 class TimeIntervalConstant:
     @staticmethod
     def get_all_time_slots():

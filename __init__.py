@@ -1,20 +1,15 @@
-# This is the Orchestrator file, which will govern the flow.
+# This init is for preloaded values and to test the flow the actual init is inside GA/__init__.py
+
 import json
 
 from Constants.constant import Defaults
-from GA.mutation import TimeTableMutation, TimeTableCrossOver
-from GA.selection import TimeTableSelection
-from GA.fitness import TimetableFitnessEvaluator
 from GA.chromosome import TimeTableGeneration
-from Samples.samples import (
-    SubjectTeacherMap,
-    TeacherWorkload,
-    SpecialSubjects,
-    SubjectWeeklyQuota,
-    Classrooms,
-    Sections, InterDepartment,
-
-)
+from GA.fitness import TimetableFitnessEvaluator
+from GA.mutation import TimeTableCrossOver, TimeTableMutation
+from GA.selection import TimeTableSelection
+from Samples.samples import (InterDepartment, SpecialSubjects,
+                             SubjectTeacherMap, SubjectWeeklyQuota,
+                             TeacherWorkload)
 
 
 def timetable_generation():
@@ -28,15 +23,14 @@ def timetable_generation():
         teacher_weekly_workload=TeacherWorkload.Weekly_workLoad,
         special_subjects=SpecialSubjects.special_subjects,
         subject_quota_limits=SubjectWeeklyQuota.subject_quota,
-        labs_list=Classrooms.labs,
         teacher_duty_days=TeacherWorkload.teacher_duty_days,
         labs=SpecialSubjects.Labs,
         teacher_availability_matrix=InterDepartment.teacher_availability_matrix,
     )
 
     timetable, teacher_avail_matrix = timetable_generator.create_timetable(Defaults.initial_no_of_chromosomes)
-    from icecream import ic
-    ic(timetable)
+
+
     # Fitness of each Chromosome
     fitness_calculator = TimetableFitnessEvaluator(
         timetable,

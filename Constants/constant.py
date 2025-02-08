@@ -6,7 +6,7 @@ class Defaults:
     max_class_capacity = 250
     initial_no_of_chromosomes = 10
     total_no_of_generations = 10
-
+    class_strength = 50
 
 class Sections:
     def __init__(self, section_number):

@@ -1,5 +1,6 @@
 from ortools.sat.python import cp_model
 
+
 def assign_section_to_classes(x_section, y_classrooms, z_time_slots):
     # Create a CP-SAT model
     model = cp_model.CpModel()
@@ -39,7 +40,6 @@ def assign_section_to_classes(x_section, y_classrooms, z_time_slots):
         print("No feasible solution found.")
 
 from datetime import datetime
-
 
 start_time = datetime.now()
 

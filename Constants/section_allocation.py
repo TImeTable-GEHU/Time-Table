@@ -1,7 +1,8 @@
 import random
 from collections import defaultdict
-from typing import List, Dict
-from Constants.constant import SectionsConstants
+from typing import Dict, List
+
+from Constants.constant import Defaults, SectionsConstants
 
 
 class StudentScorer:
@@ -151,8 +152,7 @@ if __name__ == "__main__":
     students_with_scores = scorer.assign_scores_to_students(students)
 
     # Divide students into sections
-    class_strength = 50
-    sections = scorer.divide_students_into_sections(students_with_scores, class_strength)
+    sections = scorer.divide_students_into_sections(students_with_scores, Defaults.class_strength)
 
     # Display the sections
     for i, section in enumerate(sections, 1):

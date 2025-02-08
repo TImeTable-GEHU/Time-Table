@@ -1,5 +1,8 @@
 import psycopg2
+
 from Samples.samples import SampleChromosome
+
+
 class IsConflict:
     def __init__(self, dbname="timetable", user="postgres", password="root", host="localhost", port="5432"):
         self.dbname = dbname
