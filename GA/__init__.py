@@ -1,6 +1,7 @@
 # This is the Orchestrator file, which will govern the flow.
 
 from Constants.constant import Defaults
+from Constants.helper_routines import update_teacher_availability_matrix
 from GA.chromosome import TimeTableGeneration
 from GA.fitness import TimetableFitnessEvaluator
 from GA.mutation import TimeTableCrossOver, TimeTableMutation
@@ -8,14 +9,6 @@ from GA.selection import TimeTableSelection
 from Samples.samples import (InterDepartment, SpecialSubjects,
                              SubjectTeacherMap, SubjectWeeklyQuota,
                              TeacherWorkload)
-
-
-def update_teacher_availability_matrix(teacher_availability_matrix, best_chromosome):
-
-    for teacher_id, schedule_data in best_chromosome.items():
-        if teacher_id in teacher_availability_matrix:
-            teacher_availability_matrix[teacher_id] = schedule_data
-    return teacher_availability_matrix
 
 
 def timetable_generation(
@@ -98,7 +91,10 @@ def timetable_generation(
             best_chromosome = timetable[w_no]
 
     if best_chromosome:
-        teacher_availability_matrix = update_teacher_availability_matrix(teacher_availability_matrix, best_chromosome)
+        teacher_availability_matrix = update_teacher_availability_matrix(
+            teacher_availability_matrix,
+            best_chromosome
+        )
 
     return best_chromosome, teacher_availability_matrix, selected_chromosomes, mutated_chromosomes
 
