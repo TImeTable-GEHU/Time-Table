@@ -1,5 +1,6 @@
-import random
 import copy
+import random
+
 
 class Mutation:
     def __init__(self, mutation_rate= random.random()):

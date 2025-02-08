@@ -156,6 +156,37 @@ class TeacherWorkload:
         "VD25": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday"],
         "AK26": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday"],
     }
+
+class InterDepartment:
+  teacher_availability_matrix = {
+        "AB01": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "PK02": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "SS03": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "AA04": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "AC05": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "SP06": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "DP07": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "AD08": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "RD09": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "BJ10": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "RS11": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "JM12": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "NJ13": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "PM14": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "AA15": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "SJ16": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "AB17": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "HP18": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "SG19": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "DT20": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "PA21": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "NB22": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "AK23": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "AP24": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "VD25": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "AK26": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+    }
+
 class SampleChromosome:
     schedule1={
             "Monday": {

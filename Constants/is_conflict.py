@@ -1,4 +1,5 @@
 import psycopg2
+
 from Samples.samples import SampleChromosome
 
 

@@ -1,5 +1,6 @@
 import random
 
+
 def mutate_time_slots_in_section(schedule, section):
     """
     Mutates the time slots within a particular section by shuffling them.
