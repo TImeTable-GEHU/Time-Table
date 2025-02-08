@@ -11,7 +11,7 @@ def update_matrix_for_best(best_chromosome, teacher_availability_matrix, day_map
         Set teacher_availability_matrix[teacher_id][day_index][slot_index] = False
         for every (day, slot) where teacher_id != 'None' in the best chromosome.
     """
-    # print(teacher_availability_matrix)
+
     for day_name, section_dict in best_chromosome.items():
         if day_name not in day_map:
             continue  # or raise an error
@@ -27,8 +27,6 @@ def update_matrix_for_best(best_chromosome, teacher_availability_matrix, day_map
                 if time_slot_str not in time_slot_map:
                     continue  # or raise an error
                 slot_index = time_slot_map[time_slot_str]
-                print(teacher_id, day_index, slot_index)
-                print(teacher_availability_matrix)
 
                 # Now set availability to False
                 teacher_availability_matrix[teacher_id][day_index][slot_index - 1] = False
