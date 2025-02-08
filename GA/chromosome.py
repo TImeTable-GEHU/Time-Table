@@ -127,7 +127,7 @@ class TimeTableGeneration:
                         and len(teacher_availability_matrix[teacher][day_index]) > (slot_index - 1)
                         and teacher_availability_matrix[teacher][day_index][slot_index - 1]
                     ):
-                        teacher_availability_matrix[teacher][day_index][slot_index - 1] = False
+                        # teacher_availability_matrix[teacher][day_index][slot_index - 1] = False
                         assigned_teacher = teacher
                         teacher_workload_tracker[assigned_teacher] += 1
                         selected_subject = subject

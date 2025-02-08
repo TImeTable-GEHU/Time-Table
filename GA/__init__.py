@@ -1,7 +1,8 @@
 # This is the Orchestrator file, which will govern the flow.
 
 from Constants.constant import Defaults
-from Constants.helper_routines import update_teacher_availability_matrix
+from Constants.helper_routines import update_teacher_availability_matrix, update_matrix_for_best, \
+    initialize_teacher_availability
 from GA.chromosome import TimeTableGeneration
 from GA.fitness import TimetableFitnessEvaluator
 from GA.mutation import TimeTableCrossOver, TimeTableMutation
@@ -150,9 +151,36 @@ if __name__ == "__main__":
         labs=SpecialSubjects.Labs,
         subject_quota_limits=SubjectWeeklyQuota.subject_quota,
         teacher_duty_days=TeacherWorkload.teacher_duty_days,
-        teacher_availability_matrix=InterDepartment.teacher_availability_matrix,
+        teacher_availability_matrix=initialize_teacher_availability(
+            TeacherWorkload.Weekly_workLoad.keys(),
+            5,
+            8
+        ),
         total_generations=Defaults.total_no_of_generations
     )
 
     from icecream import ic
+    ic(best)
+    correct_teacher_availability_matrix = update_matrix_for_best(
+        best,
+        correct_teacher_availability_matrix,
+        {
+            "Monday": 0,
+            "Tuesday": 1,
+            "Wednesday": 2,
+            "Thursday": 3,
+            "Friday": 4,
+            "Saturday": 5,
+            "Sunday": 6
+        },{
+            "08:00 - 09:00": 1,
+            "09:00 - 10:00": 2,
+            "10:00 - 11:00": 3,
+            "11:00 - 12:00": 4,
+            "12:00 - 13:00": 5,
+            "13:50 - 14:50": 6,
+            "14:50 - 15:50": 7,
+            "16:50 - 17:50": 8
+        }
+    )
     ic(best, correct_teacher_availability_matrix)
