@@ -126,7 +126,6 @@ if __name__ == "__main__":
         teacher_weekly_workload=TeacherWorkload.Weekly_workLoad,
         special_subjects=SpecialSubjects.special_subjects,
         subject_quota_limits=SubjectWeeklyQuota.subject_quota,
-        labs_list=SpecialSubjects.Labs,
         teacher_duty_days=TeacherWorkload.teacher_duty_days,
     )
     generated_timetables = timetable_generator.create_timetable(5)
