@@ -5,9 +5,8 @@ setup(
     packages=find_packages(include=["GA", "Samples", "Constants"]),
     version="v0.1.0",
     description="This Library generates timetable and is a plug and play solution for any python based backend service.",
-    long_description=open("README.md",encoding="utf-8").read(),
-    long_description_content_type="text/markdown",
-    author="Graphic Era Hill University, Bhimtal",,
+    long_description=open("README.md", encoding="utf-8").read(),
+    authors=["Graphic Era Hill University, Bhimtal"],
     license="MIT",
     install_requires=[
         "psycopg2-binary==2.9.9",
