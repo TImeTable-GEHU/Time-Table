@@ -3,7 +3,7 @@ import json
 from Constants.constant import Defaults, PenaltyConstants
 from Constants.time_intervals import TimeIntervalConstant
 from GA.chromosome import TimeTableGeneration
-from Samples.samples import (Classrooms, SpecialSubjects, SubjectTeacherMap,
+from Samples.samples import (SpecialSubjects, SubjectTeacherMap,
                              SubjectWeeklyQuota, TeacherWorkload)
 
 
@@ -107,7 +107,6 @@ class TimetableFitnessEvaluator:
                 weekly_fitness += day_fitness
 
             weekly_fitness_scores[week] = weekly_fitness
-
         return daily_section_fitness_scores, weekly_fitness_scores
 
 

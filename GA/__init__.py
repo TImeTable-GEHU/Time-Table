@@ -7,9 +7,10 @@ from GA.chromosome import TimeTableGeneration
 from GA.fitness import TimetableFitnessEvaluator
 from GA.mutation import TimeTableCrossOver, TimeTableMutation
 from GA.selection import TimeTableSelection
+from Constants.time_intervals import TimeIntervalConstant
 from Samples.samples import (InterDepartment, SpecialSubjects,
                              SubjectTeacherMap, SubjectWeeklyQuota,
-                             TeacherWorkload)
+                             TeacherWorkload,RoomCapacity)
 
 
 def timetable_generation(
@@ -40,19 +41,18 @@ def timetable_generation(
         teacher_duty_days=teacher_duty_days,
         teacher_availability_matrix=teacher_availability_matrix,
     )
-
     timetable, teacher_availability_matrix = timetable_generator.create_timetable(
         Defaults.initial_no_of_chromosomes
     )
-
+    # print(timetable)
     fitness_calculator = TimetableFitnessEvaluator(
         timetable,
-        timetable_generator.sections_manager.sections,
+        timetable_generator.sections_manager.keys(),
         SubjectTeacherMap.subject_teacher_map,
-        timetable_generator.classrooms_manager.classrooms,
-        timetable_generator.classrooms_manager.labs,
-        timetable_generator.room_capacity_manager.room_capacity,
-        timetable_generator.room_capacity_manager.section_strength,
+        timetable_generator.classrooms_manager.keys(),
+        timetable_generator.lab_capacity_manager.keys(),
+        timetable_generator.classrooms_manager,
+        timetable_generator.sections_manager,
         timetable_generator.subject_quota_limits,
         timetable_generator.teacher_availability_preferences,
         timetable_generator.weekly_workload,
@@ -142,9 +142,9 @@ def run_timetable_generation(
 if __name__ == "__main__":
     best, correct_teacher_availability_matrix = run_timetable_generation(
         teacher_subject_mapping=SubjectTeacherMap.subject_teacher_map,
-        total_sections=6,
-        total_classrooms=8,
-        total_labs=3,
+        total_sections=RoomCapacity.section_strength,
+        total_classrooms=RoomCapacity.room_capacity,
+        total_labs=RoomCapacity.lab_capacity,
         teacher_preferences=TeacherWorkload.teacher_preferences,
         teacher_weekly_workload=TeacherWorkload.Weekly_workLoad,
         special_subjects=SpecialSubjects.special_subjects,
@@ -154,7 +154,7 @@ if __name__ == "__main__":
         teacher_availability_matrix=initialize_teacher_availability(
             TeacherWorkload.Weekly_workLoad.keys(),
             5,
-            8
+            7
         ),
         total_generations=Defaults.total_no_of_generations
     )
@@ -180,7 +180,6 @@ if __name__ == "__main__":
             "12:00 - 13:00": 5,
             "13:50 - 14:50": 6,
             "14:50 - 15:50": 7,
-            "16:50 - 17:50": 8
         }
     )
-    ic(best, correct_teacher_availability_matrix)
+    # ic(best, correct_teacher_availability_matrix)

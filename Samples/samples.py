@@ -22,22 +22,10 @@ class SubjectTeacherMap:
 class WorkingDays:
     days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
-
-class Sections:
-    sections = []
-
-    def __init__(self, section_number):
-        self.sections = [chr(65 + i) for i in range(section_number)]
-
-
-class Classrooms:
-    classrooms = ["R1", "R2", "R3", "R4", "R5"]
-    labs = ["L1", "L2", "L3", "L4", "L5"]
-
-
 class RoomCapacity:
     room_capacity = {"R1": 200, "R2": 230, "R3": 240, "R4": 250, "R5": 250}
-    section_strength = {"A": 200, "B": 200, "C": 200, "D": 100}
+    section_strength = {"A": 70, "B": 100, "C": 75, "D": 100}
+    lab_capacity={"L1":70,"L2":50,"L3":70,"L4":50,"L5":70,"L6":50}
 
 
 class SubjectWeeklyQuota:
@@ -186,7 +174,17 @@ class InterDepartment:
         "VD25": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
         "AK26": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
     }
-
+  
+class Lab_availability:
+  lab_availability_matrix = {
+        "L1": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "L2": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "L3": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "L4": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "L5": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+        "L6": [[True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True], [True, True, True, True, True, True, True]],
+    }
+  
 class SampleChromosome:
     schedule1={
             "Monday": {

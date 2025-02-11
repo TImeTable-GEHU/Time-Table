@@ -110,5 +110,5 @@ slot_numbers = TimeIntervalConstant.get_all_slot_numbers()
 time_slots = TimeIntervalConstant.get_all_time_slots()
 
 
-print("Slot Numbers:", slot_numbers)
-print("Time Slots:", time_slots)
+# print("Slot Numbers:", slot_numbers)
+# print("Time Slots:", time_slots)
