@@ -31,7 +31,7 @@ class StudentScorer:
         """
 
         sorted_cgpas = sorted(
-            (student['CGPA'] for student in students),
+            (student['cgpa'] for student in students),
             reverse=True
         )
 
@@ -46,7 +46,7 @@ class StudentScorer:
         Args:
             cgpa_threshold (float): The CGPA threshold for "good_cgpa".
         """
-        SectionsConstants.ATTRIBUTE_CONDITIONS['good_cgpa'] = lambda student: student['CGPA'] >= cgpa_threshold
+        SectionsConstants.ATTRIBUTE_CONDITIONS['good_cgpa'] = lambda student: student['cgpa'] >= cgpa_threshold
 
 
     def calculate_student_score(self, student: Dict) -> int:

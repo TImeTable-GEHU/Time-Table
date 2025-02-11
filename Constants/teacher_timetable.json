@@ -1,0 +1,1050 @@
+{
+    "AB01": {
+        "Monday": [
+            {
+                "course": "Week 2",
+                "section": "B",
+                "subject_id": "TCS-531",
+                "time_slot": "2:15 - 3:10",
+                "classroom_id": "R2"
+            },
+            {
+                "course": "Week 1",
+                "section": "D",
+                "subject_id": "TCS-531",
+                "time_slot": "1:20 - 2:15",
+                "classroom_id": "R4"
+            }
+        ],
+        "Tuesday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "TCS-531",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "R1"
+            },
+            {
+                "course": "Week 1",
+                "section": "B",
+                "subject_id": "TCS-531",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "R2"
+            }
+        ],
+        "Wednesday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "TCS-531",
+                "time_slot": "11:10 - 12:05",
+                "classroom_id": "R3"
+            }
+        ],
+        "Thursday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "TCS-531",
+                "time_slot": "3:30 - 4:25",
+                "classroom_id": "R3"
+            }
+        ],
+        "Friday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "TCS-531",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "R3"
+            }
+        ],
+        "Saturday": []
+    },
+    "PK02": {
+        "Monday": [],
+        "Tuesday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "TCS-531",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "R3"
+            },
+            {
+                "course": "Week 1",
+                "section": "C",
+                "subject_id": "TCS-531",
+                "time_slot": "1:20 - 2:15",
+                "classroom_id": "R3"
+            }
+        ],
+        "Wednesday": [
+            {
+                "course": "Week 2",
+                "section": "D",
+                "subject_id": "TCS-531",
+                "time_slot": "2:15 - 3:10",
+                "classroom_id": "R4"
+            }
+        ],
+        "Thursday": [
+            {
+                "course": "Week 1",
+                "section": "D",
+                "subject_id": "TCS-531",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "R4"
+            }
+        ],
+        "Friday": [],
+        "Saturday": []
+    },
+    "SS03": {
+        "Monday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "TCS-502",
+                "time_slot": "3:30 - 4:25",
+                "classroom_id": "R1"
+            }
+        ],
+        "Tuesday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "TCS-502",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "R1"
+            },
+            {
+                "course": "Week 1",
+                "section": "B",
+                "subject_id": "TCS-502",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "R2"
+            }
+        ],
+        "Wednesday": [
+            {
+                "course": "Week 2",
+                "section": "B",
+                "subject_id": "TCS-502",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "R2"
+            }
+        ],
+        "Thursday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "TCS-502",
+                "time_slot": "2:15 - 3:10",
+                "classroom_id": "R1"
+            }
+        ],
+        "Friday": [],
+        "Saturday": []
+    },
+    "AA04": {
+        "Monday": [],
+        "Tuesday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "TCS-502",
+                "time_slot": "3:30 - 4:25",
+                "classroom_id": "R3"
+            }
+        ],
+        "Wednesday": [],
+        "Thursday": [
+            {
+                "course": "Week 2",
+                "section": "B",
+                "subject_id": "TCS-502",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "R2"
+            }
+        ],
+        "Friday": [
+            {
+                "course": "Week 2",
+                "section": "D",
+                "subject_id": "TCS-502",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "R4"
+            }
+        ],
+        "Saturday": []
+    },
+    "AC05": {
+        "Monday": [],
+        "Tuesday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "TCS-503",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "R3"
+            },
+            {
+                "course": "Week 2",
+                "section": "D",
+                "subject_id": "TCS-502",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "R4"
+            }
+        ],
+        "Wednesday": [
+            {
+                "course": "Week 1",
+                "section": "D",
+                "subject_id": "TCS-503",
+                "time_slot": "11:10 - 12:05",
+                "classroom_id": "R4"
+            }
+        ],
+        "Thursday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "TCS-503",
+                "time_slot": "1:20 - 2:15",
+                "classroom_id": "R3"
+            }
+        ],
+        "Friday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "TCS-503",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "R3"
+            }
+        ],
+        "Saturday": []
+    },
+    "SP06": {
+        "Monday": [
+            {
+                "course": "Week 2",
+                "section": "B",
+                "subject_id": "TCS-503",
+                "time_slot": "1:20 - 2:15",
+                "classroom_id": "R2"
+            }
+        ],
+        "Tuesday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "TCS-503",
+                "time_slot": "11:10 - 12:05",
+                "classroom_id": "R1"
+            },
+            {
+                "course": "Week 1",
+                "section": "C",
+                "subject_id": "TCS-503",
+                "time_slot": "2:15 - 3:10",
+                "classroom_id": "R3"
+            }
+        ],
+        "Wednesday": [
+            {
+                "course": "Week 2",
+                "section": "D",
+                "subject_id": "PCS-503",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "L4"
+            },
+            {
+                "course": "Week 2",
+                "section": "D",
+                "subject_id": "PCS-503",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "L4"
+            }
+        ],
+        "Thursday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "TCS-503",
+                "time_slot": "3:30 - 4:25",
+                "classroom_id": "R1"
+            }
+        ],
+        "Friday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "TCS-503",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "R1"
+            }
+        ],
+        "Saturday": []
+    },
+    "DP07": {
+        "Monday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "PCS-503",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "L4"
+            },
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "PCS-503",
+                "time_slot": "11:10 - 12:05",
+                "classroom_id": "L4"
+            },
+            {
+                "course": "Week 1",
+                "section": "C",
+                "subject_id": "TCS-503",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "R3"
+            }
+        ],
+        "Tuesday": [],
+        "Wednesday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "PCS-503",
+                "time_slot": "2:15 - 3:10",
+                "classroom_id": "L1"
+            },
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "PCS-503",
+                "time_slot": "1:20 - 2:15",
+                "classroom_id": "L1"
+            }
+        ],
+        "Thursday": [
+            {
+                "course": "Week 2",
+                "section": "B",
+                "subject_id": "TCS-503",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "R2"
+            }
+        ],
+        "Friday": [],
+        "Saturday": []
+    },
+    "AD08": {
+        "Monday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "PCS-506",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "L5"
+            },
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "PCS-506",
+                "time_slot": "11:10 - 12:05",
+                "classroom_id": "L5"
+            }
+        ],
+        "Tuesday": [
+            {
+                "course": "Week 2",
+                "section": "D",
+                "subject_id": "PCS-506",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "L3"
+            },
+            {
+                "course": "Week 2",
+                "section": "D",
+                "subject_id": "PCS-506",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "L3"
+            }
+        ],
+        "Wednesday": [],
+        "Thursday": [],
+        "Friday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "PCS-506",
+                "time_slot": "2:15 - 3:10",
+                "classroom_id": "L5"
+            },
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "PCS-506",
+                "time_slot": "1:20 - 2:15",
+                "classroom_id": "L5"
+            }
+        ],
+        "Saturday": []
+    },
+    "RD09": {
+        "Monday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "PCS-506",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "L5"
+            },
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "PCS-506",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "L5"
+            }
+        ],
+        "Tuesday": [],
+        "Wednesday": [],
+        "Thursday": [],
+        "Friday": [],
+        "Saturday": []
+    },
+    "BJ10": {
+        "Monday": [
+            {
+                "course": "Week 1",
+                "section": "A",
+                "subject_id": "TMA-502",
+                "time_slot": "1:20 - 2:15",
+                "classroom_id": "R1"
+            }
+        ],
+        "Tuesday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "TMA-502",
+                "time_slot": "2:15 - 3:10",
+                "classroom_id": "R3"
+            }
+        ],
+        "Wednesday": [
+            {
+                "course": "Week 2",
+                "section": "B",
+                "subject_id": "TMA-502",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "R2"
+            }
+        ],
+        "Thursday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "TMA-502",
+                "time_slot": "11:10 - 12:05",
+                "classroom_id": "R1"
+            }
+        ],
+        "Friday": [
+            {
+                "course": "Week 1",
+                "section": "B",
+                "subject_id": "TMA-502",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "R2"
+            }
+        ],
+        "Saturday": []
+    },
+    "RS11": {
+        "Monday": [
+            {
+                "course": "Week 2",
+                "section": "B",
+                "subject_id": "PCS-503",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "L3"
+            },
+            {
+                "course": "Week 2",
+                "section": "B",
+                "subject_id": "PCS-503",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "L3"
+            }
+        ],
+        "Tuesday": [],
+        "Wednesday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "PCS-503",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "L3"
+            },
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "PCS-503",
+                "time_slot": "11:10 - 12:05",
+                "classroom_id": "L3"
+            }
+        ],
+        "Thursday": [
+            {
+                "course": "Week 1",
+                "section": "B",
+                "subject_id": "TMA-502",
+                "time_slot": "1:20 - 2:15",
+                "classroom_id": "R2"
+            }
+        ],
+        "Friday": [
+            {
+                "course": "Week 1",
+                "section": "B",
+                "subject_id": "PCS-503",
+                "time_slot": "2:15 - 3:10",
+                "classroom_id": "L3"
+            }
+        ],
+        "Saturday": []
+    },
+    "JM12": {
+        "Monday": [],
+        "Tuesday": [],
+        "Wednesday": [
+            {
+                "course": "Week 1",
+                "section": "D",
+                "subject_id": "TMA-502",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "R4"
+            }
+        ],
+        "Thursday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "TMA-502",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "R3"
+            },
+            {
+                "course": "Week 1",
+                "section": "D",
+                "subject_id": "TMA-502",
+                "time_slot": "11:10 - 12:05",
+                "classroom_id": "R4"
+            }
+        ],
+        "Friday": [],
+        "Saturday": []
+    },
+    "NJ13": {
+        "Monday": [],
+        "Tuesday": [],
+        "Wednesday": [],
+        "Thursday": [
+            {
+                "course": "Week 2",
+                "section": "D",
+                "subject_id": "TMA-502",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "R4"
+            }
+        ],
+        "Friday": [],
+        "Saturday": []
+    },
+    "PM14": {
+        "Monday": [
+            {
+                "course": "Week 2",
+                "section": "D",
+                "subject_id": "PMA-502",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "L1"
+            },
+            {
+                "course": "Week 2",
+                "section": "D",
+                "subject_id": "PMA-502",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "L1"
+            },
+            {
+                "course": "Week 1",
+                "section": "B",
+                "subject_id": "PMA-502",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "L4"
+            },
+            {
+                "course": "Week 1",
+                "section": "B",
+                "subject_id": "PMA-502",
+                "time_slot": "11:10 - 12:05",
+                "classroom_id": "L4"
+            }
+        ],
+        "Tuesday": [],
+        "Wednesday": [],
+        "Thursday": [],
+        "Friday": [
+            {
+                "course": "Week 1",
+                "section": "C",
+                "subject_id": "PMA-502",
+                "time_slot": "2:15 - 3:10",
+                "classroom_id": "L5"
+            },
+            {
+                "course": "Week 1",
+                "section": "C",
+                "subject_id": "PMA-502",
+                "time_slot": "1:20 - 2:15",
+                "classroom_id": "L5"
+            }
+        ],
+        "Saturday": []
+    },
+    "AA15": {
+        "Monday": [],
+        "Tuesday": [],
+        "Wednesday": [],
+        "Thursday": [],
+        "Friday": [],
+        "Saturday": []
+    },
+    "SJ16": {
+        "Monday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "TCS-509",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "R1"
+            },
+            {
+                "course": "Week 1",
+                "section": "A",
+                "subject_id": "TCS-509",
+                "time_slot": "2:15 - 3:10",
+                "classroom_id": "R1"
+            }
+        ],
+        "Tuesday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "TCS-509",
+                "time_slot": "3:30 - 4:25",
+                "classroom_id": "R1"
+            }
+        ],
+        "Wednesday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "TCS-509",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "R1"
+            }
+        ],
+        "Thursday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "TCS-509",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "R1"
+            }
+        ],
+        "Friday": [],
+        "Saturday": []
+    },
+    "AB17": {
+        "Monday": [
+            {
+                "course": "Week 2",
+                "section": "B",
+                "subject_id": "TCS-509",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "R2"
+            },
+            {
+                "course": "Week 1",
+                "section": "B",
+                "subject_id": "TCS-509",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "R2"
+            }
+        ],
+        "Tuesday": [],
+        "Wednesday": [
+            {
+                "course": "Week 2",
+                "section": "B",
+                "subject_id": "TCS-509",
+                "time_slot": "11:10 - 12:05",
+                "classroom_id": "R2"
+            },
+            {
+                "course": "Week 1",
+                "section": "B",
+                "subject_id": "TCS-509",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "R2"
+            }
+        ],
+        "Thursday": [],
+        "Friday": [
+            {
+                "course": "Week 1",
+                "section": "C",
+                "subject_id": "TCS-509",
+                "time_slot": "3:30 - 4:25",
+                "classroom_id": "R3"
+            }
+        ],
+        "Saturday": []
+    },
+    "HP18": {
+        "Monday": [
+            {
+                "course": "Week 1",
+                "section": "C",
+                "subject_id": "TCS-509",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "R3"
+            }
+        ],
+        "Tuesday": [],
+        "Wednesday": [
+            {
+                "course": "Week 2",
+                "section": "D",
+                "subject_id": "TCS-509",
+                "time_slot": "3:30 - 4:25",
+                "classroom_id": "R4"
+            }
+        ],
+        "Thursday": [],
+        "Friday": [
+            {
+                "course": "Week 2",
+                "section": "D",
+                "subject_id": "TCS-509",
+                "time_slot": "11:10 - 12:05",
+                "classroom_id": "R4"
+            },
+            {
+                "course": "Week 1",
+                "section": "D",
+                "subject_id": "TCS-509",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "R4"
+            }
+        ],
+        "Saturday": []
+    },
+    "SG19": {
+        "Monday": [
+            {
+                "course": "Week 1",
+                "section": "D",
+                "subject_id": "TCS-509",
+                "time_slot": "2:15 - 3:10",
+                "classroom_id": "R4"
+            }
+        ],
+        "Tuesday": [
+            {
+                "course": "Week 1",
+                "section": "D",
+                "subject_id": "TCS-509",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "R4"
+            }
+        ],
+        "Wednesday": [],
+        "Thursday": [],
+        "Friday": [],
+        "Saturday": []
+    },
+    "DT20": {
+        "Monday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "XCS-501",
+                "time_slot": "1:20 - 2:15",
+                "classroom_id": "R1"
+            }
+        ],
+        "Tuesday": [
+            {
+                "course": "Week 2",
+                "section": "D",
+                "subject_id": "XCS-501",
+                "time_slot": "11:10 - 12:05",
+                "classroom_id": "R4"
+            },
+            {
+                "course": "Week 1",
+                "section": "D",
+                "subject_id": "XCS-501",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "R4"
+            }
+        ],
+        "Wednesday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "XCS-501",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "R1"
+            }
+        ],
+        "Thursday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "XCS-501",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "R3"
+            }
+        ],
+        "Friday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "XCS-501",
+                "time_slot": "3:30 - 4:25",
+                "classroom_id": "R3"
+            }
+        ],
+        "Saturday": []
+    },
+    "PA21": {
+        "Monday": [
+            {
+                "course": "Week 2",
+                "section": "B",
+                "subject_id": "XCS-501",
+                "time_slot": "3:30 - 4:25",
+                "classroom_id": "R2"
+            }
+        ],
+        "Tuesday": [
+            {
+                "course": "Week 2",
+                "section": "B",
+                "subject_id": "XCS-501",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "R2"
+            }
+        ],
+        "Wednesday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "XCS-501",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "R3"
+            }
+        ],
+        "Thursday": [
+            {
+                "course": "Week 2",
+                "section": "D",
+                "subject_id": "XCS-501",
+                "time_slot": "11:10 - 12:05",
+                "classroom_id": "R4"
+            }
+        ],
+        "Friday": [],
+        "Saturday": []
+    },
+    "NB22": {
+        "Monday": [
+            {
+                "course": "Week 2",
+                "section": "D",
+                "subject_id": "XCS-501",
+                "time_slot": "11:10 - 12:05",
+                "classroom_id": "R4"
+            }
+        ],
+        "Tuesday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "XCS-501",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "R3"
+            },
+            {
+                "course": "Week 1",
+                "section": "C",
+                "subject_id": "XCS-501",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "R3"
+            }
+        ],
+        "Wednesday": [
+            {
+                "course": "Week 2",
+                "section": "D",
+                "subject_id": "XCS-501",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "R4"
+            }
+        ],
+        "Thursday": [],
+        "Friday": [],
+        "Saturday": []
+    },
+    "AK23": {
+        "Monday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "CSP-501",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "R1"
+            },
+            {
+                "course": "Week 1",
+                "section": "D",
+                "subject_id": "CSP-501",
+                "time_slot": "3:30 - 4:25",
+                "classroom_id": "R4"
+            }
+        ],
+        "Tuesday": [
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "CSP-501",
+                "time_slot": "11:10 - 12:05",
+                "classroom_id": "R3"
+            }
+        ],
+        "Wednesday": [],
+        "Thursday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "CSP-501",
+                "time_slot": "1:20 - 2:15",
+                "classroom_id": "R1"
+            },
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "CSP-501",
+                "time_slot": "2:15 - 3:10",
+                "classroom_id": "R3"
+            },
+            {
+                "course": "Week 2",
+                "section": "D",
+                "subject_id": "CSP-501",
+                "time_slot": "12:05 - 1:00",
+                "classroom_id": "R4"
+            }
+        ],
+        "Friday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "CSP-501",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "R1"
+            }
+        ],
+        "Saturday": []
+    },
+    "AP24": {
+        "Monday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "SCS-501",
+                "time_slot": "2:15 - 3:10",
+                "classroom_id": "R1"
+            },
+            {
+                "course": "Week 2",
+                "section": "B",
+                "subject_id": "SCS-501",
+                "time_slot": "11:10 - 12:05",
+                "classroom_id": "R2"
+            }
+        ],
+        "Tuesday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "SCS-501",
+                "time_slot": "9:55 - 10:50",
+                "classroom_id": "R1"
+            },
+            {
+                "course": "Week 2",
+                "section": "C",
+                "subject_id": "SCS-501",
+                "time_slot": "1:20 - 2:15",
+                "classroom_id": "R3"
+            }
+        ],
+        "Wednesday": [
+            {
+                "course": "Week 2",
+                "section": "B",
+                "subject_id": "SCS-501",
+                "time_slot": "9:00 - 9:55",
+                "classroom_id": "R2"
+            }
+        ],
+        "Thursday": [],
+        "Friday": [],
+        "Saturday": []
+    },
+    "VD25": {
+        "Monday": [],
+        "Tuesday": [],
+        "Wednesday": [],
+        "Thursday": [],
+        "Friday": [],
+        "Saturday": []
+    },
+    "AK26": {
+        "Monday": [],
+        "Tuesday": [
+            {
+                "course": "Week 2",
+                "section": "A",
+                "subject_id": "Placement_Class",
+                "time_slot": "2:15 - 3:10",
+                "classroom_id": "R1"
+            }
+        ],
+        "Wednesday": [],
+        "Thursday": [],
+        "Friday": [],
+        "Saturday": []
+    }
+}
