@@ -150,15 +150,16 @@ class TimeTableGeneration:
 
         return assigned_teacher, selected_subject, assigned_room
 
-
     def _generate_section_schedule(
-        self,
-        section,
-        half_day_sections,
-        section_subject_usage_tracker,
-        teacher_workload_tracker,
-        teacher_availability_matrix,
-        day_index
+            self,
+            section,
+            half_day_sections,
+            section_subject_usage_tracker,
+            teacher_workload_tracker,
+            teacher_availability_matrix,
+            day_index,
+            section_strength=100,
+            labs_capacity: dict = {"L1": 50, "L2": 50}
     ):
         section_schedule = []
         subjects_scheduled_today = set()
@@ -174,29 +175,90 @@ class TimeTableGeneration:
                 teacher_availability_matrix, day_index
             )
 
-            section_schedule.append({
-                "teacher_id": assigned_teacher,
-                "subject_id": assigned_subject,
-                "classroom_id": assigned_room,
-                "time_slot": time_slot
-            })
+            # Non-lab subjects (or labs when no special handling is needed)
+            if assigned_subject not in self.lab_subject_list:
+                section_schedule.append({
+                    "teacher_id": assigned_teacher,
+                    "subject_id": assigned_subject,
+                    "classroom_id": assigned_room,
+                    "time_slot": time_slot,
+                    "group": "all"
+                })
+                if assigned_subject != "Library":
+                    section_subject_usage_tracker[section][assigned_subject] += 1
+                slot_index += 1
+            else:
+                # split section, out section is too large.
+                if (section_strength is not None and labs_capacity is not None and
+                        assigned_room in labs_capacity and section_strength > labs_capacity[assigned_room]):
 
-            if assigned_subject != "Library":
-                section_subject_usage_tracker[section][assigned_subject] += 1
+                    # Look for an alternative lab room for group 2.
+                    lab2 = None
+                    for lab in self.classrooms_manager.labs:
+                        if lab != assigned_room and lab in labs_capacity:
+                            # Check if lab2 can accommodate the remaining students.
+                            if labs_capacity[lab] >= section_strength - labs_capacity[assigned_room]:
+                                lab2 = lab
+                                break
 
-            if assigned_subject in self.lab_subject_list:
-                if slot_index + 1 <= total_slots_for_section:
-                    next_time_slot = self.available_time_slots[slot_index + 1]
+                    if lab2 is None:
+                        raise ValueError("Insufficient lab capacity to split section for lab subject.")
+
+                    # Use two consecutive slots (if available) for the two groups.
+                    if slot_index + 1 <= total_slots_for_section:
+                        next_time_slot = self.available_time_slots[slot_index + 1]
+                        section_schedule.append({
+                            "teacher_id": assigned_teacher,
+                            "subject_id": assigned_subject,
+                            "classroom_id": assigned_room,
+                            "time_slot": time_slot,
+                            "group": 1
+                        })
+                        section_schedule.append({
+                            "teacher_id": assigned_teacher,
+                            "subject_id": assigned_subject,
+                            "classroom_id": lab2,
+                            "time_slot": next_time_slot,
+                            "group": 2
+                        })
+                        section_subject_usage_tracker[section][assigned_subject] += 2
+                        slot_index += 2
+
+                    else:
+                        # Not enough slots to assign both groups; fall back to a single session.
+                        section_schedule.append({
+                            "teacher_id": assigned_teacher,
+                            "subject_id": assigned_subject,
+                            "classroom_id": assigned_room,
+                            "time_slot": time_slot,
+                            "group": 1
+                        })
+                        section_subject_usage_tracker[section][assigned_subject] += 1
+                        slot_index += 1
+                else:
+                    # No split needed; assign lab in double slot if possible.
                     section_schedule.append({
                         "teacher_id": assigned_teacher,
                         "subject_id": assigned_subject,
                         "classroom_id": assigned_room,
-                        "time_slot": next_time_slot
+                        "time_slot": time_slot,
+                        "group": 1
                     })
-                    section_subject_usage_tracker[section][assigned_subject] += 1
-                    slot_index += 1  # Skip the next slot as it's taken by the lab subject
+                    if slot_index + 1 <= total_slots_for_section:
+                        next_time_slot = self.available_time_slots[slot_index + 1]
+                        section_schedule.append({
+                            "teacher_id": assigned_teacher,
+                            "subject_id": assigned_subject,
+                            "classroom_id": assigned_room,
+                            "time_slot": next_time_slot,
+                            "group": 1
+                        })
+                        section_subject_usage_tracker[section][assigned_subject] += 2
+                        slot_index += 2
 
-            slot_index += 1
+                    else:
+                        section_subject_usage_tracker[section][assigned_subject] += 1
+                        slot_index += 1
 
         return section_schedule, teacher_availability_matrix
 
