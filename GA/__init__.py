@@ -1,4 +1,5 @@
 # This is the Orchestrator file, which will govern the flow.
+import json
 
 from Constants.constant import Defaults
 from Constants.helper_routines import update_teacher_availability_matrix, update_matrix_for_best, \
@@ -154,13 +155,11 @@ if __name__ == "__main__":
         teacher_availability_matrix=initialize_teacher_availability(
             TeacherWorkload.Weekly_workLoad.keys(),
             5,
-            8
+            7
         ),
         total_generations=Defaults.total_no_of_generations
     )
 
-    from icecream import ic
-    ic(best)
     correct_teacher_availability_matrix = update_matrix_for_best(
         best,
         correct_teacher_availability_matrix,
@@ -169,18 +168,17 @@ if __name__ == "__main__":
             "Tuesday": 1,
             "Wednesday": 2,
             "Thursday": 3,
-            "Friday": 4,
-            "Saturday": 5,
-            "Sunday": 6
+            "Friday": 4
         },{
             "08:00 - 09:00": 1,
             "09:00 - 10:00": 2,
-            "10:00 - 11:00": 3,
-            "11:00 - 12:00": 4,
-            "12:00 - 13:00": 5,
-            "13:50 - 14:50": 6,
-            "14:50 - 15:50": 7,
-            "16:50 - 17:50": 8
+            "11:00 - 12:00": 3,
+            "12:00 - 13:00": 4,
+            "13:50 - 14:50": 5,
+            "14:50 - 15:50": 6,
+            "16:50 - 17:50": 7
         }
     )
-    ic(best, correct_teacher_availability_matrix)
+
+    json_data = json.dumps(best, indent=4)
+    print(json_data)
