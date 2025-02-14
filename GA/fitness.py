@@ -20,9 +20,10 @@ class TimetableFitnessEvaluator:
         subject_quota_data,
         teacher_time_preferences,
         teacher_daily_workload,
+        time_slots,
     ):
         self.timetable = timetable
-        self.available_days = Defaults.working_days  # Removed trailing comma
+        self.available_days = Defaults.working_days 
         self.all_sections = all_sections
         self.subject_teacher_mapping = subject_teacher_mapping
         self.available_classrooms = available_classrooms
@@ -32,7 +33,8 @@ class TimetableFitnessEvaluator:
         self.subject_quota_data = subject_quota_data
         self.teacher_time_preferences = teacher_time_preferences
         self.teacher_daily_workload = teacher_daily_workload
-
+        self.time_slots = time_slots
+        
     def evaluate_timetable_fitness(self):
         daily_section_fitness_scores = {}
         weekly_fitness_scores = {}
@@ -55,7 +57,7 @@ class TimetableFitnessEvaluator:
                     for schedule_item in section_schedule:
                         assigned_teacher = schedule_item["teacher_id"]
                         assigned_classroom = schedule_item["classroom_id"]
-                        assigned_time_slot = TimeIntervalConstant.time_mapping.get(
+                        assigned_time_slot = self.time_slots.get(
                             schedule_item["time_slot"]
                         )
                         section_strength = self.section_student_strength.get(section, 0)
@@ -107,6 +109,7 @@ class TimetableFitnessEvaluator:
                 weekly_fitness += day_fitness
 
             weekly_fitness_scores[week] = weekly_fitness
+
         return daily_section_fitness_scores, weekly_fitness_scores
 
 

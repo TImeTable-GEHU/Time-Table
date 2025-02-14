@@ -1,9 +1,6 @@
 import random
 
 from Constants.constant import Defaults
-from Constants.time_intervals import TimeIntervalConstant
-
-
 class TimeTableGeneration:
     def __init__(
         self,
@@ -17,7 +14,8 @@ class TimeTableGeneration:
         labs: dict,
         subject_quota_limits: dict,
         teacher_duty_days: dict,
-        teacher_availability_matrix=dict
+        teacher_availability_matrix:dict,
+        time_slots:dict,
     ):
         self.sections_manager = total_sections
         self.classrooms_manager =total_classrooms
@@ -28,7 +26,7 @@ class TimeTableGeneration:
         self.lab_subject_list = labs
         self.special_subject_list = special_subjects
         self.teacher_availability_preferences = teacher_preferences
-        self.available_time_slots = TimeIntervalConstant.time_slots
+        self.available_time_slots =time_slots
         self.teacher_duty_days = teacher_duty_days
         self.weekly_workload = teacher_weekly_workload
         self.teacher_assignment_tracker = {teacher: 0 for teacher in teacher_weekly_workload}
@@ -77,6 +75,7 @@ class TimeTableGeneration:
         return [
             subject
             for subject in self.subject_teacher_mapping
+            # print(subject_usage_tracker[section][subject], self.subject_quota_limits.get(subject, 0))
             if subject_usage_tracker[section][subject] < self.subject_quota_limits.get(subject, 0)
         ]
 
@@ -121,7 +120,7 @@ class TimeTableGeneration:
                         and len(teacher_availability_matrix[teacher][day_index]) > (slot_index - 1)
                         and teacher_availability_matrix[teacher][day_index][slot_index - 1]
                     ):
-                        teacher_availability_matrix[teacher][day_index][slot_index - 1] = False
+                        # teacher_availability_matrix[teacher][day_index][slot_index - 1] = False
                         assigned_teacher = teacher
                         teacher_workload_tracker[assigned_teacher] += 1
                         selected_subject = subject
@@ -159,8 +158,8 @@ class TimeTableGeneration:
         total_slots_for_section = 4 if section in half_day_sections else 7
         slot_index = 1
 
-        while slot_index <= total_slots_for_section:
-            time_slot = self.available_time_slots[slot_index]
+        while slot_index+1 <= total_slots_for_section:
+            time_slot = self.available_time_slots[slot_index+1]
             assigned_teacher, assigned_subject, assigned_room= self._assign_subject_and_teacher(
                 section, slot_index, subjects_scheduled_today, assigned_classroom,
                 section_subject_usage_tracker, teacher_workload_tracker,
