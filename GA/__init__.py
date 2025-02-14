@@ -100,7 +100,7 @@ def timetable_generation(
 
     return best_chromosome, teacher_availability_matrix, selected_chromosomes, mutated_chromosomes
 
-def run_timetable_generation(
+def run_timetable_generations(
     teacher_subject_mapping,
     total_sections,
     total_classrooms,
@@ -140,24 +140,37 @@ def run_timetable_generation(
     return best_chromosome, teacher_availability_matrix
 
 
-if __name__ == "__main__":
-    best, correct_teacher_availability_matrix = run_timetable_generation(
-        teacher_subject_mapping=SubjectTeacherMap.subject_teacher_map,
-        total_sections=6,
-        total_classrooms=8,
-        total_labs=3,
-        teacher_preferences=TeacherWorkload.teacher_preferences,
-        teacher_weekly_workload=TeacherWorkload.Weekly_workLoad,
-        special_subjects=SpecialSubjects.special_subjects,
-        labs=SpecialSubjects.Labs,
-        subject_quota_limits=SubjectWeeklyQuota.subject_quota,
-        teacher_duty_days=TeacherWorkload.teacher_duty_days,
-        teacher_availability_matrix=initialize_teacher_availability(
-            TeacherWorkload.Weekly_workLoad.keys(),
-            5,
-            7
-        ),
-        total_generations=Defaults.total_no_of_generations
+def run_timetable_generation(
+    teacher_subject_mapping=SubjectTeacherMap.subject_teacher_map,
+    total_sections=6,
+    total_classrooms=8,
+    total_labs=3,
+    teacher_preferences=TeacherWorkload.teacher_preferences,
+    teacher_weekly_workload=TeacherWorkload.Weekly_workLoad,
+    special_subjects=SpecialSubjects.special_subjects,
+    labs=SpecialSubjects.Labs,
+    subject_quota_limits=SubjectWeeklyQuota.subject_quota,
+    teacher_duty_days=TeacherWorkload.teacher_duty_days,
+    teacher_availability_matrix=initialize_teacher_availability(
+        TeacherWorkload.Weekly_workLoad.keys(),
+        5,
+        7
+    ),
+    total_generations=Defaults.total_no_of_generations,
+):
+    best, correct_teacher_availability_matrix = run_timetable_generations(
+        teacher_subject_mapping,
+        total_sections,
+        total_classrooms,
+        total_labs,
+        teacher_preferences,
+        teacher_weekly_workload,
+        special_subjects,
+        labs,
+        subject_quota_limits,
+        teacher_duty_days,
+        teacher_availability_matrix,
+        total_generations
     )
 
     correct_teacher_availability_matrix = update_matrix_for_best(
@@ -181,4 +194,4 @@ if __name__ == "__main__":
     )
 
     json_data = json.dumps(best, indent=4)
-    print(json_data)
+    return json_data, correct_teacher_availability_matrix
