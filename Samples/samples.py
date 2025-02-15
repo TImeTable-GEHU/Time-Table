@@ -1664,52 +1664,52 @@ class SampleChromosome:
     "Monday": {
         "A": [
             {
-                "teacher_id": "SP06",
-                "subject_id": "TCS-503",
-                "classroom_id": "R1",
+                "teacher_id": "RS11",
+                "subject_id": "PCS-503",
+                "classroom_id": "L2",
                 "time_slot": "08:00 - 09:00",
-                "group": "all"
+                "group": 1
             },
             {
-                "teacher_id": "SJ16",
-                "subject_id": "TCS-509",
-                "classroom_id": "R1",
+                "teacher_id": "RS11",
+                "subject_id": "PCS-503",
+                "classroom_id": "L2",
                 "time_slot": "09:00 - 10:00",
-                "group": "all"
+                "group": 1
             },
             {
-                "teacher_id": "AP24",
-                "subject_id": "SCS-501",
-                "classroom_id": "R1",
+                "teacher_id": "RS11",
+                "subject_id": "PCS-503",
+                "classroom_id": "L1",
                 "time_slot": "11:00 - 12:00",
-                "group": "all"
+                "group": 2
             },
             {
-                "teacher_id": "AK23",
-                "subject_id": "CSP-501",
-                "classroom_id": "R1",
+                "teacher_id": "RS11",
+                "subject_id": "PCS-503",
+                "classroom_id": "L1",
                 "time_slot": "12:00 - 13:00",
-                "group": "all"
+                "group": 2
             }
         ],
         "B": [
             {
-                "teacher_id": "AB01",
-                "subject_id": "TCS-531",
+                "teacher_id": "DT20",
+                "subject_id": "XCS-501",
                 "classroom_id": "R2",
                 "time_slot": "08:00 - 09:00",
                 "group": "all"
             },
             {
-                "teacher_id": "AP24",
-                "subject_id": "SCS-501",
+                "teacher_id": "AB01",
+                "subject_id": "TCS-531",
                 "classroom_id": "R2",
                 "time_slot": "09:00 - 10:00",
                 "group": "all"
             },
             {
-                "teacher_id": "AK23",
-                "subject_id": "CSP-501",
+                "teacher_id": "AP24",
+                "subject_id": "SCS-501",
                 "classroom_id": "R2",
                 "time_slot": "11:00 - 12:00",
                 "group": "all"
@@ -1724,80 +1724,80 @@ class SampleChromosome:
         ],
         "C": [
             {
-                "teacher_id": "DP07",
-                "subject_id": "TCS-503",
-                "classroom_id": "R3",
-                "time_slot": "08:00 - 09:00",
-                "group": "all"
-            },
-            {
                 "teacher_id": "AK23",
                 "subject_id": "CSP-501",
                 "classroom_id": "R3",
-                "time_slot": "09:00 - 10:00",
-                "group": "all"
-            },
-            {
-                "teacher_id": "AD08",
-                "subject_id": "PCS-506",
-                "classroom_id": "L1",
-                "time_slot": "11:00 - 12:00",
-                "group": 1
-            },
-            {
-                "teacher_id": "AD08",
-                "subject_id": "PCS-506",
-                "classroom_id": "L1",
-                "time_slot": "12:00 - 13:00",
-                "group": 1
-            }
-        ],
-        "D": [
-            {
-                "teacher_id": "AP24",
-                "subject_id": "SCS-501",
-                "classroom_id": "R4",
                 "time_slot": "08:00 - 09:00",
-                "group": "all"
-            },
-            {
-                "teacher_id": "RS11",
-                "subject_id": "TMA-502",
-                "classroom_id": "R4",
-                "time_slot": "09:00 - 10:00",
-                "group": "all"
-            },
-            {
-                "teacher_id": "AB17",
-                "subject_id": "TCS-509",
-                "classroom_id": "R4",
-                "time_slot": "11:00 - 12:00",
-                "group": "all"
-            },
-            {
-                "teacher_id": "AK23",
-                "subject_id": "CSP-501",
-                "classroom_id": "R4",
-                "time_slot": "12:00 - 13:00",
-                "group": "all"
-            },
-            {
-                "teacher_id": "PK02",
-                "subject_id": "TCS-531",
-                "classroom_id": "R4",
-                "time_slot": "13:50 - 14:50",
-                "group": "all"
-            },
-            {
-                "teacher_id": "AC05",
-                "subject_id": "TCS-503",
-                "classroom_id": "R4",
-                "time_slot": "14:50 - 15:50",
                 "group": "all"
             },
             {
                 "teacher_id": "SS03",
                 "subject_id": "TCS-502",
+                "classroom_id": "R3",
+                "time_slot": "09:00 - 10:00",
+                "group": "all"
+            },
+            {
+                "teacher_id": "AP24",
+                "subject_id": "SCS-501",
+                "classroom_id": "R3",
+                "time_slot": "11:00 - 12:00",
+                "group": "all"
+            },
+            {
+                "teacher_id": "PA21",
+                "subject_id": "XCS-501",
+                "classroom_id": "R3",
+                "time_slot": "12:00 - 13:00",
+                "group": "all"
+            }
+        ],
+        "D": [
+            {
+                "teacher_id": "AK23",
+                "subject_id": "CSP-501",
+                "classroom_id": "R4",
+                "time_slot": "08:00 - 09:00",
+                "group": "all"
+            },
+            {
+                "teacher_id": "SP06",
+                "subject_id": "TCS-503",
+                "classroom_id": "R4",
+                "time_slot": "09:00 - 10:00",
+                "group": "all"
+            },
+            {
+                "teacher_id": "AD08",
+                "subject_id": "PCS-506",
+                "classroom_id": "L1",
+                "time_slot": "11:00 - 12:00",
+                "group": 1
+            },
+            {
+                "teacher_id": "AD08",
+                "subject_id": "PCS-506",
+                "classroom_id": "L1",
+                "time_slot": "12:00 - 13:00",
+                "group": 1
+            },
+            {
+                "teacher_id": "AD08",
+                "subject_id": "PCS-506",
+                "classroom_id": "L2",
+                "time_slot": "13:50 - 14:50",
+                "group": 2
+            },
+            {
+                "teacher_id": "AD08",
+                "subject_id": "PCS-506",
+                "classroom_id": "L2",
+                "time_slot": "14:50 - 15:50",
+                "group": 2
+            },
+            {
+                "teacher_id": "NB22",
+                "subject_id": "XCS-501",
                 "classroom_id": "R4",
                 "time_slot": "16:50 - 17:50",
                 "group": "all"
@@ -1805,50 +1805,50 @@ class SampleChromosome:
         ],
         "E": [
             {
-                "teacher_id": "DT20",
-                "subject_id": "XCS-501",
+                "teacher_id": "PK02",
+                "subject_id": "TCS-531",
                 "classroom_id": "R5",
                 "time_slot": "08:00 - 09:00",
                 "group": "all"
             },
             {
-                "teacher_id": "SP06",
-                "subject_id": "TCS-503",
+                "teacher_id": "AA04",
+                "subject_id": "TCS-502",
                 "classroom_id": "R5",
                 "time_slot": "09:00 - 10:00",
                 "group": "all"
             },
             {
-                "teacher_id": "AP24",
-                "subject_id": "SCS-501",
+                "teacher_id": "AK23",
+                "subject_id": "CSP-501",
                 "classroom_id": "R5",
                 "time_slot": "11:00 - 12:00",
                 "group": "all"
             },
             {
-                "teacher_id": "JM12",
-                "subject_id": "TMA-502",
+                "teacher_id": "DT20",
+                "subject_id": "XCS-501",
                 "classroom_id": "R5",
                 "time_slot": "12:00 - 13:00",
                 "group": "all"
             },
             {
-                "teacher_id": "AK26",
-                "subject_id": "Placement_Class",
+                "teacher_id": "DP07",
+                "subject_id": "TCS-503",
                 "classroom_id": "R5",
                 "time_slot": "13:50 - 14:50",
-                "group": 1
+                "group": "all"
             },
             {
-                "teacher_id": "AK26",
-                "subject_id": "Placement_Class",
+                "teacher_id": "SJ16",
+                "subject_id": "TCS-509",
                 "classroom_id": "R5",
                 "time_slot": "14:50 - 15:50",
-                "group": 1
+                "group": "all"
             },
             {
-                "teacher_id": "HP18",
-                "subject_id": "TCS-509",
+                "teacher_id": "AP24",
+                "subject_id": "SCS-501",
                 "classroom_id": "R5",
                 "time_slot": "16:50 - 17:50",
                 "group": "all"
@@ -1856,50 +1856,50 @@ class SampleChromosome:
         ],
         "F": [
             {
-                "teacher_id": "AP24",
-                "subject_id": "SCS-501",
+                "teacher_id": "AK23",
+                "subject_id": "CSP-501",
                 "classroom_id": "R6",
                 "time_slot": "08:00 - 09:00",
                 "group": "all"
             },
             {
-                "teacher_id": "DP07",
-                "subject_id": "TCS-503",
+                "teacher_id": "AB17",
+                "subject_id": "TCS-509",
                 "classroom_id": "R6",
                 "time_slot": "09:00 - 10:00",
                 "group": "all"
             },
             {
-                "teacher_id": "PM14",
-                "subject_id": "PMA-502",
-                "classroom_id": "L1",
+                "teacher_id": "AP24",
+                "subject_id": "SCS-501",
+                "classroom_id": "R6",
                 "time_slot": "11:00 - 12:00",
-                "group": 1
-            },
-            {
-                "teacher_id": "PM14",
-                "subject_id": "PMA-502",
-                "classroom_id": "L1",
-                "time_slot": "12:00 - 13:00",
-                "group": 1
-            },
-            {
-                "teacher_id": "PM14",
-                "subject_id": "PMA-502",
-                "classroom_id": "L2",
-                "time_slot": "13:50 - 14:50",
-                "group": 2
-            },
-            {
-                "teacher_id": "PM14",
-                "subject_id": "PMA-502",
-                "classroom_id": "L2",
-                "time_slot": "14:50 - 15:50",
-                "group": 2
+                "group": "all"
             },
             {
                 "teacher_id": "PA21",
                 "subject_id": "XCS-501",
+                "classroom_id": "R6",
+                "time_slot": "12:00 - 13:00",
+                "group": "all"
+            },
+            {
+                "teacher_id": "PM14",
+                "subject_id": "PMA-502",
+                "classroom_id": "L3",
+                "time_slot": "13:50 - 14:50",
+                "group": 1
+            },
+            {
+                "teacher_id": "PM14",
+                "subject_id": "PMA-502",
+                "classroom_id": "L3",
+                "time_slot": "14:50 - 15:50",
+                "group": 1
+            },
+            {
+                "teacher_id": "AC05",
+                "subject_id": "TCS-503",
                 "classroom_id": "R6",
                 "time_slot": "16:50 - 17:50",
                 "group": "all"
@@ -1909,29 +1909,29 @@ class SampleChromosome:
     "Tuesday": {
         "A": [
             {
-                "teacher_id": "AD08",
-                "subject_id": "PCS-506",
+                "teacher_id": "PM14",
+                "subject_id": "PMA-502",
                 "classroom_id": "L2",
                 "time_slot": "08:00 - 09:00",
                 "group": 1
             },
             {
-                "teacher_id": "AD08",
-                "subject_id": "PCS-506",
+                "teacher_id": "PM14",
+                "subject_id": "PMA-502",
                 "classroom_id": "L2",
                 "time_slot": "09:00 - 10:00",
                 "group": 1
             },
             {
-                "teacher_id": "AD08",
-                "subject_id": "PCS-506",
+                "teacher_id": "PM14",
+                "subject_id": "PMA-502",
                 "classroom_id": "L1",
                 "time_slot": "11:00 - 12:00",
                 "group": 2
             },
             {
-                "teacher_id": "AD08",
-                "subject_id": "PCS-506",
+                "teacher_id": "PM14",
+                "subject_id": "PMA-502",
                 "classroom_id": "L1",
                 "time_slot": "12:00 - 13:00",
                 "group": 2
@@ -1939,22 +1939,22 @@ class SampleChromosome:
         ],
         "B": [
             {
-                "teacher_id": "AB01",
-                "subject_id": "TCS-531",
+                "teacher_id": "SP06",
+                "subject_id": "TCS-503",
                 "classroom_id": "R2",
                 "time_slot": "08:00 - 09:00",
                 "group": "all"
             },
             {
-                "teacher_id": "DT20",
-                "subject_id": "XCS-501",
+                "teacher_id": "AB01",
+                "subject_id": "TCS-531",
                 "classroom_id": "R2",
                 "time_slot": "09:00 - 10:00",
                 "group": "all"
             },
             {
-                "teacher_id": "SP06",
-                "subject_id": "TCS-503",
+                "teacher_id": "DT20",
+                "subject_id": "XCS-501",
                 "classroom_id": "R2",
                 "time_slot": "11:00 - 12:00",
                 "group": "all"
@@ -1976,25 +1976,25 @@ class SampleChromosome:
                 "group": "all"
             },
             {
-                "teacher_id": "SJ16",
-                "subject_id": "TCS-509",
+                "teacher_id": "DP07",
+                "subject_id": "TCS-503",
                 "classroom_id": "R3",
                 "time_slot": "09:00 - 10:00",
                 "group": "all"
             },
             {
-                "teacher_id": "BJ10",
-                "subject_id": "TMA-502",
-                "classroom_id": "R3",
+                "teacher_id": "AD08",
+                "subject_id": "PMA-502",
+                "classroom_id": "L1",
                 "time_slot": "11:00 - 12:00",
-                "group": "all"
+                "group": 1
             },
             {
-                "teacher_id": "AP24",
-                "subject_id": "SCS-501",
-                "classroom_id": "R3",
+                "teacher_id": "AD08",
+                "subject_id": "PMA-502",
+                "classroom_id": "L1",
                 "time_slot": "12:00 - 13:00",
-                "group": "all"
+                "group": 1
             }
         ],
         "D": [
@@ -2006,43 +2006,43 @@ class SampleChromosome:
                 "group": "all"
             },
             {
-                "teacher_id": "PK02",
-                "subject_id": "TCS-531",
+                "teacher_id": "SJ16",
+                "subject_id": "TCS-509",
                 "classroom_id": "R4",
                 "time_slot": "09:00 - 10:00",
                 "group": "all"
             },
             {
-                "teacher_id": "RS11",
-                "subject_id": "TMA-502",
+                "teacher_id": "AP24",
+                "subject_id": "SCS-501",
                 "classroom_id": "R4",
                 "time_slot": "11:00 - 12:00",
                 "group": "all"
             },
             {
-                "teacher_id": "AB17",
-                "subject_id": "TCS-509",
+                "teacher_id": "AC05",
+                "subject_id": "TCS-503",
                 "classroom_id": "R4",
                 "time_slot": "12:00 - 13:00",
                 "group": "all"
             },
             {
-                "teacher_id": "AC05",
-                "subject_id": "TCS-502",
+                "teacher_id": "BJ10",
+                "subject_id": "TMA-502",
                 "classroom_id": "R4",
                 "time_slot": "13:50 - 14:50",
                 "group": "all"
             },
             {
-                "teacher_id": "DP07",
-                "subject_id": "TCS-503",
+                "teacher_id": "SS03",
+                "subject_id": "TCS-502",
                 "classroom_id": "R4",
                 "time_slot": "14:50 - 15:50",
                 "group": "all"
             },
             {
-                "teacher_id": "None",
-                "subject_id": "Library",
+                "teacher_id": "PK02",
+                "subject_id": "TCS-531",
                 "classroom_id": "R4",
                 "time_slot": "16:50 - 17:50",
                 "group": "all"
@@ -2050,50 +2050,50 @@ class SampleChromosome:
         ],
         "E": [
             {
-                "teacher_id": "AK23",
-                "subject_id": "CSP-501",
+                "teacher_id": "AA04",
+                "subject_id": "TCS-502",
                 "classroom_id": "R5",
                 "time_slot": "08:00 - 09:00",
                 "group": "all"
             },
             {
-                "teacher_id": "SP06",
-                "subject_id": "TCS-503",
+                "teacher_id": "RS11",
+                "subject_id": "TMA-502",
                 "classroom_id": "R5",
                 "time_slot": "09:00 - 10:00",
-                "group": "all"
-            },
-            {
-                "teacher_id": "SS03",
-                "subject_id": "TCS-502",
-                "classroom_id": "R5",
-                "time_slot": "11:00 - 12:00",
                 "group": "all"
             },
             {
                 "teacher_id": "NB22",
                 "subject_id": "XCS-501",
                 "classroom_id": "R5",
+                "time_slot": "11:00 - 12:00",
+                "group": "all"
+            },
+            {
+                "teacher_id": "AB01",
+                "subject_id": "TCS-531",
+                "classroom_id": "R5",
                 "time_slot": "12:00 - 13:00",
                 "group": "all"
             },
             {
-                "teacher_id": "RD09",
-                "subject_id": "PCS-506",
+                "teacher_id": "AA15",
+                "subject_id": "PMA-502",
                 "classroom_id": "L3",
                 "time_slot": "13:50 - 14:50",
                 "group": 1
             },
             {
-                "teacher_id": "RD09",
-                "subject_id": "PCS-506",
+                "teacher_id": "AA15",
+                "subject_id": "PMA-502",
                 "classroom_id": "L3",
                 "time_slot": "14:50 - 15:50",
                 "group": 1
             },
             {
-                "teacher_id": "AB01",
-                "subject_id": "TCS-531",
+                "teacher_id": "AB17",
+                "subject_id": "TCS-509",
                 "classroom_id": "R5",
                 "time_slot": "16:50 - 17:50",
                 "group": "all"
@@ -2101,50 +2101,50 @@ class SampleChromosome:
         ],
         "F": [
             {
-                "teacher_id": "DT20",
-                "subject_id": "XCS-501",
+                "teacher_id": "AC05",
+                "subject_id": "TCS-502",
                 "classroom_id": "R6",
                 "time_slot": "08:00 - 09:00",
                 "group": "all"
             },
             {
-                "teacher_id": "DP07",
-                "subject_id": "TCS-503",
+                "teacher_id": "PK02",
+                "subject_id": "TCS-531",
                 "classroom_id": "R6",
                 "time_slot": "09:00 - 10:00",
                 "group": "all"
             },
             {
-                "teacher_id": "JM12",
-                "subject_id": "TMA-502",
-                "classroom_id": "R6",
+                "teacher_id": "RD09",
+                "subject_id": "PCS-506",
+                "classroom_id": "L1",
                 "time_slot": "11:00 - 12:00",
-                "group": "all"
+                "group": 1
             },
             {
-                "teacher_id": "AK23",
-                "subject_id": "CSP-501",
-                "classroom_id": "R6",
+                "teacher_id": "RD09",
+                "subject_id": "PCS-506",
+                "classroom_id": "L1",
                 "time_slot": "12:00 - 13:00",
-                "group": "all"
+                "group": 1
             },
             {
-                "teacher_id": "VD25",
-                "subject_id": "PCS-503",
-                "classroom_id": "L3",
+                "teacher_id": "RD09",
+                "subject_id": "PCS-506",
+                "classroom_id": "L2",
                 "time_slot": "13:50 - 14:50",
-                "group": 1
+                "group": 2
             },
             {
-                "teacher_id": "VD25",
-                "subject_id": "PCS-503",
-                "classroom_id": "L3",
+                "teacher_id": "RD09",
+                "subject_id": "PCS-506",
+                "classroom_id": "L2",
                 "time_slot": "14:50 - 15:50",
-                "group": 1
+                "group": 2
             },
             {
-                "teacher_id": "AA04",
-                "subject_id": "TCS-502",
+                "teacher_id": "SP06",
+                "subject_id": "TCS-503",
                 "classroom_id": "R6",
                 "time_slot": "16:50 - 17:50",
                 "group": "all"
@@ -2154,8 +2154,8 @@ class SampleChromosome:
     "Wednesday": {
         "A": [
             {
-                "teacher_id": "BJ10",
-                "subject_id": "TMA-502",
+                "teacher_id": "AB01",
+                "subject_id": "TCS-531",
                 "classroom_id": "R1",
                 "time_slot": "08:00 - 09:00",
                 "group": "all"
@@ -2168,45 +2168,45 @@ class SampleChromosome:
                 "group": "all"
             },
             {
-                "teacher_id": "PM14",
-                "subject_id": "PMA-502",
-                "classroom_id": "L1",
-                "time_slot": "11:00 - 12:00",
-                "group": 1
-            },
-            {
-                "teacher_id": "PM14",
-                "subject_id": "PMA-502",
-                "classroom_id": "L1",
-                "time_slot": "12:00 - 13:00",
-                "group": 1
-            }
-        ],
-        "B": [
-            {
                 "teacher_id": "SP06",
                 "subject_id": "TCS-503",
-                "classroom_id": "R2",
-                "time_slot": "08:00 - 09:00",
-                "group": "all"
-            },
-            {
-                "teacher_id": "AB01",
-                "subject_id": "TCS-531",
-                "classroom_id": "R2",
-                "time_slot": "09:00 - 10:00",
-                "group": "all"
-            },
-            {
-                "teacher_id": "SS03",
-                "subject_id": "TCS-502",
-                "classroom_id": "R2",
+                "classroom_id": "R1",
                 "time_slot": "11:00 - 12:00",
                 "group": "all"
             },
             {
                 "teacher_id": "SJ16",
                 "subject_id": "TCS-509",
+                "classroom_id": "R1",
+                "time_slot": "12:00 - 13:00",
+                "group": "all"
+            }
+        ],
+        "B": [
+            {
+                "teacher_id": "AK23",
+                "subject_id": "CSP-501",
+                "classroom_id": "R2",
+                "time_slot": "08:00 - 09:00",
+                "group": "all"
+            },
+            {
+                "teacher_id": "DP07",
+                "subject_id": "TCS-503",
+                "classroom_id": "R2",
+                "time_slot": "09:00 - 10:00",
+                "group": "all"
+            },
+            {
+                "teacher_id": "AB17",
+                "subject_id": "TCS-509",
+                "classroom_id": "R2",
+                "time_slot": "11:00 - 12:00",
+                "group": "all"
+            },
+            {
+                "teacher_id": "SS03",
+                "subject_id": "TCS-502",
                 "classroom_id": "R2",
                 "time_slot": "12:00 - 13:00",
                 "group": "all"
@@ -2214,80 +2214,80 @@ class SampleChromosome:
         ],
         "C": [
             {
-                "teacher_id": "DP07",
-                "subject_id": "TCS-503",
+                "teacher_id": "PK02",
+                "subject_id": "TCS-531",
                 "classroom_id": "R3",
                 "time_slot": "08:00 - 09:00",
                 "group": "all"
             },
             {
-                "teacher_id": "RS11",
-                "subject_id": "TMA-502",
+                "teacher_id": "AA04",
+                "subject_id": "TCS-502",
                 "classroom_id": "R3",
                 "time_slot": "09:00 - 10:00",
                 "group": "all"
             },
             {
-                "teacher_id": "PK02",
-                "subject_id": "TCS-531",
-                "classroom_id": "R3",
+                "teacher_id": "AD08",
+                "subject_id": "PCS-506",
+                "classroom_id": "L1",
                 "time_slot": "11:00 - 12:00",
-                "group": "all"
+                "group": 1
             },
             {
-                "teacher_id": "AB17",
-                "subject_id": "TCS-509",
-                "classroom_id": "R3",
+                "teacher_id": "AD08",
+                "subject_id": "PCS-506",
+                "classroom_id": "L1",
                 "time_slot": "12:00 - 13:00",
-                "group": "all"
+                "group": 1
             }
         ],
         "D": [
             {
-                "teacher_id": "AB01",
-                "subject_id": "TCS-531",
+                "teacher_id": "HP18",
+                "subject_id": "TCS-509",
                 "classroom_id": "R4",
                 "time_slot": "08:00 - 09:00",
                 "group": "all"
             },
             {
-                "teacher_id": "PA21",
-                "subject_id": "XCS-501",
+                "teacher_id": "AC05",
+                "subject_id": "TCS-503",
                 "classroom_id": "R4",
                 "time_slot": "09:00 - 10:00",
                 "group": "all"
             },
             {
-                "teacher_id": "HP18",
-                "subject_id": "TCS-509",
-                "classroom_id": "R4",
+                "teacher_id": "PM14",
+                "subject_id": "PMA-502",
+                "classroom_id": "L1",
                 "time_slot": "11:00 - 12:00",
-                "group": "all"
+                "group": 1
             },
             {
-                "teacher_id": "JM12",
-                "subject_id": "TMA-502",
-                "classroom_id": "R4",
+                "teacher_id": "PM14",
+                "subject_id": "PMA-502",
+                "classroom_id": "L1",
                 "time_slot": "12:00 - 13:00",
-                "group": "all"
+                "group": 1
             },
             {
-                "teacher_id": "VD25",
-                "subject_id": "PCS-503",
-                "classroom_id": "L3",
+                "teacher_id": "PM14",
+                "subject_id": "PMA-502",
+                "classroom_id": "L2",
                 "time_slot": "13:50 - 14:50",
-                "group": 1
+                "group": 2
             },
             {
-                "teacher_id": "VD25",
-                "subject_id": "PCS-503",
-                "classroom_id": "L3",
+                "teacher_id": "PM14",
+                "subject_id": "PMA-502",
+                "classroom_id": "L2",
                 "time_slot": "14:50 - 15:50",
-                "group": 1
+                "group": 2
             },
             {
-                "teacher_id": "AC05",
-                "subject_id": "TCS-503",
+                "teacher_id": "BJ10",
+                "subject_id": "TMA-502",
                 "classroom_id": "R4",
                 "time_slot": "16:50 - 17:50",
                 "group": "all"
@@ -2295,50 +2295,50 @@ class SampleChromosome:
         ],
         "E": [
             {
-                "teacher_id": "AD08",
-                "subject_id": "PMA-502",
-                "classroom_id": "L2",
+                "teacher_id": "RS11",
+                "subject_id": "TMA-502",
+                "classroom_id": "R5",
                 "time_slot": "08:00 - 09:00",
-                "group": 1
+                "group": "all"
             },
             {
-                "teacher_id": "AD08",
-                "subject_id": "PMA-502",
-                "classroom_id": "L2",
+                "teacher_id": "AB01",
+                "subject_id": "TCS-531",
+                "classroom_id": "R5",
                 "time_slot": "09:00 - 10:00",
-                "group": 1
+                "group": "all"
             },
             {
-                "teacher_id": "AD08",
-                "subject_id": "PMA-502",
+                "teacher_id": "VD25",
+                "subject_id": "PCS-503",
                 "classroom_id": "L1",
                 "time_slot": "11:00 - 12:00",
+                "group": 1
+            },
+            {
+                "teacher_id": "VD25",
+                "subject_id": "PCS-503",
+                "classroom_id": "L1",
+                "time_slot": "12:00 - 13:00",
+                "group": 1
+            },
+            {
+                "teacher_id": "VD25",
+                "subject_id": "PCS-503",
+                "classroom_id": "L2",
+                "time_slot": "13:50 - 14:50",
                 "group": 2
             },
             {
-                "teacher_id": "AD08",
-                "subject_id": "PMA-502",
-                "classroom_id": "L1",
-                "time_slot": "12:00 - 13:00",
+                "teacher_id": "VD25",
+                "subject_id": "PCS-503",
+                "classroom_id": "L2",
+                "time_slot": "14:50 - 15:50",
                 "group": 2
             },
             {
                 "teacher_id": "SG19",
                 "subject_id": "TCS-509",
-                "classroom_id": "R5",
-                "time_slot": "13:50 - 14:50",
-                "group": "all"
-            },
-            {
-                "teacher_id": "SP06",
-                "subject_id": "TCS-503",
-                "classroom_id": "R5",
-                "time_slot": "14:50 - 15:50",
-                "group": "all"
-            },
-            {
-                "teacher_id": "AA04",
-                "subject_id": "TCS-502",
                 "classroom_id": "R5",
                 "time_slot": "16:50 - 17:50",
                 "group": "all"
@@ -2346,50 +2346,50 @@ class SampleChromosome:
         ],
         "F": [
             {
-                "teacher_id": "DP07",
-                "subject_id": "TCS-503",
+                "teacher_id": "PA21",
+                "subject_id": "XCS-501",
                 "classroom_id": "R6",
                 "time_slot": "08:00 - 09:00",
+                "group": "all"
+            },
+            {
+                "teacher_id": "SP06",
+                "subject_id": "TCS-503",
+                "classroom_id": "R6",
+                "time_slot": "09:00 - 10:00",
                 "group": "all"
             },
             {
                 "teacher_id": "SS03",
                 "subject_id": "TCS-502",
                 "classroom_id": "R6",
-                "time_slot": "09:00 - 10:00",
+                "time_slot": "11:00 - 12:00",
                 "group": "all"
             },
             {
-                "teacher_id": "SJ16",
-                "subject_id": "TCS-509",
+                "teacher_id": "JM12",
+                "subject_id": "TMA-502",
                 "classroom_id": "R6",
-                "time_slot": "11:00 - 12:00",
+                "time_slot": "12:00 - 13:00",
                 "group": "all"
             },
             {
                 "teacher_id": "PK02",
                 "subject_id": "TCS-531",
                 "classroom_id": "R6",
-                "time_slot": "12:00 - 13:00",
+                "time_slot": "13:50 - 14:50",
                 "group": "all"
             },
             {
-                "teacher_id": "RD09",
-                "subject_id": "PCS-506",
-                "classroom_id": "L3",
-                "time_slot": "13:50 - 14:50",
-                "group": 1
-            },
-            {
-                "teacher_id": "RD09",
-                "subject_id": "PCS-506",
-                "classroom_id": "L3",
+                "teacher_id": "SJ16",
+                "subject_id": "TCS-509",
+                "classroom_id": "R6",
                 "time_slot": "14:50 - 15:50",
-                "group": 1
+                "group": "all"
             },
             {
-                "teacher_id": "NJ13",
-                "subject_id": "TMA-502",
+                "teacher_id": "None",
+                "subject_id": "Library",
                 "classroom_id": "R6",
                 "time_slot": "16:50 - 17:50",
                 "group": "all"
@@ -2399,140 +2399,140 @@ class SampleChromosome:
     "Thursday": {
         "A": [
             {
-                "teacher_id": "SJ16",
-                "subject_id": "TCS-509",
+                "teacher_id": "AP24",
+                "subject_id": "SCS-501",
                 "classroom_id": "R1",
                 "time_slot": "08:00 - 09:00",
+                "group": "all"
+            },
+            {
+                "teacher_id": "DT20",
+                "subject_id": "XCS-501",
+                "classroom_id": "R1",
+                "time_slot": "09:00 - 10:00",
                 "group": "all"
             },
             {
                 "teacher_id": "BJ10",
                 "subject_id": "TMA-502",
                 "classroom_id": "R1",
-                "time_slot": "09:00 - 10:00",
+                "time_slot": "11:00 - 12:00",
                 "group": "all"
             },
             {
-                "teacher_id": "RS11",
-                "subject_id": "PCS-503",
-                "classroom_id": "L1",
-                "time_slot": "11:00 - 12:00",
-                "group": 1
-            },
-            {
-                "teacher_id": "RS11",
-                "subject_id": "PCS-503",
-                "classroom_id": "L1",
+                "teacher_id": "SJ16",
+                "subject_id": "TCS-509",
+                "classroom_id": "R1",
                 "time_slot": "12:00 - 13:00",
-                "group": 1
+                "group": "all"
             }
         ],
         "B": [
             {
-                "teacher_id": "PM14",
-                "subject_id": "PMA-502",
-                "classroom_id": "L2",
+                "teacher_id": "RS11",
+                "subject_id": "TMA-502",
+                "classroom_id": "R2",
                 "time_slot": "08:00 - 09:00",
-                "group": 1
-            },
-            {
-                "teacher_id": "PM14",
-                "subject_id": "PMA-502",
-                "classroom_id": "L2",
-                "time_slot": "09:00 - 10:00",
-                "group": 1
-            },
-            {
-                "teacher_id": "PM14",
-                "subject_id": "PMA-502",
-                "classroom_id": "L1",
-                "time_slot": "11:00 - 12:00",
-                "group": 2
-            },
-            {
-                "teacher_id": "PM14",
-                "subject_id": "PMA-502",
-                "classroom_id": "L1",
-                "time_slot": "12:00 - 13:00",
-                "group": 2
-            }
-        ],
-        "C": [
-            {
-                "teacher_id": "SS03",
-                "subject_id": "TCS-502",
-                "classroom_id": "R3",
-                "time_slot": "08:00 - 09:00",
-                "group": "all"
-            },
-            {
-                "teacher_id": "SP06",
-                "subject_id": "TCS-503",
-                "classroom_id": "R3",
-                "time_slot": "09:00 - 10:00",
                 "group": "all"
             },
             {
                 "teacher_id": "AB17",
                 "subject_id": "TCS-509",
-                "classroom_id": "R3",
+                "classroom_id": "R2",
+                "time_slot": "09:00 - 10:00",
+                "group": "all"
+            },
+            {
+                "teacher_id": "SP06",
+                "subject_id": "TCS-503",
+                "classroom_id": "R2",
                 "time_slot": "11:00 - 12:00",
                 "group": "all"
             },
             {
-                "teacher_id": "JM12",
-                "subject_id": "TMA-502",
-                "classroom_id": "R3",
+                "teacher_id": "AB01",
+                "subject_id": "TCS-531",
+                "classroom_id": "R2",
                 "time_slot": "12:00 - 13:00",
                 "group": "all"
             }
         ],
-        "D": [
+        "C": [
             {
-                "teacher_id": "AD08",
-                "subject_id": "PMA-502",
+                "teacher_id": "DP07",
+                "subject_id": "PCS-503",
                 "classroom_id": "L2",
                 "time_slot": "08:00 - 09:00",
                 "group": 1
             },
             {
-                "teacher_id": "AD08",
-                "subject_id": "PMA-502",
+                "teacher_id": "DP07",
+                "subject_id": "PCS-503",
                 "classroom_id": "L2",
                 "time_slot": "09:00 - 10:00",
                 "group": 1
             },
             {
-                "teacher_id": "AD08",
-                "subject_id": "PMA-502",
+                "teacher_id": "DP07",
+                "subject_id": "PCS-503",
                 "classroom_id": "L1",
                 "time_slot": "11:00 - 12:00",
                 "group": 2
             },
             {
-                "teacher_id": "AD08",
-                "subject_id": "PMA-502",
+                "teacher_id": "DP07",
+                "subject_id": "PCS-503",
                 "classroom_id": "L1",
                 "time_slot": "12:00 - 13:00",
                 "group": 2
-            },
+            }
+        ],
+        "D": [
             {
-                "teacher_id": "AK26",
-                "subject_id": "Placement_Class",
-                "classroom_id": "R4",
-                "time_slot": "13:50 - 14:50",
-                "group": 1
-            },
-            {
-                "teacher_id": "AK26",
-                "subject_id": "Placement_Class",
-                "classroom_id": "R4",
-                "time_slot": "14:50 - 15:50",
-                "group": 1
-            },
-            {
-                "teacher_id": "AA04",
+                "teacher_id": "SS03",
                 "subject_id": "TCS-502",
+                "classroom_id": "R4",
+                "time_slot": "08:00 - 09:00",
+                "group": "all"
+            },
+            {
+                "teacher_id": "PK02",
+                "subject_id": "TCS-531",
+                "classroom_id": "R4",
+                "time_slot": "09:00 - 10:00",
+                "group": "all"
+            },
+            {
+                "teacher_id": "VD25",
+                "subject_id": "PCS-503",
+                "classroom_id": "L1",
+                "time_slot": "11:00 - 12:00",
+                "group": 1
+            },
+            {
+                "teacher_id": "VD25",
+                "subject_id": "PCS-503",
+                "classroom_id": "L1",
+                "time_slot": "12:00 - 13:00",
+                "group": 1
+            },
+            {
+                "teacher_id": "VD25",
+                "subject_id": "PCS-503",
+                "classroom_id": "L2",
+                "time_slot": "13:50 - 14:50",
+                "group": 2
+            },
+            {
+                "teacher_id": "VD25",
+                "subject_id": "PCS-503",
+                "classroom_id": "L2",
+                "time_slot": "14:50 - 15:50",
+                "group": 2
+            },
+            {
+                "teacher_id": "HP18",
+                "subject_id": "TCS-509",
                 "classroom_id": "R4",
                 "time_slot": "16:50 - 17:50",
                 "group": "all"
@@ -2540,50 +2540,50 @@ class SampleChromosome:
         ],
         "E": [
             {
-                "teacher_id": "AB01",
-                "subject_id": "TCS-531",
+                "teacher_id": "AC05",
+                "subject_id": "TCS-503",
                 "classroom_id": "R5",
                 "time_slot": "08:00 - 09:00",
                 "group": "all"
             },
             {
-                "teacher_id": "AC05",
+                "teacher_id": "AA04",
                 "subject_id": "TCS-502",
                 "classroom_id": "R5",
                 "time_slot": "09:00 - 10:00",
                 "group": "all"
             },
             {
-                "teacher_id": "HP18",
-                "subject_id": "TCS-509",
-                "classroom_id": "R5",
+                "teacher_id": "AD08",
+                "subject_id": "PCS-506",
+                "classroom_id": "L1",
                 "time_slot": "11:00 - 12:00",
-                "group": "all"
+                "group": 1
             },
             {
-                "teacher_id": "NJ13",
-                "subject_id": "TMA-502",
-                "classroom_id": "R5",
+                "teacher_id": "AD08",
+                "subject_id": "PCS-506",
+                "classroom_id": "L1",
                 "time_slot": "12:00 - 13:00",
-                "group": "all"
+                "group": 1
             },
             {
-                "teacher_id": "DP07",
-                "subject_id": "PCS-503",
-                "classroom_id": "L3",
+                "teacher_id": "AD08",
+                "subject_id": "PCS-506",
+                "classroom_id": "L2",
                 "time_slot": "13:50 - 14:50",
-                "group": 1
+                "group": 2
             },
             {
-                "teacher_id": "DP07",
-                "subject_id": "PCS-503",
-                "classroom_id": "L3",
+                "teacher_id": "AD08",
+                "subject_id": "PCS-506",
+                "classroom_id": "L2",
                 "time_slot": "14:50 - 15:50",
-                "group": 1
+                "group": 2
             },
             {
-                "teacher_id": "None",
-                "subject_id": "Library",
+                "teacher_id": "JM12",
+                "subject_id": "TMA-502",
                 "classroom_id": "R5",
                 "time_slot": "16:50 - 17:50",
                 "group": "all"
@@ -2591,50 +2591,50 @@ class SampleChromosome:
         ],
         "F": [
             {
-                "teacher_id": "PK02",
-                "subject_id": "TCS-531",
-                "classroom_id": "R6",
+                "teacher_id": "RS11",
+                "subject_id": "PCS-503",
+                "classroom_id": "L2",
                 "time_slot": "08:00 - 09:00",
-                "group": "all"
+                "group": 1
             },
             {
-                "teacher_id": "BJ10",
-                "subject_id": "TMA-502",
-                "classroom_id": "R6",
+                "teacher_id": "RS11",
+                "subject_id": "PCS-503",
+                "classroom_id": "L2",
                 "time_slot": "09:00 - 10:00",
+                "group": 1
+            },
+            {
+                "teacher_id": "RS11",
+                "subject_id": "PCS-503",
+                "classroom_id": "L1",
+                "time_slot": "11:00 - 12:00",
+                "group": 2
+            },
+            {
+                "teacher_id": "RS11",
+                "subject_id": "PCS-503",
+                "classroom_id": "L1",
+                "time_slot": "12:00 - 13:00",
+                "group": 2
+            },
+            {
+                "teacher_id": "SG19",
+                "subject_id": "TCS-509",
+                "classroom_id": "R6",
+                "time_slot": "13:50 - 14:50",
                 "group": "all"
             },
             {
                 "teacher_id": "SS03",
                 "subject_id": "TCS-502",
                 "classroom_id": "R6",
-                "time_slot": "11:00 - 12:00",
-                "group": "all"
-            },
-            {
-                "teacher_id": "SG19",
-                "subject_id": "TCS-509",
-                "classroom_id": "R6",
-                "time_slot": "12:00 - 13:00",
-                "group": "all"
-            },
-            {
-                "teacher_id": "AK26",
-                "subject_id": "Placement_Class",
-                "classroom_id": "R6",
-                "time_slot": "13:50 - 14:50",
-                "group": 1
-            },
-            {
-                "teacher_id": "AK26",
-                "subject_id": "Placement_Class",
-                "classroom_id": "R6",
                 "time_slot": "14:50 - 15:50",
-                "group": 1
+                "group": "all"
             },
             {
-                "teacher_id": "None",
-                "subject_id": "Library",
+                "teacher_id": "AB01",
+                "subject_id": "TCS-531",
                 "classroom_id": "R6",
                 "time_slot": "16:50 - 17:50",
                 "group": "all"
@@ -2644,29 +2644,29 @@ class SampleChromosome:
     "Friday": {
         "A": [
             {
-                "teacher_id": "SS03",
-                "subject_id": "TCS-502",
+                "teacher_id": "BJ10",
+                "subject_id": "TMA-502",
                 "classroom_id": "R1",
                 "time_slot": "08:00 - 09:00",
                 "group": "all"
             },
             {
-                "teacher_id": "SJ16",
-                "subject_id": "TCS-509",
+                "teacher_id": "AB01",
+                "subject_id": "TCS-531",
                 "classroom_id": "R1",
                 "time_slot": "09:00 - 10:00",
                 "group": "all"
             },
             {
-                "teacher_id": "BJ10",
-                "subject_id": "TMA-502",
+                "teacher_id": "SP06",
+                "subject_id": "TCS-503",
                 "classroom_id": "R1",
                 "time_slot": "11:00 - 12:00",
                 "group": "all"
             },
             {
-                "teacher_id": "AB01",
-                "subject_id": "TCS-531",
+                "teacher_id": "AK23",
+                "subject_id": "CSP-501",
                 "classroom_id": "R1",
                 "time_slot": "12:00 - 13:00",
                 "group": "all"
@@ -2674,106 +2674,106 @@ class SampleChromosome:
         ],
         "B": [
             {
-                "teacher_id": "DT20",
-                "subject_id": "XCS-501",
-                "classroom_id": "R2",
+                "teacher_id": "AD08",
+                "subject_id": "PCS-506",
+                "classroom_id": "L2",
+                "time_slot": "08:00 - 09:00",
+                "group": 1
+            },
+            {
+                "teacher_id": "AD08",
+                "subject_id": "PCS-506",
+                "classroom_id": "L2",
+                "time_slot": "09:00 - 10:00",
+                "group": 1
+            },
+            {
+                "teacher_id": "AD08",
+                "subject_id": "PCS-506",
+                "classroom_id": "L1",
+                "time_slot": "11:00 - 12:00",
+                "group": 2
+            },
+            {
+                "teacher_id": "AD08",
+                "subject_id": "PCS-506",
+                "classroom_id": "L1",
+                "time_slot": "12:00 - 13:00",
+                "group": 2
+            }
+        ],
+        "C": [
+            {
+                "teacher_id": "SJ16",
+                "subject_id": "TCS-509",
+                "classroom_id": "R3",
                 "time_slot": "08:00 - 09:00",
                 "group": "all"
             },
             {
-                "teacher_id": "SP06",
+                "teacher_id": "DP07",
                 "subject_id": "TCS-503",
-                "classroom_id": "R2",
+                "classroom_id": "R3",
                 "time_slot": "09:00 - 10:00",
                 "group": "all"
             },
             {
                 "teacher_id": "RS11",
                 "subject_id": "TMA-502",
-                "classroom_id": "R2",
+                "classroom_id": "R3",
                 "time_slot": "11:00 - 12:00",
                 "group": "all"
             },
             {
-                "teacher_id": "AA04",
-                "subject_id": "TCS-502",
-                "classroom_id": "R2",
+                "teacher_id": "PK02",
+                "subject_id": "TCS-531",
+                "classroom_id": "R3",
                 "time_slot": "12:00 - 13:00",
                 "group": "all"
-            }
-        ],
-        "C": [
-            {
-                "teacher_id": "DP07",
-                "subject_id": "PCS-503",
-                "classroom_id": "L2",
-                "time_slot": "08:00 - 09:00",
-                "group": 1
-            },
-            {
-                "teacher_id": "DP07",
-                "subject_id": "PCS-503",
-                "classroom_id": "L2",
-                "time_slot": "09:00 - 10:00",
-                "group": 1
-            },
-            {
-                "teacher_id": "DP07",
-                "subject_id": "PCS-503",
-                "classroom_id": "L1",
-                "time_slot": "11:00 - 12:00",
-                "group": 2
-            },
-            {
-                "teacher_id": "DP07",
-                "subject_id": "PCS-503",
-                "classroom_id": "L1",
-                "time_slot": "12:00 - 13:00",
-                "group": 2
             }
         ],
         "D": [
             {
-                "teacher_id": "AD08",
-                "subject_id": "PCS-506",
-                "classroom_id": "L2",
+                "teacher_id": "SS03",
+                "subject_id": "TCS-502",
+                "classroom_id": "R4",
                 "time_slot": "08:00 - 09:00",
-                "group": 1
+                "group": "all"
             },
             {
-                "teacher_id": "AD08",
-                "subject_id": "PCS-506",
-                "classroom_id": "L2",
+                "teacher_id": "AB01",
+                "subject_id": "TCS-531",
+                "classroom_id": "R4",
                 "time_slot": "09:00 - 10:00",
-                "group": 1
+                "group": "all"
             },
             {
-                "teacher_id": "AD08",
-                "subject_id": "PCS-506",
-                "classroom_id": "L1",
+                "teacher_id": "JM12",
+                "subject_id": "TMA-502",
+                "classroom_id": "R4",
                 "time_slot": "11:00 - 12:00",
-                "group": 2
-            },
-            {
-                "teacher_id": "AD08",
-                "subject_id": "PCS-506",
-                "classroom_id": "L1",
-                "time_slot": "12:00 - 13:00",
-                "group": 2
+                "group": "all"
             },
             {
                 "teacher_id": "None",
                 "subject_id": "Library",
+                "classroom_id": "R4",
+                "time_slot": "12:00 - 13:00",
+                "group": "all"
+            },
+            {
+                "teacher_id": "AK26",
+                "subject_id": "Placement_Class",
                 "classroom_id": "R4",
                 "time_slot": "13:50 - 14:50",
-                "group": "all"
+                "group": 1
             },
             {
-                "teacher_id": "None",
-                "subject_id": "Library",
+                "teacher_id": "AK26",
+                "subject_id": "Placement_Class",
                 "classroom_id": "R4",
                 "time_slot": "14:50 - 15:50",
-                "group": "all"
+                "group": 1
             },
             {
                 "teacher_id": "None",
@@ -2785,15 +2785,15 @@ class SampleChromosome:
         ],
         "E": [
             {
-                "teacher_id": "PK02",
-                "subject_id": "TCS-531",
+                "teacher_id": "AC05",
+                "subject_id": "TCS-503",
                 "classroom_id": "R5",
                 "time_slot": "08:00 - 09:00",
                 "group": "all"
             },
             {
-                "teacher_id": "JM12",
-                "subject_id": "TMA-502",
+                "teacher_id": "None",
+                "subject_id": "Library",
                 "classroom_id": "R5",
                 "time_slot": "09:00 - 10:00",
                 "group": "all"
@@ -2813,18 +2813,18 @@ class SampleChromosome:
                 "group": "all"
             },
             {
-                "teacher_id": "None",
-                "subject_id": "Library",
+                "teacher_id": "AK26",
+                "subject_id": "Placement_Class",
                 "classroom_id": "R5",
                 "time_slot": "13:50 - 14:50",
-                "group": "all"
+                "group": 1
             },
             {
-                "teacher_id": "None",
-                "subject_id": "Library",
+                "teacher_id": "AK26",
+                "subject_id": "Placement_Class",
                 "classroom_id": "R5",
                 "time_slot": "14:50 - 15:50",
-                "group": "all"
+                "group": 1
             },
             {
                 "teacher_id": "None",
@@ -2836,15 +2836,15 @@ class SampleChromosome:
         ],
         "F": [
             {
-                "teacher_id": "AB01",
-                "subject_id": "TCS-531",
+                "teacher_id": "NJ13",
+                "subject_id": "TMA-502",
                 "classroom_id": "R6",
                 "time_slot": "08:00 - 09:00",
                 "group": "all"
             },
             {
-                "teacher_id": "AB17",
-                "subject_id": "TCS-509",
+                "teacher_id": "None",
+                "subject_id": "Library",
                 "classroom_id": "R6",
                 "time_slot": "09:00 - 10:00",
                 "group": "all"
@@ -2864,18 +2864,18 @@ class SampleChromosome:
                 "group": "all"
             },
             {
-                "teacher_id": "None",
-                "subject_id": "Library",
+                "teacher_id": "AK26",
+                "subject_id": "Placement_Class",
                 "classroom_id": "R6",
                 "time_slot": "13:50 - 14:50",
-                "group": "all"
+                "group": 1
             },
             {
-                "teacher_id": "None",
-                "subject_id": "Library",
+                "teacher_id": "AK26",
+                "subject_id": "Placement_Class",
                 "classroom_id": "R6",
                 "time_slot": "14:50 - 15:50",
-                "group": "all"
+                "group": 1
             },
             {
                 "teacher_id": "None",
