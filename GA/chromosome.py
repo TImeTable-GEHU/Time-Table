@@ -18,7 +18,7 @@ class TimeTableGeneration:
         subject_quota_limits: dict,
         teacher_duty_days: dict,
         teacher_availability_matrix: dict,
-        time_slots:dict,
+        time_slots: dict,
     ):
         self.sections_manager = total_sections
         self.classrooms_manager = total_classrooms
@@ -113,7 +113,6 @@ class TimeTableGeneration:
     def _initialize_teacher_workload_tracker(self):
         return {teacher: 0 for teacher in self.weekly_workload}
 
-
     def _get_available_subjects(self, section, subject_usage_tracker):
         return [
             subject
@@ -154,7 +153,10 @@ class TimeTableGeneration:
                         teacher, []
                     )
                 ]
-                sorted_teachers_by_load = sorted(preferred_teachers, key=lambda teacher: teacher_workload_tracker[teacher])
+                sorted_teachers_by_load = sorted(
+                    preferred_teachers,
+                    key=lambda teacher: teacher_workload_tracker[teacher]
+                )
 
                 for teacher in sorted_teachers_by_load:
                     if (
@@ -186,7 +188,6 @@ class TimeTableGeneration:
 
         return assigned_teacher, selected_subject, assigned_room
 
-
     def _generate_section_schedule(
             self,
             section,
@@ -196,7 +197,10 @@ class TimeTableGeneration:
             teacher_availability_matrix,
             day_index,
             section_strength=100,
-            labs_capacity: dict = {"L1": 50, "L2": 50}
+            labs_capacity: dict = {
+                "L1": 50,
+                "L2": 50
+            }
     ):
         section_schedule = []
         subjects_scheduled_today = set()
