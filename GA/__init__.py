@@ -190,9 +190,9 @@ def run_timetable_generation(
 if __name__ == "__main__":
     best, correct_teacher_availability_matrix = run_timetable_generation(
         teacher_subject_mapping=SubjectTeacherMap.subject_teacher_map,
-        total_sections=6,
-        total_classrooms=8,
-        total_labs=3,
+        total_sections={"A": 70, "B": 100, "C": 75, "D": 100},
+        total_classrooms={"R1": 200, "R2": 230, "R3": 240, "R4": 250, "R5": 250},
+        total_labs={"L1":70,"L2":50,"L3":70,"L4":50,"L5":70,"L6":50},
         teacher_preferences=TeacherWorkload.teacher_preferences,
         teacher_weekly_workload=TeacherWorkload.Weekly_workLoad,
         special_subjects=SpecialSubjects.special_subjects,
@@ -204,11 +204,19 @@ if __name__ == "__main__":
             5,
             7
         ),
-        total_generations=Defaults.total_no_of_generations
+        total_generations = Defaults.total_no_of_generations,
+        time_slots = {
+            1: "9:00 - 9:55",
+            2: "9:55 - 10:50",
+            3: "11:10 - 12:05",
+            4: "12:05 - 1:00",
+            5: "1:20 - 2:15",
+            6: "2:15 - 3:10",
+            7: "3:30 - 4:25",
+        }
     )
 
     from icecream import ic
-    ic(best)
     correct_teacher_availability_matrix = update_matrix_for_best(
         best,
         correct_teacher_availability_matrix,
@@ -221,14 +229,13 @@ if __name__ == "__main__":
             "Saturday": 5,
             "Sunday": 6
         },{
-            "08:00 - 09:00": 1,
-            "09:00 - 10:00": 2,
-            "10:00 - 11:00": 3,
-            "11:00 - 12:00": 4,
-            "12:00 - 13:00": 5,
-            "13:50 - 14:50": 6,
-            "14:50 - 15:50": 7,
-            "16:50 - 17:50": 8
+            "9:00 - 9:55": 1,
+            "9:55 - 10:50": 2,
+            "11:10 - 12:05": 3,
+            "12:05 - 1:00": 4,
+            "1:20 - 2:15": 5,
+            "2:15 - 3:10": 6,
+            "3:30 - 4:25": 7
         }
     )
     ic(best, correct_teacher_availability_matrix)

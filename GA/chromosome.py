@@ -1,7 +1,6 @@
 import random
 
-from Constants.constant import Classrooms, Defaults, RoomCapacity, Sections
-from Constants.time_intervals import TimeIntervalConstant
+from Constants.constant import Defaults
 
 
 class TimeTableGeneration:
@@ -35,7 +34,6 @@ class TimeTableGeneration:
         self.teacher_assignment_tracker = teacher_subject_mapping
         self.teacher_availability_matrix = teacher_availability_matrix
         self._map_sections_to_classrooms()
-        self._assign_teachers_to_sections()
 
     def _map_sections_to_classrooms(self):
         sorted_classrooms = sorted(
@@ -95,9 +93,7 @@ class TimeTableGeneration:
                         selected_subject = subject
                         subjects_scheduled_today.add(subject)
                         assigned_room = (
-                            self.classrooms_manager.labs[slot_index % len(self.classrooms_manager.labs)]
-                            if subject in self.lab_subject_list or subject == "Placement_Class"
-                            else assigned_classroom
+                            list(self.lab_capacity_manager.keys())[slot_index % len(self.lab_capacity_manager)]
                         )
                         break
             if assigned_teacher:
@@ -171,11 +167,7 @@ class TimeTableGeneration:
                         selected_subject = subject
                         subjects_scheduled_today.add(subject)
 
-                        assigned_room = (
-                            self.classrooms_manager.labs[slot_index % len(self.classrooms_manager.labs)]
-                            if subject in self.lab_subject_list
-                            else assigned_classroom
-                        )
+                        assigned_room = list(self.lab_capacity_manager.keys())[slot_index % len(self.lab_capacity_manager)]
                         break
 
             if assigned_teacher:
@@ -197,17 +189,14 @@ class TimeTableGeneration:
             teacher_availability_matrix,
             day_index,
             section_strength=100,
-            labs_capacity: dict = {
-                "L1": 50,
-                "L2": 50
-            }
+            labs_capacity: dict = {"L1":70,"L2":50,"L3":70,"L4":50,"L5":70,"L6":50}
     ):
         section_schedule = []
         subjects_scheduled_today = set()
         assigned_classroom = self.section_to_classroom_map[section]
         total_slots = 4 if section in half_day_sections else 7
         slot_index = 1
-
+        print(self.available_time_slots)
         while slot_index <= total_slots:
             time_slot = self.available_time_slots[slot_index]
             assigned_teacher, assigned_subject, assigned_room = self._assign_subject_and_teacher(
@@ -223,7 +212,7 @@ class TimeTableGeneration:
                         assigned_room in labs_capacity and section_strength > labs_capacity[assigned_room]):
                     # Try to find an alternate lab room for group 2.
                     lab2 = None
-                    for lab in self.classrooms_manager.labs:
+                    for lab in self.lab_capacity_manager:
                         if lab != assigned_room and lab in labs_capacity:
                             if labs_capacity[lab] >= section_strength - labs_capacity[assigned_room]:
                                 lab2 = lab
