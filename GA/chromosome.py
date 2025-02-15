@@ -8,55 +8,50 @@ class TimeTableGeneration:
     def __init__(
         self,
         teacher_subject_mapping: dict,
-        total_sections: int,
-        total_classrooms: int,
-        total_labs: int,
+        total_sections: dict,
+        total_classrooms: dict,
+        total_labs: dict,
         teacher_preferences: dict,
         teacher_weekly_workload: dict,
         special_subjects: dict,
         labs: dict,
         subject_quota_limits: dict,
         teacher_duty_days: dict,
-        teacher_availability_matrix=dict,
+        teacher_availability_matrix: dict,
+        time_slots:dict,
     ):
-        self.sections_manager = Sections(total_sections)
-        self.classrooms_manager = Classrooms(total_classrooms, total_labs)
-        self.room_capacity_manager = RoomCapacity(
-            self.classrooms_manager.classrooms, self.sections_manager.sections
-        )
+        self.sections_manager = total_sections
+        self.classrooms_manager = total_classrooms
+        self.lab_capacity_manager = total_labs
         self.weekdays = Defaults.working_days
         self.subject_teacher_mapping = teacher_subject_mapping
         self.subject_quota_limits = subject_quota_limits
         self.lab_subject_list = labs
         self.special_subject_list = special_subjects
         self.teacher_availability_preferences = teacher_preferences
-        self.available_time_slots = TimeIntervalConstant.time_slots
+        self.available_time_slots = time_slots
         self.teacher_duty_days = teacher_duty_days
         self.weekly_workload = teacher_weekly_workload
-        self.teacher_assignment_tracker = {teacher: 0 for teacher in teacher_weekly_workload}
+        self.teacher_assignment_tracker = teacher_subject_mapping
         self.teacher_availability_matrix = teacher_availability_matrix
         self._map_sections_to_classrooms()
-        self.teacher_subject_mapping = teacher_subject_mapping
-
+        self._assign_teachers_to_sections()
 
     def _map_sections_to_classrooms(self):
         sorted_classrooms = sorted(
-            self.classrooms_manager.classrooms,
-            key=lambda classroom: self.room_capacity_manager.room_capacity[classroom],
-            reverse=True,
+            self.classrooms_manager.items(), key=lambda x: x[1], reverse=True
         )
         sorted_sections = sorted(
-            self.sections_manager.sections,
-            key=lambda section: self.room_capacity_manager.section_strength[section],
-            reverse=True,
+            self.sections_manager.items(), key=lambda x: x[1], reverse=True
         )
         self.section_to_classroom_map = {}
-        for section in sorted_sections:
-            for classroom in sorted_classrooms:
-                if self.room_capacity_manager.room_capacity[classroom] >= self.room_capacity_manager.section_strength[section]:
+        for section, strength in sorted_sections:
+            for i, (classroom, capacity) in enumerate(sorted_classrooms):
+                if capacity >= strength:
                     self.section_to_classroom_map[section] = classroom
-                    sorted_classrooms.remove(classroom)
+                    sorted_classrooms.pop(i)
                     break
+        return self.section_to_classroom_map
 
     def _assign_subject_and_teacher(
             self,
@@ -115,7 +110,6 @@ class TimeTableGeneration:
 
         return assigned_teacher, selected_subject, assigned_room
 
-
     def _initialize_teacher_workload_tracker(self):
         return {teacher: 0 for teacher in self.weekly_workload}
 
@@ -141,7 +135,6 @@ class TimeTableGeneration:
     ):
         available_subjects = self._get_available_subjects(section, section_subject_usage_tracker)
         random.shuffle(available_subjects)
-
         assigned_teacher = None
         selected_subject = None
         assigned_room = None
@@ -192,6 +185,7 @@ class TimeTableGeneration:
             assigned_room = assigned_classroom
 
         return assigned_teacher, selected_subject, assigned_room
+
 
     def _generate_section_schedule(
             self,
@@ -352,13 +346,18 @@ class TimeTableGeneration:
         return section_schedule, teacher_availability_matrix
 
 
-    def generate_daily_schedule(self, half_day_sections, section_subject_usage_tracker, day_index):
+    def generate_daily_schedule(self, section_list,half_day_sections,section_subject_usage_tracker, day_index):
         daily_schedule = {}
         teacher_workload_tracker = self._initialize_teacher_workload_tracker()
 
-        for section in self.sections_manager.sections:
+        for section in section_list:  # Iterate over half-day sections only
             section_schedule, self.teacher_availability_matrix = self._generate_section_schedule(
-                section, half_day_sections, section_subject_usage_tracker, teacher_workload_tracker, self.teacher_availability_matrix, day_index
+                section,
+                half_day_sections,
+                section_subject_usage_tracker,
+                teacher_workload_tracker,
+                self.teacher_availability_matrix,
+                day_index
             )
             daily_schedule[section] = section_schedule
 
@@ -368,16 +367,20 @@ class TimeTableGeneration:
     def _generate_weekly_schedule(self):
         weekly_schedule = {}
         section_subject_usage_tracker = {
-            section: {subject: 0 for subject in self.subject_teacher_mapping} for section in self.sections_manager.sections
+            section: {subject: 0 for subject in self.subject_teacher_mapping.keys()}
+            for section in self.sections_manager.keys()
         }
 
-        for day_index, weekday in enumerate(self.weekdays):
-            half_day_sections = self.sections_manager.sections[: len(self.sections_manager.sections)//2]
-            daily_schedule, section_subject_usage_tracker, self.teacher_availability_matrix = self.generate_daily_schedule(
-                half_day_sections, section_subject_usage_tracker, day_index
-            )
-            weekly_schedule[weekday] = daily_schedule
+        section_list = list(self.sections_manager.keys())
 
+        for day_index, weekday in enumerate(self.weekdays):
+            random.shuffle(section_list)
+            half_day_sections = section_list[: len(section_list) // 2]
+            daily_schedule, section_subject_usage_tracker, self.teacher_availability_matrix= self.generate_daily_schedule(
+                section_list,half_day_sections, section_subject_usage_tracker, day_index
+            )
+
+            weekly_schedule[weekday] = daily_schedule
         return weekly_schedule, section_subject_usage_tracker, self.teacher_availability_matrix
 
 
