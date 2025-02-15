@@ -1,16 +1,10 @@
 # This is the Orchestrator file, which will govern the flow.
-import json
 
-from Constants.constant import Defaults
-from Constants.helper_routines import update_teacher_availability_matrix, update_matrix_for_best, \
-    initialize_teacher_availability
+from Constants.helper_routines import update_teacher_availability_matrix, update_matrix_for_best
 from GA.chromosome import TimeTableGeneration
 from GA.fitness import TimetableFitnessEvaluator
 from GA.mutation import TimeTableCrossOver, TimeTableMutation
 from GA.selection import TimeTableSelection
-from Samples.samples import (InterDepartment, SpecialSubjects,
-                             SubjectTeacherMap, SubjectWeeklyQuota,
-                             TeacherWorkload)
 
 
 def timetable_generation(
@@ -50,18 +44,18 @@ def timetable_generation(
     )
 
     fitness_calculator = TimetableFitnessEvaluator(
-    timetable=timetable,
-    all_sections=list(timetable_generator.sections_manager.keys()),
-    subject_teacher_mapping=timetable_generator.subject_teacher_mapping,
-    available_classrooms=list(timetable_generator.classrooms_manager.keys()),
-    available_labs=list(timetable_generator.lab_capacity_manager.keys()),
-    classroom_capacity=timetable_generator.classrooms_manager,
-    section_student_strength=timetable_generator.sections_manager,
-    subject_quota_data=timetable_generator.subject_quota_limits,
-    teacher_time_preferences=timetable_generator.teacher_availability_preferences,
-    teacher_daily_workload=timetable_generator.weekly_workload,
-    time_slots=time_slots
-)
+        timetable=timetable,
+        all_sections=list(timetable_generator.sections_manager.keys()),
+        subject_teacher_mapping=timetable_generator.subject_teacher_mapping,
+        available_classrooms=list(timetable_generator.classrooms_manager.keys()),
+        available_labs=list(timetable_generator.lab_capacity_manager.keys()),
+        classroom_capacity=timetable_generator.classrooms_manager,
+        section_student_strength=timetable_generator.sections_manager,
+        subject_quota_data=timetable_generator.subject_quota_limits,
+        teacher_time_preferences=timetable_generator.teacher_availability_preferences,
+        teacher_daily_workload=timetable_generator.weekly_workload,
+        time_slots=time_slots
+    )
     fitness_scores = fitness_calculator.evaluate_timetable_fitness()
 
     selection_object = TimeTableSelection()
@@ -103,6 +97,7 @@ def timetable_generation(
         )
 
     return best_chromosome, teacher_availability_matrix, selected_chromosomes, mutated_chromosomes
+
 
 def run_timetable_generations(
     teacher_subject_mapping,
@@ -184,42 +179,9 @@ def run_timetable_generation(
         prev_selected = selected
         prev_mutated = mutated
 
-    return best_chromosome, teacher_availability_matrix
-
-
-if __name__ == "__main__":
-    best, correct_teacher_availability_matrix = run_timetable_generation(
-        teacher_subject_mapping=SubjectTeacherMap.subject_teacher_map,
-        total_sections={"A": 70, "B": 100, "C": 75, "D": 100},
-        total_classrooms={"R1": 200, "R2": 230, "R3": 240, "R4": 250, "R5": 250},
-        total_labs={"L1":70,"L2":50,"L3":70,"L4":50,"L5":70,"L6":50},
-        teacher_preferences=TeacherWorkload.teacher_preferences,
-        teacher_weekly_workload=TeacherWorkload.Weekly_workLoad,
-        special_subjects=SpecialSubjects.special_subjects,
-        labs=SpecialSubjects.Labs,
-        subject_quota_limits=SubjectWeeklyQuota.subject_quota,
-        teacher_duty_days=TeacherWorkload.teacher_duty_days,
-        teacher_availability_matrix=initialize_teacher_availability(
-            TeacherWorkload.Weekly_workLoad.keys(),
-            5,
-            7
-        ),
-        total_generations = Defaults.total_no_of_generations,
-        time_slots = {
-            1: "9:00 - 9:55",
-            2: "9:55 - 10:50",
-            3: "11:10 - 12:05",
-            4: "12:05 - 1:00",
-            5: "1:20 - 2:15",
-            6: "2:15 - 3:10",
-            7: "3:30 - 4:25",
-        }
-    )
-
-    from icecream import ic
     correct_teacher_availability_matrix = update_matrix_for_best(
-        best,
-        correct_teacher_availability_matrix,
+        best_chromosome,
+        teacher_availability_matrix,
         {
             "Monday": 0,
             "Tuesday": 1,
@@ -228,14 +190,61 @@ if __name__ == "__main__":
             "Friday": 4,
             "Saturday": 5,
             "Sunday": 6
-        },{
-            "9:00 - 9:55": 1,
-            "9:55 - 10:50": 2,
-            "11:10 - 12:05": 3,
-            "12:05 - 1:00": 4,
-            "1:20 - 2:15": 5,
-            "2:15 - 3:10": 6,
-            "3:30 - 4:25": 7
-        }
+        }, time_slots
     )
-    ic(best, correct_teacher_availability_matrix)
+
+    return best_chromosome, correct_teacher_availability_matrix
+
+
+# if __name__ == "__main__":
+#     best, correct_teacher_availability_matrix = run_timetable_generation(
+#         teacher_subject_mapping=SubjectTeacherMap.subject_teacher_map,
+#         total_sections={"A": 70, "B": 100, "C": 75, "D": 100},
+#         total_classrooms={"R1": 200, "R2": 230, "R3": 240, "R4": 250, "R5": 250},
+#         total_labs={"L1":70,"L2":50,"L3":70,"L4":50,"L5":70,"L6":50},
+#         teacher_preferences=TeacherWorkload.teacher_preferences,
+#         teacher_weekly_workload=TeacherWorkload.Weekly_workLoad,
+#         special_subjects=SpecialSubjects.special_subjects,
+#         labs=SpecialSubjects.Labs,
+#         subject_quota_limits=SubjectWeeklyQuota.subject_quota,
+#         teacher_duty_days=TeacherWorkload.teacher_duty_days,
+#         teacher_availability_matrix=initialize_teacher_availability(
+#             TeacherWorkload.Weekly_workLoad.keys(),
+#             5,
+#             7
+#         ),
+#         total_generations = Defaults.total_no_of_generations,
+#         time_slots = {
+#             1: "9:00 - 9:55",
+#             2: "9:55 - 10:50",
+#             3: "11:10 - 12:05",
+#             4: "12:05 - 1:00",
+#             5: "1:20 - 2:15",
+#             6: "2:15 - 3:10",
+#             7: "3:30 - 4:25",
+#         }
+#     )
+#
+#     from icecream import ic
+#     correct_teacher_availability_matrix = update_matrix_for_best(
+#         best,
+#         correct_teacher_availability_matrix,
+#         {
+#             "Monday": 0,
+#             "Tuesday": 1,
+#             "Wednesday": 2,
+#             "Thursday": 3,
+#             "Friday": 4,
+#             "Saturday": 5,
+#             "Sunday": 6
+#         },{
+#             "9:00 - 9:55": 1,
+#             "9:55 - 10:50": 2,
+#             "11:10 - 12:05": 3,
+#             "12:05 - 1:00": 4,
+#             "1:20 - 2:15": 5,
+#             "2:15 - 3:10": 6,
+#             "3:30 - 4:25": 7
+#         }
+#     )
+#     ic(best, correct_teacher_availability_matrix)
