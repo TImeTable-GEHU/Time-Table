@@ -1,7 +1,6 @@
 import json
 
 from Constants.constant import Defaults, PenaltyConstants
-from Constants.time_intervals import TimeIntervalConstant
 from GA.chromosome import TimeTableGeneration
 from Samples.samples import (SpecialSubjects, SubjectTeacherMap,
                              SubjectWeeklyQuota, TeacherWorkload)
@@ -39,9 +38,7 @@ class TimetableFitnessEvaluator:
         daily_section_fitness_scores = {}
         weekly_fitness_scores = {}
         teacher_workload_tracking = {}
-        from icecream import ic
 
-        # ic(self.timetable)
         for week, week_schedule in self.timetable.items():
             weekly_fitness = 0
             daily_section_fitness_scores[week] = {}
