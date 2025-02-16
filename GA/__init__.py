@@ -1,9 +1,8 @@
 # This is the Orchestrator file, which will govern the flow.
-import json
 
-from Constants.constant import Defaults
-from Constants.helper_routines import update_teacher_availability_matrix, update_matrix_for_best, \
-    initialize_teacher_availability
+from Constants.helper_routines import (initialize_teacher_availability,
+                                       update_matrix_for_best,
+                                       update_teacher_availability_matrix)
 from GA.chromosome import TimeTableGeneration
 from GA.fitness import TimetableFitnessEvaluator
 from GA.mutation import TimeTableCrossOver, TimeTableMutation
@@ -189,9 +188,9 @@ def run_timetable_generation(
 
 if __name__ == '__main__':
     from Constants.constant import Defaults
-    from Constants.helper_routines import initialize_teacher_availability, update_matrix_for_best
     from GA.__init__ import run_timetable_generation
-    from Samples.samples import SubjectTeacherMap, SubjectWeeklyQuota, TeacherWorkload, SpecialSubjects
+    from Samples.samples import (SpecialSubjects, SubjectTeacherMap,
+                                 SubjectWeeklyQuota, TeacherWorkload)
 
     best, correct_teacher_availability_matrix = run_timetable_generation(
         teacher_subject_mapping=SubjectTeacherMap.subject_teacher_map,

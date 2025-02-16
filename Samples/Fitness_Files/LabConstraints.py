@@ -1,5 +1,6 @@
-import random
 import json
+import random
+
 from constants.time_intervals import TimeIntervalConstant
 
 # Constants

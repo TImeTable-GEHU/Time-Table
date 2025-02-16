@@ -1,13 +1,15 @@
 from Constants.constant import Defaults
-from Constants.helper_routines import update_teacher_availability_matrix, update_matrix_for_best, \
-    initialize_teacher_availability
+from Constants.helper_routines import (initialize_teacher_availability,
+                                       update_matrix_for_best,
+                                       update_teacher_availability_matrix)
 from GA.chromosome import TimeTableGeneration
 from GA.fitness import TimetableFitnessEvaluator
 from GA.mutation import TimeTableCrossOver, TimeTableMutation
 from GA.selection import TimeTableSelection
-from Samples.samples import (InterDepartment, SpecialSubjects,
+from Samples.samples import (InterDepartment, RoomCapacity, SpecialSubjects,
                              SubjectTeacherMap, SubjectWeeklyQuota,
-                             TeacherWorkload, RoomCapacity, TimeSlots)
+                             TeacherWorkload, TimeSlots)
+
 
 def timetable_generation(
     teacher_subject_mapping,

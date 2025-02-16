@@ -1,5 +1,7 @@
 import json
-from Samples.samples import (SubjectTeacherMap, WorkingDays, SampleChromosome)
+
+from Samples.samples import SampleChromosome, SubjectTeacherMap, WorkingDays
+
 
 class TeacherTimetable:
     def __init__(self):

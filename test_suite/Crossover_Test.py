@@ -5,6 +5,7 @@
 import random
 import unittest
 
+
 # TimetableScheduler Class
 class TimetableScheduler:
     def __init__(self):
@@ -137,8 +138,9 @@ if __name__ == "__main__":
 #2.  def create_multiple_chromosomes(self, num_chromosomes):
 
 import random
-import unittest
 import time
+import unittest
+
 
 class TimetableScheduler:
     def __init__(self, subjects, rooms, days, sections, max_attempts=10):
@@ -293,6 +295,7 @@ if __name__ == "__main__":
 import random
 import unittest
 
+
 class TimetableScheduler:
     def __init__(self, subjects, rooms, days, sections):
         self.subjects = subjects  # List of subject codes
@@ -395,6 +398,7 @@ if __name__ == '__main__':
 
 import random
 import unittest
+
 
 class TimetableScheduler:
     def __init__(self, classrooms, sections, time_slots):
@@ -515,8 +519,9 @@ if __name__ == '__main__':
 #5.def print_chromosomes(self, chromosomes):
 
 import unittest
-from unittest.mock import patch
 from io import StringIO
+from unittest.mock import patch
+
 
 class TimetableScheduler:
     def __init__(self, classrooms, sections, teachers, subjects, time_slots):
