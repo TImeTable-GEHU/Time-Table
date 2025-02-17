@@ -4,6 +4,7 @@
 
 import unittest
 
+
 class Sections:
     def __init__(self, num_sections):
         # Generate sections as sectionA, sectionB, sectionC, etc.
@@ -96,6 +97,7 @@ if __name__ == "__main__":
 
 import random
 from collections import defaultdict
+
 
 class TimetableGenerator:
     def __init__(self, sections, time_slots, subject_teacher_map, section_rooms, lab):
@@ -199,6 +201,7 @@ class TimetableGenerator:
         return day_schedule
 import unittest
 
+
 class TestGenerateDaySchedule(unittest.TestCase):
     def setUp(self):
         self.sections = ["A", "B", "C"]
@@ -282,9 +285,10 @@ if __name__ == "__main__":
 
 #3. def create_timetable(self, num_weeks=1):
 
+import random
 import unittest
 from collections import defaultdict
-import random
+
 
 class TimetableGenerator:
     def __init__(self, sections, time_slots, subject_teacher_map, section_rooms, lab):
@@ -457,9 +461,10 @@ if __name__ == "__main__":
 
 #4.  def calculate_fitness(self, chromosome):
 
+import random
 import unittest
 from collections import defaultdict
-import random
+
 
 class TimetableGenerator:
     def __init__(self, sections, time_slots, subject_teacher_map, section_rooms, lab, section_strength, room_capacity, teacher_preferences, teacher_work_load):

@@ -113,10 +113,6 @@ class StudentScorer:
         return sections
 
 
-
-
-
-
 def generate_students(num_students: int = 500) -> List[Dict]:
     """
     Generate a list of random students with CGPA and hostler status.
