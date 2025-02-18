@@ -2,7 +2,7 @@ import random
 import copy
 from math import ceil
 from Constants.constant import Defaults
-
+from Constants.constant import TeacherPreferences
 class TimeTableGeneration:
     def __init__(
         self,
@@ -34,7 +34,6 @@ class TimeTableGeneration:
         self.weekly_workload = teacher_weekly_workload
         self.teacher_assignment_tracker = teacher_subject_mapping
         self.teacher_availability_matrix = teacher_availability_matrix
-
         # Save the original lab matrix so that each generation starts fresh.
         self.initial_lab_availability_matrix = copy.deepcopy(lab_availability_matrix)
         self.lab_availability_matrix = copy.deepcopy(self.initial_lab_availability_matrix)
@@ -288,10 +287,11 @@ class TimeTableGeneration:
         teacher_workload_tracker
     ):
         daily_schedule = {}
+        teacher_workload_tracker = self._initialize_teacher_workload_tracker()
         for section in section_list:
             section_strength = self.sections_manager[section]
             labs_capacity = self.lab_capacity_manager
-            section_schedule, self.teacher_availability_matrix ,= self._generate_section_schedule(
+            section_schedule, self.teacher_availability_matrix = self._generate_section_schedule(
                 section,
                 half_day_sections,
                 section_subject_usage_tracker,

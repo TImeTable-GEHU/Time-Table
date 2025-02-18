@@ -4,6 +4,7 @@ from Constants.helper_routines import (
     update_matrix_for_best,
     update_teacher_availability_matrix
 )
+from Constants.constant import (Defaults,TeacherPreferences)
 from GA.chromosome import TimeTableGeneration
 from GA.fitness import TimetableFitnessEvaluator
 from GA.mutation import TimeTableCrossOver, TimeTableMutation
@@ -58,7 +59,7 @@ def timetable_generation(
         total_sections=total_sections,
         total_classrooms=total_classrooms,
         total_labs=total_labs,
-        teacher_preferences=teacher_preferences,
+        teacher_preferences=TeacherPreferences(teacher_weekly_workload).get_preferences(),
         teacher_weekly_workload=teacher_weekly_workload,
         special_subjects=special_subjects,
         labs=labs,
@@ -197,7 +198,7 @@ def run_timetable_generation(
         teacher_duty_days=teacher_duty_days,
         teacher_availability_matrix=teacher_availability_matrix,
         lab_availability_matrix=lab_availability_matrix,
-        total_generations=total_generations,
+        total_generations=Defaults.total_no_of_generations,
         time_slots=time_slots
     )
     teacher_availability_matrix = update_matrix_for_best(
@@ -228,7 +229,7 @@ if __name__ == '__main__':
         total_sections={"A": 70, "B": 100, "C": 75, "D": 100},
         total_classrooms={"R1": 200, "R2": 230, "R3": 240, "R4": 250, "R5": 250},
         total_labs={"L1": 70, "L2": 50, "L3": 70, "L4": 50, "L5": 70, "L6": 50},
-        teacher_preferences=TeacherWorkload.teacher_preferences,
+        teacher_preferences={},
         teacher_weekly_workload=TeacherWorkload.Weekly_workLoad,
         special_subjects=SpecialSubjects.special_subjects,
         labs=SpecialSubjects.Labs,

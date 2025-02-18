@@ -1,0 +1,2255 @@
+{
+    "L2": {
+        "Monday": {
+            "A": [
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "RS11",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "RS11",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Tuesday": {
+            "A": [
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "RD09",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "RD09",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Wednesday": {
+            "D": [
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "VD25",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "VD25",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "AD08",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "AD08",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "C": [
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "VD25",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "VD25",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "AD08",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "AD08",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "RS11",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "RS11",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "B": [
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Friday": {
+            "B": [
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "L1": {
+        "Monday": {
+            "A": [
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "RS11",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "RS11",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Tuesday": {
+            "A": [
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "AD08",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "AD08",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "RD09",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "RD09",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "C": [
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "VD25",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "VD25",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "AD08",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "AD08",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "A": [
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "C": [
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "VD25",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "VD25",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "AD08",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "AD08",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "RS11",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "RS11",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "A": [
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "RS11",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "RS11",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "B": [
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Friday": {
+            "B": [
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "AD08",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "R2": {
+        "Monday": {
+            "B": [
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "DT20",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "AB01",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "SCS-501",
+                    "teacher_id": "AP24",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "BJ10",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "AB01",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "SCS-501",
+                    "teacher_id": "AP24",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "CSP-501",
+                    "teacher_id": "AK23",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "BJ10",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Tuesday": {
+            "B": [
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "SP06",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "AB01",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "DT20",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "SS03",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "AB01",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "DT20",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "SP06",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "SS03",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "B": [
+                {
+                    "subject_id": "CSP-501",
+                    "teacher_id": "AK23",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "AB17",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "SS03",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "SP06",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "AB01",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "SS03",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "SJ16",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "B": [
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "RS11",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "AB17",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "SP06",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "AB01",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Friday": {
+            "B": [
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "DT20",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "SP06",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "RS11",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "AA04",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Saturday": {
+            "B": [
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        }
+    },
+    "R3": {
+        "Monday": {
+            "C": [
+                {
+                    "subject_id": "CSP-501",
+                    "teacher_id": "AK23",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "SS03",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "SCS-501",
+                    "teacher_id": "AP24",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "PA21",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "CSP-501",
+                    "teacher_id": "AK23",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Tuesday": {
+            "C": [
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "AA04",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "AA04",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "SJ16",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "BJ10",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "SCS-501",
+                    "teacher_id": "AP24",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "C": [
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "PK02",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "AA04",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "RS11",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "PK02",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "AB17",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "C": [
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "SS03",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "SP06",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "AB17",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "JM12",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Friday": {
+            "C": [
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "SJ16",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "RS11",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "PK02",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Saturday": {
+            "C": [
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        }
+    },
+    "R4": {
+        "Monday": {
+            "D": [
+                {
+                    "subject_id": "CSP-501",
+                    "teacher_id": "AK23",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "SP06",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "NB22",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "SCS-501",
+                    "teacher_id": "AP24",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "RS11",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "AB17",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "CSP-501",
+                    "teacher_id": "AK23",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "PK02",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "AC05",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "SS03",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Tuesday": {
+            "D": [
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "PA21",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "SJ16",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "SCS-501",
+                    "teacher_id": "AP24",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "AC05",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "BJ10",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "SS03",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "PK02",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "PA21",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "PK02",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "RS11",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "AB17",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "AC05",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Wednesday": {
+            "D": [
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "HP18",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "AC05",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "BJ10",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "AB01",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "PA21",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "HP18",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "JM12",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "AC05",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Thursday": {
+            "D": [
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "SS03",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "PK02",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "HP18",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "teacher_id": "AK26",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "teacher_id": "AK26",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "AA04",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Friday": {
+            "D": [
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "SS03",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "AB01",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "JM12",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "teacher_id": "AK26",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "teacher_id": "AK26",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Saturday": {
+            "D": [
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        }
+    },
+    "R5": {
+        "Monday": {
+            "E": [
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "PK02",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "AA04",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "CSP-501",
+                    "teacher_id": "AK23",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "DT20",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "SJ16",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "SCS-501",
+                    "teacher_id": "AP24",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "DT20",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "SP06",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "SCS-501",
+                    "teacher_id": "AP24",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "JM12",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "teacher_id": "AK26",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "teacher_id": "AK26",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "HP18",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Tuesday": {
+            "E": [
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "AA04",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "RS11",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "NB22",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "AB01",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "AB17",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "CSP-501",
+                    "teacher_id": "AK23",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "SP06",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "SS03",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "NB22",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "AB01",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Wednesday": {
+            "E": [
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "RS11",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "AB01",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "SG19",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "SG19",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "SP06",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "AA04",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Thursday": {
+            "E": [
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "AC05",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "AA04",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "JM12",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "AB01",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "AC05",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "HP18",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "NJ13",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Friday": {
+            "E": [
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "AC05",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "teacher_id": "AK26",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "teacher_id": "AK26",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "PK02",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "JM12",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Saturday": {
+            "E": [
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        }
+    },
+    "R6": {
+        "Monday": {
+            "F": [
+                {
+                    "subject_id": "CSP-501",
+                    "teacher_id": "AK23",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "AB17",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "SCS-501",
+                    "teacher_id": "AP24",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "PA21",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "AC05",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "SCS-501",
+                    "teacher_id": "AP24",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "PA21",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Tuesday": {
+            "F": [
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "AC05",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "PK02",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "SP06",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "DT20",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "JM12",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "CSP-501",
+                    "teacher_id": "AK23",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "AA04",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Wednesday": {
+            "F": [
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "PA21",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "SP06",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "SS03",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "JM12",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "PK02",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "SJ16",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "SS03",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "SJ16",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "PK02",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "NJ13",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Thursday": {
+            "F": [
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "SG19",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "SS03",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "AB01",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "PK02",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "BJ10",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "SS03",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "SG19",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "teacher_id": "AK26",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "teacher_id": "AK26",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Friday": {
+            "F": [
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "NJ13",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "teacher_id": "AK26",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "teacher_id": "AK26",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "AB01",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "AB17",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Saturday": {
+            "F": [
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        }
+    },
+    "L3": {
+        "Monday": {
+            "F": [
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "PM14",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Tuesday": {
+            "E": [
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "AA15",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "teacher_id": "AA15",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "RD09",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "RD09",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "VD25",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "VD25",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Wednesday": {
+            "D": [
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "VD25",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "VD25",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "RD09",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "teacher_id": "RD09",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Thursday": {
+            "E": [
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "teacher_id": "DP07",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Friday": {},
+        "Saturday": {}
+    },
+    "R1": {
+        "Monday": {
+            "A": [
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "SP06",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "SJ16",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "SCS-501",
+                    "teacher_id": "AP24",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "CSP-501",
+                    "teacher_id": "AK23",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Tuesday": {},
+        "Wednesday": {
+            "A": [
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "AB01",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "DT20",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "SP06",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "SJ16",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "BJ10",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "DT20",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "A": [
+                {
+                    "subject_id": "SCS-501",
+                    "teacher_id": "AP24",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "teacher_id": "DT20",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "BJ10",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "SJ16",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "SJ16",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "BJ10",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Friday": {
+            "A": [
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "BJ10",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "AB01",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "teacher_id": "SP06",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "CSP-501",
+                    "teacher_id": "AK23",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "teacher_id": "SS03",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "teacher_id": "SJ16",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "teacher_id": "BJ10",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "teacher_id": "AB01",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Saturday": {
+            "A": [
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "teacher_id": "None",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        }
+    }
+}
