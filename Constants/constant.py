@@ -8,6 +8,17 @@ class Defaults:
     total_no_of_generations = 10
     class_strength = 50
 
+
+class TeacherPreferences:
+    def __init__(self, teacher_weekly_workload: dict):
+        self.teacher_preferences = {}
+        for teacher, workload in teacher_weekly_workload.items():
+            self.teacher_preferences[teacher] = list(range(1, 8))
+
+    def get_preferences(self):
+        return self.teacher_preferences
+        
+    
 class SubjectWeeklyQuota:
     def __init__(self, subject_quota):
         self.subject_quota = subject_quota
