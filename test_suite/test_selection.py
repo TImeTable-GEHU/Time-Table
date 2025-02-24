@@ -3,7 +3,10 @@
 #1.def get_all_time_slots():
 
 import unittest
+
 from Constants.time_intervals import TimeIntervalConstant
+
+
 class TestTimeIntervalConstant(unittest.TestCase):
     
     def test_get_all_time_slots(self):
@@ -14,8 +17,10 @@ if __name__ == "__main__":
     unittest.main()
 
 import unittest
-from Samples.Selection_Files.selection import Timetable  # Correct import
 from unittest import mock
+
+from Samples.Selection_Files.selection import Timetable  # Correct import
+
 
 class TestTimetable(unittest.TestCase):
     
@@ -76,8 +81,10 @@ if __name__ == "__main__":
 #2. def create_timetable(self):
 
 import unittest
-from Samples.Selection_Files.selection import Timetable  
-from unittest import mock  
+from unittest import mock
+
+from Samples.Selection_Files.selection import Timetable
+
 
 class TestTimetable(unittest.TestCase):
     
@@ -127,7 +134,10 @@ if __name__ == "__main__":
 #3.   def create_multiple_timelines(self, num_chromosomes):
 
 import unittest
-from Samples.Selection_Files.selection import Timetable  # Adjust the import as necessary
+
+from Samples.Selection_Files.selection import \
+    Timetable  # Adjust the import as necessary
+
 
 class TestTimetable(unittest.TestCase):
     
@@ -162,7 +172,10 @@ if __name__ == "__main__":
 #4. def calculate_fitness(self, chromosome):
 
 import unittest
-from Samples.Selection_Files.selection import Timetable  # Adjust the import path
+
+from Samples.Selection_Files.selection import \
+    Timetable  # Adjust the import path
+
 
 class TestTimetableFitness(unittest.TestCase):
     
@@ -251,7 +264,9 @@ if __name__ == "__main__":
 
 #5. def select_top_chromosomes(self, population: list, percentage=0.30) -> list:
 
-import random 
+import random
+
+
 def select_top_chromosomes(self, population: list, percentage=0.30) -> list:
     num_to_select = int(len(population) * percentage)
     fitness_scores = [(chromosome, self.calculate_fitness(chromosome)) for chromosome in population]

@@ -2,8 +2,9 @@
 
 #1. def mutate_time_slots_in_section(self, schedule, section):
 
-import unittest
 import random
+import unittest
+
 
 class TestMutateTimeSlots(unittest.TestCase):
     def setUp(self):
@@ -79,9 +80,9 @@ if __name__ == "__main__":
 
 #2. def mutate_schedule_for_week(self, weekly_schedule):
 
-import unittest
-import random
 import copy
+import random
+import unittest
 from unittest.mock import patch
 
 
@@ -248,11 +249,13 @@ if __name__ == "__main__":
 
 #3. def print_weekly_schedule(self, weekly_schedule):
 
+import copy
+import random
 import unittest
 from unittest.mock import patch
-import random
-import copy
-from Samples.Mutation_Files.mutation import Mutation 
+
+from Samples.Mutation_Files.mutation import Mutation
+
 
 class TestMutation(unittest.TestCase):
 
