@@ -76,3 +76,53 @@ class StudentScorer:
             sections.append(current_section)
 
         return sections
+<<<<<<< HEAD
+=======
+
+
+def generate_students(num_students: int = 500) -> List[Dict]:
+    """
+    Generate a list of random students with CGPA and hostler status.
+
+    Args:
+        num_students (int): Number of students to generate.
+
+    Returns:
+        List[Dict]: List of student dictionaries.
+    """
+
+    return [
+        {
+            'ID': i,
+            'CGPA': round(random.uniform(6.0, 9.8), 2),
+            'Hostler': random.choice([True, False])
+        }
+        for i in range(1, num_students + 1)
+    ]
+
+
+if __name__ == "__main__":
+    # Initialize constants and scorer
+    scorer = StudentScorer()
+    students = generate_students(num_students=500)
+
+    # Calculate the dynamic CGPA threshold
+    cgpa_threshold = scorer.calculate_dynamic_cgpa_threshold(students, top_percentage=30)
+    print(f"Dynamic CGPA Threshold (Top 30%): {cgpa_threshold}")
+
+    # Assign conditions and scores
+    scorer.assign_dynamic_conditions(cgpa_threshold)
+    students_with_scores = scorer.assign_scores_to_students(students)
+
+    # Divide students into sections
+    sections = scorer.divide_students_into_sections(students_with_scores, Defaults.class_strength)
+
+    # Display the sections
+    for i, section in enumerate(sections, 1):
+        print(f"Section {i} (Total Students: {len(section)}):")
+        for student in section:
+            print(
+                f"  Student ID: {student['ID']}, CGPA: {student['CGPA']}, "
+                f"Hostler: {student['Hostler']}, score: {student['score']}"
+            )
+>>>>>>> 89e907051dd54e4748a9dd197f4b4cd9d0da4c30
