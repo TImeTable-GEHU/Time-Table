@@ -48,5 +48,5 @@ class SectionsConstants:
     }
 
     ATTRIBUTE_CONDITIONS = {
-        'hostler': lambda student: student.get('Hostler', False),
+        'hostler': lambda student: student.get('is_hosteller', False),
     }
