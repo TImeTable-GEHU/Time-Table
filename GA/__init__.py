@@ -9,6 +9,7 @@ from GA.fitness import TimetableFitnessEvaluator
 from GA.mutation import TimeTableCrossOver, TimeTableMutation
 from GA.selection import TimeTableSelection
 
+
 def update_lab_availability_matrix(initial_lab_matrix, best_timetable, day_map, time_slot_map):
     """
     Iterate over the best chromosome (weekly timetable) and for each lab allocation,
@@ -32,25 +33,27 @@ def update_lab_availability_matrix(initial_lab_matrix, best_timetable, day_map, 
                     if ts_index is not None:
                         # Adjust index (if lab matrix lists are 0-indexed)
                         updated_lab_matrix[lab][day_index][ts_index - 1] = False
+
     return updated_lab_matrix
 
+
 def timetable_generation(
-    teacher_subject_mapping,
-    total_sections,
-    total_classrooms,
-    total_labs,
-    teacher_preferences,
-    teacher_weekly_workload,
-    special_subjects,
-    labs,
-    subject_quota_limits,
-    teacher_duty_days,
-    teacher_availability_matrix,
-    lab_availability_matrix,  # Initial lab matrix passed in
-    time_slots,
-    total_generations,
-    prev_selected_chromosomes=None,
-    prev_mutated_chromosomes=None
+        teacher_subject_mapping,
+        total_sections,
+        total_classrooms,
+        total_labs,
+        teacher_preferences,
+        teacher_weekly_workload,
+        special_subjects,
+        labs,
+        subject_quota_limits,
+        teacher_duty_days,
+        teacher_availability_matrix,
+        lab_availability_matrix,  # Initial lab matrix passed in
+        time_slots,
+        total_generations,
+        prev_selected_chromosomes=None,
+        prev_mutated_chromosomes=None
 ):
     # Create an instance of TimeTableGeneration.
     timetable_generator = TimeTableGeneration(
@@ -124,21 +127,22 @@ def timetable_generation(
     # We do NOT return the working lab matrix because we want to update the initial matrix.
     return best_chromosome, teacher_availability_matrix, selected_chromosomes, mutated_chromosomes
 
+
 def run_timetable_generations(
-    teacher_subject_mapping,
-    total_sections,
-    total_classrooms,
-    total_labs,
-    teacher_preferences,
-    teacher_weekly_workload,
-    special_subjects,
-    labs,
-    subject_quota_limits,
-    teacher_duty_days,
-    teacher_availability_matrix,
-    lab_availability_matrix,
-    total_generations,
-    time_slots
+        teacher_subject_mapping,
+        total_sections,
+        total_classrooms,
+        total_labs,
+        teacher_preferences,
+        teacher_weekly_workload,
+        special_subjects,
+        labs,
+        subject_quota_limits,
+        teacher_duty_days,
+        teacher_availability_matrix,
+        lab_availability_matrix,
+        total_generations,
+        time_slots
 ):
     prev_selected = None
     prev_mutated = None
@@ -166,23 +170,24 @@ def run_timetable_generations(
         prev_mutated = mutated
     return best_chromosome, teacher_availability_matrix, lab_availability_matrix
 
+
 def run_timetable_generation(
-    teacher_subject_mapping,
-    total_sections,
-    total_classrooms,
-    total_labs,
-    teacher_preferences,
-    teacher_weekly_workload,
-    special_subjects,
-    labs,
-    subject_quota_limits,
-    teacher_duty_days,
-    teacher_availability_matrix,
-    lab_availability_matrix,
-    total_generations,
-    time_slots,
-    day_map,
-    time_slot_map
+        teacher_subject_mapping,
+        total_sections,
+        total_classrooms,
+        total_labs,
+        teacher_preferences,
+        teacher_weekly_workload,
+        special_subjects,
+        labs,
+        subject_quota_limits,
+        teacher_duty_days,
+        teacher_availability_matrix,
+        lab_availability_matrix,
+        total_generations,
+        time_slots,
+        day_map,
+        time_slot_map
 ):
     best_tt, teacher_availability_matrix, lab_availability_matrix = run_timetable_generations(
         teacher_subject_mapping=teacher_subject_mapping,
@@ -210,11 +215,13 @@ def run_timetable_generation(
     updated_lab_matrix = update_lab_availability_matrix(lab_availability_matrix, best_tt, day_map, time_slot_map)
     return best_tt, teacher_availability_matrix, updated_lab_matrix
 
+
 if __name__ == '__main__':
     from Constants.constant import Defaults
     from GA.__init__ import run_timetable_generation
     from Samples.samples import (SpecialSubjects, SubjectTeacherMap,
                                  SubjectWeeklyQuota, TeacherWorkload)
+
     lab_availability_matrix = {
         "L1": [[True] * 7 for _ in range(5)],
         "L2": [[True] * 7 for _ in range(5)],
@@ -268,4 +275,5 @@ if __name__ == '__main__':
         }
     )
     from icecream import ic
+
     ic(best, correct_teacher_availability_matrix, correct_lab_availability_matrix)
