@@ -43,21 +43,27 @@ class TimeTableGeneration:
 
     def _map_sections_to_classrooms(self) -> dict:
         sorted_classrooms = sorted(
-            self.classrooms_manager.items(), key=lambda x: x[1], reverse=True
+            self.classrooms_manager.items(),
+            key = lambda item: item[1],
+            reverse=True
         )
         sorted_sections = sorted(
-            self.sections_manager.items(), key=lambda x: x[1], reverse=True
+            self.sections_manager.items(),
+            key = lambda item: item[1],
+            reverse = True
         )
-        self.section_to_classroom_map = {}
+        section_classroom_map = {}
 
-        for section, strength in sorted_sections:
-            for i, (classroom, capacity) in enumerate(sorted_classrooms):
-                if capacity >= strength:
-                    self.section_to_classroom_map[section] = classroom
-                    sorted_classrooms.pop(i)
+        for section, student_count in sorted_sections:
+            for index, (classroom, capacity) in enumerate(sorted_classrooms):
+                if capacity >= student_count:
+                    section_classroom_map[section] = classroom
+                    sorted_classrooms.pop(index)
                     break
 
-        return self.section_to_classroom_map
+        self.section_to_classroom_map = section_classroom_map
+        return section_classroom_map
+
 
     def _initialize_teacher_workload_tracker(self) -> dict:
         return {
@@ -65,12 +71,14 @@ class TimeTableGeneration:
             for teacher in self.weekly_workload
         }
 
+
     def _get_available_subjects(self, section: str, subject_usage_tracker: dict) -> list:
         return [
             subject
             for subject in self.subject_teacher_mapping
             if subject_usage_tracker[section][subject] < self.subject_quota_limits.get(subject, 0)
         ]
+
 
     def _assign_subject_and_teacher(
         self,
@@ -133,6 +141,7 @@ class TimeTableGeneration:
             selected_subject = "Library"
             assigned_teacher = "None"
         return assigned_teacher, selected_subject, assigned_room
+
 
     def _allocate_lab(
         self,
@@ -214,6 +223,7 @@ class TimeTableGeneration:
         }
         return [merged_entry], slot_index + 1
 
+
     def _generate_section_schedule(
         self,
         section: str,
@@ -277,6 +287,7 @@ class TimeTableGeneration:
 
         return schedule, teacher_availability_matrix
 
+
     def generate_daily_schedule(
         self,
         sections: list,
@@ -303,6 +314,7 @@ class TimeTableGeneration:
             daily_schedule[section] = schedule
         return daily_schedule, subject_usage_tracker, self.teacher_availability_matrix
 
+
     def _generate_weekly_schedule(self) -> tuple:
         weekly_schedule = {}
         subject_usage = {
@@ -322,6 +334,7 @@ class TimeTableGeneration:
             )
             weekly_schedule[weekday] = daily_sched
         return weekly_schedule, subject_usage, self.teacher_availability_matrix
+
 
     def create_timetable(self, num_weeks: int) -> tuple:
         timetable = {}

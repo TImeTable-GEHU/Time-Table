@@ -143,6 +143,48 @@ class TimetableEngine:
         return best_chromosome, updated_teacher, updated_lab
 
 
+def run_timetable_generation(
+    teacher_subject_mapping: dict,
+    total_sections: dict,
+    total_classrooms: dict,
+    total_labs: dict,
+    teacher_preferences: dict,
+    teacher_weekly_workload: dict,
+    special_subjects: dict,
+    labs: dict,
+    subject_quota_limits: dict,
+    teacher_duty_days: dict,
+    teacher_availability_matrix: dict,
+    lab_availability_matrix: dict,
+    total_generations: int,
+    time_slots: dict,
+    day_map: dict,
+    time_slot_map: dict,
+    fixed_teacher_assignment: dict = None
+):
+    config = TimetableConfig(
+        teacher_subject_mapping=teacher_subject_mapping,
+        total_sections=total_sections,
+        total_classrooms=total_classrooms,
+        total_labs=total_labs,
+        teacher_preferences=teacher_preferences,
+        teacher_weekly_workload=teacher_weekly_workload,
+        special_subjects=special_subjects,
+        labs=labs,
+        subject_quota_limits=subject_quota_limits,
+        teacher_duty_days=teacher_duty_days,
+        teacher_availability_matrix=teacher_availability_matrix,
+        lab_availability_matrix=lab_availability_matrix,
+        total_generations=total_generations,
+        time_slots=time_slots,
+        day_map=day_map,
+        time_slot_map=time_slot_map,
+        fixed_teacher_assignment=fixed_teacher_assignment or {}
+    )
+    engine = TimetableEngine(config)
+    return engine.run()
+
+
 if __name__ == "__main__":
     from Constants.constant import Defaults
     from Samples.samples import (
@@ -165,21 +207,21 @@ if __name__ == "__main__":
         TeacherWorkload.Weekly_workLoad.keys(), 5, 7
     )
 
-    config = TimetableConfig(
-        teacher_subject_mapping = SubjectTeacherMap.subject_teacher_map,
-        total_sections = {"A": 70, "B": 100, "C": 75, "D": 100},
-        total_classrooms = {"R1": 200, "R2": 230, "R3": 240, "R4": 250, "R5": 250},
-        total_labs = {"L1": 70, "L2": 50, "L3": 70, "L4": 50, "L5": 70, "L6": 50},
-        teacher_preferences = TeacherWorkload.teacher_preferences,
-        teacher_weekly_workload = TeacherWorkload.Weekly_workLoad,
-        special_subjects = SpecialSubjects.special_subjects,
-        labs = SpecialSubjects.Labs,
-        subject_quota_limits = SubjectWeeklyQuota.subject_quota,
-        teacher_duty_days = TeacherWorkload.teacher_duty_days,
-        teacher_availability_matrix = teacher_availability,
-        lab_availability_matrix = lab_matrix,
-        total_generations = Defaults.total_no_of_generations,
-        time_slots = {
+    best_tt, final_teacher, final_lab = run_timetable_generation(
+        teacher_subject_mapping=SubjectTeacherMap.subject_teacher_map,
+        total_sections={"A": 70, "B": 100, "C": 75, "D": 100},
+        total_classrooms={"R1": 200, "R2": 230, "R3": 240, "R4": 250, "R5": 250},
+        total_labs={"L1": 70, "L2": 50, "L3": 70, "L4": 50, "L5": 70, "L6": 50},
+        teacher_preferences=TeacherWorkload.teacher_preferences,
+        teacher_weekly_workload=TeacherWorkload.Weekly_workLoad,
+        special_subjects=SpecialSubjects.special_subjects,
+        labs=SpecialSubjects.Labs,
+        subject_quota_limits=SubjectWeeklyQuota.subject_quota,
+        teacher_duty_days=TeacherWorkload.teacher_duty_days,
+        teacher_availability_matrix=teacher_availability,
+        lab_availability_matrix=lab_matrix,
+        total_generations=Defaults.total_no_of_generations,
+        time_slots={
             1: "9:00 - 9:55",
             2: "9:55 - 10:50",
             3: "11:10 - 12:05",
@@ -188,7 +230,7 @@ if __name__ == "__main__":
             6: "2:15 - 3:10",
             7: "3:30 - 4:25",
         },
-        day_map = {
+        day_map={
             "Monday": 0,
             "Tuesday": 1,
             "Wednesday": 2,
@@ -197,7 +239,7 @@ if __name__ == "__main__":
             "Saturday": 5,
             "Sunday": 6,
         },
-        time_slot_map = {
+        time_slot_map={
             "9:00 - 9:55": 1,
             "9:55 - 10:50": 2,
             "11:10 - 12:05": 3,
@@ -206,14 +248,11 @@ if __name__ == "__main__":
             "2:15 - 3:10": 6,
             "3:30 - 4:25": 7,
         },
-        fixed_teacher_assignment = {
+        fixed_teacher_assignment={
             "A": {"TCS-531": "AB01", "TMA-502": "HP18"},  # section: {"subject": teacher}
             "B": {"TCS-503": "BJ10"}
         }
     )
-
-    engine = TimetableEngine(config)
-    best_tt, final_teacher, final_lab = engine.run()
 
     from icecream import ic
     ic(best_tt, final_teacher, final_lab)
