@@ -43,8 +43,8 @@ class TimetableEngine:
 
     def update_teacher_workload(self, best_teacher_matrix):
         teacher_workload = {
-            teacher: sum(sum(day) for day in availability)
-            for teacher, availability in best_teacher_matrix.items()
+        teacher: sum(sum(1 for slot in day if not slot) for day in availability)
+        for teacher, availability in best_teacher_matrix.items()
         }
         return teacher_workload
     
@@ -111,9 +111,12 @@ class TimetableEngine:
         mutated = [TimeTableMutation().mutate_schedule_for_week(ch) for ch in crossover_chromosomes]
         if self.config.prev_mutated:
             mutated.extend(self.config.prev_mutated)
-
-        best_chromosome = max(selected, key=selected.get, default=None)
-        best_chromosome = timetable.get(best_chromosome)
+        best_chromosome, best_score = None, -1
+        for key, score in selected.items():
+            score = int(score)
+            if score > best_score and key in timetable:
+                best_score = score
+                best_chromosome = timetable[key]
 
         if best_chromosome:
             updated_teacher = update_teacher_availability_matrix(teacher_matrix, best_chromosome)
@@ -121,7 +124,8 @@ class TimetableEngine:
 
     def run(self):
         initial_teacher = copy.deepcopy(self.teacher_availability)
-        best_chromosome, updated_teacher = None, None
+        updated_teacher = copy.deepcopy(initial_teacher)
+        best_chromosome = None
 
         self.config.prev_selected = None
         self.config.prev_mutated = None

@@ -140,7 +140,6 @@ class TimeTableGeneration:
 
         if not assigned_teacher:
             selected_subject = "Library"
-            assigned_teacher = "None"
             assigned_teacher = None
             assigned_room = assigned_classroom
 
