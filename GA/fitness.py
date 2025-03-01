@@ -2,8 +2,12 @@ import json
 
 from Constants.constant import Defaults, PenaltyConstants
 from GA.chromosome import TimeTableGeneration
-from Samples.samples import (SpecialSubjects, SubjectTeacherMap,
-                             SubjectWeeklyQuota, TeacherWorkload)
+from Samples.samples import (
+    SpecialSubjects,
+    SubjectTeacherMap,
+    SubjectWeeklyQuota,
+    TeacherWorkload
+)
 
 
 class TimetableFitnessEvaluator:

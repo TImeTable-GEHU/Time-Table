@@ -44,7 +44,7 @@ def timetable_generation(
     timetable, teacher_availability_matrix = timetable_generator.create_timetable(
         Defaults.initial_no_of_chromosomes
     )
-    
+
     fitness_calculator = TimetableFitnessEvaluator(
         timetable,
         timetable_generator.sections_manager.keys(),

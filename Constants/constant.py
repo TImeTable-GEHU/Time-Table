@@ -4,9 +4,10 @@ class Defaults:
     working_days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     starting_section_fitness = 1000
     max_class_capacity = 250
-    initial_no_of_chromosomes = 10
-    total_no_of_generations = 10
+    initial_no_of_chromosomes = 1000
+    total_no_of_generations = 100
     class_strength = 50
+
 
 class SubjectWeeklyQuota:
     def __init__(self, subject_quota):

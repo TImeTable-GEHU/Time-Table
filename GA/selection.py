@@ -14,7 +14,7 @@ class TimeTableSelection:
     ):
         """
             Entry point for selecting chromosomes.
-            Select chromosomes based on top scores and roulette wheel selection.
+            Select chromosomes based on top scores and roulette-wheel selection.
         """
 
         if not weekly_fitness_scores:
@@ -54,7 +54,7 @@ class TimeTableSelection:
     @staticmethod
     def perform_roulette_selection(cumulative_probabilities, total_fitness, num_select):
         """
-            Perform roulette wheel selection to choose items.
+            Perform roulette-wheel selection to choose items.
         """
 
         selected_items = []
@@ -70,7 +70,7 @@ class TimeTableSelection:
 
     def roulette_wheel_selection(self, scores, num_select):
         """
-            Select items using roulette wheel selection.
+            Select items using roulette-wheel selection.
         """
 
         if not scores:
@@ -87,21 +87,8 @@ class TimeTableSelection:
 
     @staticmethod
     def get_top_and_remaining_items(scores, percentage):
-        """
-        Select the top percentage of items based on scores and return the remaining items.
 
-        Args:
-            scores (dict): A dictionary of items with their scores.
-            percentage (float): The percentage of top items to select.
-
-        Returns:
-            tuple: A tuple of two dictionaries:
-                - Top-selected items and their scores.
-                - Remaining items and their scores.
-        """
-
-        # at least 1 chromosome to select.
-        num_select = max(1, int(len(scores) * percentage))
+        num_select = max(1, int(len(scores) * percentage))  # at least 1 chromosome to select.
         sorted_scores = sorted(scores.items(), key=lambda x: x[1], reverse=True)
         top_selected = dict(sorted_scores[:num_select])
         remaining_items = dict(sorted_scores[num_select:])

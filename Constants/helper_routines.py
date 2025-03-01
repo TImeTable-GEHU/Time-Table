@@ -7,10 +7,6 @@ def update_teacher_availability_matrix(teacher_availability_matrix, best_chromos
 
 
 def update_matrix_for_best(best_chromosome, teacher_availability_matrix, day_map, time_slot_map):
-    """
-        Set teacher_availability_matrix[teacher_id][day_index][slot_index] = False
-        for every (day, slot) where teacher_id != 'None' in the best chromosome.
-    """
 
     for day_name, section_dict in best_chromosome.items():
         if day_name not in day_map:
@@ -35,14 +31,6 @@ def update_matrix_for_best(best_chromosome, teacher_availability_matrix, day_map
 
 
 def initialize_teacher_availability(teacher_list, num_days=5, num_slots=7):
-    """
-        Creates a dynamic teacher availability matrix.
-
-        :param teacher_list: List of teacher IDs.
-        :param num_days: Number of working days (default: 5 for Mon-Fri).
-        :param num_slots: Number of slots per day (default: 7 per day).
-        :return: Dictionary mapping teacher IDs to a 2D availability matrix.
-    """
 
     return {
         teacher: [[True] * num_slots for _ in range(num_days)]
