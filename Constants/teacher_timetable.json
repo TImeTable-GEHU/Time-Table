@@ -1,0 +1,2720 @@
+{
+    "RS11": {
+        "Monday": {
+            "A": [
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L2",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L2",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R4",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Tuesday": {
+            "E": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R5",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R4",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "E": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R5",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R3",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "B": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R2",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L2",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L2",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "A": [
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Friday": {
+            "C": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R3",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ],
+            "B": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R2",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "DT20": {
+        "Monday": {
+            "B": [
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R2",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R5",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R5",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Tuesday": {
+            "B": [
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R2",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R2",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R6",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "A": [
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R1",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R1",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "A": [
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R1",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Friday": {
+            "B": [
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R2",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "AB01": {
+        "Monday": {
+            "B": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R2",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R2",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Tuesday": {
+            "B": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R2",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R2",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R5",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R5",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Wednesday": {
+            "A": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R1",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R5",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "B": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R2",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R4",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "B": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R2",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R6",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R5",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Friday": {
+            "A": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R1",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R4",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R6",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "AP24": {
+        "Monday": {
+            "B": [
+                {
+                    "subject_id": "SCS-501",
+                    "classroom_id": "R2",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "SCS-501",
+                    "classroom_id": "R2",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "SCS-501",
+                    "classroom_id": "R3",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "SCS-501",
+                    "classroom_id": "R5",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "SCS-501",
+                    "classroom_id": "R5",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "SCS-501",
+                    "classroom_id": "R6",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "SCS-501",
+                    "classroom_id": "R6",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "A": [
+                {
+                    "subject_id": "SCS-501",
+                    "classroom_id": "R1",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "SCS-501",
+                    "classroom_id": "R4",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Tuesday": {
+            "D": [
+                {
+                    "subject_id": "SCS-501",
+                    "classroom_id": "R4",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "SCS-501",
+                    "classroom_id": "R3",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Wednesday": {},
+        "Thursday": {
+            "A": [
+                {
+                    "subject_id": "SCS-501",
+                    "classroom_id": "R1",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Friday": {},
+        "Saturday": {}
+    },
+    "BJ10": {
+        "Monday": {
+            "B": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R2",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R2",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Tuesday": {
+            "D": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R4",
+                    "time_slot": "13:50 - 14:50"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R3",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "D": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R4",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ],
+            "A": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R1",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "A": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R1",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R6",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Friday": {
+            "A": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R1",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R1",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "AK23": {
+        "Monday": {
+            "C": [
+                {
+                    "subject_id": "CSP-501",
+                    "classroom_id": "R3",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "CSP-501",
+                    "classroom_id": "R3",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "CSP-501",
+                    "classroom_id": "R4",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "CSP-501",
+                    "classroom_id": "R4",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "CSP-501",
+                    "classroom_id": "R5",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "CSP-501",
+                    "classroom_id": "R6",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "A": [
+                {
+                    "subject_id": "CSP-501",
+                    "classroom_id": "R1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "B": [
+                {
+                    "subject_id": "CSP-501",
+                    "classroom_id": "R2",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ]
+        },
+        "Tuesday": {
+            "E": [
+                {
+                    "subject_id": "CSP-501",
+                    "classroom_id": "R5",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "CSP-501",
+                    "classroom_id": "R6",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "B": [
+                {
+                    "subject_id": "CSP-501",
+                    "classroom_id": "R2",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Thursday": {},
+        "Friday": {
+            "A": [
+                {
+                    "subject_id": "CSP-501",
+                    "classroom_id": "R1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "SS03": {
+        "Monday": {
+            "C": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R3",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R4",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Tuesday": {
+            "B": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R2",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R2",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R4",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R5",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "B": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R2",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R2",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R6",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R6",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "D": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R4",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R6",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R6",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R3",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Friday": {
+            "D": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R4",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "A": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R1",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "PA21": {
+        "Monday": {
+            "C": [
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R3",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R6",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R6",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Tuesday": {
+            "D": [
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R4",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R4",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "F": [
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R6",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R4",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Thursday": {},
+        "Friday": {},
+        "Saturday": {}
+    },
+    "SP06": {
+        "Monday": {
+            "D": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R4",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "A": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R1",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R5",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Tuesday": {
+            "B": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R2",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R2",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R6",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R5",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "A": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R1",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R6",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "B": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R2",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R5",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Thursday": {
+            "B": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R2",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R3",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Friday": {
+            "A": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R1",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ],
+            "B": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R2",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "AD08": {
+        "Monday": {
+            "D": [
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L2",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L2",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Tuesday": {
+            "C": [
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "A": [
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L2",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L2",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "C": [
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L2",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L2",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "E": [
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L2",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L2",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L2",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L2",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Friday": {
+            "B": [
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L2",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L2",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L2",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L2",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "NB22": {
+        "Monday": {
+            "D": [
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R4",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Tuesday": {
+            "E": [
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R5",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "XCS-501",
+                    "classroom_id": "R5",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Wednesday": {},
+        "Thursday": {},
+        "Friday": {},
+        "Saturday": {}
+    },
+    "PK02": {
+        "Monday": {
+            "E": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R5",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R4",
+                    "time_slot": "13:50 - 14:50"
+                }
+            ]
+        },
+        "Tuesday": {
+            "D": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R4",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R4",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R6",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "C": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R3",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R3",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R6",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R6",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "D": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R4",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R6",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Friday": {
+            "C": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R3",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "TCS-531",
+                    "classroom_id": "R5",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "AA04": {
+        "Monday": {
+            "E": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R5",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Tuesday": {
+            "C": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R3",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R3",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R5",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R6",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Wednesday": {
+            "C": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R3",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R5",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Thursday": {
+            "E": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R5",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R4",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Friday": {
+            "B": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R2",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "DP07": {
+        "Monday": {
+            "E": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R5",
+                    "time_slot": "13:50 - 14:50"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R3",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R6",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Tuesday": {
+            "C": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R3",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R4",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R6",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "B": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R2",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R3",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R6",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "C": [
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L2",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L2",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L3",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L3",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Friday": {
+            "C": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R3",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L2",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L2",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "SJ16": {
+        "Monday": {
+            "E": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R5",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ],
+            "A": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R1",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Tuesday": {
+            "D": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R4",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R3",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "A": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R6",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R6",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ],
+            "B": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R2",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "A": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R1",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R1",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Friday": {
+            "C": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R3",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ],
+            "A": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R1",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "AB17": {
+        "Monday": {
+            "F": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R6",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R4",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ]
+        },
+        "Tuesday": {
+            "E": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R5",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R4",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "B": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R2",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R3",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "B": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R2",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R3",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ]
+        },
+        "Friday": {
+            "F": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R6",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "PM14": {
+        "Monday": {
+            "F": [
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L3",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L3",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L2",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L2",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Tuesday": {
+            "A": [
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L2",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L2",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "D": [
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L2",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L2",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ],
+            "A": [
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "B": [
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L2",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L2",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Friday": {},
+        "Saturday": {}
+    },
+    "AC05": {
+        "Monday": {
+            "F": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R6",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R4",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Tuesday": {
+            "D": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R4",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R4",
+                    "time_slot": "13:50 - 14:50"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R6",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "D": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R4",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R4",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Thursday": {
+            "E": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R5",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-502",
+                    "classroom_id": "R5",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Friday": {
+            "E": [
+                {
+                    "subject_id": "TCS-503",
+                    "classroom_id": "R5",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "AA15": {
+        "Monday": {},
+        "Tuesday": {
+            "E": [
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L3",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PMA-502",
+                    "classroom_id": "L3",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Wednesday": {},
+        "Thursday": {},
+        "Friday": {},
+        "Saturday": {}
+    },
+    "RD09": {
+        "Monday": {},
+        "Tuesday": {
+            "F": [
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L2",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L2",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L3",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L3",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Wednesday": {
+            "F": [
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L3",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-506",
+                    "classroom_id": "L3",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Thursday": {},
+        "Friday": {},
+        "Saturday": {}
+    },
+    "HP18": {
+        "Monday": {
+            "E": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R5",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Tuesday": {},
+        "Wednesday": {
+            "D": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R4",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R4",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "D": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R4",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R5",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ]
+        },
+        "Friday": {},
+        "Saturday": {}
+    },
+    "VD25": {
+        "Monday": {},
+        "Tuesday": {
+            "F": [
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L3",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L3",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Wednesday": {
+            "E": [
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L2",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L2",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L3",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L3",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Thursday": {
+            "D": [
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L1",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L2",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "PCS-503",
+                    "classroom_id": "L2",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Friday": {},
+        "Saturday": {}
+    },
+    "SG19": {
+        "Monday": {},
+        "Tuesday": {},
+        "Wednesday": {
+            "E": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R5",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R5",
+                    "time_slot": "13:50 - 14:50"
+                }
+            ]
+        },
+        "Thursday": {
+            "F": [
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R6",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "TCS-509",
+                    "classroom_id": "R6",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Friday": {},
+        "Saturday": {}
+    },
+    "JM12": {
+        "Monday": {
+            "E": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R5",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Tuesday": {
+            "F": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R6",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ]
+        },
+        "Wednesday": {
+            "F": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R6",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R4",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Thursday": {
+            "E": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R5",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R3",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Friday": {
+            "D": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R4",
+                    "time_slot": "11:00 - 12:00"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R5",
+                    "time_slot": "09:00 - 10:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "None": {
+        "Monday": {},
+        "Tuesday": {
+            "D": [
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Wednesday": {
+            "F": [
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Thursday": {
+            "E": [
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Friday": {
+            "D": [
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Saturday": {
+            "A": [
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R1",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R1",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R1",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R1",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R1",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R1",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R1",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "B": [
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R2",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R2",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R2",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R2",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R2",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R2",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R2",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R2",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "C": [
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R3",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R3",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R3",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R3",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R3",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R3",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R3",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R3",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ],
+            "D": [
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R4",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R5",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "16:50 - 17:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "08:00 - 09:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "09:00 - 10:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "11:00 - 12:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "12:00 - 13:00"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "14:50 - 15:50"
+                },
+                {
+                    "subject_id": "Library",
+                    "classroom_id": "R6",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        }
+    },
+    "AK26": {
+        "Monday": {
+            "E": [
+                {
+                    "subject_id": "Placement_Class",
+                    "classroom_id": "R5",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "classroom_id": "R5",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Tuesday": {},
+        "Wednesday": {},
+        "Thursday": {
+            "D": [
+                {
+                    "subject_id": "Placement_Class",
+                    "classroom_id": "R4",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "classroom_id": "R4",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "Placement_Class",
+                    "classroom_id": "R6",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "classroom_id": "R6",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Friday": {
+            "D": [
+                {
+                    "subject_id": "Placement_Class",
+                    "classroom_id": "R4",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "classroom_id": "R4",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ],
+            "E": [
+                {
+                    "subject_id": "Placement_Class",
+                    "classroom_id": "R5",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "classroom_id": "R5",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ],
+            "F": [
+                {
+                    "subject_id": "Placement_Class",
+                    "classroom_id": "R6",
+                    "time_slot": "13:50 - 14:50"
+                },
+                {
+                    "subject_id": "Placement_Class",
+                    "classroom_id": "R6",
+                    "time_slot": "14:50 - 15:50"
+                }
+            ]
+        },
+        "Saturday": {}
+    },
+    "NJ13": {
+        "Monday": {},
+        "Tuesday": {},
+        "Wednesday": {
+            "F": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R6",
+                    "time_slot": "16:50 - 17:50"
+                }
+            ]
+        },
+        "Thursday": {
+            "E": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R5",
+                    "time_slot": "12:00 - 13:00"
+                }
+            ]
+        },
+        "Friday": {
+            "F": [
+                {
+                    "subject_id": "TMA-502",
+                    "classroom_id": "R6",
+                    "time_slot": "08:00 - 09:00"
+                }
+            ]
+        },
+        "Saturday": {}
+    }
+}

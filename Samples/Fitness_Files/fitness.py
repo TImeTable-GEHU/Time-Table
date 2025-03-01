@@ -1,11 +1,15 @@
 import json
+
+from Constants.constant import Defaults, PenaltyConstants
 from Constants.time_intervals import TimeIntervalConstant
 from GA.chromosome import TimeTableGeneration
-from Constants.constant import (
-    PenaltyConstants,
-    Defaults,
+from Samples.samples import (
+    Classrooms,
+    SpecialSubjects,
+    SubjectTeacherMap,
+    SubjectWeeklyQuota,
+    TeacherWorkload,
 )
-from Samples.samples import SubjectTeacherMap, SpecialSubjects, SubjectWeeklyQuota, Classrooms, TeacherWorkload
 
 
 class TimetableFitnessEvaluator:
@@ -59,16 +63,30 @@ class TimetableFitnessEvaluator:
                         section_strength = self.section_student_strength.get(section, 0)
 
                         # Penalty 1: Double booking a teacher in the same time slot
-                        if (assigned_teacher, assigned_time_slot) in teacher_time_slot_tracking.keys():
-                            section_fitness -= PenaltyConstants.PENALTY_TEACHER_DOUBLE_BOOKED
+                        if (
+                            assigned_teacher,
+                            assigned_time_slot,
+                        ) in teacher_time_slot_tracking.keys():
+                            section_fitness -= (
+                                PenaltyConstants.PENALTY_TEACHER_DOUBLE_BOOKED
+                            )
                         else:
-                            teacher_time_slot_tracking[(assigned_teacher, assigned_time_slot)] = section
+                            teacher_time_slot_tracking[
+                                (assigned_teacher, assigned_time_slot)
+                            ] = section
 
                         # Penalty 2: Double booking a classroom in the same time slot
-                        if (assigned_classroom, assigned_time_slot) in classroom_time_slot_tracking:
-                            section_fitness -= PenaltyConstants.PENALTY_CLASSROOM_DOUBLE_BOOKED
+                        if (
+                            assigned_classroom,
+                            assigned_time_slot,
+                        ) in classroom_time_slot_tracking:
+                            section_fitness -= (
+                                PenaltyConstants.PENALTY_CLASSROOM_DOUBLE_BOOKED
+                            )
                         else:
-                            classroom_time_slot_tracking[(assigned_classroom, assigned_time_slot)] = section
+                            classroom_time_slot_tracking[
+                                (assigned_classroom, assigned_time_slot)
+                            ] = section
 
                         # Penalty 3: Over-capacity classrooms
                         if section_strength > self.classroom_capacity.get(
@@ -81,23 +99,33 @@ class TimetableFitnessEvaluator:
                             assigned_teacher, []
                         )
                         if assigned_time_slot not in preferred_time_slots:
-                            section_fitness -= PenaltyConstants.PENALTY_UN_PREFERRED_SLOT
+                            section_fitness -= (
+                                PenaltyConstants.PENALTY_UN_PREFERRED_SLOT
+                            )
 
                         # Penalty 5: Scheduling teacher on a non-duty day
                         assigned_day = day
-                        if assigned_day not in TeacherWorkload.teacher_duty_days.get(assigned_teacher, []):
+                        if assigned_day not in TeacherWorkload.teacher_duty_days.get(
+                            assigned_teacher, []
+                        ):
                             section_fitness -= PenaltyConstants.PENALTY_NON_DUTY_DAY
 
                         # Tracking teacher workload
                         if assigned_teacher not in teacher_workload_tracking:
                             teacher_workload_tracking[assigned_teacher] = []
-                        teacher_workload_tracking[assigned_teacher].append(assigned_time_slot)
+                        teacher_workload_tracking[assigned_teacher].append(
+                            assigned_time_slot
+                        )
 
                     # Penalty 6: Exceeding teacher daily workload
                     for teacher, times_assigned in teacher_workload_tracking.items():
                         if teacher is not None:
-                            if len(times_assigned) > self.teacher_daily_workload.get(teacher, 0):
-                                section_fitness -= PenaltyConstants.PENALTY_OVERLOAD_TEACHER
+                            if len(times_assigned) > self.teacher_daily_workload.get(
+                                teacher, 0
+                            ):
+                                section_fitness -= (
+                                    PenaltyConstants.PENALTY_OVERLOAD_TEACHER
+                                )
 
                     daily_section_fitness_scores[week][day][section] = section_fitness
                     day_fitness += section_fitness
@@ -143,7 +171,10 @@ if __name__ == "__main__":
         timetable_generator.weekly_workload,
     )
 
-    section_fitness_data, weekly_fitness_data = fitness_evaluator.evaluate_timetable_fitness()
+    (
+        section_fitness_data,
+        weekly_fitness_data,
+    ) = fitness_evaluator.evaluate_timetable_fitness()
 
     # Save results
     with open("GA/chromosome.json", "w") as timetable_file:

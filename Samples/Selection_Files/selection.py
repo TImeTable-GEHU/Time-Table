@@ -1,9 +1,20 @@
 import random
 
+
 class TimeIntervalConstant:
     @staticmethod
     def get_all_time_slots():
-        return ["9:00-10:00", "10:00-11:00", "11:00-12:00", "12:00-1:00", "1:00-2:00", "2:00-3:00", "3:00-4:00", "4:00-5:00"]
+        return [
+            "9:00-10:00",
+            "10:00-11:00",
+            "11:00-12:00",
+            "12:00-1:00",
+            "1:00-2:00",
+            "2:00-3:00",
+            "3:00-4:00",
+            "4:00-5:00",
+        ]
+
 
 class Timetable:
     def __init__(self):
@@ -18,7 +29,7 @@ class Timetable:
             "T2": ["S2", "S4", "S6"],
             "T3": ["S2", "S5"],
             "T4": ["S7", "S6"],
-            "T5": ["S5", "S1"]
+            "T5": ["S5", "S1"],
         }
         self.teacher_max_hours = {"T1": 4, "T2": 5, "T3": 4, "T4": 3, "T5": 4}
         self.room_capacity = {"R1": 30, "R2": 25, "R3": 20}
@@ -28,7 +39,7 @@ class Timetable:
         day_schedule = {}
         time_slot_classroom_usage = {time_slot: set() for time_slot in self.time_slots}
         time_slot_teacher_usage = {time_slot: set() for time_slot in self.time_slots}
-        
+
         for section in self.sections:
             section_schedule = []
             for time_slot in self.time_slots:
@@ -37,7 +48,7 @@ class Timetable:
                         "teacher_id": "None",
                         "subject_id": "Break",
                         "classroom_id": "N/A",
-                        "time_slot": time_slot
+                        "time_slot": time_slot,
                     }
                 else:
                     teacher, subject, classroom = None, None, None
@@ -46,8 +57,10 @@ class Timetable:
                         teacher = random.choice(self.teachers)
                         subject = random.choice(self.teacher_subject_map[teacher])
                         classroom = random.choice(self.classrooms)
-                        if teacher not in time_slot_teacher_usage[time_slot] and \
-                           classroom not in time_slot_classroom_usage[time_slot]:
+                        if (
+                            teacher not in time_slot_teacher_usage[time_slot]
+                            and classroom not in time_slot_classroom_usage[time_slot]
+                        ):
                             break
                         attempts += 1
 
@@ -58,7 +71,7 @@ class Timetable:
                         "teacher_id": teacher,
                         "subject_id": subject,
                         "classroom_id": classroom,
-                        "time_slot": time_slot
+                        "time_slot": time_slot,
                     }
                 section_schedule.append(schedule_item)
             day_schedule[section] = section_schedule
@@ -83,9 +96,9 @@ class Timetable:
                 teacher_load = {}
 
                 for item in section_schedule:
-                    teacher = item['teacher_id']
-                    classroom = item['classroom_id']
-                    time_slot = item['time_slot']
+                    teacher = item["teacher_id"]
+                    classroom = item["classroom_id"]
+                    time_slot = item["time_slot"]
                     strength = self.section_strength[section]
 
                     if "Break" in time_slot:
@@ -123,38 +136,49 @@ class Timetable:
     def select_top_chromosomes(self, population: list, percentage=0.30) -> list:
         """
         Selects the top chromosomes based on their fitness scores from the population.
-        
+
         :param population: List of chromosomes (each chromosome is a dictionary representing a timetable).
         :param percentage: The proportion of chromosomes to select (default is 30%).
         :return: A list of selected chromosomes.
         """
         num_to_select = int(len(population) * percentage)
-        fitness_scores = [(chromosome, self.calculate_fitness(chromosome)) for chromosome in population]
+        fitness_scores = [
+            (chromosome, self.calculate_fitness(chromosome))
+            for chromosome in population
+        ]
         sorted_chromosomes = sorted(fitness_scores, key=lambda x: x[1], reverse=True)
-        
+
         best_num = int(num_to_select * 0.20)
         worst_num = int(num_to_select * 0.10)
         middle_num = num_to_select - (best_num + worst_num)
-        
+
         best_chromosomes = sorted_chromosomes[:best_num]
         worst_chromosomes = sorted_chromosomes[-worst_num:]
-        middle_chromosomes = sorted_chromosomes[best_num:best_num + middle_num]
-        
+        middle_chromosomes = sorted_chromosomes[best_num : best_num + middle_num]
+
         roulette_num = int(middle_num * 0.70)
         rank_num = middle_num - roulette_num
-        
+
         total_fitness = sum(fitness for _, fitness in middle_chromosomes)
-        roulette_chromosomes = random.choices(middle_chromosomes, weights=[fitness / total_fitness for _, fitness in middle_chromosomes], k=roulette_num)
-        
+        roulette_chromosomes = random.choices(
+            middle_chromosomes,
+            weights=[fitness / total_fitness for _, fitness in middle_chromosomes],
+            k=roulette_num,
+        )
+
         total_rank = sum(range(1, len(middle_chromosomes) + 1))
-        rank_probabilities = [i / total_rank for i in range(1, len(middle_chromosomes) + 1)]
-        rank_chromosomes = random.choices(middle_chromosomes, weights=rank_probabilities, k=rank_num)
-        
+        rank_probabilities = [
+            i / total_rank for i in range(1, len(middle_chromosomes) + 1)
+        ]
+        rank_chromosomes = random.choices(
+            middle_chromosomes, weights=rank_probabilities, k=rank_num
+        )
+
         selected_chromosomes = [chromosome for chromosome, _ in best_chromosomes]
         selected_chromosomes += [chromosome for chromosome, _ in worst_chromosomes]
         selected_chromosomes += [chromosome for chromosome, _ in roulette_chromosomes]
         selected_chromosomes += [chromosome for chromosome, _ in rank_chromosomes]
-        
+
         # Output the breakdown
         print(f"Total Number of Chromosomes: {len(population)}")
         print(f"30% of Total Chromosomes: {num_to_select}")
@@ -162,15 +186,20 @@ class Timetable:
         print(f"Number of Worst Chromosomes: {worst_num}")
         print(f"Number of Chromosomes for Roulette: {roulette_num}")
         print(f"Number of Chromosomes for Rank: {rank_num}")
-        
+
         return selected_chromosomes
+
 
 # Example usage
 timetable_obj = Timetable()
 num_chromosomes = 1000
 chromosomes = timetable_obj.create_multiple_timelines(num_chromosomes)
-selected_chromosomes = timetable_obj.select_top_chromosomes(chromosomes, percentage=0.30)
+selected_chromosomes = timetable_obj.select_top_chromosomes(
+    chromosomes, percentage=0.30
+)
 
 # Output selected chromosomes
-for chromosome in selected_chromosomes[:5]:  # Displaying the first 5 selected chromosomes
+for chromosome in selected_chromosomes[
+    :5
+]:  # Displaying the first 5 selected chromosomes
     print(chromosome)

@@ -1,4 +1,5 @@
 import psycopg2
+
 from Samples.samples import SampleChromosome
 
 
@@ -39,7 +40,6 @@ class IsConflict:
             for day, sections in timetable.items():
                 for section, classes in sections.items():
                     for cls in classes:
-
                         print(
                             f"Inserting data: {chromosome_name}, {day}, {section}, {cls['teacher_id']}, {cls['subject_id']}, {cls['classroom_id']}, {cls['time_slot']}"
                         )

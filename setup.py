@@ -12,7 +12,7 @@ setup(
         "psycopg2-binary==2.9.9",
         "pytest==7.4.2",
         "ortools==9.11.4210",
-        "icecream==2.1.3"
+        "icecream==2.1.3",
     ],  # noqa: E501
     setup_requires=["pytest-runner"],
     tests_require=["pytest==7.4.2"],

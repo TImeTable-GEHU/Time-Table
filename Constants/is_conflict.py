@@ -1,4 +1,5 @@
 import psycopg2
+
 from Samples.samples import SampleChromosome
 
 
@@ -50,7 +51,7 @@ class IsConflict:
                             "N/A",
                             cls["time_slot"],
                         ),
-                    )  # "N/A" for classroom_id
+                    )
             self.conn.commit()
         except Exception as e:
             print(f"Error inserting schedule: {e}")
@@ -100,16 +101,12 @@ class IsConflict:
         try:
             self.connect_to_database()
 
-            # Insert both timetables into the database with proper chromosomes
             self.insert_schedule(timetable1, "Week 1")
             self.insert_schedule(timetable2, "Week 2")
 
-            # Detect teacher conflicts
             teacher_conflicts = self.detect_teacher_conflicts()
-
             conflicts = []
 
-            # Add teacher conflicts to the list
             for conflict in teacher_conflicts:
                 conflicts.append(
                     {
@@ -120,7 +117,7 @@ class IsConflict:
                     }
                 )
 
-            return conflicts if conflicts else [{"message": "No conflicts found."}]
+            return conflicts
         finally:
             self.truncate_schedule()
             self.close_connection()
