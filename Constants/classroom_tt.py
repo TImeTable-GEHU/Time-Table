@@ -5,7 +5,7 @@ class ClassroomTimetable:
     def __init__(self):
         # Dictionary to hold timetables for each classroom
         self.classroom_timetable = {}
-    
+        
     def generate_classroom_timetable(self, chromosome):
         for week, days in chromosome.items():
             for day, sections in days.items():
@@ -35,14 +35,14 @@ class ClassroomTimetable:
         except Exception as e:
             print(f"Error saving timetable to '{file_path}': {e}")
 
-if __name__ == "__main__":
-    # Generate classroom-wise timetable
-    classroom_timetable = ClassroomTimetable()
-    w = {
-        "Week 2": SampleChromosome.schedule2,
-        "Week 1": SampleChromosome.schedule1
-    }
-    classroom_tt = classroom_timetable.generate_classroom_timetable(w)
-    print(classroom_tt)
-    # Save as JSON
-    classroom_timetable.save_timetable_to_json()
+# if __name__ == "__main__":
+#     # Generate classroom-wise timetable
+#     classroom_timetable = ClassroomTimetable()
+#     w = {
+#         "Week 2": SampleChromosome.schedule2,
+#         "Week 1": SampleChromosome.schedule1
+#     }
+#     classroom_tt = classroom_timetable.generate_classroom_timetable(w)
+#     print(classroom_tt)
+#     # Save as JSON
+#     classroom_timetable.save_timetable_to_json()
