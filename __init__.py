@@ -1,14 +1,22 @@
 from Constants.constant import Defaults
-from Constants.helper_routines import (initialize_teacher_availability,
-                                       update_matrix_for_best,
-                                       update_teacher_availability_matrix)
+from Constants.helper_routines import (
+    initialize_teacher_availability,
+    update_matrix_for_best,
+    update_teacher_availability_matrix,
+)
 from GA.chromosome import TimeTableGeneration
 from GA.fitness import TimetableFitnessEvaluator
 from GA.mutation import TimeTableCrossOver, TimeTableMutation
 from GA.selection import TimeTableSelection
-from Samples.samples import (InterDepartment, RoomCapacity, SpecialSubjects,
-                             SubjectTeacherMap, SubjectWeeklyQuota,
-                             TeacherWorkload, TimeSlots)
+from Samples.samples import (
+    InterDepartment,
+    RoomCapacity,
+    SpecialSubjects,
+    SubjectTeacherMap,
+    SubjectWeeklyQuota,
+    TeacherWorkload,
+    TimeSlots,
+)
 
 
 def timetable_generation(
@@ -25,7 +33,7 @@ def timetable_generation(
     teacher_availability_matrix,
     time_slots,
     prev_selected_chromosomes=None,
-    prev_mutated_chromosomes=None
+    prev_mutated_chromosomes=None,
 ):
     timetable_generator = TimeTableGeneration(
         teacher_subject_mapping=teacher_subject_mapping,
@@ -39,7 +47,7 @@ def timetable_generation(
         subject_quota_limits=subject_quota_limits,
         teacher_duty_days=teacher_duty_days,
         teacher_availability_matrix=teacher_availability_matrix,
-        time_slots=time_slots
+        time_slots=time_slots,
     )
     timetable, teacher_availability_matrix = timetable_generator.create_timetable(
         Defaults.initial_no_of_chromosomes
@@ -56,7 +64,7 @@ def timetable_generation(
         timetable_generator.subject_quota_limits,
         timetable_generator.teacher_availability_preferences,
         timetable_generator.weekly_workload,
-        time_slots
+        time_slots,
     )
     fitness_scores = fitness_calculator.evaluate_timetable_fitness()
 
@@ -74,12 +82,16 @@ def timetable_generation(
         if i + 1 < len(selected_keys):
             parent1 = selected_keys[i]
             parent2 = selected_keys[i + 1]
-            c1, c2 = crossover_object.perform_crossover(timetable[parent1], timetable[parent2])
+            c1, c2 = crossover_object.perform_crossover(
+                timetable[parent1], timetable[parent2]
+            )
             crossover_chromosomes.append(c1)
             crossover_chromosomes.append(c2)
 
     mutation_object = TimeTableMutation()
-    mutated_chromosomes = [mutation_object.mutate_schedule_for_week(ch) for ch in crossover_chromosomes]
+    mutated_chromosomes = [
+        mutation_object.mutate_schedule_for_week(ch) for ch in crossover_chromosomes
+    ]
     if prev_mutated_chromosomes:
         mutated_chromosomes.extend(prev_mutated_chromosomes)
 
@@ -94,11 +106,16 @@ def timetable_generation(
 
     if best_chromosome:
         teacher_availability_matrix = update_teacher_availability_matrix(
-            teacher_availability_matrix,
-            best_chromosome
+            teacher_availability_matrix, best_chromosome
         )
 
-    return best_chromosome, teacher_availability_matrix, selected_chromosomes, mutated_chromosomes
+    return (
+        best_chromosome,
+        teacher_availability_matrix,
+        selected_chromosomes,
+        mutated_chromosomes,
+    )
+
 
 def run_timetable_generation(
     teacher_subject_mapping,
@@ -113,14 +130,19 @@ def run_timetable_generation(
     teacher_duty_days,
     teacher_availability_matrix,
     total_generations,
-    time_slots
+    time_slots,
 ):
     prev_selected = None
     prev_mutated = None
     best_chromosome = None
 
     for _ in range(total_generations):
-        best_chromosome, teacher_availability_matrix, selected, mutated = timetable_generation(
+        (
+            best_chromosome,
+            teacher_availability_matrix,
+            selected,
+            mutated,
+        ) = timetable_generation(
             teacher_subject_mapping=teacher_subject_mapping,
             total_sections=total_sections,
             total_classrooms=total_classrooms,
@@ -134,12 +156,13 @@ def run_timetable_generation(
             teacher_availability_matrix=teacher_availability_matrix,
             time_slots=time_slots,
             prev_selected_chromosomes=prev_selected,
-            prev_mutated_chromosomes=prev_mutated
+            prev_mutated_chromosomes=prev_mutated,
         )
         prev_selected = selected
         prev_mutated = mutated
 
     return best_chromosome, teacher_availability_matrix
+
 
 if __name__ == "__main__":
     best, correct_teacher_availability_matrix = run_timetable_generation(
@@ -154,14 +177,13 @@ if __name__ == "__main__":
         subject_quota_limits=SubjectWeeklyQuota.subject_quota,
         teacher_duty_days=TeacherWorkload.teacher_duty_days,
         teacher_availability_matrix=initialize_teacher_availability(
-            TeacherWorkload.Weekly_workLoad.keys(),
-            5,
-            7
+            TeacherWorkload.Weekly_workLoad.keys(), 5, 7
         ),
         total_generations=Defaults.total_no_of_generations,
-        time_slots=TimeSlots.time_slots
+        time_slots=TimeSlots.time_slots,
     )
     from icecream import ic
+
     ic(best)
     correct_teacher_availability_matrix = update_matrix_for_best(
         best,
@@ -173,7 +195,7 @@ if __name__ == "__main__":
             "Thursday": 3,
             "Friday": 4,
             "Saturday": 5,
-            "Sunday": 6
+            "Sunday": 6,
         },
         {
             "08:00 - 09:00": 1,
@@ -183,5 +205,5 @@ if __name__ == "__main__":
             "12:00 - 13:00": 5,
             "13:50 - 14:50": 6,
             "14:50 - 15:50": 7,
-        }
+        },
     )

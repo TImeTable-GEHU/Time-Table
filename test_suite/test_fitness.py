@@ -1,6 +1,6 @@
 # FITNESS
 
-#1. def __init__(self, sections):
+# 1. def __init__(self, sections):
 
 import unittest
 
@@ -28,7 +28,9 @@ class TimetableFitness:
     def __init__(self, sections):
         # Ensure `self.sections` is iterable (convert Sections object to a list if needed)
         if isinstance(sections, Sections):
-            self.sections = list(sections)  # Convert to list if it is a custom iterable object
+            self.sections = list(
+                sections
+            )  # Convert to list if it is a custom iterable object
         else:
             self.sections = sections  # Assume it is already a list or other iterable
 
@@ -37,7 +39,10 @@ class TimetableFitness:
         self.time_slots = ["9-10 AM", "10-11 AM", "11-12 PM", "1-2 PM", "2-3 PM"]
 
         # Teacher-subject mapping
-        self.subject_teacher_map = {"TCS-531": ["Teacher1", "Teacher2"], "TCS-502": ["Teacher3", "Teacher4"]}
+        self.subject_teacher_map = {
+            "TCS-531": ["Teacher1", "Teacher2"],
+            "TCS-502": ["Teacher3", "Teacher4"],
+        }
 
         # Classroom and capacity details
         self.classrooms = ["Room1", "Room2", "Room3"]
@@ -47,19 +52,24 @@ class TimetableFitness:
         self.teacher_schedule = {slot: {} for slot in self.time_slots}
         self.room_schedule = {slot: {} for slot in self.time_slots}
         self.assigned_teachers = {section: {} for section in self.sections}
-        self.section_rooms = {section: self.classrooms[i % len(self.classrooms)] for i, section in enumerate(self.sections)}
-
-        # Subject-specific constraints
-        self.subject_weekly_quota = {
-            "TCS-531": 3,
-            "TCS-502": 3,
-            "Placement_Class": 1
+        self.section_rooms = {
+            section: self.classrooms[i % len(self.classrooms)]
+            for i, section in enumerate(self.sections)
         }
 
-        self.weekly_assignments = {section: {subject: 0 for subject in self.subject_weekly_quota} for section in self.sections}
+        # Subject-specific constraints
+        self.subject_weekly_quota = {"TCS-531": 3, "TCS-502": 3, "Placement_Class": 1}
+
+        self.weekly_assignments = {
+            section: {subject: 0 for subject in self.subject_weekly_quota}
+            for section in self.sections
+        }
 
         # Teacher constraints
-        self.teacher_preferences = {teacher_id: [1, 2, 3, 4, 5, 6, 7] for teacher_id in ["Teacher1", "Teacher2", "Teacher3", "Teacher4"]}
+        self.teacher_preferences = {
+            teacher_id: [1, 2, 3, 4, 5, 6, 7]
+            for teacher_id in ["Teacher1", "Teacher2", "Teacher3", "Teacher4"]
+        }
         self.teacher_work_load = {teacher: 5 for teacher in self.teacher_preferences}
         self.teacher_assignments = {}
 
@@ -93,7 +103,7 @@ class TestTimetableFitness(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main()
 
-#2. def generate_day_schedule(self, day, half_day_sections, week_number):
+# 2. def generate_day_schedule(self, day, half_day_sections, week_number):
 
 import random
 from collections import defaultdict
@@ -113,7 +123,10 @@ class TimetableGenerator:
 
     def generate_day_schedule(self, day, half_day_sections, week_number):
         day_schedule = {}
-        subject_teacher_usage = {subject: iter(teachers) for subject, teachers in self.subject_teacher_map.items()}
+        subject_teacher_usage = {
+            subject: iter(teachers)
+            for subject, teachers in self.subject_teacher_map.items()
+        }
 
         for section in self.sections:
             section_schedule = []
@@ -126,7 +139,7 @@ class TimetableGenerator:
                 time_slot = self.time_slots[index]
 
                 # Skip if time_slot is already used
-                if any(item['time_slot'] == time_slot for item in section_schedule):
+                if any(item["time_slot"] == time_slot for item in section_schedule):
                     index += 1
                     continue
 
@@ -178,27 +191,33 @@ class TimetableGenerator:
                     next_slot_index = index + 1
                     if next_slot_index <= num_slots:
                         next_time_slot = self.time_slots[next_slot_index]
-                        section_schedule.append({
-                            "teacher_id": teacher,
-                            "subject_id": subject,
-                            "classroom_id": assigned_room,
-                            "time_slot": next_time_slot
-                        })
+                        section_schedule.append(
+                            {
+                                "teacher_id": teacher,
+                                "subject_id": subject,
+                                "classroom_id": assigned_room,
+                                "time_slot": next_time_slot,
+                            }
+                        )
                         self.room_schedule[next_time_slot][assigned_room] = section
                         self.teacher_schedule[next_time_slot][teacher] = section
                         index += 1  # Skip the next slot for lab
 
-                section_schedule.append({
-                    "teacher_id": teacher,
-                    "subject_id": subject,
-                    "classroom_id": assigned_room,
-                    "time_slot": time_slot
-                })
+                section_schedule.append(
+                    {
+                        "teacher_id": teacher,
+                        "subject_id": subject,
+                        "classroom_id": assigned_room,
+                        "time_slot": time_slot,
+                    }
+                )
 
                 index += 1
 
             day_schedule[section] = section_schedule
         return day_schedule
+
+
 import unittest
 
 
@@ -212,7 +231,7 @@ class TestGenerateDaySchedule(unittest.TestCase):
             4: "12:00-1:00",
             5: "2:00-3:00",
             6: "3:00-4:00",
-            7: "4:00-5:00"
+            7: "4:00-5:00",
         }
         self.subject_teacher_map = {
             "Math": ["T1", "T2"],
@@ -223,7 +242,11 @@ class TestGenerateDaySchedule(unittest.TestCase):
         self.section_rooms = {"A": "R1", "B": "R2", "C": "R3"}
         self.lab = ["Lab1", "Lab2"]
         self.tt = TimetableGenerator(
-            self.sections, self.time_slots, self.subject_teacher_map, self.section_rooms, self.lab
+            self.sections,
+            self.time_slots,
+            self.subject_teacher_map,
+            self.section_rooms,
+            self.lab,
         )
 
     def test_schedule_structure(self):
@@ -255,27 +278,29 @@ class TestGenerateDaySchedule(unittest.TestCase):
         schedule = self.tt.generate_day_schedule("Monday", ["A"], 1)
         for section, section_schedule in schedule.items():
             for i, entry in enumerate(section_schedule):
-                if "Lab" in entry['subject_id']:
-                    current_slot = entry['time_slot']
-                    current_index = list(self.tt.time_slots.values()).index(current_slot)
+                if "Lab" in entry["subject_id"]:
+                    current_slot = entry["time_slot"]
+                    current_index = list(self.tt.time_slots.values()).index(
+                        current_slot
+                    )
 
                     # Check if the lab occupies the next time slot
                     if current_index + 1 < len(self.tt.time_slots):
-                        next_slot = section_schedule[i + 1]['time_slot']
+                        next_slot = section_schedule[i + 1]["time_slot"]
                         expected_next_slot = self.tt.time_slots[current_index + 1]
                         self.assertEqual(
-                            next_slot, 
+                            next_slot,
                             expected_next_slot,
-                            f"Lab for section {section} did not occupy consecutive slots as expected."
+                            f"Lab for section {section} did not occupy consecutive slots as expected.",
                         )
 
     def test_teacher_and_room_assignments(self):
         schedule = self.tt.generate_day_schedule("Monday", ["A"], 1)
         for section, section_schedule in schedule.items():
             for entry in section_schedule:
-                teacher = entry['teacher_id']
-                room = entry['classroom_id']
-                time_slot = entry['time_slot']
+                teacher = entry["teacher_id"]
+                room = entry["classroom_id"]
+                time_slot = entry["time_slot"]
                 self.assertIn(teacher, self.tt.teacher_schedule[time_slot])
                 self.assertIn(room, self.tt.room_schedule[time_slot])
 
@@ -283,7 +308,7 @@ class TestGenerateDaySchedule(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main()
 
-#3. def create_timetable(self, num_weeks=1):
+# 3. def create_timetable(self, num_weeks=1):
 
 import random
 import unittest
@@ -297,7 +322,13 @@ class TimetableGenerator:
         self.subject_teacher_map = subject_teacher_map
         self.section_rooms = section_rooms
         self.lab = lab
-        self.days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]  # Ensure days are initialized
+        self.days = [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+        ]  # Ensure days are initialized
         self.weekly_assignments = defaultdict(lambda: defaultdict(int))
         self.teacher_schedule = defaultdict(dict)
         self.room_schedule = defaultdict(dict)
@@ -305,7 +336,10 @@ class TimetableGenerator:
 
     def generate_day_schedule(self, day, half_day_sections, week_number):
         day_schedule = {}
-        subject_teacher_usage = {subject: iter(teachers) for subject, teachers in self.subject_teacher_map.items()}
+        subject_teacher_usage = {
+            subject: iter(teachers)
+            for subject, teachers in self.subject_teacher_map.items()
+        }
 
         for section in self.sections:
             section_schedule = []
@@ -328,7 +362,9 @@ class TimetableGenerator:
                     subject = random.choice(available_subjects)
 
                     # Handle special rules for Placement_Class and labs
-                    if subject == "Placement_Class" and index <= 4:  # Placement classes are after lunch
+                    if (
+                        subject == "Placement_Class" and index <= 4
+                    ):  # Placement classes are after lunch
                         available_subjects.remove(subject)
                         continue
 
@@ -342,12 +378,16 @@ class TimetableGenerator:
                         teacher_iter = subject_teacher_usage[subject]
                         try:
                             teacher = next(teacher_iter)
-                            self.teacher_assignments.setdefault(section, {})[subject] = teacher
+                            self.teacher_assignments.setdefault(section, {})[
+                                subject
+                            ] = teacher
                         except StopIteration:
                             teacher_iter = iter(self.subject_teacher_map[subject])
                             teacher = next(teacher_iter)
                             subject_teacher_usage[subject] = teacher_iter
-                            self.teacher_assignments.setdefault(section, {})[subject] = teacher
+                            self.teacher_assignments.setdefault(section, {})[
+                                subject
+                            ] = teacher
 
                         break
 
@@ -406,8 +446,12 @@ class TimetableGenerator:
         for week in range(1, num_weeks + 1):
             week_schedule = {}
             for week_day in self.days:
-                half_day_sections = random.sample(self.sections, len(self.sections) // 2)
-                week_schedule[week_day] = self.generate_day_schedule(week_day, half_day_sections, week)
+                half_day_sections = random.sample(
+                    self.sections, len(self.sections) // 2
+                )
+                week_schedule[week_day] = self.generate_day_schedule(
+                    week_day, half_day_sections, week
+                )
             timetable[f"Week {week}"] = week_schedule
         return timetable
 
@@ -422,7 +466,7 @@ class TestTimetableGenerator(unittest.TestCase):
             4: "12:00-1:00",
             5: "2:00-3:00",
             6: "3:00-4:00",
-            7: "4:00-5:00"
+            7: "4:00-5:00",
         }
         self.subject_teacher_map = {
             "Math": ["T1", "T2"],
@@ -433,7 +477,11 @@ class TestTimetableGenerator(unittest.TestCase):
         self.section_rooms = {"A": "R1", "B": "R2", "C": "R3"}
         self.lab = ["Lab1", "Lab2"]
         self.tt = TimetableGenerator(
-            self.sections, self.time_slots, self.subject_teacher_map, self.section_rooms, self.lab
+            self.sections,
+            self.time_slots,
+            self.subject_teacher_map,
+            self.section_rooms,
+            self.lab,
         )
 
     def test_create_timetable(self):
@@ -442,7 +490,7 @@ class TestTimetableGenerator(unittest.TestCase):
         self.assertGreater(len(timetable), 0)
         self.assertIn("Week 1", timetable)
         self.assertIn("Week 2", timetable)
-        
+
         # Verify timetable structure
         for week, week_schedule in timetable.items():
             self.assertIsInstance(week_schedule, dict)
@@ -456,10 +504,11 @@ class TestTimetableGenerator(unittest.TestCase):
                         self.assertIn("classroom_id", entry)
                         self.assertIn("time_slot", entry)
 
+
 if __name__ == "__main__":
     unittest.main()
 
-#4.  def calculate_fitness(self, chromosome):
+# 4.  def calculate_fitness(self, chromosome):
 
 import random
 import unittest
@@ -467,7 +516,18 @@ from collections import defaultdict
 
 
 class TimetableGenerator:
-    def __init__(self, sections, time_slots, subject_teacher_map, section_rooms, lab, section_strength, room_capacity, teacher_preferences, teacher_work_load):
+    def __init__(
+        self,
+        sections,
+        time_slots,
+        subject_teacher_map,
+        section_rooms,
+        lab,
+        section_strength,
+        room_capacity,
+        teacher_preferences,
+        teacher_work_load,
+    ):
         self.sections = sections
         self.time_slots = time_slots
         self.subject_teacher_map = subject_teacher_map
@@ -485,7 +545,10 @@ class TimetableGenerator:
 
     def generate_day_schedule(self, day, half_day_sections, week_number):
         day_schedule = {}
-        subject_teacher_usage = {subject: iter(teachers) for subject, teachers in self.subject_teacher_map.items()}
+        subject_teacher_usage = {
+            subject: iter(teachers)
+            for subject, teachers in self.subject_teacher_map.items()
+        }
 
         for section in self.sections:
             section_schedule = []
@@ -520,12 +583,16 @@ class TimetableGenerator:
                         teacher_iter = subject_teacher_usage[subject]
                         try:
                             teacher = next(teacher_iter)
-                            self.teacher_assignments.setdefault(section, {})[subject] = teacher
+                            self.teacher_assignments.setdefault(section, {})[
+                                subject
+                            ] = teacher
                         except StopIteration:
                             teacher_iter = iter(self.subject_teacher_map[subject])
                             teacher = next(teacher_iter)
                             subject_teacher_usage[subject] = teacher_iter
-                            self.teacher_assignments.setdefault(section, {})[subject] = teacher
+                            self.teacher_assignments.setdefault(section, {})[
+                                subject
+                            ] = teacher
 
                         break
 
@@ -592,9 +659,9 @@ class TimetableGenerator:
                     teacher_load = {}
 
                     for item in section_schedule:
-                        teacher = item['teacher_id']
-                        classroom = item['classroom_id']
-                        time_slot = item['time_slot']
+                        teacher = item["teacher_id"]
+                        classroom = item["classroom_id"]
+                        time_slot = item["time_slot"]
                         strength = self.section_strength.get(section, 0)
 
                         if "Break" in time_slot:
@@ -628,10 +695,9 @@ class TimetableGenerator:
                     section_fitness_scores[day][section] = section_score
                     overall_fitness_score += section_score
 
-            week_fitness_scores.append({
-                "week": f"Week {week_num}",
-                "score": overall_fitness_score
-            })
+            week_fitness_scores.append(
+                {"week": f"Week {week_num}", "score": overall_fitness_score}
+            )
 
         return week_fitness_scores, section_fitness_scores
 
@@ -646,7 +712,7 @@ class TestTimetableGenerator(unittest.TestCase):
             4: "12:00-1:00",
             5: "2:00-3:00",
             6: "3:00-4:00",
-            7: "4:00-5:00"
+            7: "4:00-5:00",
         }
         self.subject_teacher_map = {
             "Math": ["T1", "T2"],
@@ -658,12 +724,22 @@ class TestTimetableGenerator(unittest.TestCase):
         self.lab = ["Lab1", "Lab2"]
         self.section_strength = {"A": 40, "B": 35, "C": 50}
         self.room_capacity = {"R1": 40, "R2": 35, "R3": 50}
-        self.teacher_preferences = {"T1": ["9:00-10:00", "3:00-4:00"], "T2": ["10:00-11:00"]}
+        self.teacher_preferences = {
+            "T1": ["9:00-10:00", "3:00-4:00"],
+            "T2": ["10:00-11:00"],
+        }
         self.teacher_work_load = {"T1": 10, "T2": 15, "T3": 8, "T4": 12, "T5": 6}
 
         self.tt = TimetableGenerator(
-            self.sections, self.time_slots, self.subject_teacher_map, self.section_rooms,
-            self.lab, self.section_strength, self.room_capacity, self.teacher_preferences, self.teacher_work_load
+            self.sections,
+            self.time_slots,
+            self.subject_teacher_map,
+            self.section_rooms,
+            self.lab,
+            self.section_strength,
+            self.room_capacity,
+            self.teacher_preferences,
+            self.teacher_work_load,
         )
 
     def test_calculate_fitness(self):
@@ -671,16 +747,39 @@ class TestTimetableGenerator(unittest.TestCase):
         chromosome = {
             "Week 1": {
                 "Monday": {
-                    "A": [{"teacher_id": "T1", "subject_id": "Math", "classroom_id": "R1", "time_slot": "9:00-10:00"}],
-                    "B": [{"teacher_id": "T3", "subject_id": "Physics", "classroom_id": "R2", "time_slot": "10:00-11:00"}],
+                    "A": [
+                        {
+                            "teacher_id": "T1",
+                            "subject_id": "Math",
+                            "classroom_id": "R1",
+                            "time_slot": "9:00-10:00",
+                        }
+                    ],
+                    "B": [
+                        {
+                            "teacher_id": "T3",
+                            "subject_id": "Physics",
+                            "classroom_id": "R2",
+                            "time_slot": "10:00-11:00",
+                        }
+                    ],
                 },
                 "Tuesday": {
-                    "C": [{"teacher_id": "T4", "subject_id": "Chemistry Lab", "classroom_id": "Lab1", "time_slot": "11:00-12:00"}],
-                }
+                    "C": [
+                        {
+                            "teacher_id": "T4",
+                            "subject_id": "Chemistry Lab",
+                            "classroom_id": "Lab1",
+                            "time_slot": "11:00-12:00",
+                        }
+                    ],
+                },
             }
         }
 
-        week_fitness_scores, section_fitness_scores = self.tt.calculate_fitness(chromosome)
+        week_fitness_scores, section_fitness_scores = self.tt.calculate_fitness(
+            chromosome
+        )
 
         # Test the overall fitness score for Week 1
         self.assertIsInstance(week_fitness_scores, list)
@@ -692,6 +791,7 @@ class TestTimetableGenerator(unittest.TestCase):
         self.assertIn("Monday", section_fitness_scores)
         self.assertIn("A", section_fitness_scores["Monday"])
         self.assertIsInstance(section_fitness_scores["Monday"]["A"], int)
+
 
 if __name__ == "__main__":
     unittest.main()

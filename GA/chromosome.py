@@ -1,6 +1,7 @@
-import random
 import copy
+import random
 from math import ceil
+
 from Constants.constant import Defaults
 
 
@@ -35,9 +36,10 @@ class TimeTableGeneration:
         self.weekly_workload = teacher_weekly_workload
         self.teacher_availability_matrix = teacher_availability_matrix
         self.initial_lab_availability_matrix = copy.deepcopy(lab_availability_matrix)
-        self.lab_availability_matrix = copy.deepcopy(self.initial_lab_availability_matrix)
+        self.lab_availability_matrix = copy.deepcopy(
+            self.initial_lab_availability_matrix
+        )
         self._map_sections_to_classrooms()
-
 
     def _map_sections_to_classrooms(self) -> dict:
         sorted_classrooms = sorted(
@@ -55,18 +57,18 @@ class TimeTableGeneration:
                     break
         return self.section_to_classroom_map
 
-
     def _initialize_teacher_workload_tracker(self) -> dict:
         return {teacher: 0 for teacher in self.weekly_workload}
 
-
-    def _get_available_subjects(self, section: str, subject_usage_tracker: dict) -> list:
+    def _get_available_subjects(
+        self, section: str, subject_usage_tracker: dict
+    ) -> list:
         return [
             subject
             for subject in self.subject_teacher_mapping
-            if subject_usage_tracker[section][subject] < self.subject_quota_limits.get(subject, 0)
+            if subject_usage_tracker[section][subject]
+            < self.subject_quota_limits.get(subject, 0)
         ]
-
 
     def _assign_subject_and_teacher(
         self,
@@ -79,26 +81,37 @@ class TimeTableGeneration:
         teacher_availability_matrix: dict,
         day_index: int,
     ) -> tuple:
-        available_subjects = self._get_available_subjects(section, subject_usage_tracker)
+        available_subjects = self._get_available_subjects(
+            section, subject_usage_tracker
+        )
         random.shuffle(available_subjects)
         assigned_teacher = None
         selected_subject = None
         assigned_room = assigned_classroom
 
         for subject in available_subjects:
-            if (subject in self.lab_subject_list or subject == "Placement_Class") and slot_index not in [1, 3, 5]:
+            if (
+                subject in self.lab_subject_list or subject == "Placement_Class"
+            ) and slot_index not in [1, 3, 5]:
                 continue
             if subject not in subjects_scheduled_today:
                 teachers = self.subject_teacher_mapping[subject]
                 preferred_teachers = [
-                    t for t in teachers if self.teacher_availability_preferences.get(t, [])
+                    t
+                    for t in teachers
+                    if self.teacher_availability_preferences.get(t, [])
                 ]
-                for teacher in sorted(preferred_teachers, key=lambda t: teacher_workload_tracker[t]):
+                for teacher in sorted(
+                    preferred_teachers, key=lambda t: teacher_workload_tracker[t]
+                ):
                     if (
                         teacher in teacher_availability_matrix
                         and len(teacher_availability_matrix[teacher]) > day_index
-                        and len(teacher_availability_matrix[teacher][day_index]) > (slot_index - 1)
-                        and teacher_availability_matrix[teacher][day_index][slot_index - 1]
+                        and len(teacher_availability_matrix[teacher][day_index])
+                        > (slot_index - 1)
+                        and teacher_availability_matrix[teacher][day_index][
+                            slot_index - 1
+                        ]
                     ):
                         assigned_teacher = teacher
                         teacher_workload_tracker[teacher] += 1
@@ -112,7 +125,6 @@ class TimeTableGeneration:
             selected_subject = "Library"
             assigned_teacher = "None"
         return assigned_teacher, selected_subject, assigned_room
-
 
     def _allocate_lab(
         self,
@@ -140,10 +152,18 @@ class TimeTableGeneration:
                         and self.lab_availability_matrix[lab2][day_index][slot_index]
                         and self.lab_capacity_manager.get(lab2, 0) >= group2_size
                     ):
-                        self.lab_availability_matrix[lab1][day_index][slot_index - 1] = False
-                        self.lab_availability_matrix[lab1][day_index][slot_index] = False
-                        self.lab_availability_matrix[lab2][day_index][slot_index - 1] = False
-                        self.lab_availability_matrix[lab2][day_index][slot_index] = False
+                        self.lab_availability_matrix[lab1][day_index][
+                            slot_index - 1
+                        ] = False
+                        self.lab_availability_matrix[lab1][day_index][
+                            slot_index
+                        ] = False
+                        self.lab_availability_matrix[lab2][day_index][
+                            slot_index - 1
+                        ] = False
+                        self.lab_availability_matrix[lab2][day_index][
+                            slot_index
+                        ] = False
                         entries = [
                             {
                                 "teacher_id": teacher,
@@ -186,7 +206,6 @@ class TimeTableGeneration:
         }
         return [merged_entry], slot_index + 1
 
-
     def _generate_section_schedule(
         self,
         section: str,
@@ -223,29 +242,32 @@ class TimeTableGeneration:
                     schedule.extend(lab_entries)
                     subject_usage_tracker[section][subject] += len(lab_entries)
                 else:
-                    schedule.append({
-                        "teacher_id": teacher,
-                        "subject_id": subject,
-                        "classroom_id": assigned_classroom,
-                        "time_slot": time_slot,
-                        "group": "fallback",
-                    })
+                    schedule.append(
+                        {
+                            "teacher_id": teacher,
+                            "subject_id": subject,
+                            "classroom_id": assigned_classroom,
+                            "time_slot": time_slot,
+                            "group": "fallback",
+                        }
+                    )
                     subject_usage_tracker[section][subject] += 1
                     slot_index += 1
             else:
-                schedule.append({
-                    "teacher_id": teacher,
-                    "subject_id": subject,
-                    "classroom_id": room,
-                    "time_slot": time_slot,
-                    "group": "all",
-                })
+                schedule.append(
+                    {
+                        "teacher_id": teacher,
+                        "subject_id": subject,
+                        "classroom_id": room,
+                        "time_slot": time_slot,
+                        "group": "all",
+                    }
+                )
                 if subject != "Library":
                     subject_usage_tracker[section][subject] += 1
                 slot_index += 1
 
         return schedule, teacher_availability_matrix
-
 
     def generate_daily_schedule(
         self,
@@ -258,7 +280,10 @@ class TimeTableGeneration:
         teacher_workload = self._initialize_teacher_workload_tracker()
         for section in sections:
             section_strength = self.sections_manager[section]
-            schedule, self.teacher_availability_matrix = self._generate_section_schedule(
+            (
+                schedule,
+                self.teacher_availability_matrix,
+            ) = self._generate_section_schedule(
                 section,
                 half_day_sections,
                 subject_usage_tracker,
@@ -270,7 +295,6 @@ class TimeTableGeneration:
             daily_schedule[section] = schedule
         return daily_schedule, subject_usage_tracker, self.teacher_availability_matrix
 
-
     def _generate_weekly_schedule(self) -> tuple:
         weekly_schedule = {}
         subject_usage = {
@@ -281,17 +305,26 @@ class TimeTableGeneration:
         for day_index, weekday in enumerate(self.weekdays):
             random.shuffle(sections)
             half_day = sections[: len(sections) // 2]
-            daily_sched, subject_usage, self.teacher_availability_matrix = self.generate_daily_schedule(
+            (
+                daily_sched,
+                subject_usage,
+                self.teacher_availability_matrix,
+            ) = self.generate_daily_schedule(
                 sections, half_day, subject_usage, day_index
             )
             weekly_schedule[weekday] = daily_sched
         return weekly_schedule, subject_usage, self.teacher_availability_matrix
 
-
     def create_timetable(self, num_weeks: int) -> tuple:
         timetable = {}
         for week in range(1, num_weeks + 1):
-            self.lab_availability_matrix = copy.deepcopy(self.initial_lab_availability_matrix)
-            weekly_schedule, _, self.teacher_availability_matrix = self._generate_weekly_schedule()
+            self.lab_availability_matrix = copy.deepcopy(
+                self.initial_lab_availability_matrix
+            )
+            (
+                weekly_schedule,
+                _,
+                self.teacher_availability_matrix,
+            ) = self._generate_weekly_schedule()
             timetable[f"Week {week}"] = weekly_schedule
         return timetable, self.teacher_availability_matrix, self.lab_availability_matrix

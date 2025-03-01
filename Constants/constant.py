@@ -1,5 +1,4 @@
 class Defaults:
-    # All the defaults values over GA folder.
     room_capacity = 60
     working_days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     starting_section_fitness = 1000
@@ -26,7 +25,9 @@ class TeachersDutyDays:
 
 
 class SpecialSubjects:
-    def __init__(self, special_subjects: list, labs: list, specialization_subjects: list):
+    def __init__(
+        self, special_subjects: list, labs: list, specialization_subjects: list
+    ):
         self.special_subjects = special_subjects
         self.labs = labs
         self.specialization_subjects = specialization_subjects
@@ -38,16 +39,16 @@ class PenaltyConstants:
     PENALTY_OVER_CAPACITY = 25
     PENALTY_UN_PREFERRED_SLOT = 5
     PENALTY_OVERLOAD_TEACHER = 10
-    PENALTY_NON_DUTY_DAY=40
+    PENALTY_NON_DUTY_DAY = 40
 
 
 class SectionsConstants:
     # Define attribute weights and conditions
     ATTRIBUTE_WEIGHTS = {
-        'good_cgpa': 1,         # 2^0
-        'hostler': 2,           # 2^1
+        "good_cgpa": 1,  # 2^0
+        "hostler": 2,  # 2^1
     }
 
     ATTRIBUTE_CONDITIONS = {
-        'hostler': lambda student: student.get('Hostler', False),
+        "hostler": lambda student: student.get("Hostler", False),
     }

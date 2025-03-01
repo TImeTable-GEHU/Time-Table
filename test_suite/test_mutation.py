@@ -1,6 +1,6 @@
-#MUTATION TESTS
+# MUTATION TESTS
 
-#1. def mutate_time_slots_in_section(self, schedule, section):
+# 1. def mutate_time_slots_in_section(self, schedule, section):
 
 import random
 import unittest
@@ -13,12 +13,12 @@ class TestMutateTimeSlots(unittest.TestCase):
             "SectionA": [
                 {"subject": "Math", "time_slot": "9:00-10:00"},
                 {"subject": "English", "time_slot": "10:00-11:00"},
-                {"subject": "Science", "time_slot": "11:00-12:00"}
+                {"subject": "Science", "time_slot": "11:00-12:00"},
             ],
             "SectionB": [
                 {"subject": "History", "time_slot": "9:00-10:00"},
             ],
-            "SectionC": []  # Empty section
+            "SectionC": [],  # Empty section
         }
 
     def mutate_time_slots_in_section(self, schedule, section):
@@ -35,7 +35,7 @@ class TestMutateTimeSlots(unittest.TestCase):
         if section in schedule:
             section_list = schedule[section]
 
-            if len(section_list) < 2: 
+            if len(section_list) < 2:
                 return False
 
             time_slots = [entry["time_slot"] for entry in section_list]
@@ -55,13 +55,23 @@ class TestMutateTimeSlots(unittest.TestCase):
         mutated_schedule = [entry["time_slot"] for entry in self.schedule["SectionA"]]
 
         # Check if time slots were shuffled
-        self.assertNotEqual(original_schedule, mutated_schedule, "Schedules should differ after mutation")
-        self.assertCountEqual(original_schedule, mutated_schedule, "Schedules should have the same elements after mutation")
+        self.assertNotEqual(
+            original_schedule,
+            mutated_schedule,
+            "Schedules should differ after mutation",
+        )
+        self.assertCountEqual(
+            original_schedule,
+            mutated_schedule,
+            "Schedules should have the same elements after mutation",
+        )
 
     def test_not_enough_time_slots(self):
         # Test mutation for SectionB (not enough time slots to shuffle)
         result = self.mutate_time_slots_in_section(self.schedule, "SectionB")
-        self.assertFalse(result, "Mutation should not occur for single-element sections")
+        self.assertFalse(
+            result, "Mutation should not occur for single-element sections"
+        )
 
     def test_empty_section(self):
         # Test mutation for SectionC (empty section)
@@ -73,12 +83,12 @@ class TestMutateTimeSlots(unittest.TestCase):
         result = self.mutate_time_slots_in_section(self.schedule, "SectionD")
         self.assertFalse(result, "Mutation should not occur for non-existent sections")
 
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
 
 
-
-#2. def mutate_schedule_for_week(self, weekly_schedule):
+# 2. def mutate_schedule_for_week(self, weekly_schedule):
 
 import copy
 import random
@@ -110,7 +120,9 @@ class Mutator:
             mutated_slots = original_slots[:]
             attempt_count = 0
 
-            while mutated_slots == original_slots and attempt_count < 5:  # Ensure mutation occurs
+            while (
+                mutated_slots == original_slots and attempt_count < 5
+            ):  # Ensure mutation occurs
                 random.shuffle(mutated_slots)
                 attempt_count += 1
 
@@ -178,17 +190,37 @@ class TestMutation(unittest.TestCase):
         self.weekly_schedule = {
             "Monday": {
                 "A": [
-                    {"teacher_id": "T1", "subject_id": "Math", "time_slot": "9:00 - 9:55"},
-                    {"teacher_id": "T2", "subject_id": "Physics", "time_slot": "9:55 - 10:50"},
+                    {
+                        "teacher_id": "T1",
+                        "subject_id": "Math",
+                        "time_slot": "9:00 - 9:55",
+                    },
+                    {
+                        "teacher_id": "T2",
+                        "subject_id": "Physics",
+                        "time_slot": "9:55 - 10:50",
+                    },
                 ],
                 "B": [
-                    {"teacher_id": "T3", "subject_id": "Chemistry", "time_slot": "11:10 - 12:05"},
-                    {"teacher_id": "T4", "subject_id": "Biology", "time_slot": "12:05 - 1:00"},
+                    {
+                        "teacher_id": "T3",
+                        "subject_id": "Chemistry",
+                        "time_slot": "11:10 - 12:05",
+                    },
+                    {
+                        "teacher_id": "T4",
+                        "subject_id": "Biology",
+                        "time_slot": "12:05 - 1:00",
+                    },
                 ],
             },
             "Tuesday": {
                 "A": [
-                    {"teacher_id": "T5", "subject_id": "History", "time_slot": "1:20 - 2:15"},
+                    {
+                        "teacher_id": "T5",
+                        "subject_id": "History",
+                        "time_slot": "1:20 - 2:15",
+                    },
                 ]
             },
         }
@@ -236,7 +268,9 @@ class TestMutation(unittest.TestCase):
             for section in day.values()
             for entry in section
         ]
-        self.assertNotEqual(original_time_slots, mutated_time_slots, "Mutation did not occur.")
+        self.assertNotEqual(
+            original_time_slots, mutated_time_slots, "Mutation did not occur."
+        )
 
     def test_print_weekly_schedule(self):
         # This is primarily for manual verification; ensure no exceptions occur
@@ -247,7 +281,7 @@ if __name__ == "__main__":
     unittest.main()
 
 
-#3. def print_weekly_schedule(self, weekly_schedule):
+# 3. def print_weekly_schedule(self, weekly_schedule):
 
 import copy
 import random
@@ -258,20 +292,43 @@ from Samples.Mutation_Files.mutation import Mutation
 
 
 class TestMutation(unittest.TestCase):
-
     def setUp(self):
         """Setup a basic schedule for testing."""
         self.schedule = {
             "Monday": {
                 "A": [
-                    {"teacher_id": "AD08", "subject_id": "PCS-506", "classroom_id": "L5", "time_slot": "9:55 - 10:50"},
-                    {"teacher_id": "AD08", "subject_id": "PCS-506", "classroom_id": "L5", "time_slot": "9:00 - 9:55"}
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L5",
+                        "time_slot": "9:55 - 10:50",
+                    },
+                    {
+                        "teacher_id": "AD08",
+                        "subject_id": "PCS-506",
+                        "classroom_id": "L5",
+                        "time_slot": "9:00 - 9:55",
+                    },
                 ]
             },
             "Tuesday": {
-                "A": [{"teacher_id": "AK22", "subject_id": "CSP-501", "classroom_id": "R1", "time_slot": "9:00 - 9:55"}],
-                "B": [{"teacher_id": "BJ16", "subject_id": "TMA-502", "classroom_id": "R2", "time_slot": "9:55 - 10:50"}]
-            }
+                "A": [
+                    {
+                        "teacher_id": "AK22",
+                        "subject_id": "CSP-501",
+                        "classroom_id": "R1",
+                        "time_slot": "9:00 - 9:55",
+                    }
+                ],
+                "B": [
+                    {
+                        "teacher_id": "BJ16",
+                        "subject_id": "TMA-502",
+                        "classroom_id": "R2",
+                        "time_slot": "9:55 - 10:50",
+                    }
+                ],
+            },
         }
 
     def test_mutate_schedule_for_week(self):
@@ -288,15 +345,24 @@ class TestMutation(unittest.TestCase):
         mutated_schedule = mutator.mutate_schedule_for_week(self.schedule)
 
         # Test if the mutated schedule is different from the original schedule
-        self.assertNotEqual(self.schedule, mutated_schedule, "The mutated schedule should be different from the original schedule.")
+        self.assertNotEqual(
+            self.schedule,
+            mutated_schedule,
+            "The mutated schedule should be different from the original schedule.",
+        )
 
         # Test that at least one section was mutated
         for day in mutated_schedule:
             for section in mutated_schedule[day]:
                 # Check if time slots were shuffled (i.e., they're different from the original time slots)
-                for original_entry, mutated_entry in zip(original_schedule[day][section], mutated_schedule[day][section]):
-                    self.assertNotEqual(original_entry['time_slot'], mutated_entry['time_slot'], 
-                                        f"Time slot for {section} on {day} should be mutated.")
+                for original_entry, mutated_entry in zip(
+                    original_schedule[day][section], mutated_schedule[day][section]
+                ):
+                    self.assertNotEqual(
+                        original_entry["time_slot"],
+                        mutated_entry["time_slot"],
+                        f"Time slot for {section} on {day} should be mutated.",
+                    )
 
     def test_mutate_schedule_with_no_mutation(self):
         """
@@ -312,7 +378,11 @@ class TestMutation(unittest.TestCase):
         mutated_schedule = mutator.mutate_schedule_for_week(self.schedule)
 
         # Test that the mutated schedule is the same as the original schedule
-        self.assertEqual(self.schedule, mutated_schedule, "The schedule should remain the same if mutation rate is 0.")
+        self.assertEqual(
+            self.schedule,
+            mutated_schedule,
+            "The schedule should remain the same if mutation rate is 0.",
+        )
 
     def test_mutate_schedule_with_max_mutation(self):
         """
@@ -328,14 +398,23 @@ class TestMutation(unittest.TestCase):
         mutated_schedule = mutator.mutate_schedule_for_week(self.schedule)
 
         # Test that the mutated schedule is different from the original schedule
-        self.assertNotEqual(self.schedule, mutated_schedule, "The mutated schedule should be different from the original schedule.")
-        
+        self.assertNotEqual(
+            self.schedule,
+            mutated_schedule,
+            "The mutated schedule should be different from the original schedule.",
+        )
+
         # Check that all time slots were mutated
         for day in mutated_schedule:
             for section in mutated_schedule[day]:
-                for original_entry, mutated_entry in zip(original_schedule[day][section], mutated_schedule[day][section]):
-                    self.assertNotEqual(original_entry['time_slot'], mutated_entry['time_slot'], 
-                                        f"Time slot for {section} on {day} should be mutated.")
+                for original_entry, mutated_entry in zip(
+                    original_schedule[day][section], mutated_schedule[day][section]
+                ):
+                    self.assertNotEqual(
+                        original_entry["time_slot"],
+                        mutated_entry["time_slot"],
+                        f"Time slot for {section} on {day} should be mutated.",
+                    )
 
     @patch("random.sample")  # Mock random.sample to control which sections get mutated
     def test_mutate_schedule_with_controlled_mutation(self, mock_sample):
@@ -357,13 +436,22 @@ class TestMutation(unittest.TestCase):
         # Test that only section A was mutated, and others remain the same
         for day in mutated_schedule:
             for section in mutated_schedule[day]:
-                for original_entry, mutated_entry in zip(original_schedule[day][section], mutated_schedule[day][section]):
+                for original_entry, mutated_entry in zip(
+                    original_schedule[day][section], mutated_schedule[day][section]
+                ):
                     if section == "A":
-                        self.assertNotEqual(original_entry['time_slot'], mutated_entry['time_slot'], 
-                                            f"Time slot for {section} on {day} should be mutated.")
+                        self.assertNotEqual(
+                            original_entry["time_slot"],
+                            mutated_entry["time_slot"],
+                            f"Time slot for {section} on {day} should be mutated.",
+                        )
                     else:
-                        self.assertEqual(original_entry['time_slot'], mutated_entry['time_slot'], 
-                                         f"Time slot for {section} on {day} should not be mutated.")
+                        self.assertEqual(
+                            original_entry["time_slot"],
+                            mutated_entry["time_slot"],
+                            f"Time slot for {section} on {day} should not be mutated.",
+                        )
+
 
 if __name__ == "__main__":
     unittest.main()

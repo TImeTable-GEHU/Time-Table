@@ -1,9 +1,10 @@
 import copy
 from dataclasses import dataclass
+
 from Constants.helper_routines import (
     initialize_teacher_availability,
     update_matrix_for_best,
-    update_teacher_availability_matrix
+    update_teacher_availability_matrix,
 )
 from GA.chromosome import TimeTableGeneration
 from GA.fitness import TimetableFitnessEvaluator
@@ -67,9 +68,11 @@ class TimetableEngine:
             teacher_duty_days=self.config.teacher_duty_days,
             teacher_availability_matrix=teacher_matrix,
             lab_availability_matrix=self.lab_availability,
-            time_slots=self.config.time_slots
+            time_slots=self.config.time_slots,
         )
-        timetable, updated_teacher = tg.create_timetable(self.config.total_generations)[:2]
+        timetable, updated_teacher = tg.create_timetable(self.config.total_generations)[
+            :2
+        ]
         fitness = TimetableFitnessEvaluator(
             timetable=timetable,
             all_sections=list(tg.sections_manager.keys()),
@@ -81,7 +84,7 @@ class TimetableEngine:
             subject_quota_data=tg.subject_quota_limits,
             teacher_time_preferences=tg.teacher_availability_preferences,
             teacher_daily_workload=tg.weekly_workload,
-            time_slots=self.config.time_slots
+            time_slots=self.config.time_slots,
         ).evaluate_timetable_fitness()
 
         selected = TimeTableSelection().select_chromosomes(fitness[1])
@@ -93,10 +96,15 @@ class TimetableEngine:
         selected_keys = list(selected.keys())
         for i in range(0, len(selected_keys), 2):
             if i + 1 < len(selected_keys):
-                c1, c2 = crossover.perform_crossover(timetable[selected_keys[i]], timetable[selected_keys[i + 1]])
+                c1, c2 = crossover.perform_crossover(
+                    timetable[selected_keys[i]], timetable[selected_keys[i + 1]]
+                )
                 crossover_chromosomes.extend([c1, c2])
 
-        mutated = [TimeTableMutation().mutate_schedule_for_week(ch) for ch in crossover_chromosomes]
+        mutated = [
+            TimeTableMutation().mutate_schedule_for_week(ch)
+            for ch in crossover_chromosomes
+        ]
         if self.config.prev_mutated:
             mutated.extend(self.config.prev_mutated)
 
@@ -108,7 +116,9 @@ class TimetableEngine:
                 best_chromosome = timetable[key]
 
         if best_chromosome:
-            updated_teacher = update_teacher_availability_matrix(teacher_matrix, best_chromosome)
+            updated_teacher = update_teacher_availability_matrix(
+                teacher_matrix, best_chromosome
+            )
         return best_chromosome, updated_teacher, selected, mutated
 
     def run(self):
@@ -120,21 +130,31 @@ class TimetableEngine:
 
         for _ in range(self.config.total_generations):
             teacher_copy = copy.deepcopy(initial_teacher)
-            best, updated_teacher, selected, mutated = self._generate_timetable(teacher_copy)
+            best, updated_teacher, selected, mutated = self._generate_timetable(
+                teacher_copy
+            )
             best_chromosome = best
             self.config.prev_selected = selected
             self.config.prev_mutated = mutated
 
         updated_teacher = update_matrix_for_best(
-            best_chromosome, updated_teacher, self.config.day_map, self.config.time_slot_map
+            best_chromosome,
+            updated_teacher,
+            self.config.day_map,
+            self.config.time_slot_map,
         )
         updated_lab = self._update_lab_availability(best_chromosome)
         return best_chromosome, updated_teacher, updated_lab
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from Constants.constant import Defaults
-    from Samples.samples import SpecialSubjects, SubjectTeacherMap, SubjectWeeklyQuota, TeacherWorkload
+    from Samples.samples import (
+        SpecialSubjects,
+        SubjectTeacherMap,
+        SubjectWeeklyQuota,
+        TeacherWorkload,
+    )
 
     lab_matrix = {
         "L1": [[True] * 7 for _ in range(5)],
@@ -142,60 +162,59 @@ if __name__ == '__main__':
         "L3": [[True] * 7 for _ in range(5)],
         "L4": [[True] * 7 for _ in range(5)],
         "L5": [[True] * 7 for _ in range(5)],
-        "L6": [[True] * 7 for _ in range(5)]
+        "L6": [[True] * 7 for _ in range(5)],
     }
 
     teacher_availability = initialize_teacher_availability(
-        TeacherWorkload.Weekly_workLoad.keys(),
-        5,
-        7
+        TeacherWorkload.Weekly_workLoad.keys(), 5, 7
     )
 
     config = TimetableConfig(
-        teacher_subject_mapping = SubjectTeacherMap.subject_teacher_map,
-        total_sections = {"A": 70, "B": 100, "C": 75, "D": 100},
-        total_classrooms = {"R1": 200, "R2": 230, "R3": 240, "R4": 250, "R5": 250},
-        total_labs = {"L1": 70, "L2": 50, "L3": 70, "L4": 50, "L5": 70, "L6": 50},
-        teacher_preferences = TeacherWorkload.teacher_preferences,
-        teacher_weekly_workload = TeacherWorkload.Weekly_workLoad,
-        special_subjects = SpecialSubjects.special_subjects,
-        labs = SpecialSubjects.Labs,
-        subject_quota_limits = SubjectWeeklyQuota.subject_quota,
-        teacher_duty_days = TeacherWorkload.teacher_duty_days,
-        teacher_availability_matrix = teacher_availability,
-        lab_availability_matrix = lab_matrix,
-        total_generations = Defaults.total_no_of_generations,
-        time_slots = {
+        teacher_subject_mapping=SubjectTeacherMap.subject_teacher_map,
+        total_sections={"A": 70, "B": 100, "C": 75, "D": 100},
+        total_classrooms={"R1": 200, "R2": 230, "R3": 240, "R4": 250, "R5": 250},
+        total_labs={"L1": 70, "L2": 50, "L3": 70, "L4": 50, "L5": 70, "L6": 50},
+        teacher_preferences=TeacherWorkload.teacher_preferences,
+        teacher_weekly_workload=TeacherWorkload.Weekly_workLoad,
+        special_subjects=SpecialSubjects.special_subjects,
+        labs=SpecialSubjects.Labs,
+        subject_quota_limits=SubjectWeeklyQuota.subject_quota,
+        teacher_duty_days=TeacherWorkload.teacher_duty_days,
+        teacher_availability_matrix=teacher_availability,
+        lab_availability_matrix=lab_matrix,
+        total_generations=Defaults.total_no_of_generations,
+        time_slots={
             1: "9:00 - 9:55",
             2: "9:55 - 10:50",
             3: "11:10 - 12:05",
             4: "12:05 - 1:00",
             5: "1:20 - 2:15",
             6: "2:15 - 3:10",
-            7: "3:30 - 4:25"
+            7: "3:30 - 4:25",
         },
-        day_map = {
+        day_map={
             "Monday": 0,
             "Tuesday": 1,
             "Wednesday": 2,
             "Thursday": 3,
             "Friday": 4,
             "Saturday": 5,
-            "Sunday": 6
+            "Sunday": 6,
         },
-        time_slot_map = {
+        time_slot_map={
             "9:00 - 9:55": 1,
             "9:55 - 10:50": 2,
             "11:10 - 12:05": 3,
             "12:05 - 1:00": 4,
             "1:20 - 2:15": 5,
             "2:15 - 3:10": 6,
-            "3:30 - 4:25": 7
-        }
+            "3:30 - 4:25": 7,
+        },
     )
 
     engine = TimetableEngine(config)
     best_tt, final_teacher, final_lab = engine.run()
 
     from icecream import ic
+
     ic(best_tt, final_teacher, final_lab)

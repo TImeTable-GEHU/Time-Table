@@ -2,7 +2,6 @@ from datetime import datetime, timedelta
 
 
 class TimeIntervalConstant:
-
     time_slots = {}
     time_mapping = {}
 

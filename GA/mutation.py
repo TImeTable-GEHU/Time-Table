@@ -1,5 +1,6 @@
 import copy
 import random
+
 from Constants.constant import Defaults
 
 
@@ -8,7 +9,6 @@ class TimeTableMutation:
         self.mutation_rate = mutation_rate
 
     def mutate_time_slots_in_section(self, schedule: dict, section: str) -> bool:
-
         if section not in schedule or len(schedule[section]) < 2:
             return False
 
@@ -20,7 +20,6 @@ class TimeTableMutation:
         return True
 
     def mutate_schedule_for_week(self, weekly_schedule: dict) -> dict:
-
         mutated_schedule = copy.deepcopy(weekly_schedule)
         for day, day_schedule in mutated_schedule.items():
             sections = list(day_schedule.keys())
@@ -33,7 +32,6 @@ class TimeTableMutation:
 
 class TimeTableCrossOver:
     def perform_crossover(self, timetable1: dict, timetable2: dict) -> tuple:
-
         for day in Defaults.working_days:
             if day in timetable1 and day in timetable2:
                 timetable1[day], timetable2[day] = timetable2[day], timetable1[day]
