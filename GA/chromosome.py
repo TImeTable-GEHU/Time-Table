@@ -21,6 +21,7 @@ class TimeTableGeneration:
         teacher_availability_matrix: dict,
         lab_availability_matrix: dict,
         time_slots: dict,
+        fixed_teacher_assignment: dict = None,
     ):
         self.sections_manager = total_sections
         self.classrooms_manager = total_classrooms
@@ -36,9 +37,8 @@ class TimeTableGeneration:
         self.weekly_workload = teacher_weekly_workload
         self.teacher_availability_matrix = teacher_availability_matrix
         self.initial_lab_availability_matrix = copy.deepcopy(lab_availability_matrix)
-        self.lab_availability_matrix = copy.deepcopy(
-            self.initial_lab_availability_matrix
-        )
+        self.lab_availability_matrix = copy.deepcopy(self.initial_lab_availability_matrix)
+        self.fixed_teacher_assignment = fixed_teacher_assignment or {}
         self._map_sections_to_classrooms()
 
     def _map_sections_to_classrooms(self) -> dict:
@@ -49,25 +49,27 @@ class TimeTableGeneration:
             self.sections_manager.items(), key=lambda x: x[1], reverse=True
         )
         self.section_to_classroom_map = {}
+
         for section, strength in sorted_sections:
             for i, (classroom, capacity) in enumerate(sorted_classrooms):
                 if capacity >= strength:
                     self.section_to_classroom_map[section] = classroom
                     sorted_classrooms.pop(i)
                     break
+
         return self.section_to_classroom_map
 
     def _initialize_teacher_workload_tracker(self) -> dict:
-        return {teacher: 0 for teacher in self.weekly_workload}
+        return {
+            teacher: 0
+            for teacher in self.weekly_workload
+        }
 
-    def _get_available_subjects(
-        self, section: str, subject_usage_tracker: dict
-    ) -> list:
+    def _get_available_subjects(self, section: str, subject_usage_tracker: dict) -> list:
         return [
             subject
             for subject in self.subject_teacher_mapping
-            if subject_usage_tracker[section][subject]
-            < self.subject_quota_limits.get(subject, 0)
+            if subject_usage_tracker[section][subject] < self.subject_quota_limits.get(subject, 0)
         ]
 
     def _assign_subject_and_teacher(
@@ -81,43 +83,49 @@ class TimeTableGeneration:
         teacher_availability_matrix: dict,
         day_index: int,
     ) -> tuple:
-        available_subjects = self._get_available_subjects(
-            section, subject_usage_tracker
-        )
+        available_subjects = self._get_available_subjects(section, subject_usage_tracker)
         random.shuffle(available_subjects)
         assigned_teacher = None
         selected_subject = None
         assigned_room = assigned_classroom
 
         for subject in available_subjects:
-            if (
-                subject in self.lab_subject_list or subject == "Placement_Class"
-            ) and slot_index not in [1, 3, 5]:
+            if (subject in self.lab_subject_list or subject == "Placement_Class") and slot_index not in [1, 3, 5]:
                 continue
             if subject not in subjects_scheduled_today:
+                # First, check for a fixed teacher assignment for (section, subject)
+                fixed_teacher = self.fixed_teacher_assignment.get(section, {}).get(subject)
+                if fixed_teacher:
+                    if (
+                        fixed_teacher in teacher_availability_matrix and
+                        len(teacher_availability_matrix[fixed_teacher]) > day_index and
+                        len(teacher_availability_matrix[fixed_teacher][day_index]) > (slot_index - 1) and
+                        teacher_availability_matrix[fixed_teacher][day_index][slot_index - 1]
+                    ):
+                        assigned_teacher = fixed_teacher
+                        teacher_workload_tracker[fixed_teacher] += 1
+                        selected_subject = subject
+                        subjects_scheduled_today.add(subject)
+                        break
+
+                # Otherwise, assign normally from the available pool
                 teachers = self.subject_teacher_mapping[subject]
                 preferred_teachers = [
-                    t
-                    for t in teachers
-                    if self.teacher_availability_preferences.get(t, [])
+                    t for t in teachers if self.teacher_availability_preferences.get(t, [])
                 ]
-                for teacher in sorted(
-                    preferred_teachers, key=lambda t: teacher_workload_tracker[t]
-                ):
+                for teacher in sorted(preferred_teachers, key=lambda t: teacher_workload_tracker[t]):
                     if (
-                        teacher in teacher_availability_matrix
-                        and len(teacher_availability_matrix[teacher]) > day_index
-                        and len(teacher_availability_matrix[teacher][day_index])
-                        > (slot_index - 1)
-                        and teacher_availability_matrix[teacher][day_index][
-                            slot_index - 1
-                        ]
+                        teacher in teacher_availability_matrix and
+                        len(teacher_availability_matrix[teacher]) > day_index and
+                        len(teacher_availability_matrix[teacher][day_index]) > (slot_index - 1) and
+                        teacher_availability_matrix[teacher][day_index][slot_index - 1]
                     ):
                         assigned_teacher = teacher
                         teacher_workload_tracker[teacher] += 1
                         selected_subject = subject
                         subjects_scheduled_today.add(subject)
                         break
+
             if assigned_teacher:
                 break
 
