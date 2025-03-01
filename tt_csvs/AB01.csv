@@ -1,7 +1,7 @@
-DAY,08:00 - 09:00,09:00 - 10:00,12:00 - 13:00,16:50 - 17:50
-Monday,"TCS-531 (B, R2)","TCS-531 (B, R2)",,
-Tuesday,"TCS-531 (B, R2)","TCS-531 (B, R2)","TCS-531 (E, R5)","TCS-531 (E, R5)"
-Wednesday,"TCS-531 (D, R4)","TCS-531 (B, R2)",,
-Thursday,"TCS-531 (E, R5)",,"TCS-531 (B, R2)","TCS-531 (F, R6)"
-Friday,"TCS-531 (F, R6)","TCS-531 (D, R4)","TCS-531 (A, R1)",
-Saturday,,,,
+DAY,11:10 - 12:05,9:55 - 10:50,9:00 - 9:55,1:20 - 2:15,2:15 - 3:10
+Monday,,,"TCS-531 (A, R2)","TCS-531 (B, R4)",
+Tuesday,,"TCS-531 (A, R2)","TCS-531 (A, R2)",,
+Wednesday,,,"TCS-531 (C, R3)",,"TCS-531 (C, R3)"
+Thursday,"TCS-531 (C, R3)",,"TCS-531 (D, R5)","TCS-531 (B, R4)",
+Friday,,"TCS-531 (C, R3)","TCS-531 (D, R5)",,
+Saturday,,,,,

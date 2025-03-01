@@ -1,7 +1,7 @@
-DAY,08:00 - 09:00,09:00 - 10:00,11:00 - 12:00,12:00 - 13:00,16:50 - 17:50,14:50 - 15:50
-Monday,,"TCS-502 (C, R3)",,,"TCS-502 (D, R4)",
-Tuesday,,,"TCS-502 (E, R5)","TCS-502 (B, R2)",,"TCS-502 (D, R4)"
-Wednesday,,"TCS-502 (F, R6)","TCS-502 (F, R6)","TCS-502 (B, R2)",,
-Thursday,"TCS-502 (C, R3)",,"TCS-502 (F, R6)",,,"TCS-502 (F, R6)"
-Friday,"TCS-502 (A, R1)",,,,,
-Saturday,,,,,,
+DAY,11:10 - 12:05,9:55 - 10:50,9:00 - 9:55,1:20 - 2:15,12:05 - 1:00
+Monday,,"TCS-502 (A, R2)",,,
+Tuesday,"TCS-502 (D, R5)",,"TCS-502 (D, R5)",,
+Wednesday,,"TCS-502 (B, R4)",,"TCS-502 (C, R3)","TCS-502 (A, R2)"
+Thursday,"TCS-502 (B, R4)","TCS-502 (C, R3)",,,
+Friday,,,"TCS-502 (C, R3)",,
+Saturday,,,,,

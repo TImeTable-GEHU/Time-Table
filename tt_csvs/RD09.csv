@@ -1,7 +1,7 @@
-DAY,11:00 - 12:00,12:00 - 13:00,14:50 - 15:50,13:50 - 14:50
+DAY,11:10 - 12:05,2:15 - 3:10,12:05 - 1:00,1:20 - 2:15
 Monday,,,,
-Tuesday,"PCS-506 (F, L1)","PCS-506 (F, L1)","PCS-506 (E, L3)","PCS-506 (E, L3)"
-Wednesday,,,"PCS-506 (F, L3)","PCS-506 (F, L3)"
+Tuesday,,"PCS-506 (D, L2)",,"PCS-506 (D, L2)"
+Wednesday,"PCS-506 (B, L2)",,"PCS-506 (B, L2)",
 Thursday,,,,
 Friday,,,,
 Saturday,,,,

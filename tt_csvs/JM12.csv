@@ -1,7 +1,7 @@
-DAY,09:00 - 10:00,11:00 - 12:00,12:00 - 13:00,16:50 - 17:50
-Monday,,,"TMA-502 (E, R5)",
-Tuesday,,"TMA-502 (F, R6)",,
-Wednesday,,,"TMA-502 (D, R4)",
-Thursday,,,"TMA-502 (C, R3)","TMA-502 (E, R5)"
-Friday,"TMA-502 (E, R5)","TMA-502 (D, R4)",,
+DAY,3:30 - 4:25,11:10 - 12:05,9:00 - 9:55,12:05 - 1:00
+Monday,"TMA-502 (A, R2)",,,
+Tuesday,,,,
+Wednesday,"TMA-502 (C, R3)",,"TMA-502 (D, R5)",
+Thursday,,"TMA-502 (A, R2)",,"TMA-502 (A, R2)"
+Friday,,"TMA-502 (B, R4)",,
 Saturday,,,,

@@ -1,7 +1,7 @@
-DAY,08:00 - 09:00,09:00 - 10:00,11:00 - 12:00,12:00 - 13:00,16:50 - 17:50,14:50 - 15:50,13:50 - 14:50
+DAY,11:10 - 12:05,9:55 - 10:50,9:00 - 9:55,1:20 - 2:15,3:30 - 4:25,2:15 - 3:10,12:05 - 1:00
 Monday,,,,,,,
-Tuesday,,,,,"Library (D, R4)",,
-Wednesday,,,,,"Library (F, R6)",,
-Thursday,,,,,"Library (F, R6)",,
-Friday,,"Library (F, R6)","Library (F, R6)","Library (F, R6)","Library (F, R6)","Library (F, R6)","Library (F, R6)"
-Saturday,"Library (F, R6)","Library (F, R6)","Library (F, R6)","Library (F, R6)","Library (F, R6)","Library (F, R6)","Library (F, R6)"
+Tuesday,,,,,,,
+Wednesday,,,,,,,
+Thursday,,,,,"Library (A, R2)","Library (A, R2)","Library (C, R3)"
+Friday,,"Library (C, R3)",,"Library (C, R3)","Library (D, R5)","Library (C, R3)","Library (D, R5)"
+Saturday,"Library (D, R5)","Library (D, R5)","Library (D, R5)","Library (D, R5)","Library (D, R5)","Library (D, R5)","Library (D, R5)"

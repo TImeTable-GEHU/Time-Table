@@ -5,7 +5,7 @@ class Defaults:
     starting_section_fitness = 1000
     max_class_capacity = 250
     initial_no_of_chromosomes = 10
-    total_no_of_generations = 10
+    total_no_of_generations = 1000
     class_strength = 50
 
 

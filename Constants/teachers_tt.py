@@ -1,11 +1,5 @@
 import json
-<<<<<<< HEAD
-
-from Samples.samples import SampleChromosome, SubjectTeacherMap, WorkingDays
-
-=======
 from Samples.samples import ( WorkingDays, SampleChromosome)
->>>>>>> refactor_main_code3
 
 class TeacherTimetable:
     def __init__(self):

@@ -1,7 +1,7 @@
-DAY,08:00 - 09:00,09:00 - 10:00,11:00 - 12:00,12:00 - 13:00
-Monday,"TCS-531 (B, AB01)","SCS-501 (B, AP24)","CSP-501 (B, AK23)","TMA-502 (B, BJ10)"
-Tuesday,"TCS-531 (B, AB01)","XCS-501 (B, DT20)","TCS-503 (B, SP06)","TCS-502 (B, SS03)"
-Wednesday,"TCS-503 (B, SP06)","TCS-531 (B, AB01)","TCS-502 (B, SS03)","TCS-509 (B, SJ16)"
-Thursday,"TMA-502 (B, RS11)","TCS-509 (B, AB17)","TCS-503 (B, SP06)","TCS-531 (B, AB01)"
-Friday,"XCS-501 (B, DT20)","TCS-503 (B, SP06)","TMA-502 (B, RS11)","TCS-502 (B, AA04)"
-Saturday,"Library (B, None)","Library (B, None)","Library (B, None)","Library (B, None)"
+DAY,11:10 - 12:05,9:55 - 10:50,3:30 - 4:25,12:05 - 1:00,1:20 - 2:15,2:15 - 3:10,9:00 - 9:55
+Monday,"TCS-503 (A, DP07)","TCS-502 (A, SS03)","TMA-502 (A, JM12)","XCS-501 (A, DT20)","Placement_Class (A, AK26)","Placement_Class (A, AK26)","TCS-531 (A, AB01)"
+Tuesday,,"SCS-501 (A, AP24)","TCS-509 (A, AB17)",,"XCS-501 (A, PA21)","CSP-501 (A, AK23)","TCS-531 (A, AB01)"
+Wednesday,"TCS-503 (A, SP06)","TMA-502 (A, BJ10)",,"TCS-502 (A, SS03)",,,"TCS-531 (A, AB01)"
+Thursday,"TCS-503 (A, SP06)","TCS-509 (A, SJ16)","Library (A, None)","TMA-502 (A, JM12)","TCS-531 (A, PK02)","Library (A, None)","TCS-502 (A, AA04)"
+Friday,"TCS-503 (A, SP06)","TCS-509 (A, SJ16)",,"TCS-509 (A, SJ16)",,,"TMA-502 (A, BJ10)"
+Saturday,"Library (A, None)","Library (A, None)","Library (A, None)","Library (A, None)","Library (A, None)","Library (A, None)","Library (A, None)"

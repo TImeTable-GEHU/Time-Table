@@ -1,7 +1,7 @@
-DAY,08:00 - 09:00,09:00 - 10:00,11:00 - 12:00,12:00 - 13:00,16:50 - 17:50,14:50 - 15:50,13:50 - 14:50
-Monday,"XCS-501 (E, DT20)","TCS-503 (E, SP06)","SCS-501 (E, AP24)","TMA-502 (E, JM12)","TCS-509 (E, HP18)","Placement_Class (E, AK26)","Placement_Class (E, AK26)"
-Tuesday,"CSP-501 (E, AK23)","TCS-503 (E, SP06)","TCS-502 (E, SS03)","XCS-501 (E, NB22)","TCS-531 (E, AB01)",,
-Wednesday,"TMA-502 (E, RS11)","TCS-531 (E, AB01)",,,"TCS-502 (E, AA04)","TCS-503 (E, SP06)","TCS-509 (E, SG19)"
-Thursday,"TCS-531 (E, AB01)","TCS-502 (E, AC05)","TCS-509 (E, HP18)","TMA-502 (E, NJ13)","Library (E, None)",,
-Friday,"TCS-531 (E, PK02)","TMA-502 (E, JM12)","Library (E, None)","Library (E, None)","Library (E, None)","Library (E, None)","Library (E, None)"
-Saturday,"Library (E, None)","Library (E, None)","Library (E, None)","Library (E, None)","Library (E, None)","Library (E, None)","Library (E, None)"
+DAY,11:10 - 12:05,9:55 - 10:50,3:30 - 4:25,12:05 - 1:00,1:20 - 2:15,2:15 - 3:10,9:00 - 9:55
+Monday,"XCS-501 (D, PA21)","TCS-503 (D, AC05)","SCS-501 (D, AP24)","TCS-531 (D, PK02)","TCS-509 (D, AB17)","TCS-502 (D, AA04)","TMA-502 (D, NJ13)"
+Tuesday,"TCS-502 (D, SS03)","TMA-502 (D, BJ10)","SCS-501 (D, AP24)","CSP-501 (D, AK23)",,,"TCS-509 (D, SJ16)"
+Wednesday,"TCS-503 (D, DP07)","TCS-509 (D, SJ16)","TCS-531 (D, PK02)","XCS-501 (D, PA21)","TCS-503 (D, DP07)","XCS-501 (D, PA21)","TMA-502 (D, JM12)"
+Thursday,,"TCS-509 (D, SJ16)",,,,,"TCS-531 (D, AB01)"
+Friday,"TCS-503 (D, SP06)","TCS-531 (D, AB01)","Library (D, None)","Library (D, None)","Placement_Class (D, AK26)","Placement_Class (D, AK26)","TCS-502 (D, AC05)"
+Saturday,"Library (D, None)","Library (D, None)","Library (D, None)","Library (D, None)","Library (D, None)","Library (D, None)","Library (D, None)"

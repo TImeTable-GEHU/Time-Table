@@ -1,7 +1,7 @@
-DAY,11:00 - 12:00,12:00 - 13:00
-Monday,"PMA-502 (F, PM14)","PMA-502 (F, PM14)"
-Tuesday,"PCS-506 (F, RD09)","PCS-506 (F, RD09)"
-Wednesday,"PMA-502 (A, PM14)","PMA-502 (A, PM14)"
-Thursday,"PMA-502 (B, PM14)","PMA-502 (B, PM14)"
-Friday,"PCS-506 (D, AD08)","PCS-506 (D, AD08)"
-Saturday,,
+DAY,11:10 - 12:05,9:55 - 10:50,12:05 - 1:00,1:20 - 2:15,2:15 - 3:10,9:00 - 9:55
+Monday,"PCS-506 (C, AD08)","PCS-503 (C, RS11)","PCS-506 (C, AD08)","PCS-506 (C, AD08)","PCS-506 (C, AD08)","PCS-503 (C, RS11)"
+Tuesday,"PCS-506 (A, AD08)","PMA-502 (B, PM14)","PCS-506 (A, AD08)","PCS-506 (D, RD09)","PCS-506 (D, RD09)","PMA-502 (B, PM14)"
+Wednesday,"PCS-506 (B, RD09)","PCS-503 (A, RS11)","PCS-506 (B, RD09)","PCS-506 (D, AD08)","PCS-506 (D, AD08)","PCS-503 (A, RS11)"
+Thursday,"PMA-502 (D, PM14)","PCS-503 (D, RS11)","PMA-502 (D, PM14)","PCS-506 (A, AD08)","PCS-506 (A, AD08)","PCS-503 (D, RS11)"
+Friday,"PMA-502 (A, PM14)","PCS-503 (A, RS11)","PMA-502 (A, PM14)","PCS-503 (B, VD25)","PCS-503 (B, VD25)","PCS-503 (A, RS11)"
+Saturday,,,,,,

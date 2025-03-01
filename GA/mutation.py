@@ -34,11 +34,15 @@ class TimeTableMutation:
             if len(section_list) < 2:  # Not enough time slots to shuffle
                 return False
 
-            time_slots = [entry["time_slot"] for entry in section_list]
+            # Ensure only dictionaries are processed
+            time_slots = [entry["time_slot"] for entry in section_list if isinstance(entry, dict)]
+
             random.shuffle(time_slots)
 
-            for i, entry in enumerate(section_list):
-                entry["time_slot"] = time_slots[i]
+            for entry in section_list:
+                if not isinstance(entry, dict):
+                    print(f"Invalid entry detected: {entry}")
+
 
             return True
         return False

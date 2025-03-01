@@ -1,7 +1,7 @@
-DAY,08:00 - 09:00,09:00 - 10:00,12:00 - 13:00,16:50 - 17:50
-Monday,,,"XCS-501 (F, R6)","XCS-501 (F, R6)"
-Tuesday,"XCS-501 (D, R4)",,,
-Wednesday,"XCS-501 (F, R6)","XCS-501 (D, R4)",,
-Thursday,,,,
-Friday,,,,
-Saturday,,,,
+DAY,11:10 - 12:05,9:00 - 9:55,1:20 - 2:15,2:15 - 3:10,12:05 - 1:00
+Monday,"XCS-501 (D, R5)",,,,"XCS-501 (D, R5)"
+Tuesday,,"XCS-501 (C, R3)","XCS-501 (A, R2)",,
+Wednesday,,,,"XCS-501 (D, R5)","XCS-501 (D, R5)"
+Thursday,,,,,
+Friday,,,,,
+Saturday,,,,,
