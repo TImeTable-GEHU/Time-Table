@@ -339,13 +339,7 @@ class TimeTableGeneration:
     def create_timetable(self, num_weeks: int) -> tuple:
         timetable = {}
         for week in range(1, num_weeks + 1):
-            self.lab_availability_matrix = copy.deepcopy(
-                self.initial_lab_availability_matrix
-            )
-            (
-                weekly_schedule,
-                _,
-                self.teacher_availability_matrix,
-            ) = self._generate_weekly_schedule()
+            self.lab_availability_matrix = copy.deepcopy(self.initial_lab_availability_matrix)
+            (weekly_schedule,_,self.teacher_availability_matrix,) = self._generate_weekly_schedule()
             timetable[f"Week {week}"] = weekly_schedule
         return timetable, self.teacher_availability_matrix, self.lab_availability_matrix
