@@ -25,9 +25,8 @@ def update_matrix_for_best(
                 slot_index = time_slot_map[time_slot_str]
 
                 # Now set availability to False
-                teacher_availability_matrix[teacher_id][day_index][
-                    slot_index - 1
-                ] = False
+                if(teacher_id!=None):
+                  teacher_availability_matrix[teacher_id][day_index][slot_index - 1] = False
 
     return teacher_availability_matrix
 

@@ -129,9 +129,10 @@ class TimeTableGeneration:
                         teacher_availability_matrix[teacher][day_index][slot_index - 1]
                     ):
                         assigned_teacher = teacher
-                        teacher_workload_tracker[teacher] += 1
                         selected_subject = subject
+                        teacher_workload_tracker[teacher] += 1
                         subjects_scheduled_today.add(subject)
+                        
                         break
 
             if assigned_teacher:
@@ -139,10 +140,24 @@ class TimeTableGeneration:
 
         if not assigned_teacher:
             selected_subject = "Library"
-            assigned_teacher = "None"
+            assigned_teacher = None
+            assigned_room = assigned_classroom
+
         return assigned_teacher, selected_subject, assigned_room
 
 
+    def _initialize_teacher_workload_tracker(self):
+        return {
+            teacher: 0
+            for teacher in self.weekly_workload
+        }
+
+    def _get_available_subjects(self, section, subject_usage_tracker):
+        return [
+            subject
+            for subject in self.subject_teacher_mapping
+            if subject_usage_tracker[section][subject] < self.subject_quota_limits.get(subject, 0)
+        ]
     def _allocate_lab(
         self,
         teacher: str,
@@ -150,10 +165,18 @@ class TimeTableGeneration:
         day_index: int,
         slot_index: int,
         section_strength: int,
+        teacher_workload_tracker: dict,
     ) -> tuple:
+        """
+            Allocates labs for a subject.
+            If a single lab can accommodate the entire section, only one lab is used.
+            Otherwise, the section is split into two groups and assigned separate labs.
+        """
+
         group1_size = ceil(section_strength / 2)
         group2_size = section_strength - group1_size
         labs_list = list(self.lab_availability_matrix.keys())
+
 
         for i in range(len(labs_list)):
             lab1 = labs_list[i]
@@ -211,8 +234,10 @@ class TimeTableGeneration:
                                 "group": 2,
                             },
                         ]
-                        return entries, slot_index + 2
+                        teacher_workload_tracker[teacher]+=1
+                        return entries, slot_index + 2, teacher_workload_tracker # Move ahead by two slots
 
+    # Fallback: if no lab pair found, return a merged allocation.
         merged_entry = {
             "teacher_id": teacher,
             "subject_id": subject,
@@ -221,7 +246,8 @@ class TimeTableGeneration:
             "group": "merged",
             "flagged": False,
         }
-        return [merged_entry], slot_index + 1
+        teacher_workload_tracker[teacher]+=1
+        return merged_entry, slot_index + 1 ,teacher_workload_tracker
 
 
     def _generate_section_schedule(
@@ -254,21 +280,47 @@ class TimeTableGeneration:
             time_slot = self.available_time_slots[slot_index]
             if subject in self.lab_subject_list or subject == "Placement_Class":
                 if slot_index <= total_slots - 1:
-                    lab_entries, slot_index = self._allocate_lab(
-                        teacher, subject, day_index, slot_index, section_strength
-                    )
-                    schedule.extend(lab_entries)
-                    subject_usage_tracker[section][subject] += len(lab_entries)
+                    if subject in self.lab_subject_list:
+                        # Allocate lab for lab subjects
+                        entries, new_slot_index,teacher_workload_tracker = self._allocate_lab(
+                            teacher, subject, day_index, slot_index, section_strength,teacher_workload_tracker
+                        )
+                    elif subject in self.special_subject_list:
+                        # Allocate a normal classroom for special subjects
+                        entries = [
+                            {
+                                "teacher_id": teacher,
+                                "subject_id": subject,
+                                "classroom_id": assigned_classroom,  # Special subjects use normal classrooms
+                                "time_slot": self.available_time_slots[slot_index],
+                                "group": "all",
+                            },
+                            {
+                                "teacher_id": teacher,
+                                "subject_id": subject,
+                                "classroom_id": assigned_classroom,
+                                "time_slot": self.available_time_slots[slot_index + 1],
+                                "group": "all",
+                            },
+                        ]
+                        new_slot_index = slot_index + 2  # Move ahead by two slots
+
+                    schedule.extend(entries)
+                    subject_usage_tracker[section][subject] += len(entries)
+
+                    # ✅ Increase teacher workload by **1 more** since it's a double slot subject
+                    teacher_workload_tracker[teacher] += 1  
+
+                    slot_index = new_slot_index
                 else:
-                    schedule.append(
-                        {
-                            "teacher_id": teacher,
-                            "subject_id": subject,
-                            "classroom_id": assigned_classroom,
-                            "time_slot": time_slot,
-                            "group": "fallback",
-                        }
-                    )
+                    # If at the end of the day and no space for 2 slots, fallback to single-slot assignment
+                    schedule.append({
+                        "teacher_id": teacher,
+                        "subject_id": subject,
+                        "classroom_id": assigned_classroom,
+                        "time_slot": time_slot,
+                        "group": "fallback"
+                    })
                     subject_usage_tracker[section][subject] += 1
                     slot_index += 1
             else:
@@ -285,7 +337,9 @@ class TimeTableGeneration:
                     subject_usage_tracker[section][subject] += 1
                 slot_index += 1
 
-        return schedule, teacher_availability_matrix
+        return schedule, teacher_availability_matrix,teacher_workload_tracker
+
+
 
 
     def generate_daily_schedule(
@@ -294,58 +348,46 @@ class TimeTableGeneration:
         half_day_sections: list,
         subject_usage_tracker: dict,
         day_index: int,
+        teacher_workload_tracker:dict,
     ) -> tuple:
         daily_schedule = {}
-        teacher_workload = self._initialize_teacher_workload_tracker()
         for section in sections:
             section_strength = self.sections_manager[section]
-            (
-                schedule,
-                self.teacher_availability_matrix,
-            ) = self._generate_section_schedule(
+            labs_capacity = self.lab_capacity_manager
+            section_schedule, self.teacher_availability_matrix ,teacher_workload_tracker= self._generate_section_schedule(
                 section,
                 half_day_sections,
                 subject_usage_tracker,
-                teacher_workload,
+                teacher_workload_tracker,
                 self.teacher_availability_matrix,
                 day_index,
                 section_strength,
             )
-            daily_schedule[section] = schedule
-        return daily_schedule, subject_usage_tracker, self.teacher_availability_matrix
+            daily_schedule[section] = section_schedule
+        return daily_schedule, subject_usage_tracker, self.teacher_availability_matrix,teacher_workload_tracker
 
 
-    def _generate_weekly_schedule(self) -> tuple:
+    def _generate_weekly_schedule(self,teacher_workload_tracker):
         weekly_schedule = {}
-        subject_usage = {
+        section_subject_usage_tracker = {
             section: {subject: 0 for subject in self.subject_teacher_mapping.keys()}
             for section in self.sections_manager.keys()
         }
         sections = list(self.sections_manager.keys())
         for day_index, weekday in enumerate(self.weekdays):
             random.shuffle(sections)
-            half_day = sections[: len(sections) // 2]
-            (
-                daily_sched,
-                subject_usage,
-                self.teacher_availability_matrix,
-            ) = self.generate_daily_schedule(
-                sections, half_day, subject_usage, day_index
+            half_day_sections = sections[: len(sections) // 2]
+            daily_schedule, section_subject_usage_tracker, self.teacher_availability_matrix,teacher_workload_tracker = self.generate_daily_schedule(
+                sections, half_day_sections, section_subject_usage_tracker, day_index,teacher_workload_tracker
             )
-            weekly_schedule[weekday] = daily_sched
-        return weekly_schedule, subject_usage, self.teacher_availability_matrix
+            weekly_schedule[weekday] = daily_schedule
+        return weekly_schedule, section_subject_usage_tracker, self.teacher_availability_matrix,teacher_workload_tracker
 
-
-    def create_timetable(self, num_weeks: int) -> tuple:
+    def create_timetable(self, num_weeks):
         timetable = {}
         for week in range(1, num_weeks + 1):
-            self.lab_availability_matrix = copy.deepcopy(
-                self.initial_lab_availability_matrix
-            )
-            (
-                weekly_schedule,
-                _,
-                self.teacher_availability_matrix,
-            ) = self._generate_weekly_schedule()
+            self.lab_availability_matrix = copy.deepcopy(self.initial_lab_availability_matrix)
+            teacher_workload_tracker = self._initialize_teacher_workload_tracker()
+            weekly_schedule, _, self.teacher_availability_matrix,teacher_workload_tracker = self._generate_weekly_schedule(teacher_workload_tracker)
             timetable[f"Week {week}"] = weekly_schedule
         return timetable, self.teacher_availability_matrix, self.lab_availability_matrix

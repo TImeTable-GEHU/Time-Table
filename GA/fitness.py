@@ -56,12 +56,13 @@ class TimetableFitnessEvaluator:
                     classroom_time_slot_tracking = {}
 
                     for schedule_item in section_schedule:
-                        assigned_teacher = schedule_item["teacher_id"]
-                        assigned_classroom = schedule_item["classroom_id"]
-                        assigned_time_slot = self.time_slots.get(
-                            schedule_item["time_slot"]
-                        )
-                        section_strength = self.section_student_strength.get(section, 0)
+                        if isinstance(schedule_item, dict):
+                            assigned_teacher = schedule_item['teacher_id']
+                            assigned_classroom = schedule_item['classroom_id']
+                            assigned_time_slot = self.time_slots.get(
+                                schedule_item['time_slot']
+                            )
+                            section_strength = self.section_student_strength.get(section, 0)
 
                         # Penalty 1: Double booking a teacher in the same time slot
                         if (

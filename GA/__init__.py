@@ -41,6 +41,13 @@ class TimetableEngine:
         self.teacher_availability = copy.deepcopy(config.teacher_availability_matrix)
         self.lab_availability = copy.deepcopy(config.lab_availability_matrix)
 
+    def update_teacher_workload(self, best_teacher_matrix):
+        teacher_workload = {
+        teacher: sum(sum(1 for slot in day if not slot) for day in availability)
+        for teacher, availability in best_teacher_matrix.items()
+        }
+        return teacher_workload
+    
     def _update_lab_availability(self, best_timetable):
         updated_lab = copy.deepcopy(self.config.lab_availability_matrix)
         for weekday, daily_schedule in best_timetable.items():
@@ -54,7 +61,7 @@ class TimetableEngine:
                     if lab in updated_lab and ts_index is not None:
                         updated_lab[lab][day_index][ts_index - 1] = False
         return updated_lab
-
+            
     def _generate_timetable(self, teacher_matrix):
         tg = TimeTableGeneration(
             teacher_subject_mapping=self.config.teacher_subject_mapping,
@@ -104,7 +111,6 @@ class TimetableEngine:
         mutated = [TimeTableMutation().mutate_schedule_for_week(ch) for ch in crossover_chromosomes]
         if self.config.prev_mutated:
             mutated.extend(self.config.prev_mutated)
-
         best_chromosome, best_score = None, -1
         for key, score in selected.items():
             score = int(score)
@@ -125,12 +131,9 @@ class TimetableEngine:
         self.config.prev_mutated = None
 
         for _ in range(self.config.total_generations):
-            teacher_copy = copy.deepcopy(initial_teacher)
-            best, updated_teacher, selected, mutated = self._generate_timetable(teacher_copy)
+            best, updated_teacher, selected, mutated = self._generate_timetable(copy.deepcopy(initial_teacher))
             best_chromosome = best
-
-            self.config.prev_selected = selected
-            self.config.prev_mutated = mutated
+            self.config.prev_selected, self.config.prev_mutated = selected, mutated
 
         updated_teacher = update_matrix_for_best(
             best_chromosome,
@@ -140,7 +143,10 @@ class TimetableEngine:
         )
 
         updated_lab = self._update_lab_availability(best_chromosome)
-        return best_chromosome, updated_teacher, updated_lab
+        teacher_workload = self.update_teacher_workload(updated_teacher)
+
+        return best_chromosome, updated_teacher, updated_lab, teacher_workload
+
 
 
 def run_timetable_generation(
@@ -207,7 +213,7 @@ if __name__ == "__main__":
         TeacherWorkload.Weekly_workLoad.keys(), 5, 7
     )
 
-    best_tt, final_teacher, final_lab = run_timetable_generation(
+    best_tt, final_teacher, final_lab,weekly_workload = run_timetable_generation(
         teacher_subject_mapping=SubjectTeacherMap.subject_teacher_map,
         total_sections={"A": 70, "B": 100, "C": 75, "D": 100},
         total_classrooms={"R1": 200, "R2": 230, "R3": 240, "R4": 250, "R5": 250},
@@ -255,4 +261,4 @@ if __name__ == "__main__":
     )
 
     from icecream import ic
-    ic(best_tt, final_teacher, final_lab)
+    ic(best_tt, final_teacher, final_lab,weekly_workload)

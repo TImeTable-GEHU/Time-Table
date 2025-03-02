@@ -13,11 +13,20 @@ class TimeTableMutation:
             return False
 
         section_slots = schedule[section]
+
+        # Ensure section_slots only contains dictionaries
+        if not all(isinstance(entry, dict) for entry in section_slots):
+            print(f"ERROR: section_slots contains invalid data -> {section_slots}")
+            return False  # Handle error or clean the data
+
         time_slots = [entry["time_slot"] for entry in section_slots]
         random.shuffle(time_slots)
+        
         for i, entry in enumerate(section_slots):
             entry["time_slot"] = time_slots[i]
+
         return True
+
 
     def mutate_schedule_for_week(self, weekly_schedule: dict) -> dict:
         mutated_schedule = copy.deepcopy(weekly_schedule)
